@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Temps de Faéments</title>
-	<link rel="stylesheet" href="data/faements1.css">
+	<link rel="stylesheet" href="data/faements.css">
 	<link rel="stylesheet" href="data/spells.css">
 	<script type="text/javascript" src="data/jquery.min.js"></script>
 	<script type="text/javascript" src="data/animate.js"></script>
@@ -11,16 +11,19 @@
 
 <body>
 	<div id="fastmenu">
-		<a href="home.html" title="menu"><img src="data/icons/home.png" /></a>
-		<a href="system.html" title="système de jeu"><img src="data/icons/system.png" /></a>
-		<a href="evolution.html" title="évolution"><img src="data/icons/evolution.png" /></a>
-		<a href="skills.html" title="compétences"><img src="data/icons/skills.png" /></a>
-		<a href="spells.html" title="sorts" class="current"><img src="data/icons/spells.png" /></a>
-		<a href="equipment.html" title="équipement"><img src="data/icons/equipment.png" /></a>
-		<a href="beasts.html" title="bestiaire"><img src="data/icons/beasts.png" /></a>
-		<a href="sheets.html" title="Feuilles de personnage"><img src="data/icons/sheets.png" /></a>
+		<div id="menu">
+			<a href="home.html" title="menu"><img src="data/icons/home.png" />Menu</a>
+			<a href="system.html" title="système de jeu"><img src="data/icons/system.png" />Système de jeu</a>
+			<a href="evolution.html" title="évolution"><img src="data/icons/evolution.png" />Evolution</a>
+			<a href="skills.html" title="compétences"><img src="data/icons/skills.ico" />Compétences</a>
+			<a href="spells.html" title="sorts" class="current"><img src="data/icons/spells.png" />Sorts</a>
+			<a href="equipment.html" title="équipement"><img src="data/icons/equipment.png" />Equipement</a>
+			<a href="beasts.html" title="bestiaire"><img src="data/icons/beasts.png" />Bestiaire</a>
+			<a href="craft.html" title="Artisanat"><img src="data/icons/craft.png" />Artisanat</a>
+			<a href="sheets.html" title="Feuilles de personnage"><img src="data/icons/sheets.png" />Feuilles de personnages</a>
+		</div>
 	</div>
-
+	<a id="fastmenu_trigger" href="#"><img src="data/icons/map.png" /></a>
 
 	<div id="fastnav">
 		<div id="nav_wrap">
@@ -35,53 +38,53 @@
 
 		<h2>Les sorts</h2>
 		
+		<!-- MAGIE FONDAMENTALE -->
 		<h3 class="comp_cat">Magie fondamentale</h3>
 		<div class="comp">		
-			<h5>Boule d’énergie</h5>
-			<span class="comp_req">4 en Intelligence</span>
-			<span class="comp_spec"><img src="data/icons/wind.png" />Projectile Magique</span>
+			<h4>Boule d’énergie</h4>
+			<span class="comp_req">Apprentissage (0)</span>, <span class="comp_spec">Projectile Magique</span>
 			<table class="tab2">
 				<tr><th>Niv.</th><th>Effets</th><th>SP</th><th>SC</th></tr>
-				<tr><td>1</td><td>Le mage projette une boule d’énergie qui va heurter une cible à moins de 20 mètres. Celle-ci subit alors 1D20 dégâts.<br /><u>Seuil critique</u> : si la cible rate un test de Vivacité, la boule la renverse et la jette au sol.</td><td>15</td><td>20</td></tr>
+				<tr><td>1</td><td>Le mage projette une boule d’énergie qui va heurter une cible à moins de 20 mètres. Celle-ci subit alors 1D20 dégâts.<br /><b>Seuil critique</b> : si la cible rate un test de Vivacité, la boule la renverse et la jette au sol.</td><td>15</td><td>20</td></tr>
 				<tr><td>2</td><td>La boule inflige désormais 1D20 +5 dégâts.</td><td>20</td><td>25</td></tr>
-				<tr><td>3</td><td>Seuil critique : si la cible est renversée, elle est également projetée d’1D6 mètres à l’opposée du lanceur du sort.</td><td>20</td><td>25</td></tr>
+				<tr><td>3</td><td><b>Seuil critique</b> : si la cible est renversée, elle est également projetée d’1D6 mètres à l’opposée du lanceur du sort.</td><td>20</td><td>25</td></tr>
 				<tr><td>4</td><td>La boule inflige 1D20 +10 dégâts.</td><td>25</td><td>30</td></tr>
 				<tr><td>5</td><td>Le projectile atteint toujours sa cible.</td><td>25</td><td>30</td></tr>
 				<tr><td>6+</td><td>Chaque niveau augmente les dégâts de 5 points</td><td>30</td><td>35</td></tr>
 			</table>
 		</div>
 		<div class="comp">		
-			<h5>Onde de choc</h5>
-			<span class="comp_req">5 en Intelligence</span>
+			<h4>Onde de choc</h4>
+			<span class="comp_req">Apprentissage (-2)</span>
 			<table class="tab2">
 				<tr><th>Niv.</th><th>Effets</th><th>SP</th><th>SC</th></tr>
-				<tr><td>1</td><td>Le mage expulse une onde de choc de son corps pour renverser ses ennemis. Toute personne à 3 mètres doit réussir un test d’Agilité ou être jetée au sol.<br /><u>Seuil critique</u> : les personnes touchées doivent réussir un test de Robustesse ou être sonnées pour 1D3 rounds.</td><td>25</td><td>40</td></tr>
+				<tr><td>1</td><td>Le mage expulse une onde de choc de son corps pour renverser ses ennemis. Toute personne à 3 mètres doit réussir un test d’Agilité ou être jetée au sol.<br /><b>Seuil critique</b> : les personnes touchées doivent réussir un test de Robustesse ou être sonnées pour 1D3 rounds.</td><td>25</td><td>40</td></tr>
 				<tr><td>2</td><td>Les cibles sont également repoussées de 2m.</td><td>30</td><td>40</td></tr>
 				<tr><td>3</td><td>Le mage arrive à cibler les personnes dans l’aire d’effet qui seront touchées par l’onde.</td><td>30</td><td>40</td></tr>
-				<tr><td>4</td><td>Seuil critique : La Robustesse est divisée par deux pour ne pas être sonnée</td><td>35</td><td>45</td></tr>
+				<tr><td>4</td><td><b>Seuil critique</b> : La Robustesse est divisée par deux pour ne pas être sonnée</td><td>35</td><td>45</td></tr>
 				<tr><td>5</td><td>Le test d’Agilité pour ne pas tomber est soumis à un malus de -4</td><td>35</td><td>45</td></tr>
 				<tr><td>6+</td><td>Chaque niveau augmente le malus au test d’Agilité de 1.</td><td>35</td><td>45</td></tr>
 			</table>
 		</div>
 		<div class="comp">		
-			<h5>Armure d'Astraéos</h5>
-			<span class="comp_req">4 en Intelligence</span>
+			<h4>Armure d'Astraéos</h4>
+			<span class="comp_req">Apprentissage (0)</span>
 			<table class="tab2">
 				<tr><th>Niv.</th><th>Effets</th><th>SP</th><th>SC</th></tr>
-				<tr><td>1</td><td>S’entourant d’un champ de force, le mage réduit l’intensité des agressions qui lui sont destinées. Tous les dégâts reçus sont réduis d’un nombre de points égal à l’Intelligence du mage divisée par 4.<br />Tant que ce sort est actif, le mage doit dépenser 4 points de concentration par tour.<br /><u>Seuil critique</u> : l’armure confère un bonus de +2 pour résister à un sort.</td><td>20</td><td>30</td></tr>
+				<tr><td>1</td><td>S’entourant d’un champ de force, le mage réduit l’intensité des agressions qui lui sont destinées. Tous les dégâts reçus sont réduis d’un nombre de points égal à l’Intelligence du mage divisée par 4.<br />Tant que ce sort est actif, le mage doit dépenser 4 points de concentration par tour.<br /><b>Seuil critique</b> : l’armure confère un bonus de +2 pour résister à un sort.</td><td>20</td><td>30</td></tr>
 				<tr><td>2</td><td>Sur un test d’Intelligence avec en malus les dégâts subits, le mage peut ignorer les dégâts.</td><td>25</td><td>35</td></tr>
 				<tr><td>3</td><td>L’Intelligence n’est maintenant divisée que par 2 pour déterminer la réduction de dégâts.</td><td>30</td><td>40</td></tr>
-				<tr><td>4</td><td>Seuil critique : l’armure confère un bonus de +5 pour résister à un sort.</td><td></td><td></td></tr>
+				<tr><td>4</td><td><b>Seuil critique</b> : l’armure confère un bonus de +5 pour résister à un sort.</td><td></td><td></td></tr>
 				<tr><td>5</td><td></td><td></td><td></td></tr>
 				<tr><td>6+</td><td></td><td></td><td></td></tr>
 			</table>
 		</div>
 		<div class="comp">		
-			<h5>Bottes d'Astraéos</h5>
-			<span class="comp_req">8 en Intelligence</span>
+			<h4>Bottes d'Astraéos</h4>
+			<span class="comp_req">Apprentissage (-2)</span>
 			<table class="tab2">
 				<tr><th>Niv.</th><th>Effets</th><th>SP</th><th>SC</th></tr>
-				<tr><td>1</td><td>Grâce à cet enchantement, le mage semble légèrement flotté dans les airs. Il peut se déplacer d’une distance égale à son Intelligence divisée par 4 et faire une autre action autre qu’un déplacement.<br />Le sort durera 2D3 tours.<br /><u>Seuil critique</u> : les déplacements normaux sont augmentés de 2 points.</td><td>25</td><td>35</td></tr>
+				<tr><td>1</td><td>Grâce à cet enchantement, le mage semble légèrement flotté dans les airs. Il peut se déplacer d’une distance égale à son Intelligence divisée par 4 et faire une autre action autre qu’un déplacement.<br />Le sort durera 2D3 tours.<br /><b>Seuil critique</b> : les déplacements normaux sont augmentés de 2 points.</td><td>25</td><td>35</td></tr>
 				<tr><td>2</td><td>L’Intelligence n’est maintenant divisée que par 2.</td><td>35</td><td>45</td></tr>
 				<tr><td>3</td><td>Le mage peut lancer ce sort sur une cible au contact. Ce sera toujours l’Intelligence de la cible qui sera prise pour la distance de déplacement permise.</td><td>40</td><td>45</td></tr>
 				<tr><td>4</td><td></td><td></td><td></td></tr>
@@ -90,11 +93,11 @@
 			</table>
 		</div>
 		<div class="comp">		
-			<h5>Cape d'Astraéos</h5>
-			<span class="comp_req">8 en Intelligence</span>
+			<h4>Cape d'Astraéos</h4>
+			<span class="comp_req">Apprentissage (-2)</span>
 			<table class="tab2">
 				<tr><th>Niv.</th><th>Effets</th><th>SP</th><th>SC</th></tr>
-				<tr><td>1</td><td>Bonus résistance magie<br /><u>Seuil critique</u> : </td><td>25</td><td>40</td></tr>
+				<tr><td>1</td><td>Bonus de +2 résistance magie<br /><b>Seuil critique</b> : </td><td>25</td><td>40</td></tr>
 				<tr><td>2</td><td></td><td></td><td></td></tr>
 				<tr><td>3</td><td></td><td></td><td></td></tr>
 				<tr><td>4</td><td></td><td></td><td></td></tr>
@@ -103,11 +106,11 @@
 			</table>
 		</div>
 		<div class="comp">		
-			<h5>Orbe d'Astraéos</h5>
-			<span class="comp_req">6 en Intelligence</span>
+			<h4>Orbe d'Astraéos</h4>
+			<span class="comp_req">Apprentissage (-2)</span>
 			<table class="tab2">
 				<tr><th>Niv.</th><th>Effets</th><th>SP</th><th>SC</th></tr>
-				<tr><td>1</td><td>Bonus lancement des sorts<br /><u>Seuil critique</u> : </td><td>25</td><td>40</td></tr>
+				<tr><td>1</td><td>Bonus de +2 au lancement des sorts<br /><b>Seuil critique</b> : </td><td>25</td><td>40</td></tr>
 				<tr><td>2</td><td></td><td></td><td></td></tr>
 				<tr><td>3</td><td></td><td></td><td></td></tr>
 				<tr><td>4</td><td></td><td></td><td></td></tr>
@@ -116,12 +119,11 @@
 			</table>
 		</div>
 		<div class="comp">		
-			<h5>Pique</h5>
-			<span class="comp_req">8 en Intelligence</span>
-			<span class="comp_spec"><img src="data/icons/wind.png" />Projectile Magique</span>
+			<h4>Pique</h4>
+			<span class="comp_req">Apprentissage (-2)</span>, <span class="comp_spec">Projectile Magique</span>
 			<table class="tab2">
 				<tr><th>Niv.</th><th>Effets</th><th>SP</th><th>SC</th></tr>
-				<tr><td>1</td><td>Le mage projette un trait d’énergie transperçant tout sur son passage. Le projectile touche et blesse tout ennemi sur sa trajectoire infligeant 1D10+5 dégâts. Le projectile peut être évité grâce à une esquive avec un malus de -2 et a une portée de 10 mètres.<br /><u>Seuil critique</u> : le projectile inflige le double de dégâts.</td><td>15</td><td>25</td></tr>
+				<tr><td>1</td><td>Le mage projette un trait d’énergie transperçant tout sur son passage. Le projectile touche et blesse tout ennemi sur sa trajectoire infligeant 1D10+5 dégâts. Le projectile peut être évité grâce à une esquive avec un malus de -2 et a une portée de 10 mètres.<br /><b>Seuil critique</b> : le projectile inflige le double de dégâts.</td><td>15</td><td>25</td></tr>
 				<tr><td>2</td><td>Le malus en esquive passe à -4.</td><td>20</td><td>30</td></tr>
 				<tr><td>3</td><td>Les dégâts passent à 1D20+5.</td><td>25</td><td>35</td></tr>
 				<tr><td>4</td><td>La portée passe à 20 mètres</td><td>30</td><td>40</td></tr>
@@ -130,11 +132,11 @@
 			</table>
 		</div>
 		<div class="comp">		
-			<h5>Ciblage</h5>
-			<span class="comp_req">12 en Intelligence</span>
+			<h4>Ciblage</h4>
+			<span class="comp_req">Apprentissage (-4)</span>
 			<table class="tab2">
 				<tr><th>Niv.</th><th>Effets</th><th>SP</th><th>SC</th></tr>
-				<tr><td>1</td><td>Le mage marque sa cible d’une empreinte magique qui l’aidera par la suite à diriger sa magie. La marque restera présente indéfiniment tant que le mage ne lance pas un sort sur une autre cible (lancer un sort de zone sans vouloir toucher la créature ciblée fait également disparaitre les effets). Lorsque le mage bénéficie de ce repère, il n’a plus besoin de voir sa cible pour lancer le sort et la portée est multipliée par 2.<br /><u>Seuil critique</u> : La portée est multipliée par 3.</td><td>30</td><td>45</td></tr>
+				<tr><td>1</td><td>Le mage marque une cible à moins de 20m d’une empreinte magique qui l’aidera par la suite à diriger sa magie. La marque restera présente indéfiniment tant que le mage ne lance pas un sort sur une autre cible (lancer un sort de zone sans vouloir toucher la créature ciblée fait également disparaitre les effets). Lorsque le mage bénéficie de ce repère, il n’a plus besoin de voir sa cible pour lancer le sort et la portée est multipliée par 2.<br /><b>Seuil critique</b> : La portée est multipliée par 3.</td><td>30</td><td>45</td></tr>
 				<tr><td>2</td><td>La cible subit un malus de -5 pour résister aux sorts du mage.</td><td>25</td><td>35</td></tr>
 				<tr><td>3</td><td></td><td>30</td><td>40</td></tr>
 				<tr><td>4</td><td></td><td>30</td><td>40</td></tr>
@@ -143,52 +145,11 @@
 			</table>
 		</div>
 		<div class="comp">		
-			<h5>Plaque télékinétique</h5>
-			<span class="comp_req">10 en Intelligence</span>
+			<h4>Plaque télékinétique</h4>
+			<span class="comp_req">Apprentissage (-4)</span>
 			<table class="tab2">
 				<tr><th>Niv.</th><th>Effets</th><th>SP</th><th>SC</th></tr>
-				<tr><td>1</td><td>Le mage marque invoque une plaque d’énergie de 1m x 2m. cette plaque peut résister à des coups (l’équivalent de 50 points de Vitalité sans armure) ou supporter des charges (l’équivalent de 120Kg). Une fois invoquée, le mage doit dépenser 5 points de Concentration par round et ne peut pas agir mais chaque tour redonne l’énergie à la plaque de supporter de nouveaux dégâts. La plaque peut être invoquée jusqu’à 5m du mage.<br /><u>Seuil critique</u> : la plaque reste un tour en place sans action du mage.</td><td>25</td><td>30</td></tr>
-				<tr><td>2</td><td></td><td></td><td></td></tr>
-				<tr><td>3</td><td></td><td></td><td></td></tr>
-				<tr><td>4</td><td></td><td></td><td></td></tr>
-				<tr><td>5</td><td></td><td></td><td></td></tr>
-				<tr><td>6+</td><td></td><td></td><td></td></tr>
-			</table>
-		</div>
-
-		<h3 class="comp_cat">Magie mentale</h3>
-		<div class="comp">		
-			<h5>Angoisses</h5>
-			<span class="comp_req">8 en Intelligence</span>
-			<table class="tab2">
-				<tr><th>Niv.</th><th>Effets</th><th>SP</th><th>SC</th></tr>
-				<tr><td>1</td><td>Le mage suggère un sentiment de peur dans l’esprit de sa victime. Celle-ci doit réussir un test d’Intuition ou lutter contre ses démons intérieurs. Dans ce cas, celle-ci ne pourra plus agir d’elle-même sauf pour se défendre d’une agression.<br /><u>Seuil critique</u> : en cas d’échec du test, la cible lâche tout ce qu’elle tient dans les mains et fuit dans une direction aléatoire.</td><td>20</td><td>30</td></tr>
-				<tr><td>2</td><td>Le test d’Intuition est soumis à un malus de -2.</td><td>25</td><td>35</td></tr>
-				<tr><td>3</td><td>Le test d’Intuition est soumis à un malus de -4.</td><td>30</td><td>40</td></tr>
-				<tr><td>4</td><td>Seuil critique : avant de tout lâcher, la cible se frappe violemment la tête avec son arme.</td><td>35</td><td>45</td></tr>
-				<tr><td>5</td><td>Le test d’Intuition est soumis à un malus de -6.</td><td>35</td><td>45</td></tr>
-				<tr><td>6+</td><td>Chaque niveau augmente le malus de 2.</td><td>35</td><td>45</td></tr>
-			</table>
-		</div>
-		<div class="comp">		
-			<h5>Doutes</h5>
-			<span class="comp_req">6 en Intelligence</span>
-			<table class="tab2">
-				<tr><th>Niv.</th><th>Effets</th><th>SP</th><th>SC</th></tr>
-				<tr><td>1</td><td>De sombres pensées envahissent l’esprit de la cible qui subira un malus de -1 à tous ses tests pendant 1D3 rounds.<br /><u>Seuil critique</u> : la durée est doublée.</td><td>25</td><td>35</td></tr>
-				<tr><td>2</td><td>Le malus passe à -2.</td><td>25</td><td>35</td></tr>
-				<tr><td>3</td><td>La durée passe à 1D6</td><td>30</td><td>40</td></tr>
-				<tr><td>4</td><td>Le malus passe à -3.</td><td>30</td><td>40</td></tr>
-				<tr><td>5</td><td>Le malus passe à -4.</td><td>35</td><td>45</td></tr>
-				<tr><td>6+</td><td>Chaque niveau augmente le malus de 1.</td><td>40</td><td>50</td></tr>
-			</table>
-		</div>
-		<div class="comp">		
-			<h5>Torture</h5>
-			<span class="comp_req">10 en Intelligence</span>
-			<table class="tab2">
-				<tr><th>Niv.</th><th>Effets</th><th>SP</th><th>SC</th></tr>
-				<tr><td>1</td><td>Le mage trompe le cerveau de la victime qui devient persuadé de subir des douleurs inégalées. Lorsqu’elle est la victime de ce sort, celle-ci s’effondre, terrassée par la douleur, voit sa Concentration et son Souffle divisé par deux et perd 2D10 points de Vitalité. Enfin, elle ne pourra pas agir pendant ce tour.<br /><u>Seuil critique</u> : La victime doit réussir un test de Robustesse ou devenir inconsciente.</td><td>50</td><td>80</td></tr>
+				<tr><td>1</td><td>Le mage marque invoque une plaque d’énergie de 1m x 2m. cette plaque peut résister à des coups (l’équivalent de 50 points de Vitalité sans armure) ou supporter des charges (l’équivalent de 120Kg). Une fois invoquée, le mage doit dépenser 5 points de Concentration par round et ne peut pas agir mais chaque tour redonne l’énergie à la plaque de supporter de nouveaux dégâts. La plaque peut être invoquée jusqu’à 5m du mage.<br /><b>Seuil critique</b> : la plaque reste un tour en place sans action du mage.</td><td>25</td><td>30</td></tr>
 				<tr><td>2</td><td></td><td></td><td></td></tr>
 				<tr><td>3</td><td></td><td></td><td></td></tr>
 				<tr><td>4</td><td></td><td></td><td></td></tr>
@@ -197,11 +158,11 @@
 			</table>
 		</div>
 		<div class="comp">		
-			<h5>Frustration</h5>
-			<span class="comp_req">7 en Intelligence</span>
+			<h4>Divination</h4>
+			<span class="comp_req">Apprentissage (-8)</span>
 			<table class="tab2">
 				<tr><th>Niv.</th><th>Effets</th><th>SP</th><th>SC</th></tr>
-				<tr><td>1</td><td>Chaque échec fait perdre 5 points de Concentration à la victime de la cible. <br />Durée 1D6 tours<br /><u>Seuil critique</u> : </td><td>20</td><td>30</td></tr>
+				<tr><td>1</td><td>Le mage sonde l'avenir pour prédire les actions qui vont lui arriver, il gagne un bonus de +4 à tous les jets défensifs pour 2D4 tours.<br /><b>Seuil critique</b> : -1 de réactivité après sa premiere action</td><td>25</td><td>40</td></tr>
 				<tr><td>2</td><td></td><td></td><td></td></tr>
 				<tr><td>3</td><td></td><td></td><td></td></tr>
 				<tr><td>4</td><td></td><td></td><td></td></tr>
@@ -210,13 +171,82 @@
 			</table>
 		</div>
 		
-		<h3 class="comp_cat">Magie expérimentale</h3>
+		<!-- MAGIE MENTALE -->
+		<h3 class="comp_cat">Magie mentale</h3>
 		<div class="comp">		
-			<h5>Animation macabre</h5>
-			<span class="comp_req">8 en Intelligence</span>
+			<h4>Angoisses</h4>
+			<span class="comp_req">Apprentissage (-2)</span>
 			<table class="tab2">
 				<tr><th>Niv.</th><th>Effets</th><th>SP</th><th>SC</th></tr>
-				<tr><td>1</td><td>Le personnage utilise un cadavre complet pour réanimer une créature. Celle-ci n’est pas douée de conscience, d’intelligence ni de sensations. Elle est insensible aux poisons, aux maladies, à la magie mentale, … En cas de doute sur les effets à appliquer, la créature ainsi invoquée est aussi réactive qu’une porte. Au premier niveau, le personnage ne peut utiliser que des cadavres de petite taille ou de taille équivalente à la sienne. La taille du cadavre utilisé ainsi que l’Intelligence du personnage détermine les caractéristiques de la créature. Ainsi Vitalité : x1 indique que la Vitalité de la créature sera égale au score d’Intelligence du personnage multiplié par 1.
+				<tr><td>1</td><td>Le mage suggère un sentiment de peur dans l’esprit d'une victime à 10m. Celle-ci doit réussir un test d’Intuition ou lutter contre ses démons intérieurs. Dans ce cas, celle-ci ne pourra plus agir d’elle-même sauf pour se défendre d’une agression.<br /><b>Seuil critique</b> : en cas d’échec du test, la cible lâche tout ce qu’elle tient dans les mains et fuit dans une direction aléatoire.</td><td>20</td><td>30</td></tr>
+				<tr><td>2</td><td>Le test d’Intuition est soumis à un malus de -2.</td><td>25</td><td>35</td></tr>
+				<tr><td>3</td><td>Le test d’Intuition est soumis à un malus de -4.</td><td>30</td><td>40</td></tr>
+				<tr><td>4</td><td><b>Seuil critique</b> : avant de tout lâcher, la cible se frappe violemment la tête avec son arme.</td><td>35</td><td>45</td></tr>
+				<tr><td>5</td><td>Le test d’Intuition est soumis à un malus de -6.</td><td>35</td><td>45</td></tr>
+				<tr><td>6+</td><td>Chaque niveau augmente le malus de 2.</td><td>35</td><td>45</td></tr>
+			</table>
+		</div>
+		<div class="comp">		
+			<h4>Doutes</h4>
+			<span class="comp_req">Apprentissage (0)</span>
+			<table class="tab2">
+				<tr><th>Niv.</th><th>Effets</th><th>SP</th><th>SC</th></tr>
+				<tr><td>1</td><td>De sombres pensées envahissent l’esprit d'une cible à 10m qui subira un malus de -1 à tous ses tests pendant 1D3 rounds.<br /><b>Seuil critique</b> : la durée est doublée.</td><td>25</td><td>35</td></tr>
+				<tr><td>2</td><td>Le malus passe à -2.</td><td>25</td><td>35</td></tr>
+				<tr><td>3</td><td>La durée passe à 1D6</td><td>30</td><td>40</td></tr>
+				<tr><td>4</td><td>Le malus passe à -3.</td><td>30</td><td>40</td></tr>
+				<tr><td>5</td><td>Le malus passe à -4.</td><td>35</td><td>45</td></tr>
+				<tr><td>6+</td><td>Chaque niveau augmente le malus de 1.</td><td>40</td><td>50</td></tr>
+			</table>
+		</div>
+		<div class="comp">		
+			<h4>Torture</h4>
+			<span class="comp_req">Apprentissage (-6)</span>
+			<table class="tab2">
+				<tr><th>Niv.</th><th>Effets</th><th>SP</th><th>SC</th></tr>
+				<tr><td>1</td><td>Le mage trompe le cerveau d'une victime à 5m qui devient persuadée de subir des douleurs inégalées. Lorsqu’elle est la victime de ce sort, celle-ci s’effondre, terrassée par la douleur, voit sa Concentration et son Souffle divisé par deux et perd 2D10 points de Vitalité. Enfin, elle ne pourra pas agir pendant ce tour.<br /><b>Seuil critique</b> : La victime doit réussir un test de Robustesse ou devenir inconsciente.</td><td>30</td><td>40</td></tr>
+				<tr><td>2</td><td></td><td></td><td></td></tr>
+				<tr><td>3</td><td></td><td></td><td></td></tr>
+				<tr><td>4</td><td></td><td></td><td></td></tr>
+				<tr><td>5</td><td></td><td></td><td></td></tr>
+				<tr><td>6+</td><td></td><td></td><td></td></tr>
+			</table>
+		</div>
+		<div class="comp">		
+			<h4>Frustration</h4>
+			<span class="comp_req">Apprentissage (0)</span>
+			<table class="tab2">
+				<tr><th>Niv.</th><th>Effets</th><th>SP</th><th>SC</th></tr>
+				<tr><td>1</td><td>Chaque échec fait perdre 5 points de Concentration à une victime à moins de 15m. <br />Durée 1D6 tours<br /><b>Seuil critique</b> : </td><td>20</td><td>30</td></tr>
+				<tr><td>2</td><td></td><td></td><td></td></tr>
+				<tr><td>3</td><td></td><td></td><td></td></tr>
+				<tr><td>4</td><td></td><td></td><td></td></tr>
+				<tr><td>5</td><td></td><td></td><td></td></tr>
+				<tr><td>6+</td><td></td><td></td><td></td></tr>
+			</table>
+		</div>
+		<div class="comp">		
+			<h4>Fatigue</h4>
+			<span class="comp_req">Apprentissage (0)</span>
+			<table class="tab2">
+				<tr><th>Niv.</th><th>Effets</th><th>SP</th><th>SC</th></tr>
+				<tr><td>1</td><td>Un personnage à 10m devient fatigué pour 1D6 tours<br /><b>Seuil critique</b> : la cible subit un malus de -5 pour résister à ce sort</td><td>15</td><td>20</td></tr>
+				<tr><td>2</td><td></td><td></td><td></td></tr>
+				<tr><td>3</td><td></td><td></td><td></td></tr>
+				<tr><td>4</td><td></td><td></td><td></td></tr>
+				<tr><td>5</td><td></td><td></td><td></td></tr>
+				<tr><td>6+</td><td></td><td></td><td></td></tr>
+			</table>
+		</div>
+		
+		<!-- MAGIE EXPERIMENTALE -->
+		<h3 class="comp_cat">Magie expérimentale</h3>
+		<div class="comp">		
+			<h4>Animation macabre</h4>
+			<span class="comp_req">Apprentissage (-4)</span>
+			<table class="tab2">
+				<tr><th>Niv.</th><th>Effets</th><th>SP</th><th>SC</th></tr>
+				<tr><td>1</td><td>Le personnage utilise un cadavre complet à moins de 3m pour réanimer une créature. Celle-ci n’est pas douée de conscience, d’intelligence ni de sensations. Elle est insensible aux poisons, aux maladies, à la magie mentale, … En cas de doute sur les effets à appliquer, la créature ainsi invoquée est aussi réactive qu’une porte. Au premier niveau, le personnage ne peut utiliser que des cadavres de petite taille ou de taille équivalente à la sienne. La taille du cadavre utilisé ainsi que l’Intelligence du personnage détermine les caractéristiques de la créature. Ainsi Vitalité : x1 indique que la Vitalité de la créature sera égale au score d’Intelligence du personnage multiplié par 1.
 									<br />Pour savoir si le personnage réussit son invocation, il doit réussir à lancer son sort et réussir un test d’Intelligence avec en malus la difficulté d’invocation due à la taille du cadavre.
 
 										<table class="stab1 tab_reset">
@@ -224,8 +254,8 @@
 											<tr><td>Petite</td><td>Vitalité : x0.5<br />Souffle : 2<br />Concentration : 2<br /><br />Technique de combat, Vivacité, Adresse, Robustesse, Puissance : x0.25<br />Intelligence, Prestance, Intuition : 2<br /><br />Dégâts : 1D6</td><td>2</td></tr>
 											<tr><td>Moyenne</td><td>Vitalité : x1<br />Souffle : 2<br />Concentration : 2<br /><br />Technique de combat, Vivacité, Adresse, Robustesse, Puissance : x0.5<br />Intelligence, Prestance, Intuition : 2<br /><br />Dégâts : 1D10</td><td>5</td></tr>
 										</table>
-									La créature ne possède aucune volonté, elle n’attaquera pas, ne se défendra pas et ne se déplacera pas d’elle-même. Au bout de 1D6 minutes, la créature s’effondre. Un cadavre détruit par des attaques ou à cause de la fin de l’invocation ne peut plus être utilisé.
-									<br /><u>Seuil critique</u> : Un cadavre détruit par la fin de l’invocation peut être encore ranimé.</td><td>20</td><td>30</td></tr>
+									Au bout de 1D6 minutes, la créature s’effondre. Un cadavre détruit par des attaques ou à cause de la fin de l’invocation ne peut plus être utilisé.
+									<br /><b>Seuil critique</b> : Un cadavre détruit par la fin de l’invocation peut être encore ranimé.</td><td>20</td><td>30</td></tr>
 				<tr><td>2</td><td>Le personnage invoque une version plus agressive de sa créature. Même sans aucun contrôle mental, la créature attaquera automatiquement toute créature proche.</td><td>25</td><td>30</td></tr>
 				<tr><td>3</td><td>Le personnage peut désormais invoquer des créatures de grande taille.
 
@@ -241,51 +271,25 @@
 			</table>
 		</div>
 		<div class="comp">		
-			<h5>Injonction</h5>
-			<span class="comp_req">10 en Intelligence</span>
+			<h4>Jet de flammes</h4>
+			<span class="comp_req">Apprentissage (-4)</span>
+			, <span class="comp_spec">Projectile Magique</span>
 			<table class="tab2">
 				<tr><th>Niv.</th><th>Effets</th><th>SP</th><th>SC</th></tr>
-				<tr><td>1</td><td>Ce sort permet au personnage d’avoir un contrôle direct sur une créature invoquée par Animation macabre. Les actions disponibles sont très basiques mais lorsque la créature est contrôlée directement, elle reçoit des bonus sur ses caractéristiques en fonction de la Prestance du personnage.<br /><br />Technique de combat, Robustesse, Puissance, Adresse : x1<br />Vivacité, Intuition : x0.5</td><td>25</td><td>30</td></tr>
-				<tr><td>2</td><td></td><td></td><td></td></tr>
-				<tr><td>3</td><td></td><td></td><td></td></tr>
-				<tr><td>4</td><td></td><td></td><td></td></tr>
-				<tr><td>5</td><td></td><td></td><td></td></tr>
-				<tr><td>6+</td><td></td><td></td><td></td></tr>
-			</table>
-		</div>
-		<div class="comp">		
-			<h5>Contrôle passif</h5>
-			<span class="comp_req">10 en Intelligence</span>
-			<table class="tab2">
-				<tr><th>Niv.</th><th>Effets</th><th>SP</th><th>SC</th></tr>
-				<tr><td>1</td><td>Pas de bonus aux caracs, mais pas besoin de contrôle direct pendant 1D6 tours.<br /><u>Seuil critique</u> : A cause de la faible réactivité de la créature, le choix de l’action d’un tour se fait à la fin du tour précédent.</td><td>25</td><td>30</td></tr>
-				<tr><td>2</td><td></td><td></td><td></td></tr>
-				<tr><td>3</td><td></td><td></td><td></td></tr>
-				<tr><td>4</td><td></td><td></td><td></td></tr>
-				<tr><td>5</td><td></td><td></td><td></td></tr>
-				<tr><td>6+</td><td></td><td></td><td></td></tr>
-			</table>
-		</div>
-		<div class="comp">		
-			<h5>Jet de flammes</h5>
-			<span class="comp_req">10 en Intelligence</span>
-			<span class="comp_spec"><img src="data/icons/wind.png" />Projectile Magique</span>
-			<table class="tab2">
-				<tr><th>Niv.</th><th>Effets</th><th>SP</th><th>SC</th></tr>
-				<tr><td>1</td><td>Sur un cône de 2x5m partant du lanceur du sort, projette un jet de flamme infligeant 2D6 dégâts.<br />Ce sort est un projectile magique en ce qui concerne la résistance à ses effets mais celui-ci touchera toujours ses cibles.<br /><u>Seuil critique</u> : les cibles s’embrasent subissant 1D6 dégâts par tour pendant 3 tours. </td><td>25</td><td>30</td></tr>
+				<tr><td>1</td><td>Sur un cône de 2x5m partant du lanceur du sort, projette un jet de flamme infligeant 2D6 dégâts.<br />Ce sort est un projectile magique en ce qui concerne la résistance à ses effets mais celui-ci touchera toujours ses cibles.<br /><b>Seuil critique</b> : les cibles s’embrasent subissant 1D6 dégâts par tour pendant 3 tours. </td><td>25</td><td>30</td></tr>
 				<tr><td>2</td><td>Les dégâts passent à 2D10.</td><td>30</td><td>35</td></tr>
-				<tr><td>3</td><td>Seuil critique : l’embrasement dure 6 tours.</td><td>35</td><td>45</td></tr>
+				<tr><td>3</td><td><b>Seuil critique</b> : l’embrasement dure 6 tours.</td><td>35</td><td>45</td></tr>
 				<tr><td>4</td><td>Les dégâts passent à 2D20.</td><td>40</td><td>50</td></tr>
-				<tr><td>5</td><td>Seuil critique : l’embrasement inflige 1D10 dégâts.</td><td>45</td><td>55</td></tr>
+				<tr><td>5</td><td><b>Seuil critique</b> : l’embrasement inflige 1D10 dégâts.</td><td>45</td><td>55</td></tr>
 				<tr><td>6+</td><td>Chaque niveau augmente de 5 les dégâts du jet.</td><td>50</td><td>60</td></tr>
 			</table>
 		</div>
 		<div class="comp">		
-			<h5>Corrosion</h5>
-			<span class="comp_req">10 en Intelligence</span>
+			<h4>Surpression</h4>
+			<span class="comp_req">Apprentissage (-4)</span>
 			<table class="tab2">
 				<tr><th>Niv.</th><th>Effets</th><th>SP</th><th>SC</th></tr>
-				<tr><td>1</td><td>Ce sort applicable sur un objet métallique à 5m réduit sa dureté et ses propriétés. En particulier, une armure verra sa protection réduite de 2 et une arme ses dégâts de la même valeur.<br /><u>Seuil critique</u> : l’utilisation de l’objet entraîne 1 chance sur 10 de briser l’objet.</td><td>20</td><td>25</td></tr>
+				<tr><td>1</td><td>Le mage augmente la pression sanguine d'une cible à 10m, lui infligeant 1D6 points de dégâts; De plus pendant 3 tours, à chaque fois que la cible subira des dégâts physiques, elle verra sa robustesse baissée de 2 pour son test.<br /><b>Seuil critique</b> : en plus de la baisse de robustesse, le personnage subira 2 dégâts supplémentaires par attaque physique.</td><td>15</td><td>25</td></tr>
 				<tr><td>2</td><td></td><td></td><td></td></tr>
 				<tr><td>3</td><td></td><td></td><td></td></tr>
 				<tr><td>4</td><td></td><td></td><td></td></tr>
@@ -294,11 +298,11 @@
 			</table>
 		</div>
 		<div class="comp">		
-			<h5>Condamnation</h5>
-			<span class="comp_req">10 en Intelligence</span>
+			<h4>Corrosion</h4>
+			<span class="comp_req">Apprentissage (-4)</span>
 			<table class="tab2">
 				<tr><th>Niv.</th><th>Effets</th><th>SP</th><th>SC</th></tr>
-				<tr><td>1</td><td>La cible du sort se retrouve maudite pendant 1D3 tours. Si dans cet intervale de temps elle subit des dégâts supérieurs à sa Robustesse, les dégâts sont doublés et la malédiction est levée.<br /><u>Seuil critique</u> : la malédiction reste active une fois de plus.</td><td>20</td><td>25</td></tr>
+				<tr><td>1</td><td>Ce sort applicable sur un objet métallique à 5m réduit ses propriétés. En particulier, une armure verra sa protection réduite de 2 et une arme ses dégâts de la même valeur.<br /><b>Seuil critique</b> : l’utilisation de l’objet entraîne 1 chance sur 10 de briser l’objet.</td><td>20</td><td>25</td></tr>
 				<tr><td>2</td><td></td><td></td><td></td></tr>
 				<tr><td>3</td><td></td><td></td><td></td></tr>
 				<tr><td>4</td><td></td><td></td><td></td></tr>
@@ -307,11 +311,24 @@
 			</table>
 		</div>
 		<div class="comp">		
-			<h5>Trainée pestilentielle</h5>
-			<span class="comp_req">8 en Intelligence</span>
+			<h4>Condamnation</h4>
+			<span class="comp_req">Apprentissage (-4)</span>
 			<table class="tab2">
 				<tr><th>Niv.</th><th>Effets</th><th>SP</th><th>SC</th></tr>
-				<tr><td>1</td><td>Le mage déverse une coulée d'immondices sur une couloir de 2x5m. Toute personne dans la zone, sera fievreuse et fatiguée pendant 1D3 tours.<br /><u>Seuil critique</u> : les cibles sont également déstabilisées.</td><td>20</td><td>25</td></tr>
+				<tr><td>1</td><td>Une personne à 30m du sort se retrouve maudite pendant 1D3 tours. Si dans cet intervale de temps elle subit des dégâts supérieurs à sa Robustesse, les dégâts sont doublés et la malédiction est levée.<br /><b>Seuil critique</b> : la malédiction reste active une fois de plus.</td><td>20</td><td>25</td></tr>
+				<tr><td>2</td><td></td><td></td><td></td></tr>
+				<tr><td>3</td><td></td><td></td><td></td></tr>
+				<tr><td>4</td><td></td><td></td><td></td></tr>
+				<tr><td>5</td><td></td><td></td><td></td></tr>
+				<tr><td>6+</td><td></td><td></td><td></td></tr>
+			</table>
+		</div>
+		<div class="comp">		
+			<h4>Trainée pestilentielle</h4>
+			<span class="comp_req">Apprentissage (-4)</span>
+			<table class="tab2">
+				<tr><th>Niv.</th><th>Effets</th><th>SP</th><th>SC</th></tr>
+				<tr><td>1</td><td>Le mage déverse une coulée d'immondices sur une couloir de 2x5m. Toute personne dans la zone, sera fievreuse et fatiguée pendant 1D3 tours.<br /><b>Seuil critique</b> : les cibles sont également déstabilisées.</td><td>20</td><td>25</td></tr>
 				<tr><td>2</td><td>Dure 1D6 tours</td><td></td><td></td></tr>
 				<tr><td>3</td><td></td><td></td><td></td></tr>
 				<tr><td>4</td><td></td><td></td><td></td></tr>
@@ -319,14 +336,28 @@
 				<tr><td>6+</td><td></td><td></td><td></td></tr>
 			</table>
 		</div>
+		<div class="comp">		
+			<h4>Baiser purrulent</h4>
+			<span class="comp_req">Apprentissage (-4)</span>
+			<table class="tab2">
+				<tr><th>Niv.</th><th>Effets</th><th>SP</th><th>SC</th></tr>
+				<tr><td>1</td><td>Le mage cible un ennemi à moins de 10m. Celle-ci doit réussir un test d'Intuition à -4 ou vomir le prochain tour. Il perdra alors sa prochaine action.<br /><b>Seuil critique</b> : la cible subit également 1D10 dégâts.</td><td>15</td><td>20</td></tr>
+				<tr><td>2</td><td></td><td></td><td></td></tr>
+				<tr><td>3</td><td></td><td></td><td></td></tr>
+				<tr><td>4</td><td></td><td></td><td></td></tr>
+				<tr><td>5</td><td></td><td></td><td></td></tr>
+				<tr><td>6+</td><td></td><td></td><td></td></tr>
+			</table>
+		</div>
 		
 		
+		<!-- MAGIE VITALE -->
 		<h3 class="comp_cat">Magie vitale</h3>
 		<div class="comp">		
-			<h5>Lien de vie</h5>
-			<span class="comp_req">8 en Intelligence</span>
+			<h4>Lien de vie</h4>
+			<span class="comp_req">Apprentissage (-2)</span>
 			<table class="tab2">
-				<tr><td>1</td><td>Le mage lie son énergie avec une cible à moins de 10m. A partir du tour suivant et pendant 2D6 tours, le mage pourra dépenser des points de Concentration pour augmenter d’autan les points de Vitalité de sa cible. A chaque round,  le nombre maximum de points de Concentration que le mage peut dépenser est égal à la valeur du Savoir divisé par 2.<br /><u>Seuil critique</u> : le mage peut modifier la Vitalité de sa cible dès le premier round</td><td>25</td><td>30</td></tr>
+				<tr><td>1</td><td>Le mage lie son énergie avec une cible à moins de 10m. A partir du tour suivant et pendant 2D6 tours, le mage pourra dépenser des points de Concentration pour augmenter d’autan les points de Vitalité de sa cible. A chaque round,  le nombre maximum de points de Concentration que le mage peut dépenser est égal à la valeur du Savoir divisé par 2.<br />Ce sort ne peut être utilisé qu'une seule fois par jour sur une même personne.<br /><b>Seuil critique</b> : le mage peut modifier la Vitalité de sa cible dès le premier round</td><td>25</td><td>30</td></tr>
 				<tr><td>2</td><td>Ce sort permet également de faire baisser de la même manière la Vitalité de la cible.</td><td>25</td><td>35</td></tr>
 				<tr><td>3</td><td></td><td></td><td></td></tr>
 				<tr><td>4</td><td></td><td></td><td></td></tr>
@@ -335,21 +366,21 @@
 			</table>
 		</div>
 		<div class="comp">		
-			<h5>Ange gardien</h5>
-			<span class="comp_req">10 en Intelligence</span>
+			<h4>Ange gardien</h4>
+			<span class="comp_req">Apprentissage (-8)</span>
 			<table class="tab2">
 				<tr><th>Niv.</th><th>Effets</th><th>SP</th><th>SC</th></tr>
-				<tr><td>1</td><td>Le mage protège une cible au contact avec ce sort qui durera 2D6 tours. Grâce à ce sort, si la cible reçoit une attaque mortelle, celle-ci reste vivante et avec 1 point de Vitalité.<br /><u>Seuil critique</u> : en plus de maintenir en vie le personnage, ange gardien procure un bonus de +2 en défense et résistance aux sorts pendant 4 rounds au moment où il se déclenche.</td><td>30</td><td>35</td></tr>
+				<tr><td>1</td><td>Le mage protège une cible au contact avec ce sort qui durera 2D6 tours. Grâce à ce sort, si la cible reçoit une attaque mortelle, celle-ci reste vivante et avec 1 point de Vitalité.<br /><b>Seuil critique</b> : en plus de maintenir en vie le personnage, ange gardien procure un bonus de +2 en défense et résistance aux sorts pendant 4 rounds au moment où il se déclenche.</td><td>30</td><td>35</td></tr>
 				<tr><td>2</td><td>La durée passe à 2D8.</td><td></td><td></td></tr>
-				<tr><td>3</td><td>Seuil critique : le bonus passe à +4.</td><td></td><td></td></tr>
+				<tr><td>3</td><td><b>Seuil critique</b> : le bonus passe à +4.</td><td></td><td></td></tr>
 				<tr><td>4</td><td>La durée passe à 2D10.</td><td></td><td></td></tr>
 				<tr><td>5</td><td></td><td></td><td></td></tr>
-				<tr><td>6+</td><td>Chaque niveau augmente la durée de 2 tours.</td><td></td></tr></td></tr>
+				<tr><td>6+</td><td>Chaque niveau augmente la durée de 2 tours.</td><td></td></tr>
 			</table>
 		</div>
 		<div class="comp">		
-			<h5>Révocation de la mort</h5>
-			<span class="comp_req">30 en Intelligence</span>
+			<h4>Révocation de la mort</h4>
+			<span class="comp_req">Apprentissage (-12)</span>
 			<table class="tab2">
 				<tr><th>Niv.</th><th>Effets</th><th>SP</th><th>SC</th></tr>
 				<tr><td>1</td><td>Rituel : descendre à 1PV, puis méditer pendant 1h a ce niveau. Le cadavre  doit dater de moins de 5h (tous les bouts réunis), Ressuscite la personne avec 1PV max. Gagne 10pv max par heure de dodo. des le réveil, plus de gain de pv max possible. impossible de dépasser le max d'avant la mort</td><td>100</td><td>120</td></tr>
@@ -361,24 +392,24 @@
 			</table>
 		</div>
 		<div class="comp">		
-			<h5>Bouclier anti-sorts</h5>
-			<span class="comp_req">15 en Intelligence</span>
+			<h4>Bouclier anti-sorts</h4>
+			<span class="comp_req">Apprentissage (-6)</span>
 			<table class="tab2">
 				<tr><th>Niv.</th><th>Effets</th><th>SP</th><th>SC</th></tr>
-				<tr><td>1</td><td>Procure un bouclier augmentant la résistance aux sorts de 5. Ce bouclier durera 5 tours.<br /><u>Seuil critique</u> : chaque sort bloqué, augmente la résistance aux sorts de 2. L’effet se dissipe à la fin du sort.</td><td>20</td><td>30</td></tr>
+				<tr><td>1</td><td>Procure un bouclier augmentant la résistance aux sorts du mage de 5. Ce bouclier durera 5 tours.<br /><b>Seuil critique</b> : chaque sort bloqué, augmente la résistance aux sorts de 2. L’effet se dissipe à la fin du sort.</td><td>20</td><td>30</td></tr>
 				<tr><td>2</td><td>La résistance aux sorts passe à 10.</td><td></td><td></td></tr>
-				<tr><td>3</td><td>Seuil critique : la résistance augment de 4 à chaque sort bloqué.</td><td></td><td></td></tr>
+				<tr><td>3</td><td><b>Seuil critique</b> : la résistance augment de 4 à chaque sort bloqué.</td><td></td><td></td></tr>
 				<tr><td>4</td><td>Le bouclier permet de résister également aux projectiles magiques comme des sorts classiques. Néanmoins, cette défense subira un malus de -10.</td><td></td><td></td></tr>
 				<tr><td>5</td><td></td><td></td><td></td></tr>
 				<tr><td>6+</td><td></td><td></td><td></td></tr>
 			</table>
 		</div>
 		<div class="comp">		
-			<h5>Dissipation</h5>
-			<span class="comp_req">10 en Intelligence</span>
+			<h4>Dissipation</h4>
+			<span class="comp_req">Apprentissage (-4)</span>
 			<table class="tab2">
 				<tr><th>Niv.</th><th>Effets</th><th>SP</th><th>SC</th></tr>
-				<tr><td>1</td><td>Permet de dissiper les effets d’un sort actif sur une cible. Pour réussir ce sort, le Seuil de Puissance doit dépasser le Seuil Critique du sort à dissiper. Le seuil critique se déclenche si le sort est lancé avec une puissance supérieure au Seuil Critique du sort + 10.<br /><u>Seuil critique</u> : Le sort dissipé ne pourra pas être relancé sur la cible avant 1D3 tours.</td><td>-</td><td>-</td></tr>
+				<tr><td>1</td><td>Permet de dissiper les effets d’un sort actif sur une cible à 10m. Pour réussir ce sort, le Seuil de Puissance doit dépasser le <b>Seuil critique</b> du sort à dissiper. Le <b>Seuil critique</b> se déclenche si le sort est lancé avec une puissance supérieure au <b>Seuil critique</b> du sort + 10.<br /><b>Seuil critique</b> : Le sort dissipé ne pourra pas être relancé sur la cible avant 1D3 tours.</td><td>-</td><td>-</td></tr>
 				<tr><td>2</td><td></td><td></td><td></td></tr>
 				<tr><td>3</td><td></td><td></td><td></td></tr>
 				<tr><td>4</td><td></td><td></td><td></td></tr>
@@ -387,24 +418,24 @@
 			</table>
 		</div>
 		<div class="comp">		
-			<h5>Armure vivante</h5>
-			<span class="comp_req">10 en Intelligence</span>
+			<h4>Armure vivante</h4>
+			<span class="comp_req">Apprentissage (-4)</span>
 			<table class="tab2">
 				<tr><th>Niv.</th><th>Effets</th><th>SP</th><th>SC</th></tr>
-				<tr><td>1</td><td>Ce sort confère une armure qui va absorber les dégâts à la place de son porteur. L’armure reste active pendant une heure puis disparaît. Si ses points de Vitalité tombent à 0, l’armure devient inutile (ne peut plus être soignée, n’absorbe plus, etc.) mais reste présente (le mage ne peut donc pas la relancer immédiatement). L’armure apparaît avec 10 points de Vitalité et est considérée comme un être vivant (soins possibles, poisons, …).<br /><u>Seuil critique</u> : l’armure régénère 1 point de Vitalité par tour.</td><td>30</td><td>40</td></tr>
+				<tr><td>1</td><td>Ce sort confère une armure qui va absorber les dégâts à la place de son porteur. L’armure reste active pendant une heure puis disparaît. Si ses points de Vitalité tombent à 0, l’armure devient inutile (ne peut plus être soignée, n’absorbe plus, etc.) mais reste présente (le mage ne peut donc pas la relancer immédiatement). L’armure apparaît avec 10 points de Vitalité et est considérée comme un être vivant (soins possibles, poisons, …).<br />Portée 8m.<br /><b>Seuil critique</b> : l’armure régénère 1 point de Vitalité par tour.</td><td>30</td><td>40</td></tr>
 				<tr><td>2</td><td>L’armure apparaît avec 15 points de Vitalité.</td><td>35</td><td>45</td></tr>
-				<tr><td>3</td><td>Seuil critique : la régénération passe à 2 points par tour.</td><td></td><td></td></tr>
+				<tr><td>3</td><td><b>Seuil critique</b> : la régénération passe à 2 points par tour.</td><td></td><td></td></tr>
 				<tr><td>4</td><td></td><td></td><td></td></tr>
 				<tr><td>5</td><td></td><td></td><td></td></tr>
 				<tr><td>6+</td><td></td><td></td><td></td></tr>
 			</table>
 		</div>
 		<div class="comp">		
-			<h5>Rétribution</h5>
-			<span class="comp_req">10 en Intelligence</span>
+			<h4>Rétribution magique</h4>
+			<span class="comp_req">Apprentissage (-4)</span>
 			<table class="tab2">
 				<tr><th>Niv.</th><th>Effets</th><th>SP</th><th>SC</th></tr>
-				<tr><td>1</td><td>A chaque attaque subie, le porteur de cette armure perd également la même valeur en énergie. A la fin du sort, l’énergie dépensée est restituée au lanceur du sort. Si elle souhaite résister à ce sort, la cible du sort multiplie son Intelligence par 10. Les effets du sort durent 6 rounds.<br /><u>Seuil critique</u> : le mage peut mettre fin au sort prématurément.</td><td>20</td><td>25</td></tr>
+				<tr><td>1</td><td>A chaque attaque subie, le porteur de cette armure perd également la même valeur en énergie. A la fin du sort, l’énergie dépensée est restituée au lanceur du sort. Si elle souhaite résister à ce sort, la cible du sort multiplie son Intelligence par 10. Les effets du sort durent 6 rounds.<br />Portée : 10m<br /><b>Seuil critique</b> : le mage peut mettre fin au sort prématurément.</td><td>20</td><td>25</td></tr>
 				<tr><td>2</td><td></td><td></td><td></td></tr>
 				<tr><td>3</td><td></td><td></td><td></td></tr>
 				<tr><td>4</td><td></td><td></td><td></td></tr>
@@ -412,42 +443,73 @@
 				<tr><td>6+</td><td></td><td></td><td></td></tr>
 			</table>
 		</div>
+		<div class="comp">		
+			<h4>Rétribution vitale</h4>
+			<span class="comp_req">Apprentissage (-8)</span>
+			<table class="tab2">
+				<tr><th>Niv.</th><th>Effets</th><th>SP</th><th>SC</th></tr>
+				<tr><td>1</td><td>A chaque fois que la cible du sort inflige des dégâts physiques, elle enregistre les points de Vitalité qu'elle a fait perdre. A la fin de son tour, il lance ensuite un dé 10. Sur 1, le sort se déclenche et lui fait perdre un nombre de points de Vitalité égal à celui qu'il a fait perdre<br />Portée : 10m<br /><b>Seuil critique</b> : le mage peut mettre fin au sort prématurément.</td><td>20</td><td>25</td></tr>
+				<tr><td>2</td><td></td><td></td><td></td></tr>
+				<tr><td>3</td><td></td><td></td><td></td></tr>
+				<tr><td>4</td><td></td><td></td><td></td></tr>
+				<tr><td>5</td><td></td><td></td><td></td></tr>
+				<tr><td>6+</td><td></td><td></td><td></td></tr>
+			</table>
+		</div>
+		<div class="comp">		
+			<h4>Vision nocturne</h4>
+			<span class="comp_req">Apprentissage (0)</span>
+			<table class="tab2">
+				<tr><th>Niv.</th><th>Effets</th><th>SP</th><th>SC</th></tr>
+				<tr><td>1</td><td>Permet au mage de voir clairement jusqu'à 6m dans l'obscurité totale pendant 1D8 tours<br /><b>Seuil critique</b> : le rayon de vision passe à 10m.</td><td>15</td><td>25</td></tr>
+				<tr><td>2</td><td></td><td></td><td></td></tr>
+				<tr><td>3</td><td></td><td></td><td></td></tr>
+				<tr><td>4</td><td></td><td></td><td></td></tr>
+				<tr><td>5</td><td></td><td></td><td></td></tr>
+				<tr><td>6+</td><td></td><td></td><td></td></tr>
+			</table>
+		</div>
+		<div class="comp">		
+			<h4>Corps de pierre</h4>
+			<span class="comp_req">Apprentissage (0)</span>
+			<table class="tab2">
+				<tr><th>Niv.</th><th>Effets</th><th>SP</th><th>SC</th></tr>
+				<tr><td>1</td><td>La cible à 10m ne peut plus bouger ni agir mais gagne un bonus de 20 en défense pour 1D3 tours<br /><b>Seuil critique</b> : la cible gagne un bonus de 10 en résistance aux sorts.</td><td>15</td><td>25</td></tr>
+				<tr><td>2</td><td></td><td></td><td></td></tr>
+				<tr><td>3</td><td></td><td></td><td></td></tr>
+				<tr><td>4</td><td></td><td></td><td></td></tr>
+				<tr><td>5</td><td></td><td></td><td></td></tr>
+				<tr><td>6+</td><td></td><td></td><td></td></tr>
+			</table>
+		</div>
+		<div class="comp">		
+			<h4>Equilibre surnaturel</h4>
+			<span class="comp_req">Apprentissage (-2)</span>
+			<table class="tab2">
+				<tr><th>Niv.</th><th>Effets</th><th>SP</th><th>SC</th></tr>
+				<tr><td>1</td><td>La cible à 10m gagne un bonus de 2 en Vivacité et Adresse pendant 1D6 tours<br /><b>Seuil critique</b> : la cible gagne un bonus de +2 en esquive.</td><td>10</td><td>15</td></tr>
+				<tr><td>2</td><td></td><td></td><td></td></tr>
+				<tr><td>3</td><td></td><td></td><td></td></tr>
+				<tr><td>4</td><td></td><td></td><td></td></tr>
+				<tr><td>5</td><td></td><td></td><td></td></tr>
+				<tr><td>6+</td><td></td><td></td><td></td></tr>
+			</table>
+		</div>
+		<div class="comp">		
+			<h4>Destins liés</h4>
+			<span class="comp_req">Apprentissage (-6)</span>
+			<table class="tab2">
+				<tr><th>Niv.</th><th>Effets</th><th>SP</th><th>SC</th></tr>
+				<tr><td>1</td><td>La cible à 5m et le mage lient leur énergie vitale. Chaque perte/gain de vitalité sur l'un est appliqué également sur l'autre<br /><b>Seuil critique</b> : le souffle est également lié.</td><td>20</td><td>30</td></tr>
+				<tr><td>2</td><td>Le mage peut lier 2 cibles à 5m.</td><td></td><td></td></tr>
+				<tr><td>3</td><td></td><td></td><td></td></tr>
+				<tr><td>4</td><td></td><td></td><td></td></tr>
+				<tr><td>5</td><td></td><td></td><td></td></tr>
+				<tr><td>6+</td><td></td><td></td><td></td></tr>
+			</table>
+		</div>
+		
 	</div>
-	<script type="text/javascript">
-		$(document).ready(function(){
-			$("#fastnav_trigger").hover(function(){
-				$("#fastnav").show("fast");
-				$(this).toggleClass("active");
-			},function(){
-				$(this).toggleClass("active");
-			});
-			
-			$("#fastnav").hover(function(){
-
-			},function(){
-				$(this).hide("fast");
-			});
-			
-			$('#nav').toc({
-				'selectors': 'h3,h4,h5', //elements to use as headings
-				'container': '#all', //element to find all selectors in
-				'smoothScrolling': true, //enable or disable smooth scrolling on click
-				'prefix': 'nav', //prefix for anchor tags and class names
-				'onHighlight': function(el) {}, //called when a new section is highlighted 
-				'highlightOnScroll': false, //add class to heading that is currently in focus
-				'highlightOffset': 100, //offset to trigger the next headline
-				'anchorName': function(i, heading, prefix) { //custom function for anchor name
-					return prefix+i;
-				},
-				'headerText': function(i, heading, $heading) { //custom function building the header-item text
-					return $heading.text();
-				} 
-			});
-			
-			$('#nav .nav-h3').click(function(){
-				$(this).find('.nav-h5').toggleClass("active");
-			});
-		});
-	</script>
+	<script type="text/javascript" src="data/custom_navigation.js"></script>
 </body>
 </html>

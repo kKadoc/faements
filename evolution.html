@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Temps de Faéments</title>
-	<link rel="stylesheet" href="data/faements1.css">
+	<link rel="stylesheet" href="data/faements.css">
 	<link rel="stylesheet" href="data/evolution.css">
 	<script type="text/javascript" src="data/jquery.min.js"></script>
 	<script type="text/javascript" src="data/animate.js"></script>
@@ -11,16 +11,20 @@
 
 <body>
 	<div id="fastmenu">
-		<a href="home.html" title="menu"><img src="data/icons/home.png" /></a>
-		<a href="system.html" title="système de jeu"><img src="data/icons/system.png" /></a>
-		<a href="evolution.html" title="évolution" class="current"><img src="data/icons/evolution.png" /></a>
-		<a href="skills.html" title="compétences"><img src="data/icons/skills.png" /></a>
-		<a href="spells.html" title="sorts"><img src="data/icons/spells.png" /></a>
-		<a href="equipment.html" title="équipement"><img src="data/icons/equipment.png" /></a>
-		<a href="beasts.html" title="bestiaire"><img src="data/icons/beasts.png" /></a>
-		<a href="sheets.html" title="Feuilles de personnage"><img src="data/icons/sheets.png" /></a>
+		<div id="menu">
+			<a href="home.html" title="menu"><img src="data/icons/home.png" />Menu</a>
+			<a href="system.html" title="système de jeu"><img src="data/icons/system.png" />Système de jeu</a>
+			<a href="evolution.html" title="évolution" class="current"><img src="data/icons/evolution.png" />Evolution</a>
+			<a href="skills.html" title="compétences"><img src="data/icons/skills.ico" />Compétences</a>
+			<a href="spells.html" title="sorts"><img src="data/icons/spells.png" />Sorts</a>
+			<a href="equipment.html" title="équipement"><img src="data/icons/equipment.png" />Equipement</a>
+			<a href="beasts.html" title="bestiaire"><img src="data/icons/beasts.png" />Bestiaire</a>
+			<a href="craft.html" title="Artisanat"><img src="data/icons/craft.png" />Artisanat</a>
+			<a href="sheets.html" title="Feuilles de personnage"><img src="data/icons/sheets.png" />Feuilles de personnages</a>
+		</div>
 	</div>
-	
+	<a id="fastmenu_trigger" href="#"><img src="data/icons/map.png" /></a>
+
 	<div id="fastnav">
 		<div id="nav_wrap">
 			<div id="nav">
@@ -94,7 +98,13 @@
 
 		<h4>Maitriser la magie</h4>
 		<div class="content">
-			Maitriser la magie ne vient pas avec l’entrainement, c’est d’abord un don acquis à la naissance. Ensuite seul un travail rigoureux permettra de le rentabiliser. Votre personnage peut avoir ce don, dans ce cas, il aura le point naturel dans l’action innée lancer un sort. Dans le cas contraire, le personnage n’aura aucun point de maîtrise dans cette action et ne pourra jamais en avoir.
+			Maitriser la magie ne vient pas avec l’entrainement, c’est d’abord un don acquis à la naissance. Ensuite seul un travail rigoureux permettra de le rentabiliser. Votre personnage peut avoir ce don, dans ce cas, il commence avec un point dans la compétence lancer un sort. Dans le cas contraire, le personnage n’aura aucun point de maîtrise dans cette action et ne pourra jamais en avoir.
+		</div>
+		
+		<h4>Les actions innées</h4>
+		<div class="content">
+			Ces actions sont les gestes, mouvements, postures que chaque personne sait effectuer. Ce sont des actions basiques mais qui peuvent être améliorées comme n’importe quelle compétence.
+			<br />Chaque personnage commence avec un point dans courir, attaquer, attaquer à distance, défendre, parer, esquiver, encaisser un coup et résister à un sort.
 		</div>
 		
 		<h3>Gagner un niveau</h3>
@@ -106,64 +116,34 @@
 			Au passage de niveau, le personnage gagne automatiquement des points en vitalité, concentration et souffle grâce à son profil (chiffres précédés du « + »). Il doit également répartir 6 points parmi ses caractéristiques (jauges et statistiques) sachant qu’il ne peut attribuer plus de 2 points en une fois. Pour chaque point dépensé dans une jauge, celle-ci est augmentée du score de profil (chiffres précédés du « + »).
 			<br />
 			<br />
-			<i>Exemple : un personnage au profil physique passe au niveau supérieur, il gagne automatiquement 3 points en Vitalité, 2 en Souffle et 1 en concentration. Sur ses 6 points à répartir, il choisit d’en utiliser 2 pour sa Vitalité, il gagne alors 6 points supplémentaires en Vitalité.</i>
+			<div class="bloc">
+				Exemple : un personnage au profil physique passe au niveau supérieur, il gagne automatiquement 2 points en Vitalité, 2 en Souffle et 2 en concentration. Sur ses 6 points à répartir, il choisit d’en utiliser 2 pour sa Vitalité, il gagne alors 4 points supplémentaires en Vitalité.
+			</div>
 		</div>
 		<h4>S’entrainer</h4> 
 		<div class="content">
 			En plus d’augmenter ses caractéristiques, le passage de niveau est l’occasion de s’entrainer en donnant 5 points de compétence. Les points de compétences peuvent s’utiliser à n’importe quel moment de deux façons différentes : 
 			<ul>
-				<li>•	soit le personnage améliore une compétence qu’il connait déjà (Attention, le niveau de maîtrise maximal d’une compétence est 5) (cf. initiation et perfectionnement). </li>
+				<li>soit le personnage améliore une compétence qu’il connait déjà (Attention, le niveau de maîtrise maximal d’une compétence est 5) (cf. initiation et perfectionnement). </li>
 				<li>soit le personnage tente d’apprendre une nouvelle compétence. Pour cela, il doit au préalable observer quelqu’un faire usage de cette compétence puis, dans les 24h qui suivent, il peut tenter un test selon la caractéristique associée à la compétence pour se l’approprier. Si le résultat est un succès, le personnage maîtrise le 1er niveau de la compétence et il pourra l’améliorer librement avec d’autres points de compétence. Si le test est un échec, le point de compétence n’est pas utilisé. Le personnage pourra tenter d’apprendre de nouveau la compétence dès qu’il aura pu la revoir en action.</li>
 			</ul>
 			Un certain palier est nécessaire avant de pouvoir approfondir une compétence ou action innée. Cf. tableau suivant
 			<table class="small_tab">
 				<tr><td>Niveau de maîtrise</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
-				<tr><td>Niveau minimal requis</td><td>1</td><td>2</td><td>5</td><td>10</td><td>15</td></tr>
+				<tr><td>Niveau minimal du personnage</td><td>1</td><td>2</td><td>5</td><td>10</td><td>15</td></tr>
 			</table>
 		</div>
 		<h4>Initiation vs perfectionnement</h4>
 		<div class="content">
 			Par défaut, votre personnage se trouve en phase d’initiation. Il parcourt le monde, à la recherche d’expériences et commence à se forger ses techniques et ses préférences. Dans cet état, il lui sera facile d’apprendre de très nombreuses compétences mais il éprouvera plus de difficultés à se concentrer spécialement sur certaines. La spécialisation dans une compétence nécessitera alors un point de compétence supplémentaire que pour le niveau précédent.
-			<br />Par exemple, atteindre le niveau 3 d’une compétence nécessitera 3 points de compétences (1 point pour le niveau 1, 2 pour le suivant, …).
 			<br /><br />
+			<div class="bloc">
+				Par exemple, atteindre le niveau 3 d’une compétence nécessitera 3 points de compétences (1 point pour le niveau 1, 2 pour le suivant, …).
+			</div>
+			<br />
 			Mais vient un temps, où le personnage aura trouvé sa voie. Il commencera alors à creuser les domaines qu’il maîtrise pour se perfectionner. Une fois dans sa vie, le personnage peut décider de passer en phase de perfectionnement. Cette décision est irréversible mais une fois prise, la progression d’un niveau dans une compétence ou l’apprentissage d’une nouvelle nécessitera toujours 2 points de compétence.
 		</div>
 	</div>
-	<script type="text/javascript">
-		$(document).ready(function(){
-			$("#fastnav_trigger").hover(function(){
-				$("#fastnav").show("fast");
-				$(this).toggleClass("active");
-			},function(){
-				$(this).toggleClass("active");
-			});
-			
-			$("#fastnav").hover(function(){
-
-			},function(){
-				$(this).hide("fast");
-			});
-			
-			$('#nav').toc({
-				'selectors': 'h3,h4,h5', //elements to use as headings
-				'container': '#all', //element to find all selectors in
-				'smoothScrolling': true, //enable or disable smooth scrolling on click
-				'prefix': 'nav', //prefix for anchor tags and class names
-				'onHighlight': function(el) {}, //called when a new section is highlighted 
-				'highlightOnScroll': false, //add class to heading that is currently in focus
-				'highlightOffset': 100, //offset to trigger the next headline
-				'anchorName': function(i, heading, prefix) { //custom function for anchor name
-					return prefix+i;
-				},
-				'headerText': function(i, heading, $heading) { //custom function building the header-item text
-					return $heading.text();
-				} 
-			});
-			
-			$('#nav .nav-h3').click(function(){
-				$(this).find('.nav-h5').toggleClass("active");
-			});
-		});
-	</script>
+	<script type="text/javascript" src="data/custom_navigation.js"></script>
 </body>
 </html>

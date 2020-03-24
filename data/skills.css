@@ -1,33 +1,76 @@
-.comp {
-
+.comp n, .comp s, .comp c, .comp r , .comp e{
+	
+	display : inline-block;
 	padding : 5px;
-	border-radius : 20px;
-	margin : 10px 0;
-	background : rgba(255,255,255,0.1);
-	
-	border: 1px solid rgba(0, 0, 0, 0.3);
-	
-	-moz-box-shadow: inset 1px 1px 0 rgba(255,255,255,.3),1px 1px 0 rgba(255,255,255,.3);
-	-khtml-box-shadow: inset 1px 1px 0 rgba(255,255,255,.3),1px 1px 0 rgba(255,255,255,.3);
-	-webkit-box-shadow: inset 1px 1px 0 rgba(255, 255, 255, .3),1px 1px 0 rgba(255, 255, 255, .3);
-	-o-box-shadow: inset 1px 1px 0 rgba(255,255,255,.3),1px 1px 0 rgba(255,255,255,.3);
-	box-shadow: inset 1px 1px 0 rgba(255, 255, 255, .3),1px 1px 0 rgba(255, 255, 255, .3);
-	
-	position : relative;
-	z-index : 1;
 }
 
 
-.comp h5 {
-	margin : 10px;
-	padding: 0;
-	text-shadow: 1px 1px 0 rgba(255, 255, 255, .5);
-	color : #DC5100;
-	font-size : 1.1em;
-}	
+.comp s, .comp c, .comp r{
+	cursor : default;
+	float : right;
+	width : 20px;
+	height : 20px;
+	text-align : center;
+	
+	margin : 2px;
+	
+	font-weight : bold;
+
+	border: 1px solid #2d251b;
+	color:white;
+}
+
+.comp p {
+	border: 1px solid #2d251b;
+    background: #090909;
+    padding: 15px;
+	margin : 10px 0:
+}
+
+.comp s {
+	text-decoration : none;
+	
+	border-bottom : 2px solid orange;
+}
+
+.comp c {
+	border-bottom : 2px solid blue;
+}
+
+.comp r {
+	border-bottom : 2px solid green;
+}
+
+.comp n {
+	float : left;
+	width : 50px;
+	font-weight : bold;
+	
+	color: #AD835A;
+}
+
+.comp e {
+	display : block;
+	clear :  both;
+}
+
+.comp e ul {
+	display : inline-block;
+}
+
+.stab1 {
+	margin : 10px 0;
+}
 
 .comp .comp_req {
-	position : absolute;
-	right : 20px;
-	top : 20px;
+	color : #00E676;
+}
+
+.comp .comp_spec {
+	color :  orange;
+}
+
+.comp .comp_forbid {
+	color : red;
+	text-decoration: line-through;
 }

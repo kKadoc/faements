@@ -2,52 +2,62 @@
 <html>
 <head>
 	<title>Temps de Faéments</title>
-	<link rel="stylesheet" href="data/faements1.css">
-	<link rel="stylesheet" href="data/home.css">
-	
+	<link rel="stylesheet" href="data/faements.css">
+	<link rel="stylesheet" href="data/system.css">
 	<script type="text/javascript" src="data/jquery.min.js"></script>
-	<script type="text/javascript" src="data/jquery.transit.js"></script>
+	<script type="text/javascript" src="data/animate.js"></script>
+	<script type="text/javascript" src="data/jquery.toc.js"></script>
 </head>
 
 <body>
+	<div id="fastmenu">
+		<div id="menu">
+			<a href="home.html" class="current" title="menu"><img src="data/icons/home.png" />Menu</a>
+			<a href="system.html" title="système de jeu" ><img src="data/icons/system.png" />Système de jeu</a>
+			<a href="evolution.html" title="évolution"><img src="data/icons/evolution.png" />Evolution</a>
+			<a href="skills.html" title="compétences"><img src="data/icons/skills.ico" />Compétences</a>
+			<a href="spells.html" title="sorts"><img src="data/icons/spells.png" />Sorts</a>
+			<a href="equipment.html" title="équipement"><img src="data/icons/equipment.png" />Equipement</a>
+			<a href="beasts.html" title="bestiaire"><img src="data/icons/beasts.png" />Bestiaire</a>
+			<a href="craft.html" title="Artisanat"><img src="data/icons/craft.png" />Artisanat</a>
+			<a href="sheets.html" title="Feuilles de personnage"><img src="data/icons/sheets.png" />Feuilles de personnages</a>
+		</div>
+	</div>
+	<a id="fastmenu_trigger" href="#"><img src="data/icons/map.png" /></a>
+	
 	<div id="all">
 		<h1>Temps de Faéments</h1>
-		<div class="panel">
-			<a href="system.html"><img src="data/icons/system.png" />Système de jeu</a>
-			<a href="evolution.html"><img src="data/icons/evolution.png" />Evolution</a>
-			<a href="skills.html"><img src="data/icons/skills.png" />Compétences</a>
-			<a href="spells.html"><img src="data/icons/spells.png" />Sorts</a>
-			<a href="equipment.html"><img src="data/icons/equipment.png" />Equipement</a>
-			<a href="beasts.html"><img src="data/icons/beasts.png" />Bestiaire</a>	
-			<a href="sheets.html"><img src="data/icons/sheets.png" />Feuilles de personnage</a>	
+
+		<h2>Mise à jours</h2>
+		<h3>V5.4</h3>
+		<div class="bloc">
+			<ul>
+				<li>Vitesse de course plus dépendante de la vivacité.</li>
+				<li>Mise à jour des seuils d'apprentissage des compétences.</li>
+				<li>Association des compétences selon les nouvelles actions innées.</li>
+				<li>Suppression de l'action innée "attaque au corps à corps" remplacée par trois actions innées "coup rapide", "coup précis" et "coup puissant".</li>
+				<li>Suppression des caractéristiques Puissance et Technique de combat. Création de la caractéristique Vigueur.</li>
+				<li>Suppression des catégories d'armes (légère/assault/lourde) remplacées par des profils pour chacunes.</li>
+				<li>Augmentation des dégâts des arcs et arbalètes mais création d'un temps de recharge.</li>
+				<li>Mise à jour des seuils d'apprentissage des sorts.</li>
+			</ul>
 		</div>
-		<div class="version">Temps de Faéments v1.4.0</div>
-	</div>
-	
-	<script type="text/javascript">
-		$(document).ready(function(){
-			$('.panel').transition({
-				y:-100,
-				easing: 'out',
-				duration: '1000ms'
-			});
-			
-			$('.panel a').click(function(){
-				var link = $(this).attr('href');
-				$('.panel').transition({
-					y:+1000,
-					easing: 'out',
-					duration: '500ms'
-				}, function() {
-					window.location.href=link;
-				});
-				
-				
-				return false;
-			});
-		});
+		<h3>V5.3</h3>
+		<div class="bloc">
+			<ul>
+				<li>Création de l'artisanat.</li>
+				<li>Seuils de dangeurosité des monstres.</li>
+			</ul>
+		</div>
 		
-	</script>
+		<h2>TODO</h2>
+		<div class="bloc">
+			<ul>
+				<li>Durée d'execution des sorts.</li>
+			</ul>
+		</div>
+	</div>
+
 	
 </body>
 </html>

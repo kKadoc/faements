@@ -1,9 +1,12 @@
-.tab1 td{
-	text-align : left;
-	padding : 3px 30px;
+.tab1 {
+	float : left;
+	margin : 15px 15px 15px 0;
 }
 
-.center {
-	margin : auto;
-	width : 775px;
+h5, h4 {
+	clear : both;
+}
+
+.small_tab {
+	margin-top : 15px;
 }

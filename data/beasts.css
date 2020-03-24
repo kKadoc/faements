@@ -1,45 +1,42 @@
-.beast {
-
-	padding : 15px;
-	border-radius : 20px;
-	margin : 10px 0;
-	background : rgba(255,255,255,0.1);
-	
-	border: 1px solid rgba(0, 0, 0, 0.3);
-	
-	box-shadow: inset 1px 1px 0 rgba(255, 255, 255, .3),1px 1px 0 rgba(255, 255, 255, .3);
-	
-	position : relative;
-	z-index : 1;
+table.tab3 {
+	float : left;
+	margin : 15px 15px 15px 0;
+	width : 20%;
 }
 
-.beast h4 {
-	margin : 10px;
-	padding: 0;
-	text-shadow: 1px 1px 0 rgba(255, 255, 255, .5);
-	color : #DC5100;
-	font-size : 1.1em;
-}
-
-.beast table {
-	margin : 10px 20px;
-}
-
-.beast table tr:nth-child(even) td {
-	background-color: rgba(255, 255, 255, 0.2);
-}
-
-.beast table tr:nth-child(odd) td{
-	background-color: rgba(255, 255, 255, 0.4);
-}
-
-.beast .equip{
-	margin-top : 20px;
-	padding : 15px;
+.equip {
 	clear : both;
+}
+
+.beast {
+	position : relative;
+}
+
+.level {
+	position : absolute;
+	top : 9px;
+	right : 15px;
 	
-	border: 1px solid rgba(0, 0, 0, 0.3);
-	border-radius : 6px;
-	
-	box-shadow: inset 1px 1px 0 rgba(255, 255, 255, .3),1px 1px 0 rgba(255, 255, 255, .3);
+	font-weight : bold;
+
+}
+
+.p1 {
+	color : #FFD600;
+}
+
+.p2 {
+	color : #FF6D00;
+}
+
+.p3 {
+	color : #DD2C00;
+}
+
+.p4 {
+	color : #D50000;
+}
+
+.p5 {
+	color : #6200EA;
 }

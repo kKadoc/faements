@@ -1,0 +1,47 @@
+Revoir action courir (modifier la distance de course)
+
+Sur les 3 coups innés proposer en même temps que l'attaque d'oportunité le pas de replacement. = décalage d'une case après une attaque. ce déplacement peut rompre le combat mais l'adversaire peut décider de suivre.
+
+Familier
+
+	blessures ?
+		-> un marqueur par zone
+		-> 3 niveaux :
+			- superficielle (les 3 seuils sont baissés de 1)
+			- sérieuse (malus temporaire)
+			- grave (malus permanant)
+		-> niveau choisit selon l'intensité de l'attaque et le seuil de blessure
+			0 < seuil x 1 < seuil x 1.5 < seuil x 2
+			rien < superficielle < sérieuse < grave
+		-> si 3 grave ou 1 grave tête/torse -> mort du perso
+		->  blessure -> test de douleur (si sérieuse malus, si grave malus ++)
+	
+jauges sur 5 points
+	1 et 2 : pas d'effet
+	3 et 4 : effet génant -> niveau 3 = seuil d'alerte
+	5 : effet incapacitant -> seuil critique
+	
+	
+	douleur
+		-> soin ? attente ?
+		-> seuil d'alerte : test de résistance à la douleur ou échec de l'action
+		-> seuil critique : inconscient pour 2D10 tours
+	
+	adrenaline
+		-> généré si test résistance douleur réussi + mort d'un personnage (allié ou ennemi)
+		-> permet d'ignorer un test de résistance à la douleur (doit être décidé avant de lancer le jet)
+	
+	souffle
+	
+	concentration
+	
+	faim
+		-> manger 
+		-> si certain seuil point de fatigue par heure
+		-> si seuil max KO
+	fatigue
+		-> dormir
+		-> certain seuil = malus sur toutes les caracs
+		-> si seuil max, pas de compétences
+	peur
+		-> disparait avec le temps ?

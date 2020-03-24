@@ -1,40 +1,27 @@
-.comp {
-
-	padding : 5px;
-	border-radius : 20px;
-	margin : 10px 0;
-	background : rgba(255,255,255,0.1);
+.tab1 {
+	margin : 5px 0;
 	
-	border: 1px solid rgba(0, 0, 0, 0.3);
-	
-	-moz-box-shadow: inset 1px 1px 0 rgba(255,255,255,.3),1px 1px 0 rgba(255,255,255,.3);
-	-khtml-box-shadow: inset 1px 1px 0 rgba(255,255,255,.3),1px 1px 0 rgba(255,255,255,.3);
-	-webkit-box-shadow: inset 1px 1px 0 rgba(255, 255, 255, .3),1px 1px 0 rgba(255, 255, 255, .3);
-	-o-box-shadow: inset 1px 1px 0 rgba(255,255,255,.3),1px 1px 0 rgba(255,255,255,.3);
-	box-shadow: inset 1px 1px 0 rgba(255, 255, 255, .3),1px 1px 0 rgba(255, 255, 255, .3);
-	
-	position : relative;
-	z-index : 1;
 }
 
-
-.comp h5 {
-	margin : 10px;
-	padding: 0;
-	text-shadow: 1px 1px 0 rgba(255, 255, 255, .5);
-	color : #DC5100;
-	font-size : 1.1em;
-}	
-
-.comp .comp_req {
-	position : absolute;
-	right : 20px;
-	top : 20px;
-}
-.stab1 {
-	font-size : 0.9em;
+.tab1 td, .tab1 th {
+	text-align : center;
+	padding : 2px 25px;
 }
 
-.stab1 td:nth-child(3) {
-	text-align : left;
+table.float_left {
+	float : left;
+	margin : 0;
+	width : 20%;
+}
+
+table.float_left.middle1 {
+	margin : 0 2px 0 4px;
+}
+
+table.float_left.middle2 {
+	margin : 0 2px 0 0;
+}
+
+p.float_left {
+	clear : both;
 }

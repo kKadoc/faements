@@ -1,123 +1,417 @@
-input {
-	background : rgba(255,255,255,0.1);
-	font-size : 0.9em;
-	border : 1px solid rgba(0,0,0,0.2);
-	height : 25px;
-	padding : 3px;
-}
 
-.hr {
-	width : 100%;
-	height : 1px;
-	margin : 10px 0;
-	border-bottom : 1px solid grey;
-}
-
-.title_input {
-	background : transparent;
-	border : none;
-}
-
-.carac_tab {
-	float : left;
-	margin : 10px;
-}
-
-
-.carac_tab td{
-	padding:0;
-}
-
-.carac_tab td:nth-child(1){
-	text-align : right;
-	width : 180px;
-	font-weight : bold;
-}
-
-.carac_tab td:nth-child(n+2){
-
-}
-
-.carac_tab input {
-	margin:0;
-
-	width : 40px;
-
-	text-align : center;
-}
-
-.bloc {
-	margin : 10px;
-	border-radius : 7px;
-	padding : 10px;
-	border: 1px solid rgba(0, 0, 0, 0.3);
+body, html {
+	margin : 0;
+	padding : 0;
 	
-	box-shadow: inset 1px 1px 0 rgba(255, 255, 255, .3),1px 1px 0 rgba(255, 255, 255, .3);
-	clear : both;
+	font-family: Tahoma;
+	
+	color : grey;
+}
+
+.page {
+	margin : 20px auto;
+	border : 1px solid grey;
+	width : 794px;
+	height : 1123px;
+	
 	overflow : auto;
-}
-
-.bloc h3 {
-	margin-top : 0;
-	text-align : left;
 	
-}
-
-.comp_bloc table {
-	margin : auto;
-}
-
-.comp_bloc .help_top_tr td {
-	margin :0;
-	padding:0;
-	vertical-align : bottom;
 	position : relative;
-	bottom : -5px;
-	left : 5px;
-	text-align:left;
-	font-size : 0.7em;
 }
 
-.comp_bloc .content_tr td {
-	padding :0;
+l {
+	margin : 5px 10px;
+	padding : 0;
+	display : inline-block;
+	line-height : 30px;
+	height : 30px;
+	vertical-align : middle;
 }
 
-.comp_bloc .content_bot {
+i {
+	margin : 5px 10px 5px 0;
+	padding : 0;
+	display : inline-block;
+	width : 50px;
+	height : 30px;
+	line-height : 30px;
+	border : 1px solid grey;
+	vertical-align : middle;
+}
+
+i.big {
+	border-radius : 5px;
+	width : 70px;
+	height : 50px;
+}
+
+i.small {
+	border-radius : 5px;
+	width : 30px;
+	height : 30px;
+}
+
+s {
+	font-size :0.5em;
+	text-decoration : none;
+}
+
+.ref {
+	position : relative;
+	margin : 0;
 	padding : 0;
 }
 
-.comp_bloc .content_bot textarea {
-	width : 100%;
+
+
+h1 {
+	padding : 5px 10px 10px 0;
+	margin-bottom : 30px;
+	font-weight :  normal;
+	text-align : right;
+	font-size : 1.5em;
+	color : brown;
+	border-bottom : 2px solid brown;
+}
+
+h2 {
+	font-weight :  normal;
+	font-size : 1.4em;
+	padding : 6px 10px;
+	background : #EEE;
+}
+
+#nom i {
+	width : 280px;
+}
+
+#profil i {
+	width : 150px;
+}
+
+#niveau {
+	position : absolute;
+	right : 0;
+}
+
+#pts_evol {
+	position : absolute;
+	right : 0;
+	top : 135px;
+}
+
+#pts_comp {
+	position : absolute;
+	right : 0;
+	top : 175px;
+}
+
+#pts_hero {
+	position : absolute;
+	right : 0;
+	top : 215px;
+}
+
+#init_perf {
+	border-collapse : collapse;
+}
+
+#init_perf td {
+	padding : 0 15px 0 10px;
+}
+
+#init_perf li, #init_perf ul {
+	list-style-type : circle;
+	margin-left : 0;
+	padding-left : 2px;
+}
+
+#h2_jauge {
+	margin-top : 60px;
+}
+
+.jauge i{
+	margin : 5px;
+}
+
+.jauge l {
+	width : 100px;;
+}
+
+#seuil_vita, #seuil_conc, #seuil_souffle {
+	position : absolute;
+	right : 5px;
+	top : 10px;
+}
+
+.jauge {
+	margin-bottom : 10px;
+}
+.jauge s {
+	position : absolute;
+}
+
+.jauge .s1 {
+	left : 147px;
+	top : 55px;
+}
+
+.jauge .s2{
+	left : 252px;
+	top : 55px;
+}
+
+.jauge .s3 {
+	left : 332px;
+	top : 45px;
+}
+
+.jauge .s4 {
+	left : 417px;
+	top : 45px;
+}
+
+.stats {
+	width : 50%;
+}
+
+.stats i{
+	margin : 5px;
+	margin-right : 30px;
+}
+
+.stats i.small {
+	margin-right : 5px;
+}
+
+.stats l {
+	width : 160px;
+}
+
+.stats s {
+	position : absolute;
+}
+
+.stats .st1 {
+	left : 202px;
+	top : -5px;
+}
+
+.stats .st2{
+	left : 287px;
+	top : -5px;
+}
+
+.stats .st3 {
+	left : 352px;
+	top : -5px;
+}
+
+.stats .s1 {
+	left : 202px;
+	top : 35px;
+}
+
+.stats .s2{
+	left : 287px;
+	top : 35px;
+}
+
+.stats .s3 {
+	left : 352px;
+	top : 35px;
+}
+
+.b_right {
+	position : absolute;
+	right : 0;
+	top : 600px;
+	width : 50%;
+}
+
+.b_right .ref {
+	text-align : right;
+}
+
+
+
+#des {
+	border-collapse : collapse;
 	margin : 0;
-	background : rgba(255,255,255,0.1);
-	font-size : 0.9em;
-	border : 1px solid rgba(0,0,0,0.2);
-	padding : 3px;
-	text-align : left;
+	padding : 0;
+	position : absolute;
+	bottom : 2px;
+	left : 0px;
+	right : 0px;
 }
 
-
-.comp_bloc .comp_name input{
-	width : 350px;
-	text-align : left;
+#des .first_row  td{
+	color : brown;
+	border : none;
 }
 
-
-.comp_bloc .comp_lvl input{
-	border-radius : 12px;
-	width : 25px;
+#des td {
+	border : 1px solid grey;
+	padding : 4px 1px;
+	margin : 0;
+	font-size : 0.7em;
+	width : 24px;
 	text-align : center;
 }
 
-.comp_bloc .comp_stat input{
-	width : 25px;
-	text-align : center;
+#des td:first-child {
+	border-left : none;
 }
 
-.comp_bloc .space_td {
+#des td:last-child {
+	border-right : none;
+}
+
+.comp {
+	padding : 5px;
+	margin : 10px;
+	position : relative;
+}
+
+.comp s, .comp c, .comp r , .comp n{
+	
+	display : inline-block;
 	width : 50px;
+	margin-left : 5px;
+	height : 30px;
+	
+	border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
-.comp_bloc .space_full {
-	width : 100px;
+.comp .right {
+	position : absolute;
+	top : 5px;
+	right : 5px;
 }
+
+.comp s {
+	border-radius : 0 0 0 0px;
+}
+
+.comp c {
+	border-radius :  0 0px 0px 0;
+}
+
+.comp .right span {
+	display : inline-block;
+	margin : 2px 0;
+	margin-left : 5px;
+	height : 28px;
+	width : 15px;
+	background : #EEE;
+}
+
+.comp h5 {
+	margin : 2px 0;
+	padding : 0 10px;
+	
+	width : 475px;
+	
+	height : 28px;
+	line-height : 28px;
+	background : #EEE;
+}
+
+.comp .desc {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	height : 30px;
+	padding : 0;
+	padding-left : 5px;
+	line-height : 40px;
+	font-size : 0.8em;
+	font-style : italic;
+	vertical-align : bottom;
+}
+
+.comp l {
+	font-size :0.5em;
+	position : absolute;
+}
+
+.comp l.s1 {
+	left : 10px;
+	top : 16px;
+}
+
+.comp l.s2 {
+	left : 88px;
+	top : 16px;
+}
+
+.comp l.s3 {
+	left : 163px;
+	top : 16px;
+}
+
+.comp l.s4 {
+	left : 209px;
+	top : 16px;
+}
+
+.comp .small {
+	width : 70px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.comp .arme1, .comp .arme2 {
+	width: 250px;
+	border :none;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 0;
+}
+.comp .arme2 {
+	width : 258px;
+	margin-right : 0;
+}
+
+.comp .desc_input {
+	position : relative;
+}
+
+.comp .d1 {
+	margin-right : 5px;
+	line-height : 40px;
+	vertical-align : bottom;
+	line-height : 30px;
+	font-size : 0.8em;
+}
+
+.comp .depl1 {
+	width: 541px;
+    margin-right: 0;
+	border :none;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	border-radius: 0;
+}
+
+.comp .a1, .comp .a2, .comp .a3 {
+	position : absolute;
+	top : 21px;
+}
+
+.comp .a1 {
+	left :270px;
+}
+
+.comp .a2 {
+	left :356px;
+}
+
+.comp .a3 {
+	left :428px;
+}
+
+
+
+@media print {
+	.page {
+		margin : 0;
+		border : none;
+	}
+}
+
