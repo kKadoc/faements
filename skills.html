@@ -25,7 +25,7 @@
 			<a href="spells.html" title="sorts"><img src="data/icons/spells.png" />Sorts</a>
 			<a href="equipment.html" title="équipement"><img src="data/icons/equipment.png" />Equipement</a>
 			<a href="beasts.html" title="bestiaire"><img src="data/icons/beasts.png" />Bestiaire</a>
-			<a href="craft.html" title="Artisanat"><img src="data/icons/craft.png" />Artisanat</a>
+			<a href="aventure.html" title="Aventure"><img src="data/icons/craft.png" />Aventure</a>
 			<a href="sheets.html" title="Feuilles de personnage"><img src="data/icons/sheets.png" />Feuilles de personnages</a>
 		</div>
 	</div>
@@ -44,335 +44,351 @@
 
 		<h2>Les compétences</h2>
 								
+								
+		<!--
+		
+			Baremes
+			
+			
+			Souffle/Concentration
+			Récup = 2/tours
+				
+			
+			Apprentissage
+			Apprentissage(+4)		- faciles							-> 15							
+			Apprentissage(0)		- moyennes							-> 20
+			Apprentissage(-4)		- dures								-> 30
+			Apprentissage(-8)		- necessite un réel travail			-> 40
+			Apprentissage(-12)		- sans aide impossible à apprendre	-> 50
+		-->
+								
 		<!-- ACTIONS INNEES -->
 		
 		<h3 class="comp_cat">Actions innées</h3>
 		
 		<div class="comp">
-			<h4>Courir</h4>
-			<span class="comp_req">Action innée</span>
-			<p>
-				<n>Niv. 1</n><s title="Souffle">2</s><c title="Concentration">0</c><r title="Exécution">2</r>
-				<e>Le personnage se déplace d’un mouvement maximal de 10m. Si le terrain est difficilement praticable (gravats, végétation dense, …) le personnage doit diviser sa vitesse par deux ou réussir un test d’Adresse pour ne pas chuter.<br />S’agenouiller et s’accroupir se font sans pénalité, par contre s’allonger et se relever réduisent la distance de déplacement de 3m.</e>
+			<h4 class="nom">Courir</h4>
+			<span class="specifs"><span class="comp_req">Action innée</span></span>
+			<p class="niv1">
+				<n>Niv. 1</n><s title="Souffle">1</s><c title="Concentration">0</c><r title="Exécution">2</r>
+				<e>Le personnage se déplace d’un mouvement maximal de 8m. Si le terrain est difficilement praticable (gravats, végétation dense, …) le personnage doit diviser sa vitesse par deux ou réussir un test d’Adresse pour ne pas chuter.<br />S’agenouiller et s’accroupir se font sans pénalité, par contre s’allonger et se relever réduisent la distance de déplacement de 3m. Au début de son tour, le personnage peut réaliser un mouvement gratuit de 1m mais ne pourra pas utiliser l'action courir dans ce cas.</e>
 			</p>
-			<p>
-				<n>Niv. 2</n><s title="Souffle">2</s><c title="Concentration">0</c><r title="Exécution">2</r>
-				<e>Si le déplacement du personnage l’amène à portée d’un ennemi, il peut placer un coup puissant avec un bonus en dégâts de +4. Le temps d'exécution de l'action, le souffle consommé, etc sera alors celui de l'attaque et du déplacement combinés.</e>
+			<p class="niv2">
+				<n>Niv. 2</n><s title="Souffle">1</s><c title="Concentration">0</c><r title="Exécution">2</r>
+				<e>Si le déplacement du personnage l’amène à portée d’un ennemi et que ce déplacement fait plus de 4m, il peut placer un coup puissant avec un bonus en dégâts de +4. Le temps d'exécution de l'action, le souffle consommé, etc sera alors celui de l'attaque et du déplacement combinés.</e>
 			</p>
-			<p>
-				<n>Niv. 3</n><s title="Souffle">2</s><c title="Concentration">0</c><r title="Exécution">2</r>
-				<e>Le mouvement maximal monte à 12m. De plus, en utilisant 4 points de Souffle supplémentaires, le personnage augmente sa distance de déplacement de 2 points (peut être combiné avec la charge).</e>
+			<p class="niv3">
+				<n>Niv. 3</n><s title="Souffle">1</s><c title="Concentration">0</c><r title="Exécution">2</r>
+				<e>Le mouvement maximal monte à 10m. De plus, en utilisant 1 point de Souffle supplémentaire, le personnage augmente sa distance de déplacement de 2 points (peut être combiné avec la charge).</e>
 			</p>
-			<p>
-				<n>Niv. 4</n><s title="Souffle">2</s><c title="Concentration">0</c><r title="Exécution">2</r>
+			<p class="niv4">
+				<n>Niv. 4</n><s title="Souffle">1</s><c title="Concentration">0</c><r title="Exécution">2</r>
 				<e>Le personnage n’est plus ralenti lorsqu’il porte une armure (cf. section équipement).</e>
 			</p>
-			<p>
-				<n>Niv. 5</n><s title="Souffle">2</s><c title="Concentration">0</c><r title="Exécution">2</r>
+			<p class="niv5">
+				<n>Niv. 5</n><s title="Souffle">1</s><c title="Concentration">0</c><r title="Exécution">2</r>
 				<e>Le personnage n'est plus ralenti lorsqu'il court sur un terrain difficile.</e>
 			</p>
-			<p>
-				<n>Niv. 6+</n><s title="Souffle">2</s><c title="Concentration">0</c><r title="Exécution">2</r>
+			<p class="niv6">
+				<n>Niv. 6+</n><s title="Souffle">1</s><c title="Concentration">0</c><r title="Exécution">2</r>
 				<e></e>
 			</p>
 		</div>
 		
 		<div class="comp">
-			<h4>Coup rapide</h4>
-			<span class="comp_req">Action innée</span>, <span class="comp_spec">Profil rapide</span>
-			<p>
-				<n>Niv. 1</n><s title="Souffle">4</s><c title="Concentration">0</c><r title="Exécution">4</r>
+			<h4 class="nom">Coup rapide</h4>
+			<span class="specifs"><span class="comp_req">Action innée</span>, <span class="comp_spec">Profil rapide</span></span>
+			<p class="niv1">
+				<n>Niv. 1</n><s title="Souffle">2</s><c title="Concentration">0</c><r title="Exécution">4</r>
 				<e>Un coup simple et rapide pour frapper au plus vite.</e>
 			</p>
-			<p>
-				<n>Niv. 2</n><s title="Souffle">4</s><c title="Concentration">0</c><r title="Exécution">4</r>
-				<e>Si l'adversaire effectue une action non spécifique au combat (se déplacer, tirer à l'arc, ...), le personnage peut placer un coup rapide avant l'action de son adversaire. A noter qu'il ne doit pas être à plus de 10 temps d'écart dans la bare des temps.
-				
-				+ AJOUTER replacement</e>
+			<p class="niv2">
+				<n>Niv. 2</n><s title="Souffle">2</s><c title="Concentration">0</c><r title="Exécution">4</r>
+				<e>Si l'adversaire effectue une action non spécifique au combat (se déplacer, tirer à l'arc, ...), le personnage peut placer un coup rapide avant l'action de son adversaire. A noter qu'il ne doit pas être à plus de 10 temps d'écart dans la bare des temps.<br />				
+				Après avoir réalisé son coup, le personnage peut décider d'effectuer un pas de replacement. Ce pas consiste à réaliser un mouvement d'un mètre dans n'importe quelle direction et peut l'amener à rompre le combat. Son adversaire ne peut en profiter pour placer une attaque (mais un autre ennemi si).</e>
 			</p>
-			<p>
-				<n>Niv. 3</n><s title="Souffle">4</s><c title="Concentration">0</c><r title="Exécution">4</r>
+			<p class="niv3">
+				<n>Niv. 3</n><s title="Souffle">2</s><c title="Concentration">0</c><r title="Exécution">4</r>
 				<e>Le coup gagne un bonus de +2 à son score d'attaque.</e>
 			</p>
-			<p>
-				<n>Niv. 4</n><s title="Souffle">4</s><c title="Concentration">0</c><r title="Exécution">3</r>
+			<p class="niv4">
+				<n>Niv. 4</n><s title="Souffle">2</s><c title="Concentration">0</c><r title="Exécution">3</r>
 				<e>Le coup est porté encore plus vite.</e>
 			</p>
-			<p>
-				<n>Niv. 5</n><s title="Souffle">4</s><c title="Concentration">0</c><r title="Exécution">3</r>
+			<p class="niv5">
+				<n>Niv. 5</n><s title="Souffle">2</s><c title="Concentration">0</c><r title="Exécution">3</r>
 				<e>Le bonus en attaque passe à +4.</e>
 			</p>
-			<p>
-				<n>Niv. 6+</n><s title="Souffle">4</s><c title="Concentration">0</c><r title="Exécution">3</r>
+			<p class="niv6">
+				<n>Niv. 6+</n><s title="Souffle">2</s><c title="Concentration">0</c><r title="Exécution">3</r>
 				<e>Chaque niveau augmente le bonus d'attaque de 1.</e>
 			</p>
 		</div>
 		
 		<div class="comp">
-			<h4>Coup précis</h4>
-			<span class="comp_req">Action innée</span>, <span class="comp_spec">Profil précis</span>
-			<p>
-				<n>Niv. 1</n><s title="Souffle">4</s><c title="Concentration">0</c><r title="Exécution">5</r>
+			<h4 class="nom">Coup précis</h4>
+			<span class="specifs"><span class="comp_req">Action innée</span>, <span class="comp_spec">Profil précis</span></span>
+			<p class="niv1">
+				<n>Niv. 1</n><s title="Souffle">2</s><c title="Concentration">0</c><r title="Exécution">5</r>
 				<e>Un coup visant une zone précise pour un effet maximal. Lors de l'attaque, le personnage dance deux dés de localisation et choisit celui qui l'interesse.</e>
 			</p>
-			<p>
-				<n>Niv. 2</n><s title="Souffle">4</s><c title="Concentration">0</c><r title="Exécution">5</r>
-				<e>>L'armure de la zone est ignorée, si deux des jés de localisation forment une paire.</e>
+			<p class="niv2">
+				<n>Niv. 2</n><s title="Souffle">2</s><c title="Concentration">0</c><r title="Exécution">5</r>
+				<e>L'armure de la zone est ignorée, si deux des jés de localisation forment une paire.</e>
 			</p>
-			<p>
-				<n>Niv. 3</n><s title="Souffle">4</s><c title="Concentration">0</c><r title="Exécution">5</r>
-				<e>Si l'adversaire effectue une action non spécifique au combat (se déplacer, tirer à l'arc, ...), le personnage peut placer un coup rapide avant l'action de son adversaire. A noter qu'il ne doit pas être à plus de 10 temps d'écart dans la bare des temps.
-				
-				+ AJOUTER replacement</e>
+			<p class="niv3">
+				<n>Niv. 3</n><s title="Souffle">2</s><c title="Concentration">0</c><r title="Exécution">5</r>
+				<e>Si l'adversaire effectue une action non spécifique au combat (se déplacer, tirer à l'arc, ...), le personnage peut placer un coup précis avant l'action de son adversaire. A noter qu'il ne doit pas être à plus de 10 temps d'écart dans la bare des temps.<br />				
+				Après avoir réalisé son coup, le personnage peut décider d'effectuer un pas de replacement. Ce pas consiste à réaliser un mouvement d'un mètre dans n'importe quelle direction et peut l'amener à rompre le combat. Son adversaire ne peut en profiter pour placer une attaque (mais un autre ennemi si).</e>
 			</p>
-			<p>
-				<n>Niv. 4</n><s title="Souffle">4</s><c title="Concentration">0</c><r title="Exécution">5</r>
+			<p class="niv4">
+				<n>Niv. 4</n><s title="Souffle">2</s><c title="Concentration">0</c><r title="Exécution">5</r>
 				<e>Le personnage lance 3 dés de localisation.</e>
 			</p>
-			<p>
-				<n>Niv. 5</n><s title="Souffle">4</s><c title="Concentration">0</c><r title="Exécution">5</r>
+			<p class="niv5">
+				<n>Niv. 5</n><s title="Souffle">2</s><c title="Concentration">0</c><r title="Exécution">5</r>
 				<e>Le personnage lance 4 dés de localisation.</e>
 			</p>
-			<p>
-				<n>Niv. 6+</n><s title="Souffle">4</s><c title="Concentration">0</c><r title="Exécution">5</r>
+			<p class="niv6">
+				<n>Niv. 6+</n><s title="Souffle">2</s><c title="Concentration">0</c><r title="Exécution">5</r>
 				<e></e>
 			</p>
 		</div>
 				
 		<div class="comp">
-			<h4>Coup puissant</h4>
-			<span class="comp_req">Action innée</span>, <span class="comp_spec">Profil puissant</span>
-			<p>
-				<n>Niv. 1</n><s title="Souffle">4</s><c title="Concentration">0</c><r title="Exécution">6</r>
-				<e>Un coup lent et imprecis mais avec un impact colossal. Le score d'attaque subit un malus de -4.</e>
+			<h4 class="nom">Coup puissant</h4>
+			<span class="specifs"><span class="comp_req">Action innée</span>, <span class="comp_spec">Profil puissant</span></span>
+			<p class="niv1">
+				<n>Niv. 1</n><s title="Souffle">2</s><c title="Concentration">0</c><r title="Exécution">6</r>
+				<e>Un coup lent et imprécis mais avec un impact colossal. Le score d'attaque subit un malus de -4.</e>
 			</p>
-			<p>
-				<n>Niv. 2</n><s title="Souffle">4</s><c title="Concentration">0</c><r title="Exécution">6</r>
+			<p class="niv2">
+				<n>Niv. 2</n><s title="Souffle">2</s><c title="Concentration">0</c><r title="Exécution">6</r>
 				<e>Le malus en attaque descend à -2</e>
 			</p>
-			<p>
-				<n>Niv. 3</n><s title="Souffle">4</s><c title="Concentration">0</c><r title="Exécution">6</r>
-				<e>Les dégâts infligés par l'attaque sont augmentés du quart de la puissance.</e>
+			<p class="niv3">
+				<n>Niv. 3</n><s title="Souffle">2</s><c title="Concentration">0</c><r title="Exécution">6</r>
+				<e>Les dégâts infligés par l'attaque sont augmentés du quart de la Vigueur.</e>
 			</p>
-			<p>
-				<n>Niv. 4</n><s title="Souffle">4</s><c title="Concentration">0</c><r title="Exécution">6</r>
-				<e>Si l'adversaire effectue une action non spécifique au combat (se déplacer, tirer à l'arc, ...), le personnage peut placer un coup rapide avant l'action de son adversaire. A noter qu'il ne doit pas être à plus de 10 temps d'écart dans la bare des temps.
-				
-				+ AJOUTER replacement</e>
+			<p class="niv4">
+				<n>Niv. 4</n><s title="Souffle">2</s><c title="Concentration">0</c><r title="Exécution">6</r>
+				<e>Si l'adversaire effectue une action non spécifique au combat (se déplacer, tirer à l'arc, ...), le personnage peut placer un coup puissant avant l'action de son adversaire. A noter qu'il ne doit pas être à plus de 10 temps d'écart dans la bare des temps.<br />				
+				Après avoir réalisé son coup, le personnage peut décider d'effectuer un pas de replacement. Ce pas consiste à réaliser un mouvement d'un mètre dans n'importe quelle direction et peut l'amener à rompre le combat. Son adversaire ne peut en profiter pour placer une attaque (mais un autre ennemi si).</e>
 			</p>
-			<p>
-				<n>Niv. 5</n><s title="Souffle">4</s><c title="Concentration">0</c><r title="Exécution">6</r>
+			<p class="niv5">
+				<n>Niv. 5</n><s title="Souffle">2</s><c title="Concentration">0</c><r title="Exécution">6</r>
 				<e>Les malus à l'attaque sont supprimés.</e>
 			</p>
-			<p>
-				<n>Niv. 6+</n><s title="Souffle">4</s><c title="Concentration">0</c><r title="Exécution">6</r>
+			<p class="niv6">
+				<n>Niv. 6+</n><s title="Souffle">2</s><c title="Concentration">0</c><r title="Exécution">6</r>
 				<e></e>
 			</p>
 		</div>
 		
 		<div class="comp">
-			<h4>Attaquer à distance</h4>
-			<span class="comp_req">Action innée</span>, <span class="comp_spec">Profil distance</span>
-			<div class="bloc">
-				<n>Niv. 1</n><s title="Souffle">4</s><c title="Concentration">0</c><r title="Exécution">5</r>
-				<e>Le personnage utilise une arme à projectile (arc, javelot, ou tout autre arme improvisée) pour atteindre un ennemi à distance. Pour déterminer s’il touche, il doit réussir un test d’Adresse avec les bonus/malus suivants :
+			<h4 class="nom">Attaquer à distance</h4>
+			<span class="specifs"><span class="comp_req">Action innée</span>, <span class="comp_spec">Profil distance</span></span>
+			<div class="bloc niv1">
+				<n>Niv. 1</n><s title="Souffle">2</s><c title="Concentration">2</c><r title="Exécution">5</r>
+				<e>Le personnage utilise une arme à projectile (arc, javelot, ou tout autre arme improvisée) pour atteindre un ennemi à distance. Pour déterminer s’il touche, il doit réussir un test d’Adresse à 20 avec les bonus/malus suivants :
 				<br />
 				<table class="tab_reset stab1">
 					<tr><th>Situation</th><th>Bonus/malus</th></tr>
-					<tr><td>Cible à courte portée*</td><td>+10</td></tr>
+					<tr><td>Cible à courte portée*</td><td>+4</td></tr>
 					<tr><td>Cible en mouvement**</td><td>-4</td></tr>
 					<tr><td>Cible de grande taille</td><td>+4</td></tr>
 					<tr><td>Cible sprintant</td><td>-6</td></tr>
+					<tr><td>Cible zigzagant</td><td>-10</td></tr>
 					<tr><td>Cible agenouillée</td><td>-2</td></tr>
 					<tr><td>Cible allongée</td><td>-4</td></tr>
 					<tr><td>Cible de petite taille</td><td>-4</td></tr>
 					<tr><td>Tirer au corps à corps</td><td>-6</td></tr>
+					<tr><td>Cible à couvert</td><td>-6***</td></tr>
 				</table>
 
-				<i>* est considéré comme à courte portée si la cile est à moins de 10m du tireur.</i><br />
+				<i>* est considéré comme à courte portée si la cible est à moins de 10m du tireur.</i><br />
 				<i>** est considéré comme en mouvement tout personnage ayant passé sa dernière action à se déplacer.</i>
+				<i>*** valeur à adapter par le mj selon l'importance du couvert. Un malus de -6 correspond à une cible ayant 50% de son corps protégé par un élément.</i>
 				<br />
 				<br />
 				Une fois la cible touchée, la résolution des dégâts est identique à une attaque au corps à corps (localisation, armure, …) en utilisant les dégâts du profil distance.</e>
 			</div>
-			<p>
-				<n>Niv. 2</n><s title="Souffle">4</s><c title="Concentration">0</c><r title="Exécution">5</r>
-				<e>Le personnage peut viser pour améliorer sa précision. Dans ce cas, le tir nécessite 6 points de concentration, augmente de 2 le temps d'exécution mais gagne un bonus de +6 pour toucher sa cible.</e>
-			</p>
-			<p>
-				<n>Niv. 3</n><s title="Souffle">4</s><c title="Concentration">0</c><r title="Exécution">5</r>
+			<p class="niv2">
+				<n>Niv. 2</n><s title="Souffle">2</s><c title="Concentration">2</c><r title="Exécution">5</r>
 				<e>Le personnage peut combiner l’action courir avec un tir (le tir s'effectue à la fin du déplacement).</e>
 			</p>
-			<p>
-				<n>Niv. 4</n><s title="Souffle">4</s><c title="Concentration">0</c><r title="Exécution">5</r>
-				<e>Viser devient naturel pour le personnage qui n'a besoin que de 3 points de concentration et n'augmente son exécution que d'un point.</e>
+			<p class="niv3">
+				<n>Niv. 3</n><s title="Souffle">2</s><c title="Concentration">2</c><r title="Exécution">5</r>
+				<e>La distance de la courte portée passe à 20m.</e>
 			</p>
-			<p>
-				<n>Niv. 5</n><s title="Souffle">4</s><c title="Concentration">0</c><r title="Exécution">5</r>
-				<e>La Puissance du tireur est ajoutée aux dégâts du projectile.</e>
+			<p class="niv4">
+				<n>Niv. 4</n><s title="Souffle">2</s><c title="Concentration">2</c><r title="Exécution">5</r>
+				<e>La moitié de la Vigueur du tireur est ajoutée aux dégâts du projectile.</e>
 			</p>
-			<p>
-				<n>Niv. 6+</n><s title="Souffle">4</s><c title="Concentration">0</c><r title="Exécution">5</r>
+			<p class="niv5">
+				<n>Niv. 5</n><s title="Souffle">2</s><c title="Concentration">2</c><r title="Exécution">5</r>
+				<e>La distance de la courte portée passe à 30m.</e>
+			</p>
+			<p class="niv6">
+				<n>Niv. 6+</n><s title="Souffle">2</s><c title="Concentration">2</c><r title="Exécution">5</r>
 				<e>Chaque niveau augmente la portée de l’arme de 5 ainsi que le bonus pour toucher la cible de +1.</e>
 			</p>
 		</div>
 		
 		<div class="comp">
-			<h4>Esquiver</h4>
-			<span class="comp_req">Action innée</span>
-			<p>
-				<n>Niv. 1</n><s title="Souffle">2</s><c title="Concentration">2</c><r title="Exécution">1</r>
-				<e>Au corps à corps, si le personnage pense pouvoir éviter l’attaque de son adversaire, il peut utiliser une action pour tenter de l’esquiver. Dans ce cas, son score de défense sera égal à sa Vivacité plus un D20. <br />Si sa défense est plus grande que le score d'attaque, le coup est évité.<br />Un personnage en armure lourde ne peut pas esquiver.</e>
+			<h4 class="nom">Esquiver</h4>
+			<span class="specifs"><span class="comp_req">Action innée</span></span>
+			<p class="niv1">
+				<n>Niv. 1</n><s title="Souffle">1</s><c title="Concentration">1</c><r title="Exécution">1</r>
+				<e>Au corps à corps, si le personnage pense pouvoir éviter l’attaque de son adversaire, il peut utiliser une action pour tenter de l’esquiver. Dans ce cas, son score de défense sera égal à sa Vivacité plus un D20.<br />Si sa défense est plus grande que le score d'attaque, le coup est évité.<br />Un personnage en armure lourde ne peut pas esquiver.</e>
 			</p>
-			<p>
-				<n>Niv. 2</n><s title="Souffle">2</s><c title="Concentration">2</c><r title="Exécution">1</r>
+			<p class="niv2">
+				<n>Niv. 2</n><s title="Souffle">1</s><c title="Concentration">1</c><r title="Exécution">1</r>
 				<e>Avant de tenter une esquive, le personnage peut annoncer qu’il va plonger. Dans ce cas, il subit un malus de -4 en Vivacité mais si l’esquive est réussie, il pourra se déplacer gratuitement d’1m. Ce mouvement peut l’amener à rompre le combat sans réaction possible de la part de son adversaire.</e>
 			</p>
-			<p>
-				<n>Niv. 3</n><s title="Souffle">2</s><c title="Concentration">2</c><r title="Exécution">1</r>
-				<e>Si le personnage est la cible d’un projectile, il peut tenter de l’esquiver avec un malus de -4.</e>
+			<p class="niv3">
+				<n>Niv. 3</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">1</r>
+				<e>Si le personnage est la cible d’un projectile, il peut tenter de l’esquiver avec un malus de -4. Il opposera alors sa défense au résultat du test d'Adresse du tireur (ou du test d'Intelligence pour un projectile magique).</e>
 			</p>
-			<p>
-				<n>Niv. 4</n><s title="Souffle">2</s><c title="Concentration">2</c><r title="Exécution">1</r>
+			<p class="niv4">
+				<n>Niv. 4</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">1</r>
 				<e>Le personnage peut désormais tenter des esquives en armure lourde. Il subira néanmoins un malus de -4.</e>
 			</p>
-			<p>
-				<n>Niv. 5</n><s title="Souffle">0</s><c title="Concentration">2</c><r title="Exécution">1</r>
-				<e>L’esquive est instinctive pour le personnage qui ne se fatigue plus lorsqu’il esquive et qui gagne un bonus de +2 pour ses esquives.</e>
+			<p class="niv5">
+				<n>Niv. 5</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">1</r>
+				<e></e>
 			</p>
-			<p>
-				<n>Niv. 6+</n><s title="Souffle">0</s><c title="Concentration">2</c><r title="Exécution">1</r>
+			<p class="niv6">
+				<n>Niv. 6+</n><s title="Souffle">0</s><c title="Concentration">1</c><r title="Exécution">1</r>
 				<e>Le personnage gagne un bonus de +2 par niveau pour esquiver.</e>
 			</p>
 		</div>
 		
 		<div class="comp">
-			<h4>Parer</h4>
-			<span class="comp_req">Action innée</span>
-			<p>
-				<n>Niv. 1</n><s title="Souffle">2</s><c title="Concentration">2</c><r title="Exécution">1</r>
-				<e>Au corps à corps, si le personnage pense pouvoir bloquer l’attaque de son adversaire, il peut utiliser une action pour tenter de la parer. Dans ce cas, il doit utiliser une arme ou un bouclier et son score de défense sera égal à sa Technique de Combat augmenté du bonus de son arme plus un D20.<br />Si sa défense est plus grande que l’attaque, le coup est paré.</e>
+			<h4 class="nom">Parer</h4>
+			<span class="specifs"><span class="comp_req">Action innée</span></span>
+			<p class="niv1">
+				<n>Niv. 1</n><s title="Souffle">1</s><c title="Concentration">1</c><r title="Exécution">1</r>
+				<e>Au corps à corps, si le personnage pense pouvoir bloquer l’attaque de son adversaire, il peut utiliser une action pour tenter de la parer. Dans ce cas, il doit utiliser une arme ou un bouclier et son score de défense sera égal à son Adresse augmentée du bonus de son arme plus un D20.<br />Si sa défense est plus grande que l’attaque, le coup est paré.</e>
 			</p>
-			<p>
-				<n>Niv. 2</n><s title="Souffle">2</s><c title="Concentration">2</c><r title="Exécution">1</r>
+			<p class="niv2">
+				<n>Niv. 2</n><s title="Souffle">1</s><c title="Concentration">1</c><r title="Exécution">1</r>
+				<e>Habitué à parer, le personnage gagne en efficacité avec un bonus de +2 à toutes ses parades.<br />
+				Il peut également parer les flèches, les carreaux et les projectiles de petite taille à condition d'être équipé d'un bouclier. Il opposera alors sa défense au résultat du test d'Adresse du tireur (ou du test d'Intelligence pour un projectile magique).</e>
+			</p>
+			<p class="niv3">
+				<n>Niv. 3</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">1</r>
+				<e>Le personnage peut parer les flèches, les carreaux et les projectiles de petite taille. Il aura néanmoins un malus de -6.</e>
+			</p>
+			<p class="niv4">
+				<n>Niv. 4</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">1</r>
 				<e>Habitué à parer, le personnage gagne en efficacité avec un bonus de +2 à toutes ses parades.</e>
 			</p>
-			<p>
-				<n>Niv. 3</n><s title="Souffle">2</s><c title="Concentration">2</c><r title="Exécution">1</r>
-				<e>Le personnage peut parer l’attaque sans arme. Il aura néanmoins un malus de -3 en défense.</e>
+			<p class="niv5">
+				<n>Niv. 5</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">1</r>
+				<e>Le personnage ignore les malus en parade dus à son arme et double les bonus.</e>
 			</p>
-			<p>
-				<n>Niv. 4</n><s title="Souffle">2</s><c title="Concentration">2</c><r title="Exécution">1</r>
-				<e>Habitué à parer, le personnage gagne en efficacité avec un bonus de +2 à toutes ses parades.</e>
-			</p>
-			<p>
-				<n>Niv. 5</n><s title="Souffle">2</s><c title="Concentration">2</c><r title="Exécution">1</r>
-				<e>Le personnage peut parer les flèches, les carreaux et les projectiles de petite taille. Il aura néanmoins un malus de -6  en défense.</e>
-			</p>
-			<p>
-				<n>Niv. 6+</n><s title="Souffle">2</s><c title="Concentration">2</c><r title="Exécution">1</r>
+			<p class="niv6">
+				<n>Niv. 6+</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">1</r>
 				<e>Le personnage gagne un bonus de +1 par niveau à toutes ses parades.</e>
 			</p>
 		</div>
 		
 		<div class="comp">
-			<h4>Encaisser un coup</h4>
-			<span class="comp_req">Action innée</span>
-			<div class="bloc">
+			<h4 class="nom">Encaisser un coup</h4>
+			<span class="specifs"><span class="comp_req">Action innée</span></span>
+			<div class="bloc niv1">
 				<n>Niv. 1</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
-				<e>Lorsqu’il subit une attaque ciblée (coup, projectile, ...) celle-ci atteint une zone précise selon le schéma de localisation. Pour déterminer cette zone, lancer un dé à 12 faces et référez vous au tableau suivant (illustration dans la section Equipement – Armures). Il se peut de plus qu’un coup ait des effets supplémentaires selon la localisation touchée. Les effets sont explicités dans ce même tableau et ne seront appliqués dans les situations suivantes :
-				<ul>
-					<li>si les dégâts subits sont supérieurs au seuil de coup de la cible</li>
-					<li>si la cible a tenté de réagir à l'attaque (esquive, parade, ...) mais a échoué</li>
-				</ul>
+				<e>Lorsqu’il subit une attaque ciblée (coup, projectile, ...) celle-ci atteint une zone précise selon le schéma de localisation. Pour déterminer cette zone, lancer un dé à 12 faces et référez vous au tableau suivant (illustration dans la section Equipement – Armures). 
 				<br />
 				<table class="tab_reset stab1">
-					<tr><th>Zone</th><th>Nom</th><th>Effets</th></tr>
-					<tr><td>1</td><td>Tête</td><td>La cible doit réussir un test de Vigueur ou être sonnée pour 1D3 round.</td></tr>
-					<tr><td>2,&nbsp;3,&nbsp;6</td><td>Buste</td><td>En plus de perdre les points de Vitalité normalement, la cible perd un nombre équivalent de points de Souffle.</td></tr>
-					<tr><td>4,&nbsp;5</td><td>Epaules</td><td>-</td></tr>
-					<tr><td>7,&nbsp;8</td><td>Bras</td><td>La cible doit réussir un test de Vigueur ou lâcher ce qu’elle tenait dans la main.</td></tr>  
-					<tr><td>9,&nbsp;10</td><td>Cuisses</td><td>-</td></tr>
-					<tr><td>11,&nbsp;12</td><td>Pieds</td><td>La cible doit réussir un test de Vigueur ou tomber au sol.</td></tr>
+					<tr><th>Zone</th><th>Nom</th></tr>
+					<tr><td>1</td><td>Tête</td></tr>
+					<tr><td>2,&nbsp;3,&nbsp;6</td><td>Buste</td></tr>
+					<tr><td>4,&nbsp;7</td><td>Bras gauche</td></tr>
+					<tr><td>5,&nbsp;8</td><td>Bras droit</td></tr>  
+					<tr><td>9,&nbsp;11</td><td>Jambe gauche</td></tr>
+					<tr><td>10,&nbsp;12</td><td>Jambe droite</td></tr>
 				</table>
 				</e>
 			</div>
-			<p>
+			<p class="niv2">
 				<n>Niv. 2</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
-				<e>Lorsqu’il porte un casque, le personnage ajoute la défense du casque à sa Vigueur pour déterminer s’il est sonné</e>
+				<e>Le personnage retire 1D3 blessures superficielles à la fin d'un combat.</e>
 			</p>
-			<p>
+			<p class="niv3">
 				<n>Niv. 3</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
-				<e>Le personnage ne chute plus à cause d’un coup dans les pieds.</e>
+				<e>Le personnage gagne un bonus de +2 pour résiter à la douleur et pour le test de Bravoure s'il ne souhaite pas défendre.</e>
 			</p>
-			<p>
+			<p class="niv4">
 				<n>Niv. 4</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
-				<e>Le personnage peut utiliser sa Concentration plutôt que son Souffle lorsqu’il est touché au buste.</e>
+				<e></e>
 			</p>
-			<p>
+			<p class="niv5">
 				<n>Niv. 5</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
-				<e>A la fin d’un combat, le personnage regagne les trois quarts des points de Vitalité qu’il vient de perdre.</e>
+				<e>Le seuil de blessure critique est augmenté de +5.</e>
 			</p>
-			<p>
+			<p class="niv6">
 				<n>Niv. 6+</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
-				<e>Le personnage gagne un bonus de +1 par niveau en Vigueur pour encaisser un coup.</e>
+				<e>Chaque niveau augmente les 3 seuils de blessure de +1.</e>
 			</p>
 		</div>
 		
 		<div class="comp">
-			<h4>Lancer un sort</h4>
-			<span class="comp_req">Action innée</span>
-			<p>
+			<h4 class="nom">Lancer un sort</h4>
+			<span class="specifs"><span class="comp_req">Action innée</span></span>
+			<p class="niv1">
 				<n>Niv. 1</n><s title="Souffle">0</s><c title="Concentration">*</c><r title="Exécution">5</r>
-				<e>Bien que cette action semble accessible à tous les individus, seuls les rares mages dotés de talent et de savoir peuvent réellement manipuler l’énergie magique.<br />Lorsque le personnage souhaite lancer un sort, il doit réussir à canaliser assez d’énergie en lui : c’est le seuil de puissance du sort. Pour générer cette énergie, le mage additionne son intelligence, un D20 ainsi qu’un nombre de points de concentrations au choix. (Le mage choisit ce nombre avant de lancer son dé).<br />Si ce score est inférieur au seuil de puissance du sort, le mage n’a pas réussi à se concentrer assez rapidement et le sort est perdu (l’action est perdue et les points de concentrations aussi). Sinon, le sort est lancé avec succès.<br />Si de plus le score est supérieur au seuil critique du sort, celui-ci est lancé à sa puissance maximale.<br />Enfin si le sort lancé est un projectile magique, le mage doit également toucher sa cible avec. Le principe est identique à l’attaque à distance (test d’Adresse, bonus/malus, …) à la différence près que le mage utilise son Intelligence et non son Adresse pour effectuer le test.<br />Pour lancer un sort, le personnage a besoin de parler et doit pouvoir faire suffisamment de mouvements. Ainsi, s’il se retrouve ligoté ou bâillonné, il ne pourra utiliser cette compétence.<br />Le mage ne peut dépenser plus de points de Concentration que son score d’Intelligence.</e>
+				<e>Bien que cette action semble accessible à tous les individus, seuls les rares mages dotés de talent et de savoir peuvent réellement manipuler l’énergie magique.<br />Lorsque le personnage souhaite lancer un sort, il doit réussir à canaliser assez d’énergie en lui : c’est le seuil de puissance du sort. Pour générer cette énergie, le mage additionne son intelligence et un D20. Il peut aussi ajouter un nombre de points de concentrations au choix. (Le mage choisit ce nombre avant de lancer son dé). Chaque point de Concentration dépensé donne un bonus de +5 au total<br />Si ce score est inférieur au seuil de puissance du sort, le mage n’a pas réussi à se concentrer assez rapidement et le sort est perdu (l’action est perdue et les points de concentrations aussi). Sinon, le sort est lancé avec succès.<br />Si de plus le score est supérieur au seuil critique du sort, celui-ci est lancé à sa puissance maximale.<br /><br />Enfin si le sort lancé est un projectile magique, le mage doit également toucher sa cible avec. Le principe est identique à l’attaque à distance (test d’Adresse, bonus/malus, …) à la différence près que le mage utilise son Intelligence et non son Adresse pour effectuer le test.<br />Pour lancer un sort, le personnage a besoin de parler et doit pouvoir faire suffisamment de mouvements. Ainsi, s’il se retrouve ligoté ou bâillonné, il ne pourra utiliser cette compétence.<br /><br />
+				Certains sorts doivent être canalisés avant d'être lancés. La durée de canalisation est une durée durant laquelle le mage ne doit pas être interrompu (déplacement, attaque subie, ...). A la fin de la canalisation, le sort s'applique normalement (effets, temps de réaction, temps d'execution).</e>
 			</p>
-			<p>
+			<p class="niv2">
 				<n>Niv. 2</n><s title="Souffle">0</s><c title="Concentration">*</c><r title="Exécution">5</r>
-				<e>Pour les projectiles magiques, la moitié des points de Concentration dépensés est utilisée en bonus pour déterminer si le projectile atteint sa cible.</e>
+				<e>Pour les projectiles magiques, les points de Concentration dépensés sont utilisés en bonus pour déterminer si le projectile atteint sa cible.</e>
 			</p>
-			<p>
+			<p class="niv3">
 				<n>Niv. 3</n><s title="Souffle">0</s><c title="Concentration">*</c><r title="Exécution">5</r>
-				<e>Après avoir jeté son dé, le mage peut décider de rajouter des points de concentration pour réussir à lancer le sort. Chaque point ajouté à la puissance du sort coûte 2 points de Concentration.<br />Là encore, le mage ne peut dépenser plus de points de Concentration que son score d’Intelligence.</e>
+				<e>Après avoir jeté son dé, le mage peut décider de rajouter des points de concentration pour réussir à lancer le sort. Chaque point ajouté ne donne alors qu'un bonus de 1 au total.</e>
 			</p>
-			<p>
+			<p class="niv4">
 				<n>Niv. 4</n><s title="Souffle">0</s><c title="Concentration">*</c><r title="Exécution">4</r>
 				<e>Le temps d'exécution est réduit de 1.</e>
 			</p>
-			<p>
+			<p class="niv5">
 				<n>Niv. 5</n><s title="Souffle">0</s><c title="Concentration">*</c><r title="Exécution">4</r>
 				<e>Lorsqu’il lance un sort en seuil critique, le personnage peut décider de lancer le sort sans seuil critique mais avec un temps d'exécution réduit de 1.</e>
 			</p>
-			<p>
+			<p class="niv6">
 				<n>Niv. 6+</n><s title="Souffle">0</s><c title="Concentration">*</c><r title="Exécution">4</r>
 				<e>Le personnage gagne un bonus de +2 par niveau pour lancer un sort.</e>
 			</p>
 		</div>
 		
 		<div class="comp">
-			<h4>Résister à un sort</h4>
-			<span class="comp_req">Action innée</span>
-			<p>
-				<n>Niv. 1</n><s title="Souffle">0</s><c title="Concentration">*</c><r title="Exécution">*</r>
-				<e>Se sentant affecté par les effets d’un sort, le personnage peut décider de lui résister. Comme pour la défense, il possède d’une part une résistance passive qui est utilisée dans toutes les situations et d’autre part une résistance active plus efficace mais plus contraignante. <br />Lorsqu’un sort autre qu’un projectile magique atteint le personnage, si la puissance du sort (Intelligence du lanceur  + D20 + points de concentration) est inférieure à l’Intelligence de la cible, celle-ci résiste à ses effets. Sinon, le personnage peut dépenser une action (temps d'éxécution 1 à ajouter au temps de récupération) et focaliser son attention à se protéger (il doit le décider avant que l’attaquant jette son dé). Dans ce cas, il additionne son Intelligence, un D20 et un nombre de points de Concentration de son choix (Attention ce nombre ne peut être supérieur à son score d’Intelligence.). Si le résultat est supérieur à la puissance du sort, ses effets sont contrés.</e>
+			<h4 class="nom">Résister à un sort</h4>
+			<span class="specifs"><span class="comp_req">Action innée</span></span>
+			<p class="niv1">
+				<n>Niv. 1</n><s title="Souffle">0</s><c title="Concentration">*</c><r title="Exécution">1</r>
+				<e>Se sentant affecté par les effets d’un sort, le personnage peut décider de lui résister. Le personnage peut dépenser une action (temps d'éxécution 1 à ajouter au temps de récupération) et focaliser son attention à se protéger (il doit le décider avant que l’attaquant jette son dé). Dans ce cas, il additionne son Intelligence, un D20 et un nombre de points de Concentration de son choix. Chaque point de Concentration donne un bonus de +5 au total. Si le résultat est supérieur au total du lanceur du sort, ses effets sont annulés.</e>
 			</p>
-			<p>
-				<n>Niv. 2</n><s title="Souffle">0</s><c title="Concentration">*</c><r title="Exécution">*</r>
-				<e>Lorsqu’il utilise ses points de Concentration pour résister aux effets d’un sort, leur nombre n’est plus limité que par le double de l’Intelligence.</e>
+			<p class="niv2">
+				<n>Niv. 2</n><s title="Souffle">0</s><c title="Concentration">*</c><r title="Exécution">1</r>
+				<e>Le personnage peut attendre le résultat du jet de l'attaquant avant de décider s'il résiste activement. S'il attend, la défense subira un malus de -5.</e>
 			</p>
-			<p>
-				<n>Niv. 3</n><s title="Souffle">0</s><c title="Concentration">*</c><r title="Exécution">*</r>
-				<e>Lorsqu’il tente de résister passivement à un sort, le personnage ajoute un D20 à son Intelligence.</e>
+			<p class="niv3">
+				<n>Niv. 3</n><s title="Souffle">0</s><c title="Concentration">*</c><r title="Exécution">1</r>
+				<e>Le personnage peut désormais annuler les projectiles magiques avec un malus de -10 (à noter que contrairement aux sorts "classiques" le personnage n'a pas besoin d'être la cible directe du sort pour y résister).</e>
 			</p>
-			<p>
-				<n>Niv. 4</n><s title="Souffle">0</s><c title="Concentration">*</c><r title="Exécution">*</r>
-				<e>Le personnage peut attendre le résultat du jet de l'attaquant avant de décider s'il résiste activement. S'il attend, la défense subira un malus de -4.</e>
+			<p class="niv4">
+				<n>Niv. 4</n><s title="Souffle">0</s><c title="Concentration">*</c><r title="Exécution">0</r>
+				<e>Résister à un sort est encore plus rapide</e>
 			</p>
-			<p>
-				<n>Niv. 5</n><s title="Souffle">0</s><c title="Concentration">*</c><r title="Exécution">*</r>
-				<e>Le personnage peut utiliser son souffle à la place de la concentration pour résister au sort.</e>
+			<p class="niv5">
+				<n>Niv. 5</n><s title="Souffle">0</s><c title="Concentration">*</c><r title="Exécution">0</r>
+				<e></e>
 			</p>
-			<p>
-				<n>Niv. 6+</n><s title="Souffle">0</s><c title="Concentration">*</c><r title="Exécution">*</r>
+			<p class="niv6">
+				<n>Niv. 6+</n><s title="Souffle">0</s><c title="Concentration">*</c><r title="Exécution">0</r>
 				<e>Toutes les défenses contre les sorts gagnent un bonus de +2 par niveau.</e>
 			</p>
 		</div>
@@ -382,235 +398,320 @@
 		<h3 class="comp_cat">Vivacité</h3>
 		
 		<div class="comp">
-			<h4>Feinte</h4>
-			<span class="comp_req">Apprentissage (-2)</span>, <span class="comp_spec">Profil rapide</span>
-			<p>
-				<n>Niv. 1</n><s title="Souffle">5</s><c title="Concentration">5</c><r title="Exécution">+0</r>
-				<e>Le personnage change au dernier moment la trajectoire de son attaque pour tromper son adversaire. Le coup gagne un bonus de +4 en attaque. En contrepartie, le personnage ne peut utiliser toute sa force et perd 4 points de dégâts.</e>
+			<h4 class="nom">Feinte</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Vivacité, 15)</span>, <span class="comp_spec">Profil rapide</span></span>
+			<p class="niv1">
+				<n>Niv. 1</n><s title="Souffle">3</s><c title="Concentration">3</c><r title="Exécution">4</r>
+				<e>Le personnage change au dernier moment la trajectoire de son attaque pour tromper son adversaire. Le coup gagne un bonus de +4 en attaque.</e>
 			</p>
-			<p>
-				<n>Niv. 2</n><s title="Souffle">5</s><c title="Concentration">5</c><r title="Exécution">+0</r>
+			<p class="niv2">
+				<n>Niv. 2</n><s title="Souffle">3</s><c title="Concentration">3</c><r title="Exécution">4</r>
 				<e>Le coup gagne un bonus de +5 en attaque.</e>
 			</p>
-			<p>
-				<n>Niv. 3</n><s title="Souffle">5</s><c title="Concentration">5</c><r title="Exécution">+0</r>
-				<e>L'adversaire doit réussir un test de vivacité avant de décider s'il tente une réaction façe à l'attaque.</e>
+			<p class="niv3">
+				<n>Niv. 3</n><s title="Souffle">3</s><c title="Concentration">3</c><r title="Exécution">4</r>
+				<e>L'adversaire doit réussir un test opposé sur la Vivacité avant de décider s'il tente une réaction façe à l'attaque.</e>
 			</p>
-			<p>
-				<n>Niv. 4</n><s title="Souffle">5</s><c title="Concentration">5</c><r title="Exécution">+0</r>
+			<p class="niv4">
+				<n>Niv. 4</n><s title="Souffle">3</s><c title="Concentration">3</c><r title="Exécution">4</r>
 				<e>Le coup gagne un bonus de +6 en attaque</e>
 			</p>
-			<p>
-				<n>Niv. 5</n><s title="Souffle">5</s><c title="Concentration">5</c><r title="Exécution">+0</r>
+			<p class="niv5">
+				<n>Niv. 5</n><s title="Souffle">3</s><c title="Concentration">3</c><r title="Exécution">4</r>
 				<e>Le test de vivacité adverse subit un malus de -5.</e>
 			</p>
-			<p>
-				<n>Niv. 6+</n><s title="Souffle">5</s><c title="Concentration">5</c><r title="Exécution">+0</r>
+			<p class="niv6">
+				<n>Niv. 6+</n><s title="Souffle">3</s><c title="Concentration">3</c><r title="Exécution">4</r>
 				<e>Chaque niveau augmente le bonus en attaque de 1.</e>
 			</p>
 		</div>
 		
 		<div class="comp">
-			<h4>Position défensive</h4>
-			<span class="comp_req">Apprentissage (-4)</span>
-			<p>
+			<h4 class="nom">Acharnement</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Vivacité, 20)</span>, <span class="comp_spec">Profil rapide</span></span>
+			<p class="niv1">
+				<n>Niv. 1</n><s title="Souffle">2</s><c title="Concentration">2</c><r title="Exécution">4</r>
+				<e>Une attaque plus faible mais qui en appele d'autres. Ce coup subit un malus de -3 aux dégâts mais tant que cette compétence est enchainée (les esquives n'interrompent pas la série), chaque coup gagne un bonus de +3 au dégâts. Chaque coup subi inflige un malus de -3 aux dégâts.</e>
+			</p>
+			<p class="niv2">
+				<n>Niv. 2</n><s title="Souffle">2</s><c title="Concentration">2</c><r title="Exécution">4</r>
+				<e>Le coup gagne un bonus de +5 en attaque.</e>
+			</p>
+			<p class="niv3">
+				<n>Niv. 3</n><s title="Souffle">2</s><c title="Concentration">2</c><r title="Exécution">4</r>
+				<e>Si l'ennemi est mis hors combat suite à une attaque d'acharnement, le personnage peut reporter sa série sur un nouvel ennemi à portée en ne perdant qu'un point dans la série.</e>
+			</p>
+			<p class="niv4">
+				<n>Niv. 4</n><s title="Souffle">2</s><c title="Concentration">2</c><r title="Exécution">4</r>
+				<e>Le coup gagne un bonus de +6 en attaque</e>
+			</p>
+			<p class="niv5">
+				<n>Niv. 5</n><s title="Souffle">2</s><c title="Concentration">2</c><r title="Exécution">4</r>
+				<e></e>
+			</p>
+			<p class="niv6">
+				<n>Niv. 6+</n><s title="Souffle">2</s><c title="Concentration">2</c><r title="Exécution">4</r>
+				<e>Chaque niveau augmente le bonus en attaque de 1.</e>
+			</p>
+		</div>
+		
+		<div class="comp">
+			<h4 class="nom">Position défensive</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Vivacité, 20)</span></span>
+			<p class="niv1">
 				<n>Niv. 1</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>En adoptant cette posture, le personnage se tourne résoluement vers la défense. Pendant 3 tours il gagne un bonus +1 à ses parades et esquives au prix d'un malus de -1 en attaque. Passer en position défensive ne prend pas de temps mais doit être déclaré en début d'action du personnage.</e>
 			</p>
-			<p>
+			<p class="niv2">
 				<n>Niv. 2</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Les bonus et malus passent à +2/-2.</e>
 			</p>
-			<p>
+			<p class="niv3">
 				<n>Niv. 3</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Les bonus et malus passent à +3/-3.</e>
 			</p>
-			<p>
+			<p class="niv4">
 				<n>Niv. 4</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Les bonus et malus passent à +4/-4.</e>
 			</p>
-			<p>
+			<p class="niv5">
 				<n>Niv. 5</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Les bonus et malus passent à +5/-5.</e>
 			</p>
-			<p>
+			<p class="niv6">
 				<n>Niv. 6+</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Les bonus et malus augmentent de +1/-1 par niveau.</e>
 			</p>
 		</div>
 		
 		<div class="comp">
-			<h4>Replacement stratégique</h4>
-			<span class="comp_req">Apprentissage (-4)</span>
-			<p>
-				<n>Niv. 1</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
-				<e>Au début de son tour, le personnage peut réaliser un mouvement gratuit de 1 mètre dans la direction d'un allié engagé au corps à corps.</e>
+			<h4 class="nom">Attaque par surprise</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Vivacité, 20)</span>, <span class="comp_spec">Profil rapide</span></span>
+			<p class="niv1">
+				<n>Niv. 1</n><s title="Souffle">2</s><c title="Concentration">3</c><r title="Exécution">4</r>
+				<e>Ennemi de profil : +2 dégâts<br />Ennemi de dos : +4  dégâts</e>
 			</p>
-			<p>
+			<p class="niv2">
+				<n>Niv. 2</n><s title="Souffle">2</s><c title="Concentration">3</c><r title="Exécution">4</r>
+				<e>Les bonus et malus passent à +3/+6.</e>
+			</p>
+			<p class="niv3">
+				<n>Niv. 3</n><s title="Souffle">2</s><c title="Concentration">3</c><r title="Exécution">4</r>
+				<e>Ignore l'armure</e>
+			</p>
+			<p class="niv4">
+				<n>Niv. 4</n><s title="Souffle">2</s><c title="Concentration">3</c><r title="Exécution">4</r>
+				<e>Les bonus et malus passent à +4/+8.</e>
+			</p>
+			<p class="niv5">
+				<n>Niv. 5</n><s title="Souffle">2</s><c title="Concentration">3</c><r title="Exécution">4</r>
+				<e></e>
+			</p>
+			<p class="niv6">
+				<n>Niv. 6+</n><s title="Souffle">2</s><c title="Concentration">3</c><r title="Exécution">4</r>
+				<e></e>
+			</p>
+		</div>
+		
+		<div class="comp">
+			<h4 class="nom">Replacement stratégique</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Vivacité, 20)</span></span>
+			<p class="niv1">
+				<n>Niv. 1</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
+				<e>Au début de son tour, le personnage peut réaliser un mouvement gratuit de 1 mètre dans la direction d'un allié engagé au corps à corps (ce mouvement peut être combiné avec le déplacement gratuit de courir ou une course normale).</e>
+			</p>
+			<p class="niv2">
 				<n>Niv. 2</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Le mouvement peut se faire dans n'importe quelle direction, mais ne peut être déclenché que si un allié est engagé.</e>
 			</p>
-			<p>
+			<p class="niv3">
 				<n>Niv. 3</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Le mouvement passe à 2m.</e>
 			</p>
-			<p>
+			<p class="niv4">
 				<n>Niv. 4</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Si ce mouvement entraine une rupture d'un combat, l'adversaire ne peut en profiter pour placer une attaque, tenter de le retenir, ...</e>
 			</p>
-			<p>
+			<p class="niv5">
 				<n>Niv. 5</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e></e>
 			</p>
-			<p>
+			<p class="niv6">
 				<n>Niv. 6+</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e></e>
 			</p>
 		</div>
 		
 		<div class="comp">
-			<h4>Contre attaque</h4>
-			<span class="comp_req">Apprentissage (-6)</span>, <span class="comp_spec">Profil rapide</span>
-			<p>
-				<n>Niv. 1</n><s title="Souffle">0</s><c title="Concentration">5</c><r title="Exécution">-</r>
-				<e>Avant de tenter une parade ou une esquive, le personnage annonce qu'il va contre-attaquer. Si la défense (subissant un malus de -5) est réussie, il pourra porter un coup rapide qui ne pourra pas être défendu par son adversaire.</e>
+			<h4 class="nom">Coup au vol</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Vivacité, 30)</span>, <span class="comp_spec">Profil rapide</span></span>
+			<p class="niv1">
+				<n>Niv. 1</n><s title="Souffle">3</s><c title="Concentration">3</c><r title="Exécution">7</r>
+				<e>Le personnage place une attaque au cours de son déplacement pour se retrouver immédiatement hors de portée. Le personnage réalise un déplacement de 8m au cours duquel il place une attaque à un adversaire sur la trajectoire. Cette attaque sera alors réduit de -5 en attaque et -5 en dégâts. Le déplacement ne permet pas de passer à travers les unités.</e>
 			</p>
-			<p>
-				<n>Niv. 2</n><s title="Souffle">0</s><c title="Concentration">5</c><r title="Exécution">-</r>
+			<p class="niv2">
+				<n>Niv. 2</n><s title="Souffle">3</s><c title="Concentration">3</c><r title="Exécution">7</r>
+				<e>Les malus en dégâts et attaque sont réduis à -3.</e>
+			</p>
+			<p class="niv3">
+				<n>Niv. 3</n><s title="Souffle">3</s><c title="Concentration">3</c><r title="Exécution">7</r>
 				<e></e>
 			</p>
-			<p>
-				<n>Niv. 3</n><s title="Souffle">0</s><c title="Concentration">5</c><r title="Exécution">-</r>
+			<p class="niv4">
+				<n>Niv. 4</n><s title="Souffle">3</s><c title="Concentration">3</c><r title="Exécution">7</r>
+				<e>Le personnage peut attaquer une deuxième cible sur la trajectoire portant alors les malus sur les deux attaques à -5 en attaque et dégâts.</e>
+			</p>
+			<p class="niv5">
+				<n>Niv. 5</n><s title="Souffle">3</s><c title="Concentration">3</c><r title="Exécution">7</r>
+				<e>Les malus descendent à -3 dans le cas des 2 attaques et sont annulés dans le cas d'une simple attaque.</e>
+			</p>
+			<p class="niv6">
+				<n>Niv. 6+</n><s title="Souffle">3</s><c title="Concentration">3</c><r title="Exécution">7</r>
+				<e>Chaque niveau augmente le bonus en attaque et dégâts de 1.</e>
+			</p>
+		</div>
+		
+		<div class="comp">
+			<h4 class="nom">Contre attaque</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Vivacité, 30)</span>, <span class="comp_spec">Profil rapide</span></span>
+			<p class="niv1">
+				<n>Niv. 1</n><s title="Souffle">0</s><c title="Concentration">+1</c><r title="Exécution">-</r>
+				<e>Avant de tenter une parade ou une esquive, le personnage annonce qu'il va contre-attaquer. Si la défense (subissant un malus de -5) est réussie, il pourra enchainer sur un coup rapide. Le temps de l'action sera égal à la réactivité du personnage + tps défense + tps coup rapide.</e>
+			</p>
+			<p class="niv2">
+				<n>Niv. 2</n><s title="Souffle">0</s><c title="Concentration">+1</c><r title="Exécution">-</r>
 				<e></e>
 			</p>
-			<p>
-				<n>Niv. 4</n><s title="Souffle">0</s><c title="Concentration">5</c><r title="Exécution">-</r>
+			<p class="niv3">
+				<n>Niv. 3</n><s title="Souffle">0</s><c title="Concentration">+1</c><r title="Exécution">-</r>
 				<e></e>
 			</p>
-			<p>
-				<n>Niv. 5</n><s title="Souffle">0</s><c title="Concentration">5</c><r title="Exécution">-</r>
+			<p class="niv4">
+				<n>Niv. 4</n><s title="Souffle">0</s><c title="Concentration">+1</c><r title="Exécution">-</r>
 				<e></e>
 			</p>
-			<p>
-				<n>Niv. 6+</n><s title="Souffle">0</s><c title="Concentration">5</c><r title="Exécution">-</r>
+			<p class="niv5">
+				<n>Niv. 5</n><s title="Souffle">0</s><c title="Concentration">+1</c><r title="Exécution">-</r>
+				<e></e>
+			</p>
+			<p class="niv6">
+				<n>Niv. 6+</n><s title="Souffle">0</s><c title="Concentration">+1</c><r title="Exécution">-</r>
 				<e></e>
 			</p>
 		</div>
 		
 		<div class="comp">
-			<h4>Double coup</h4>
-			<span class="comp_req">Apprentissage (-4)</span>, <span class="comp_spec">Profil rapide</span>
-			<p>
-				<n>Niv. 1</n><s title="Souffle">10</s><c title="Concentration">2</c><r title="Exécution">6</r>
-				<e>Equipé de deux armes de corps à corps, le personnage place successivement une attaque avec chacune d’elles. Les deux attaques sont distinctes (défenses différentes, localisations différentes, ...) mais doivent cibler la même cible. Chaque attaque aura un malus de -5 en attaque et -5 dégâts</e>
+			<h4 class="nom">Double coup</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Vivacité, 20)</span>, <span class="comp_spec">Profil rapide</span></span>
+			<p class="niv1">
+				<n>Niv. 1</n><s title="Souffle">4</s><c title="Concentration">2</c><r title="Exécution">7</r>
+				<e>Equipé de deux armes de corps à corps, le personnage place successivement une attaque avec chacune d’elles. Les deux attaques sont distinctes (défenses différentes, localisations différentes, ...) mais doivent cibler la même cible. Chaque attaque aura un malus de -5 en attaque et -3 dégâts</e>
 			</p>
-			<p>
-				<n>Niv. 2</n><s title="Souffle">10</s><c title="Concentration">2</c><r title="Exécution">6</r>
-				<e>Les malus descendent à -3.</e>
+			<p class="niv2">
+				<n>Niv. 2</n><s title="Souffle">4</s><c title="Concentration">2</c><r title="Exécution">7</r>
+				<e>Les malus descendent à -3/-2.</e>
 			</p>
-			<p>
-				<n>Niv. 3</n><s title="Souffle">10</s><c title="Concentration">2</c><r title="Exécution">4</r>
-				<e>Le temps d'exécution est réduit de 2.</e>
+			<p class="niv3">
+				<n>Niv. 3</n><s title="Souffle">4</s><c title="Concentration">2</c><r title="Exécution">6</r>
+				<e>Le temps d'exécution est réduit de 1.</e>
 			</p>
-			<p>
-				<n>Niv. 4</n><s title="Souffle">10</s><c title="Concentration">2</c><r title="Exécution">4</r>
+			<p class="niv4">
+				<n>Niv. 4</n><s title="Souffle">4</s><c title="Concentration">2</c><r title="Exécution">6</r>
 				<e>Les deux attaques peuvent être réparties sur deux cibles à portée.</e>
 			</p>
-			<p>
-				<n>Niv. 5</n><s title="Souffle">10</s><c title="Concentration">2</c><r title="Exécution">4</r>
+			<p class="niv5">
+				<n>Niv. 5</n><s title="Souffle">4</s><c title="Concentration">2</c><r title="Exécution">6</r>
 				<e>Les deux attaques ne subissent plus de malus.</e>
 			</p>
-			<p>
-				<n>Niv. 6+</n><s title="Souffle">10</s><c title="Concentration">2</c><r title="Exécution">4</r>
+			<p class="niv6">
+				<n>Niv. 6+</n><s title="Souffle">4</s><c title="Concentration">2</c><r title="Exécution">6</r>
 				<e>Chaque niveau donne un bonus de +1 en attaque.</e>
 			</p>
 		</div>
 		
-		
-		
 		<div class="comp">
-			<h4>Rush</h4>
-			<span class="comp_req">Apprentissage (-4)</span>, <span class="comp_spec">Profil rapide</span>
-			<p>
-				<n>Niv. 1</n><s title="Souffle">5</s><c title="Concentration">0</c><r title="Exécution">4</r>
+			<h4 class="nom">Rush</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Vivacité, 20)</span>, <span class="comp_spec">Profil rapide</span></span>
+			<p class="niv1">
+				<n>Niv. 1</n><s title="Souffle">3</s><c title="Concentration">0</c><r title="Exécution">3</r>
 				<e>Le personnage se précipite sur son adversaire pour le surprendre. Il gagne un bonus de +4 en attaque mais ne pourra placer son attaque avec précision. Si l’attaquant touche, il jette 2 dés de localisation et laisse le défenseur choisir lequel utiliser.</e>
 			</p>
-			<p>
-				<n>Niv. 2</n><s title="Souffle">5</s><c title="Concentration">0</c><r title="Exécution">4</r>
+			<p class="niv2">
+				<n>Niv. 2</n><s title="Souffle">3</s><c title="Concentration">0</c><r title="Exécution">3</r>
 				<e>L'attaque gagne un bonus de +5.</e>
 			</p>
-			<p>
-				<n>Niv. 3</n><s title="Souffle">5</s><c title="Concentration">0</c><r title="Exécution">4</r>
+			<p class="niv3">
+				<n>Niv. 3</n><s title="Souffle">3</s><c title="Concentration">0</c><r title="Exécution">3</r>
 				<e>Cette attaque peut être combinée avec la charge à la place du coup puissant.</e>
 			</p>
-			<p>
-				<n>Niv. 4</n><s title="Souffle">5</s><c title="Concentration">0</c><r title="Exécution">4</r>
+			<p class="niv4">
+				<n>Niv. 4</n><s title="Souffle">3</s><c title="Concentration">0</c><r title="Exécution">3</r>
 				<e>L'attaque gagne un bonus de +6.</e>
 			</p>
-			<p>
-				<n>Niv. 5</n><s title="Souffle">5</s><c title="Concentration">0</c><r title="Exécution">4</r>
+			<p class="niv5">
+				<n>Niv. 5</n><s title="Souffle">3</s><c title="Concentration">0</c><r title="Exécution">3</r>
 				<e>L’attaquant lance désormais un seul dé pour la localisation. Le défenseur peut alors décider de relancer ou non ce dé. Dans ce cas, le deuxième résultat sera appliqué.</e>
 			</p>
-			<p>
-				<n>Niv. 6+</n><s title="Souffle">5</s><c title="Concentration">0</c><r title="Exécution">4</r>
+			<p class="niv6">
+				<n>Niv. 6+</n><s title="Souffle">3</s><c title="Concentration">0</c><r title="Exécution">3</r>
 				<e>Chaque niveau augmente le bonus en attaque de 1.</e>
 			</p>
 		</div>
 		
 		<div class="comp">
-			<h4>Déstabilisation</h4>
-			<span class="comp_req">Apprentissage (-4)</span>, <span class="comp_spec">Profil rapide</span>
-			<p>
-				<n>Niv. 1</n><s title="Souffle">5</s><c title="Concentration">0</c><r title="Exécution">1</r>
-				<e>En utilisant cette technique, le personnage cherche à mettre en péril l’équilibre de son adversaire. Pour cela il devra gagner un duel de caractéristiques basé sur la vivacité. + En cas de succès, la cible est déstabilisée pour 1D3 tours.</e>
+			<h4 class="nom">Déstabilisation</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Vivacité, 20)</span>, <span class="comp_spec">Profil rapide</span></span>
+			<p class="niv1">
+				<n>Niv. 1</n><s title="Souffle">3</s><c title="Concentration">0</c><r title="Exécution">1</r>
+				<e>En utilisant cette technique, le personnage cherche à mettre en péril l’équilibre de son adversaire. Pour cela il devra gagner un duel de caractéristiques basé sur la Vivacité. En cas de succès, la cible est déstabilisée pour 1D3 tours.</e>
 			</p>
-			<p>
-				<n>Niv. 2</n><s title="Souffle">5</s><c title="Concentration">0</c><r title="Exécution">1</r>
+			<p class="niv2">
+				<n>Niv. 2</n><s title="Souffle">3</s><c title="Concentration">0</c><r title="Exécution">1</r>
+				<e>Les prochains dégâts physiques seront augmentés de +5.</e>
+			</p>
+			<p class="niv3">
+				<n>Niv. 3</n><s title="Souffle">3</s><c title="Concentration">0</c><r title="Exécution">1</r>
 				<e></e>
 			</p>
-			<p>
-				<n>Niv. 3</n><s title="Souffle">5</s><c title="Concentration">0</c><r title="Exécution">1</r>
+			<p class="niv4">
+				<n>Niv. 4</n><s title="Souffle">3</s><c title="Concentration">0</c><r title="Exécution">1</r>
 				<e></e>
 			</p>
-			<p>
-				<n>Niv. 4</n><s title="Souffle">5</s><c title="Concentration">0</c><r title="Exécution">1</r>
+			<p class="niv5">
+				<n>Niv. 5</n><s title="Souffle">3</s><c title="Concentration">0</c><r title="Exécution">1</r>
 				<e></e>
 			</p>
-			<p>
-				<n>Niv. 5</n><s title="Souffle">5</s><c title="Concentration">0</c><r title="Exécution">1</r>
-				<e></e>
-			</p>
-			<p>
-				<n>Niv. 6+</n><s title="Souffle">5</s><c title="Concentration">0</c><r title="Exécution">1</r>
+			<p class="niv6">
+				<n>Niv. 6+</n><s title="Souffle">3</s><c title="Concentration">0</c><r title="Exécution">1</r>
 				<e></e>
 			</p>
 		</div>
-			
+		
 		<div class="comp">
-			<h4>Interception</h4>
-			<span class="comp_req">Apprentissage (-8)</span>, <span class="comp_spec">Profil rapide</span>
-			<p>
-				<n>Niv. 1</n><s title="Souffle">5</s><c title="Concentration">5</c><r title="Exécution">4</r>
-				<e>Cette attaque peut être placée à la place d’une défense. Le personnage tente de prendre de vitesse son adversaire et porte un coup au moment où ce dernier prépare son attaque. L’interception est réussie si le personnage gagne un duel de Vivacité et si son attaque (malus -5) à un meilleur score que celle de son adversaire. Si l'interception est réussie, l'attaque de l'adversaire est perdue et il ne peut tenter de se défendre.</e>
+			<h4 class="nom">Acrobate</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Vivacité, 15)</span></span>
+			<p class="niv1">
+				<n>Niv. 1</n><s title="Souffle">3</s><c title="Concentration">0</c><r title="Exécution">1</r>
+				<e>Lorsqu'il rate un test d'adresse à cause d'un terrain difficile, il peut relancer le test.</e>
 			</p>
-			<p>
-				<n>Niv. 2</n><s title="Souffle">5</s><c title="Concentration">5</c><r title="Exécution">4</r>
-				<e>Les malus à l'attaque descendent à -4.</e>
-			</p>
-			<p>
-				<n>Niv. 3</n><s title="Souffle">5</s><c title="Concentration">5</c><r title="Exécution">4</r>
-				<e>Les malus à l'attaque descendent à -3.</e>
-			</p>
-			<p>
-				<n>Niv. 4</n><s title="Souffle">5</s><c title="Concentration">5</c><r title="Exécution">4</r>
+			<p class="niv2">
+				<n>Niv. 2</n><s title="Souffle">3</s><c title="Concentration">0</c><r title="Exécution">1</r>
 				<e></e>
 			</p>
-			<p>
-				<n>Niv. 5</n><s title="Souffle">5</s><c title="Concentration">5</c><r title="Exécution">4</r>
+			<p class="niv3">
+				<n>Niv. 3</n><s title="Souffle">3</s><c title="Concentration">0</c><r title="Exécution">1</r>
 				<e></e>
 			</p>
-			<p>
-				<n>Niv. 6+</n><s title="Souffle">5</s><c title="Concentration">5</c><r title="Exécution">4</r>
+			<p class="niv4">
+				<n>Niv. 4</n><s title="Souffle">3</s><c title="Concentration">0</c><r title="Exécution">1</r>
+				<e></e>
+			</p>
+			<p class="niv5">
+				<n>Niv. 5</n><s title="Souffle">3</s><c title="Concentration">0</c><r title="Exécution">1</r>
+				<e></e>
+			</p>
+			<p class="niv6">
+				<n>Niv. 6+</n><s title="Souffle">3</s><c title="Concentration">0</c><r title="Exécution">1</r>
 				<e></e>
 			</p>
 		</div>
@@ -620,816 +721,965 @@
 		<h3 class="comp_cat">Adresse</h3>
 		
 		<div class="comp">
-			<h4>Coup croisé</h4>
-			<span class="comp_req">Apprentissage (-4)</span>, <span class="comp_spec">Profil précis</span>
-			<p>
-				<n>Niv. 1</n><s title="Souffle">10</s><c title="Concentration">5</c><r title="Exécution">7</r>
+			<h4 class="nom">Maitrise de l'arme XXX</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Adresse, 15)</span></span>
+			<p class="niv1">
+				<n>Niv. 1</n><s title="Souffle">-</s><c title="Concentration">-</c><r title="Exécution">-</r>
+				<e>Le personnage choisit une arme (dague, arc long, ...) qu'il va maitriser au maximum. Il gagne un bonus de +1 aux dégâts à chaque fois qu'il utilise cette arme. De plus il peut s'entrainer à raison de séances d'une heure pour continuer son amélioration. Une heure d'entrainement génère 1 point de Fatigue. Au bout de 5h d'entrainement, le personnage gagne un nouveau +1 aux dégâts avec l'arme choisie. Le personnage peut choisir plusieurs fois cette compétence en prenant une nouvelle arme à chaque fois.</e>
+			</p>
+			<p class="niv2">
+				<n>Niv. 2</n><s title="Souffle">-</s><c title="Concentration">-</c><r title="Exécution">-</r>
+				<e>+1 aux dégâts. 10h d'entraienemt donne un nouveau +1.</e>
+			</p>
+			<p class="niv3">
+				<n>Niv. 3</n><s title="Souffle">-</s><c title="Concentration">-</c><r title="Exécution">-</r>
+				<e>+1 aux dégâts. 20h d'entraienemt donne un nouveau +1.</e>
+			</p>
+			<p class="niv4">
+				<n>Niv. 4</n><s title="Souffle">-</s><c title="Concentration">-</c><r title="Exécution">-</r>
+				<e>+1 aux dégâts. 30h d'entraienemt donne un nouveau +1.</e>
+			</p>
+			<p class="niv5">
+				<n>Niv. 5</n><s title="Souffle">-</s><c title="Concentration">-</c><r title="Exécution">-</r>
+				<e>+1 aux dégâts. 50h d'entraienemt donne un nouveau +1.</e>
+			</p>
+			<p class="niv6">
+				<n>Niv. 6+</n><s title="Souffle">-</s><c title="Concentration">-</c><r title="Exécution">-</r>
+				<e>+1 aux dégâts.</e>
+			</p>
+		</div>
+		
+		<div class="comp">
+			<h4 class="nom">Coup croisé</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Adresse, 20)</span>, <span class="comp_spec">Profil précis</span></span>
+			<p class="niv1">
+				<n>Niv. 1</n><s title="Souffle">4</s><c title="Concentration">3</c><r title="Exécution">7</r>
 				<e>Avec deux armes, le personnage porte une attaque simultanée des deux côtés de son adversaire. C'est l'arme principale qui est considérée comme portant l'attaque (pas de jet de dé pour l'arme secondaire). Si l'adversaire veut parer le coup, il doit réaliser une parade pour chaque arme, par contre il peut esquiver les deux coups en une esquive. L'attaque aura un malus de -5 en attaque et -5 dégâts</e>
 			</p>
-			<p>
-				<n>Niv. 2</n><s title="Souffle">10</s><c title="Concentration">5</c><r title="Exécution">7</r>
+			<p class="niv2">
+				<n>Niv. 2</n><s title="Souffle">4</s><c title="Concentration">3</c><r title="Exécution">7</r>
 				<e></e>
 			</p>
-			<p>
-				<n>Niv. 3</n><s title="Souffle">10</s><c title="Concentration">5</c><r title="Exécution">7</r>
+			<p class="niv3">
+				<n>Niv. 3</n><s title="Souffle">4</s><c title="Concentration">3</c><r title="Exécution">7</r>
 				<e></e>
 			</p>
-			<p>
-				<n>Niv. 4</n><s title="Souffle">10</s><c title="Concentration">5</c><r title="Exécution">6</r>
+			<p class="niv4">
+				<n>Niv. 4</n><s title="Souffle">4</s><c title="Concentration">3</c><r title="Exécution">6</r>
 				<e></e>
 			</p>
-			<p>
-				<n>Niv. 5</n><s title="Souffle">10</s><c title="Concentration">5</c><r title="Exécution">6</r>
+			<p class="niv5">
+				<n>Niv. 5</n><s title="Souffle">4</s><c title="Concentration">3</c><r title="Exécution">6</r>
 				<e></e>
 			</p>
-			<p>
-				<n>Niv. 6+</n><s title="Souffle">10</s><c title="Concentration">5</c><r title="Exécution">6</r>
+			<p class="niv6">
+				<n>Niv. 6+</n><s title="Souffle">4</s><c title="Concentration">3</c><r title="Exécution">6</r>
 				<e></e>
 			</p>
 		</div>
 		
 		<div class="comp">
-			<h4>Coup de bouclier</h4>
-			<span class="comp_req">Apprentissage (-4)</span>, <span class="comp_spec">Profil précis</span>
-			<p>
-				<n>Niv. 1</n><s title="Souffle">5</s><c title="Concentration">0</c><r title="Exécution">-</r>
+			<h4 class="nom">Frappe économe</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Adresse, 20)</span>, <span class="comp_spec">Profil précis</span></span>
+			<p class="niv1">
+				<n>Niv. 1</n><s title="Souffle">1</s><c title="Concentration">0</c><r title="Exécution">5</r>
+				<e>Un coup simple permettant de reprendre son souffle dans le combat tout en maintenant l'agression.</e>
+			</p>
+			<p class="niv2">
+				<n>Niv. 2</n><s title="Souffle">1</s><c title="Concentration">0</c><r title="Exécution">7</r>
+				<e></e>
+			</p>
+			<p class="niv3">
+				<n>Niv. 3</n><s title="Souffle">1</s><c title="Concentration">0</c><r title="Exécution">5</r>
+				<e>Si la prochaine action est une attaque, celle-ci coute 1 point de souffle en moins.</e>
+			</p>
+			<p class="niv4">
+				<n>Niv. 4</n><s title="Souffle">1</s><c title="Concentration">0</c><r title="Exécution">5</r>
+				<e></e>
+			</p>
+			<p class="niv5">
+				<n>Niv. 5</n><s title="Souffle">1</s><c title="Concentration">0</c><r title="Exécution">5</r>
+				<e></e>
+			</p>
+			<p class="niv6">
+				<n>Niv. 6+</n><s title="Souffle">1</s><c title="Concentration">0</c><r title="Exécution">5</r>
+				<e></e>
+			</p>
+		</div>
+		
+		<div class="comp">
+			<h4 class="nom">Arts martiaux</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Adresse, 20)</span>, <span class="comp_spec">Profil précis</span></span>
+			<p class="niv1">
+				<n>Niv. 1</n><s title="Souffle">2</s><c title="Concentration">2</c><r title="Exécution">5</r>
+				<e>Le personnage frappe sans arme de la même façon qu'un coup précis. Il lance 2 dés pour la localisation et inflige 1D8 dégâts.</e>
+			</p>
+			<p class="niv2">
+				<n>Niv. 2</n><s title="Souffle">2</s><c title="Concentration">2</c><r title="Exécution">4</r>
+				<e>Le coup devient plus rapide.<br />
+				Si l'adversaire effectue une action non spécifique au combat (se déplacer, tirer à l'arc, ...), le personnage peut placer un coup rapide avant l'action de son adversaire. A noter qu'il ne doit pas être à plus de 10 temps d'écart dans la bare des temps.< br/>
+				Après avoir réalisé son coup, le personnage peut décider d'effectuer un pas de replacement. Ce pas consiste à réaliser un mouvement d'un mètre dans n'importe quelle direction et peut l'amener à rompre le combat. Son adversaire ne peut en profiter pour placer une attaque (mais un autre ennemi si)</e>
+			</p>
+			<p class="niv3">
+				<n>Niv. 3</n><s title="Souffle">2</s><c title="Concentration">2</c><r title="Exécution">4</r>
+				<e>Les dégâts infligés par l'attaque sont augmentés du quart de la Vigueur.</e>
+			</p>
+			<p class="niv4">
+				<n>Niv. 4</n><s title="Souffle">2</s><c title="Concentration">2</c><r title="Exécution">4</r>
+				<e>Le personnage lance 3 dés de localisation. En cas de double, l'armure est ignorée.</e>
+			</p>
+			<p class="niv5">
+				<n>Niv. 5</n><s title="Souffle">2</s><c title="Concentration">2</c><r title="Exécution">4</r>
+				<e></e>
+			</p>
+			<p class="niv6">
+				<n>Niv. 6+</n><s title="Souffle">2</s><c title="Concentration">2</c><r title="Exécution">4</r>
+				<e></e>
+			</p>
+		</div>
+		
+		<div class="comp">
+			<h4 class="nom">Coup de bouclier</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Adresse, 20)</span>, <span class="comp_spec">Profil précis</span></span>
+			<p class="niv1">
+				<n>Niv. 1</n><s title="Souffle">3</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Le personnage porte un coup à l'aide de son bouclier. L'attaque touche alors deux localisations. (Le dé est lancé une unique fois puis l'attaquant choisit la zone adjacente touchée).</e>
 			</p>
-			<p>
-				<n>Niv. 2</n><s title="Souffle">5</s><c title="Concentration">0</c><r title="Exécution">-</r>
+			<p class="niv2">
+				<n>Niv. 2</n><s title="Souffle">3</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Le coup gagne un bonus aux dégâts de +5</e>
 			</p>
-			<p>
-				<n>Niv. 3</n><s title="Souffle">5</s><c title="Concentration">0</c><r title="Exécution">-</r>
-				<e></e>
+			<p class="niv3">
+				<n>Niv. 3</n><s title="Souffle">3</s><c title="Concentration">0</c><r title="Exécution">-</r>
+				<e>Si l'adversaire subit au moins une blessure superficielle au torse ou à la tête il doit réussir un test de Vigueur à 20 ou être sonné pour 1D3 tours.</e>
 			</p>
-			<p>
-				<n>Niv. 4</n><s title="Souffle">5</s><c title="Concentration">0</c><r title="Exécution">-</r>
+			<p class="niv4">
+				<n>Niv. 4</n><s title="Souffle">3</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Le bonus aux dégâts passe à de +10</e>
 			</p>
-			<p>
-				<n>Niv. 5</n><s title="Souffle">5</s><c title="Concentration">0</c><r title="Exécution">-</r>
-				<e></e>
+			<p class="niv5">
+				<n>Niv. 5</n><s title="Souffle">3</s><c title="Concentration">0</c><r title="Exécution">-</r>
+				<e>Le test de Vigueur passe à 30.</e>
 			</p>
-			<p>
-				<n>Niv. 6+</n><s title="Souffle">5</s><c title="Concentration">0</c><r title="Exécution">-</r>
+			<p class="niv6">
+				<n>Niv. 6+</n><s title="Souffle">3</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Chaque niveau augmente les dégâts de +5</e>
 			</p>
 		</div>
 		
 		<div class="comp">
-			<h4>Coup de pommeau</h4>
-			<span class="comp_req">Apprentissage (-4)</span>
-			<p>
-				<n>Niv. 1</n><s title="Souffle">2</s><c title="Concentration">2</c><r title="Exécution">+2</r>
+			<h4 class="nom">Coup de pommeau</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Adresse, 20)</span></span>
+			<p class="niv1">
+				<n>Niv. 1</n><s title="Souffle">1</s><c title="Concentration">1</c><r title="Exécution">+2</r>
 				<e>Après un coup rapide/précis/puissant paré par l'adversaire, le personnage ajoute un dernier mouvement pour asséner un coup de pommeau à son adversaire. Pour cela, le personnage doit gagner un duel de caractéristiques sur l'Adresse. Un succès sonne la cible pour 1D3 tours.</e>
 			</p>
-			<p>
-				<n>Niv. 2</n><s title="Souffle">2</s><c title="Concentration">2</c><r title="Exécution">+2</r>
+			<p class="niv2">
+				<n>Niv. 2</n><s title="Souffle">1</s><c title="Concentration">1</c><r title="Exécution">+2</r>
 				<e></e>
 			</p>
-			<p>
-				<n>Niv. 3</n><s title="Souffle">2</s><c title="Concentration">2</c><r title="Exécution">+2</r>
+			<p class="niv3">
+				<n>Niv. 3</n><s title="Souffle">1</s><c title="Concentration">1</c><r title="Exécution">+2</r>
 				<e></e>
 			</p>
-			<p>
-				<n>Niv. 4</n><s title="Souffle">2</s><c title="Concentration">2</c><r title="Exécution">+2</r>
+			<p class="niv4">
+				<n>Niv. 4</n><s title="Souffle">1</s><c title="Concentration">1</c><r title="Exécution">+2</r>
 				<e></e>
 			</p>
-			<p>
-				<n>Niv. 5</n><s title="Souffle">2</s><c title="Concentration">2</c><r title="Exécution">+2</r>
+			<p class="niv5">
+				<n>Niv. 5</n><s title="Souffle">1</s><c title="Concentration">1</c><r title="Exécution">+2</r>
 				<e></e>
 			</p>
-			<p>
-				<n>Niv. 6+</n><s title="Souffle">2</s><c title="Concentration">2</c><r title="Exécution">+2</r>
+			<p class="niv6">
+				<n>Niv. 6+</n><s title="Souffle">1</s><c title="Concentration">1</c><r title="Exécution">+2</r>
 				<e></e>
 			</p>
 		</div>
 		
 		<div class="comp">
-			<h4>Attaque en finesse</h4>
-			<span class="comp_req">Apprentissage (-3)</span>, <span class="comp_spec">Profil précis</span>
-			<p>
-				<n>Niv. 1</n><s title="Souffle">5</s><c title="Concentration">8</c><r title="Exécution">5</r>
+			<h4 class="nom">Attaque en finesse</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Adresse, 20)</span>, <span class="comp_spec">Profil précis</span></span>
+			<p class="niv1">
+				<n>Niv. 1</n><s title="Souffle">3</s><c title="Concentration">3</c><r title="Exécution">5</r>
 				<e>Le personnage tente une attaque particulièrement vicieuse pour infliger un maximum de dégâts. L’attaque subira un malus de -5 pour toucher mais en cas de succès, les dégâts seront augmentés du quart de l’adresse du personnage. </e>
 			</p>
-			<p>
-				<n>Niv. 2</n><s title="Souffle">5</s><c title="Concentration">8</c><r title="Exécution">5</r>
+			<p class="niv2">
+				<n>Niv. 2</n><s title="Souffle">3</s><c title="Concentration">3</c><r title="Exécution">5</r>
 				<e>Le malus d’attaque passe à -4.</e>
 			</p>
-			<p>
-				<n>Niv. 3</n><s title="Souffle">5</s><c title="Concentration">8</c><r title="Exécution">5</r>
+			<p class="niv3">
+				<n>Niv. 3</n><s title="Souffle">3</s><c title="Concentration">3</c><r title="Exécution">5</r>
 				<e>Les dégâts sont augmentés de la moitié de l’adresse du personnage.</e>
 			</p>
-			<p>
-				<n>Niv. 4</n><s title="Souffle">5</s><c title="Concentration">8</c><r title="Exécution">5</r>
+			<p class="niv4">
+				<n>Niv. 4</n><s title="Souffle">3</s><c title="Concentration">3</c><r title="Exécution">5</r>
 				<e>Le malus d’attaque passe à -3.</e>
 			</p>
-			<p>
-				<n>Niv. 5</n><s title="Souffle">5</s><c title="Concentration">8</c><r title="Exécution">5</r>
+			<p class="niv5">
+				<n>Niv. 5</n><s title="Souffle">3</s><c title="Concentration">3</c><r title="Exécution">5</r>
 				<e>Les dégâts sont augmentés des trois quarts de l’adresse du personnage.</e>
 			</p>
-			<p>
-				<n>Niv. 6+</n><s title="Souffle">5</s><c title="Concentration">8</c><r title="Exécution">5</r>
+			<p class="niv6">
+				<n>Niv. 6+</n><s title="Souffle">3</s><c title="Concentration">3</c><r title="Exécution">5</r>
 				<e></e>
 			</p>
 		</div>
 		
 		<div class="comp">
-			<h4>Position offensive</h4>
-			<span class="comp_req">Apprentissage (-4)</span>
-			<p>
+			<h4 class="nom">Position offensive</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Adresse, 20)</span></span>
+			<p class="niv1">
 				<n>Niv. 1</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>En adoptant cette posture, le personnage se tourne résoluement vers l'offensive. Pendant 3 tours il gagne un bonus de +1 en attaque au prix d'un malus de -1 en défense. Passer en position offensive ne prend pas de temps mais doit être déclaré en début d'action du personnage.</e>
 			</p>
-			<p>
+			<p class="niv2">
 				<n>Niv. 2</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Les bonus et malus passent à +2/-2.</e>
 			</p>
-			<p>
+			<p class="niv3">
 				<n>Niv. 3</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Les bonus et malus passent à +3/-3.</e>
 			</p>
-			<p>
+			<p class="niv4">
 				<n>Niv. 4</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Les bonus et malus passent à +4/-4.</e>
 			</p>
-			<p>
+			<p class="niv5">
 				<n>Niv. 5</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Les bonus et malus passent à +5/-5.</e>
 			</p>
-			<p>
+			<p class="niv6">
 				<n>Niv. 6+</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Chaque niveau augmente les bonus et malus de +1/-1.</e>
 			</p>
 		</div>
 		
 		<div class="comp">
-			<h4>Tir double</h4>
-			<span class="comp_req">Apprentissage (-6)</span>, <span class="comp_spec">Profil distance</span>
-			<p>
-				<n>Niv. 1</n><s title="Souffle"></s>8<c title="Concentration">5</c><r title="Exécution">5</r>
+			<h4 class="nom">Tir double</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Adresse, 30)</span>, <span class="comp_spec">Profil distance</span></span>
+			<p class="niv1">
+				<n>Niv. 1</n><s title="Souffle"></s>8<c title="Concentration">3</c><r title="Exécution">5</r>
 				<e>Le personnage enclenche deux flèches sur son arc et les décoche vers une cible unique. La portée est alors réduite de 10, les dégâts de chaque flèche de 4 et l’Adresse de 4. Un seul jet de localisation est utilisé mais l'armure est appliquée pour chaque flèche.</e>
 			</p>
-			<p>
+			<p class="niv2">
 				<n>Niv. 2</n><s title="Souffle"></s><c title="Concentration"></c><r title="Exécution">5</r>
 				<e>Les dégâts ne sont réduits que de 2 points.</e>
 			</p>
-			<p>
+			<p class="niv3">
 				<n>Niv. 3</n><s title="Souffle"></s><c title="Concentration"></c><r title="Exécution">5</r>
 				<e>Le personnage n’a plus de malus d’Adresse.</e>
 			</p>
-			<p>
+			<p class="niv4">
 				<n>Niv. 4</n><s title="Souffle"></s><c title="Concentration"></c><r title="Exécution">5</r>
 				<e>Le personnage n’a plus de malus aux dégâts.</e>
 			</p>
-			<p>
+			<p class="niv5">
 				<n>Niv. 5</n><s title="Souffle"></s><c title="Concentration"></c><r title="Exécution">5</r>
 				<e></e>
 			</p>
-			<p>
+			<p class="niv6">
 				<n>Niv. 6+</n><s title="Souffle"></s><c title="Concentration"></c><r title="Exécution"></r>
 				<e>Chaque niveau augmente de 1 les dégâts de chaque flèche.</e>
 			</p>
 		</div>
 		
 		<div class="comp">
-			<h4>Tir précis</h4>
-			<span class="comp_req">Apprentissage (-2)</span>, <span class="comp_spec">Profil distance</span>
-			<p>
-				<n>Niv. 1</n><s title="Souffle">5</s><c title="Concentration">5</c><r title="Exécution">6</r>
+			<h4 class="nom">Tir précis</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Adresse, 15)</span>, <span class="comp_spec">Profil distance</span></span>
+			<p class="niv1">
+				<n>Niv. 1</n><s title="Souffle">3</s><c title="Concentration">3</c><r title="Exécution">6</r>
 				<e>Ignore le malus pour toucher le plus faible</e>
 			</p>
-			<p>
-				<n>Niv. 2</n><s title="Souffle">5</s><c title="Concentration">5</c><r title="Exécution">6</r>
+			<p class="niv2">
+				<n>Niv. 2</n><s title="Souffle">3</s><c title="Concentration">3</c><r title="Exécution">6</r>
 				<e>Ignore maintenant le malus le plus fort</e>
 			</p>
-			<p>
-				<n>Niv. 3</n><s title="Souffle">5</s><c title="Concentration">5</c><r title="Exécution">6</r>
+			<p class="niv3">
+				<n>Niv. 3</n><s title="Souffle">3</s><c title="Concentration">3</c><r title="Exécution">6</r>
 				<e>Les malus cumulés pour toucher la cible ne peuvent pas dépasser -5.</e>
 			</p>
-			<p>
-				<n>Niv. 4</n><s title="Souffle">5</s><c title="Concentration">5</c><r title="Exécution">6</r>
+			<p class="niv4">
+				<n>Niv. 4</n><s title="Souffle">3</s><c title="Concentration">3</c><r title="Exécution">6</r>
 				<e></e>
 			</p>
-			<p>
-				<n>Niv. 5</n><s title="Souffle">5</s><c title="Concentration">5</c><r title="Exécution">6</r>
+			<p class="niv5">
+				<n>Niv. 5</n><s title="Souffle">3</s><c title="Concentration">3</c><r title="Exécution">6</r>
 				<e></e>
 			</p>
-			<p>
-				<n>Niv. 6+</n><s title="Souffle">5</s><c title="Concentration">5</c><r title="Exécution">6</r>
+			<p class="niv6">
+				<n>Niv. 6+</n><s title="Souffle">3</s><c title="Concentration">3</c><r title="Exécution">6</r>
 				<e></e>
 			</p>
 		</div>
 		
 		<div class="comp">
-			<h4>Tir rapide</h4>
-			<span class="comp_req">Apprentissage (-4)</span>, <span class="comp_spec">Profil distance</span>
-			<p>
-				<n>Niv. 1</n><s title="Souffle">5</s><c title="Concentration">5</c><r title="Exécution">4</r>
-				<e>Un tir plus rapide mais moins efficace. Les dégâts et l'adresse sont réduis de 5.</e>
+			<h4 class="nom">Tir rapide</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Adresse, 20)</span>, <span class="comp_spec">Profil distance</span></span>
+			<p class="niv1">
+				<n>Niv. 1</n><s title="Souffle">3</s><c title="Concentration">3</c><r title="Exécution">4</r>
+				<e>Un tir plus rapide mais moins efficace. Les dégâts et l'Adresse sont réduis de 5.</e>
 			</p>
-			<p>
-				<n>Niv. 2</n><s title="Souffle">5</s><c title="Concentration">5</c><r title="Exécution">4</r>
+			<p class="niv2">
+				<n>Niv. 2</n><s title="Souffle">3</s><c title="Concentration">3</c><r title="Exécution">4</r>
 				<e>Les malus passent à -4.</e>
 			</p>
-			<p>
-				<n>Niv. 3</n><s title="Souffle">5</s><c title="Concentration">5</c><r title="Exécution">4</r>
+			<p class="niv3">
+				<n>Niv. 3</n><s title="Souffle">3</s><c title="Concentration">3</c><r title="Exécution">4</r>
 				<e>Les malus passent à -3.</e>
 			</p>
-			<p>
-				<n>Niv. 4</n><s title="Souffle">5</s><c title="Concentration">5</c><r title="Exécution">3</r>
+			<p class="niv4">
+				<n>Niv. 4</n><s title="Souffle">3</s><c title="Concentration">3</c><r title="Exécution">3</r>
 				<e>L'attaque est encore plus rapide</e>
 			</p>
-			<p>
-				<n>Niv. 5</n><s title="Souffle">5</s><c title="Concentration">5</c><r title="Exécution">3</r>
+			<p class="niv5">
+				<n>Niv. 5</n><s title="Souffle">3</s><c title="Concentration">3</c><r title="Exécution">3</r>
 				<e>Les malus passent à -2.</e>
 			</p>
-			<p>
-				<n>Niv. 6+</n><s title="Souffle">5</s><c title="Concentration">5</c><r title="Exécution">-2</r>
+			<p class="niv6">
+				<n>Niv. 6+</n><s title="Souffle">3</s><c title="Concentration">3</c><r title="Exécution">-2</r>
 				<e>Les malus sont diminués de 1 par niveau. (ne peuvent pas devenir des bonus)</e>
 			</p>
 		</div>
 		
 		<div class="comp">
-			<h4>Tir incapacitant</h4>
-			<span class="comp_req">Apprentissage (-4)</span>, <span class="comp_spec">Profil distance</span>
-			<p>
-				<n>Niv. 1</n><s title="Souffle">6</s><c title="Concentration">6</c><r title="Exécution">5</r>
-				<e>Le projectile se plante dans l'adversaire dès qu'il blesse et pas uniquement après avoir fait plus de dégâts que la robustesse de l'adversaire.</e>
-			</p>
-			<p>
-				<n>Niv. 2</n><s title="Souffle">6</s><c title="Concentration">6</c><r title="Exécution">-</r>
+			<h4 class="nom">Tir incapacitant</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Adresse, 20)</span>, <span class="comp_spec">Profil distance</span></span>
+			<p class="niv1">
+				<n>Niv. 1</n><s title="Souffle">3</s><c title="Concentration">3</c><r title="Exécution">5</r>
 				<e></e>
 			</p>
-			<p>
-				<n>Niv. 3</n><s title="Souffle">6</s><c title="Concentration">6</c><r title="Exécution">-</r>
+			<p class="niv2">
+				<n>Niv. 2</n><s title="Souffle">3</s><c title="Concentration">3</c><r title="Exécution">-</r>
 				<e></e>
 			</p>
-			<p>
-				<n>Niv. 4</n><s title="Souffle">6</s><c title="Concentration">6</c><r title="Exécution">-</r>
+			<p class="niv3">
+				<n>Niv. 3</n><s title="Souffle">3</s><c title="Concentration">3</c><r title="Exécution">-</r>
 				<e></e>
 			</p>
-			<p>
-				<n>Niv. 5</n><s title="Souffle">6</s><c title="Concentration">6</c><r title="Exécution">-</r>
+			<p class="niv4">
+				<n>Niv. 4</n><s title="Souffle">3</s><c title="Concentration">3</c><r title="Exécution">-</r>
 				<e></e>
 			</p>
-			<p>
-				<n>Niv. 6+</n><s title="Souffle">6</s><c title="Concentration">6</c><r title="Exécution">-</r>
+			<p class="niv5">
+				<n>Niv. 5</n><s title="Souffle">3</s><c title="Concentration">3</c><r title="Exécution">-</r>
+				<e></e>
+			</p>
+			<p class="niv6">
+				<n>Niv. 6+</n><s title="Souffle">3</s><c title="Concentration">3</c><r title="Exécution">-</r>
 				<e></e>
 			</p>
 		</div>
 		
 		<div class="comp">
-			<h4>Tir courbe</h4>
-			<span class="comp_req">Apprentissage (-6)</span>, <span class="comp_spec">Profil distance</span>
-			<p>
-				<n>Niv. 1</n><s title="Souffle">6</s><c title="Concentration">6</c><r title="Exécution">5</r>
+			<h4 class="nom">Tir courbe</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Adresse, 30)</span>, <span class="comp_spec">Profil distance</span></span>
+			<p class="niv1">
+				<n>Niv. 1</n><s title="Souffle">3</s><c title="Concentration">3</c><r title="Exécution">5</r>
 				<e>Utilisé avec une arme de jet (ni arc, ni arbalette), le personnage donne une trajectiore courbe à son projectile entrainant un eccart au centre de 2m par tranche de 10m. En contrepartie, les dégâts et le jet d'attaque sont réduis de 5.</e>
 			</p>
-			<p>
-				<n>Niv. 2</n><s title="Souffle">6</s><c title="Concentration">6</c><r title="Exécution">5</r>
+			<p class="niv2">
+				<n>Niv. 2</n><s title="Souffle">3</s><c title="Concentration">3</c><r title="Exécution">5</r>
 				<e></e>
 			</p>
-			<p>
-				<n>Niv. 3</n><s title="Souffle">6</s><c title="Concentration">6</c><r title="Exécution">5</r>
+			<p class="niv3">
+				<n>Niv. 3</n><s title="Souffle">3</s><c title="Concentration">3</c><r title="Exécution">5</r>
 				<e></e>
 			</p>
-			<p>
-				<n>Niv. 4</n><s title="Souffle">6</s><c title="Concentration">6</c><r title="Exécution">5</r>
+			<p class="niv4">
+				<n>Niv. 4</n><s title="Souffle">3</s><c title="Concentration">3</c><r title="Exécution">5</r>
 				<e></e>
 			</p>
-			<p>
-				<n>Niv. 5</n><s title="Souffle">6</s><c title="Concentration">6</c><r title="Exécution">5</r>
+			<p class="niv5">
+				<n>Niv. 5</n><s title="Souffle">3</s><c title="Concentration">3</c><r title="Exécution">5</r>
 				<e></e>
 			</p>
-			<p>
-				<n>Niv. 6+</n><s title="Souffle">6</s><c title="Concentration">6</c><r title="Exécution">5</r>
+			<p class="niv6">
+				<n>Niv. 6+</n><s title="Souffle">3</s><c title="Concentration">3</c><r title="Exécution">5</r>
 				<e></e>
 			</p>
 		</div>
 		
 		<div class="comp">
-			<h4>Tir d'ajustement</h4>
-			<span class="comp_req">Apprentissage (-6)</span>, <span class="comp_spec">Profil distance</span>
-			<p>
-				<n>Niv. 1</n><s title="Souffle">4</s><c title="Concentration">6</c><r title="Exécution">3</r>
+			<h4 class="nom">Tir d'ajustement</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Adresse, 30)</span>, <span class="comp_spec">Profil distance</span></span>
+			<p class="niv1">
+				<n>Niv. 1</n><s title="Souffle">2</s><c title="Concentration">3</c><r title="Exécution">3</r>
 				<e>Le personnage effectue un tir ayant pour bout de trouver ses marques. Les dégâts de l'attaque sont divisés par deux mais si l'attaque touche, toutes les prochains tirs auront un bonus de +5 pour toucher jusqu'à ce que la cible ce soit déplacée de plus de 2m.</e>
 			</p>
-			<p>
-				<n>Niv. 2</n><s title="Souffle">6</s><c title="Concentration">6</c><r title="Exécution">3</r>
+			<p class="niv2">
+				<n>Niv. 2</n><s title="Souffle">3</s><c title="Concentration">3</c><r title="Exécution">3</r>
 				<e>Le bonus fonctionne sur un adversaire s'étant déplacé jusqu'à 5m.</e>
 			</p>
-			<p>
-				<n>Niv. 3</n><s title="Souffle">6</s><c title="Concentration">6</c><r title="Exécution">3</r>
+			<p class="niv3">
+				<n>Niv. 3</n><s title="Souffle">3</s><c title="Concentration">3</c><r title="Exécution">3</r>
 				<e>Le bonus s'applique à tout ennemi dans une zone de 5m de rayon.</e>
 			</p>
-			<p>
-				<n>Niv. 4</n><s title="Souffle">6</s><c title="Concentration">6</c><r title="Exécution">3</r>
+			<p class="niv4">
+				<n>Niv. 4</n><s title="Souffle">3</s><c title="Concentration">3</c><r title="Exécution">3</r>
 				<e>Les bonus passent à +8</e>
 			</p>
-			<p>
-				<n>Niv. 5</n><s title="Souffle">6</s><c title="Concentration">6</c><r title="Exécution">3</r>
+			<p class="niv5">
+				<n>Niv. 5</n><s title="Souffle">3</s><c title="Concentration">3</c><r title="Exécution">3</r>
 				<e></e>
 			</p>
-			<p>
-				<n>Niv. 6+</n><s title="Souffle">6</s><c title="Concentration">6</c><r title="Exécution">5</r>
+			<p class="niv6">
+				<n>Niv. 6+</n><s title="Souffle">3</s><c title="Concentration">3</c><r title="Exécution">5</r>
 				<e></e>
 			</p>
 		</div>
 				
 		<div class="comp">
-			<h4>Jet chargé</h4>
-			<span class="comp_req">Apprentissage (-10)</span>, <span class="comp_spec">Profil distance</span>
-			<p>
-				<n>Niv. 1</n><s title="Souffle"></s><c title="Concentration"></c><r title="Exécution"></r>
-				<e>Lors d'une charge, le personnage muni d'une arme de jet projette son arme sur sa cible et la récupère au bout de sa charge. Si l'attaque touche, il récupèrera son arme à la fin de sa charge en réussissant un test d'adresse. L'attaque est considérée comme un lancé avec un malus de -5 en Adresse.</e>
+			<h4 class="nom">Jet chargé</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Adresse, 40)</span>, <span class="comp_spec">Profil distance</span></span>
+			<p class="niv1">
+				<n>Niv. 1</n><s title="Souffle">3</s><c title="Concentration">2</c><r title="Exécution">5</r>
+				<e>Lors d'une charge, le personnage muni d'une arme de jet projette son arme sur sa cible et la récupère au bout de sa charge. Si l'attaque touche, il récupèrera son arme à la fin de sa charge en réussissant un test d'Adresse à 25. L'attaque est considérée comme un lancé avec un malus de -5 en Adresse.</e>
 			</p>
-			<p>
+			<p class="niv2">
 				<n>Niv. 2</n><s title="Souffle"></s><c title="Concentration"></c><r title="Exécution"></r>
-				<e>Si le personnage dispose d'une deuxième arme sur lui, il peut s'en saisir pendant la charge. (L'autre n'est cependant pas récupérée)</e>
+				<e>Coup de pied pour récupérer l'arme. Test opposé adresse -> déstabilisation</e>
 			</p>
-			<p>
+			<p class="niv3">
 				<n>Niv. 3</n><s title="Souffle"></s><c title="Concentration"></c><r title="Exécution"></r>
-				<e>Coup de pied pour récupérer l'arme -> déstabilisation</e>
+				<e></e>
 			</p>
-			<p>
+			<p class="niv4">
 				<n>Niv. 4</n><s title="Souffle"></s><c title="Concentration"></c><r title="Exécution"></r>
 				<e>Plus de malus au lancer</e>
 			</p>
-			<p>
+			<p class="niv5">
 				<n>Niv. 5</n><s title="Souffle"></s><c title="Concentration"></c><r title="Exécution"></r>
 				<e></e>
 			</p>
-			<p>
+			<p class="niv6">
 				<n>Niv. 6+</n><s title="Souffle"></s><c title="Concentration"></c><r title="Exécution"></r>
 				<e></e>
 			</p>
 		</div>
 		
 		<div class="comp">
-			<h4>Science des pièges</h4>
-			<span class="comp_req">Apprentissage (-4)</span>
-			<p>
+			<h4 class="nom">Science des pièges</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Adresse, 20)</span></span>
+			<p class="niv1">
 				<n>Niv. 1</n><s title="Souffle"></s><c title="Concentration"></c><r title="Exécution"></r>
 				<e>Le personnage sait poser la plupart des pièges.</e>
 			</p>
-			<p>
+			<p class="niv2">
 				<n>Niv. 2</n><s title="Souffle"></s><c title="Concentration"></c><r title="Exécution"></r>
 				<e>Le personnage sait fabriquer la plupart des pièges</e>
 			</p>
-			<p>
+			<p class="niv3">
 				<n>Niv. 3</n><s title="Souffle"></s><c title="Concentration"></c><r title="Exécution"></r>
 				<e>Le personnage gagne un bonus de +10 en intuition pour détecter les pièges</e>
 			</p>
-			<p>
+			<p class="niv4">
 				<n>Niv. 4</n><s title="Souffle"></s><c title="Concentration"></c><r title="Exécution"></r>
 				<e>Le personnage sait désamorcer la plupart des pièges en réussissant un test d'adresse. En cas d'échec, le piège se déclenche.</e>
 			</p>
-			<p>
+			<p class="niv5">
 				<n>Niv. 5</n><s title="Souffle"></s><c title="Concentration"></c><r title="Exécution"></r>
 				<e>Lorsqu'il désamorce un piège, il peut tenter de le récupérer pour lui. Dans ce cas le test de désamorçage subit un malus de -10.</e>
 			</p>
-			<p>
+			<p class="niv6">
 				<n>Niv. 6+</n><s title="Souffle"></s><c title="Concentration"></c><r title="Exécution"></r>
 				<e></e>
 			</p>
 		</div>
 		
 		<div class="comp">
-			<h4>Discrétion</h4>
-			<span class="comp_req">Apprentissage (-4)</span>
-			<p>
+			<h4 class="nom">Discrétion</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Adresse, 20)</span></span>
+			<p class="niv1">
 				<n>Niv. 1</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
-				<e>Grâce à cette compétence, le personnage peut diminuer ses chances d’etre repéré. Lorsqu’il utilise une armure légère, il peut se déplacer sans émettre de son et ne sera détecté que par une personne le cherchant activement. Pour le détecter, celle-ci devra alors faire un test d’Intuition basé sur l’ouïe avec en malus -5 à cette caractéristique. A noter que le personnage ne dissimule que les sons qu’il émet. S’il passe devant un vigile celui-ci le verra aussitôt. Pendant la discrétion, le personnage ne peut utiliser d’autre compétence.</e>
+				<e>Grâce à cette compétence, le personnage peut diminuer ses chances d’etre repéré. Lorsqu’il utilise une armure légère, il peut se déplacer sans émettre de son et ne sera détecté que par une personne le cherchant activement. Pour le détecter, celle-ci devra alors réussir un test opposé sur l'Intuition basé sur l’ouïe avec en malus -5 contre l'Adresse du personnage. A noter que le personnage ne dissimule que les sons qu’il émet. S’il passe devant un vigile celui-ci le verra aussitôt. Pendant la discrétion, le personnage ne peut utiliser d’autre compétence.</e>
 			</p>
-			<p>
+			<p class="niv2">
 				<n>Niv. 2</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
-				<e>La discrétion s’applique désormais sur son apparence. Il pourra ainsi passer devant une personne sans se faire détecter si celle-ci ne la cherche pas activement. Un test d’Intuition sur la vue avec un malus de -5 permet de détecter le personnage. Une personne tentant de passer discrètement devant un vigile pourra être détecté par un test sur l’ouïe ou sur la vue.</e>
+				<e>La discrétion s’applique désormais sur son apparence. Il pourra ainsi passer devant une personne sans se faire détecter si celle-ci ne la cherche pas activement. Pour le détecter, celle-ci devra alors réussir un test opposé sur l'Intuition avec en malus -5 contre l'Adresse du personnage. Une personne tentant de passer discrètement devant un vigile pourra être détectée par un test sur l’ouïe ou sur la vue.</e>
 			</p>
-			<p>
+			<p class="niv3">
 				<n>Niv. 3</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Les malus pour se faire détecter passent à -8.</e>
 			</p>
-			<p>
+			<p class="niv4">
 				<n>Niv. 4</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
-				<e>Lorsque le personnage porte une attaque pendant sa discrétion, il choisit sa localisation et inflige le maximum de dégâts. Le personnage peut désormais lancer des sorts même en étant discret. Dès le lancement du sort, toute personne à proximité tente des tests d’Intuition sur la vue et sur l’ouïe sans malus pour repérer l’origine de ce sort.</e>
+				<e>Lorsque le personnage porte une attaque pendant sa discrétion, il choisit sa localisation et inflige le maximum de dégâts. Le personnage peut désormais lancer des sorts même en étant discret. Dès le lancement du sort, toute personne à proximité tente un test opposé sur l'Intuition avec en malus -5 contre l'Adresse du personnage pour détecter la provenance des sorts.</e>
 			</p>
-			<p>
+			<p class="niv5">
 				<n>Niv. 5</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Les malus pour se faire détecter passent à -10.</e>
 			</p>
-			<p>
+			<p class="niv6">
 				<n>Niv. 6+</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Chaque niveau augmente le malus pour être détecté de 1.</e>
 			</p>
 		</div>
 		
 		<div class="comp">
-			<h4>Crochetage</h4>
-			<span class="comp_req">Apprentissage (-4)</span>
-			<p>
+			<h4 class="nom">Crochetage</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Adresse, 20)</span></span>
+			<p class="niv1">
 				<n>Niv. 1</n><s title="Souffle"></s><c title="Concentration"></c><r title="Exécution"></r>
 				<e></e>
 			</p>
-			<p>
+			<p class="niv2">
 				<n>Niv. 2</n><s title="Souffle"></s><c title="Concentration"></c><r title="Exécution"></r>
 				<e></e>
 			</p>
-			<p>
+			<p class="niv3">
 				<n>Niv. 3</n><s title="Souffle"></s><c title="Concentration"></c><r title="Exécution"></r>
 				<e></e>
 			</p>
-			<p>
+			<p class="niv4">
 				<n>Niv. 4</n><s title="Souffle"></s><c title="Concentration"></c><r title="Exécution"></r>
 				<e></e>
 			</p>
-			<p>
+			<p class="niv5">
 				<n>Niv. 5</n><s title="Souffle"></s><c title="Concentration"></c><r title="Exécution"></r>
 				<e></e>
 			</p>
-			<p>
+			<p class="niv6">
 				<n>Niv. 6+</n><s title="Souffle"></s><c title="Concentration"></c><r title="Exécution"></r>
 				<e></e>
 			</p>
 		</div>
-		
-		<div class="comp">
-			<h4>Chant des lames</h4>
-			<span class="comp_req">Apprentissage (-6)</span>, <span class="comp_spec">Profil précis</span>
-			<p>
-				<n>Niv. 1</n><s title="Souffle">3</s><c title="Concentration">5</c><r title="Exécution">5</r>
-				<e>Lorsqu’il utilise une arme légère, le personnage peut utiliser cette attaque redoutable. Cette attaque modifie la localisation de -1 et donne un malus de -4 à la parade adverse.</e>
-			</p>
-			<p>
-				<n>Niv. 2</n><s title="Souffle"></s><c title="Concentration"></c><r title="Exécution">5</r>
-				<e></e>
-			</p>
-			<p>
-				<n>Niv. 3</n><s title="Souffle"></s><c title="Concentration"></c><r title="Exécution">5</r>
-				<e></e>
-			</p>
-			<p>
-				<n>Niv. 4</n><s title="Souffle"></s><c title="Concentration"></c><r title="Exécution">5</r>
-				<e></e>
-			</p>
-			<p>
-				<n>Niv. 5</n><s title="Souffle"></s><c title="Concentration"></c><r title="Exécution">5</r>
-				<e></e>
-			</p>
-			<p>
-				<n>Niv. 6+</n><s title="Souffle"></s><c title="Concentration"></c><r title="Exécution"></r>
-				<e></e>
-			</p>
-		</div>
-		
-		<div class="comp">
-			<h4>Achever</h4>
-			<span class="comp_req">6 en Adresse</span>
-			<p>
-				<n>Niv. 1</n><s title="Souffle">5</s><c title="Concentration">5</c><r title="Exécution">5</r>
-				<e>Si l’ennemi se retrouve sans défense (paralysé, endormi, ...), le personnage peut tenter de lui porter un coup fatal. L’adversaire devra réussir un test de Vigueur avec sa valeur multipliée par 2. En cas de succès de la compétence, les points de vitalité de la victime tombent à 0.</e>
-			</p>
-			<p>
-				<n>Niv. 2</n><s title="Souffle">5</s><c title="Concentration">5</c><r title="Exécution">5</r>
-				<e>Si la cible est à moins de 25% de ses points de Vitalité maximums, la Vigueur n’est pas multipliée par 2.</e>
-			</p>
-			<p>
-				<n>Niv. 3</n><s title="Souffle">5</s><c title="Concentration">5</c><r title="Exécution">5</r>
-				<e></e>
-			</p>
-			<p>
-				<n>Niv. 4</n><s title="Souffle">5</s><c title="Concentration">5</c><r title="Exécution">5</r>
-				<e></e>
-			</p>
-			<p>
-				<n>Niv. 5</n><s title="Souffle">5</s><c title="Concentration">5</c><r title="Exécution">5</r>
-				<e></e>
-			</p>
-			<p>
-				<n>Niv. 6+</n><s title="Souffle">5</s><c title="Concentration">5</c><r title="Exécution">5</r>
-				<e></e>
-			</p>
-		</div>
-		
+				
 		<!-- VIGUEUR -->
 		
 		<h3 class="comp_cat">Vigueur</h3>
 		
 		<div class="comp">
-			<h4>Santé de fer</h4>
-			<span class="comp_req">10 en Vigueur</span>
-			<p>
+			<h4 class="nom">Peau de fer</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Vigueur, 15)</span></span>
+			<p class="niv1">
 				<n>Niv. 1</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Le personnage est doté d’une constitution à toute épreuve. Il réduit les dégâts provenant d’une attaque physique de 2 points.</e>
 			</p>
-			<p>
+			<p class="niv2">
 				<n>Niv. 2</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Les dégâts physiques sont réduits de 3 points et les autres de 2.</e>
 			</p>
-			<p>
+			<p class="niv3">
 				<n>Niv. 3</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
-				<e>Contre une attaque physique, le personnage peut réduire le nombre de dégâts subits. Pour chaque point de dégâts réduit, il doit dépenser 4 points de Souffle.</e>
+				<e>Contre une attaque physique, le personnage peut réduire le nombre de dégâts subis. Pour chaque point de dégâts réduit, il doit dépenser 1 point de Souffle.</e>
 			</p>
-			<p>
+			<p class="niv4">
 				<n>Niv. 4</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Les dégâts physiques sont réduits de 4 points et les autres de 2.</e>
 			</p>
-			<p>
+			<p class="niv5">
 				<n>Niv. 5</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
-				<e>3 points de Souffle suffisent à réduire 1 point de dégât.</e>
+				<e>1 point de Souffle réduit de 3 les dégâts.</e>
 			</p>
-			<p>
+			<p class="niv6">
 				<n>Niv. 6+</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Chaque niveau augmente la résistance aux dégâts physiques et magiques de 1.</e>
 			</p>
 		</div>
 		
 		<div class="comp">
-			<h4>Résistance aux poisons</h4>
-			<span class="comp_req">8 en Vigueur</span>
-			<p>
+			<h4 class="nom">Résistance aux poisons</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Vigueur, 15)</span></span>
+			<p class="niv1">
 				<n>Niv. 1</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Lorsque le personnage doit résister à un poison, il peut relancer son jet si le résultat ne lui convient pas. Cependant cette relance sera soumise à un malus de -4 à la statistique testée.</e>
 			</p>
-			<p>
+			<p class="niv2">
 				<n>Niv. 2</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Le malus de la relance passe à -3.</e>
 			</p>
-			<p>
+			<p class="niv3">
 				<n>Niv. 3</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e></e>
 			</p>
-			<p>
+			<p class="niv4">
 				<n>Niv. 4</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e></e>
 			</p>
-			<p>
+			<p class="niv5">
 				<n>Niv. 5</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e></e>
 			</p>
-			<p>
+			<p class="niv6">
 				<n>Niv. 6+</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e></e>
 			</p>
 		</div>
 		
 		<div class="comp">
-			<h4>Pour l’honneur, et la gloire !</h4>
-			<span class="comp_req">10 en Vigueur</span>
-			<p>
+			<h4 class="nom">Second souffle</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Vigueur, 15)</span></span>
+			<p class="niv1">
 				<n>Niv. 1</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
-				<e>Dès que le personnage arrive à moins de 25% de sa Vitalité, il ajoute +2 dans deux de ses statistiques (cet ajout s'effectue après un éventuel test pour déterminer si le personnage tombe inconscient).</e>
+				<e>Une fois par combat, si le personnage tombe à 0 points de Souffle et doit prendre 1 point de Fatigue, il regagne 2 points de Souffle à la place.</e>
 			</p>
-			<p>
+			<p class="niv2">
+				<n>Niv. 2</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
+				<e>+1 en Vigueur pour 1 tour</e>
+			</p>
+			<p class="niv3">
+				<n>Niv. 3</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
+				<e>Il gagne désormais 3 points de souffle</e>
+			</p>
+			<p class="niv4">
+				<n>Niv. 4</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
+				<e>+1 en Vigueur pour 2 tours</e>
+			</p>
+			<p class="niv5">
+				<n>Niv. 5</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
+				<e>Il regagne tout son souffle</e>
+			</p>
+			<p class="niv6">
+				<n>Niv. 6+</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
+				<e>Chaque niveau augmente de 1 tour la durée du bonus en Vigueur</e>
+			</p>
+		</div>
+		
+		<div class="comp">
+			<h4 class="nom">Regain d'attention</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Vigueur, 15)</span></span>
+			<p class="niv1">
+				<n>Niv. 1</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
+				<e>Une fois par combat, si le personnage tombe à 0 points de Concentration et doit prendre 1 point de Fatigue, il regagne 2 points de Concentration à la place.</e>
+			</p>
+			<p class="niv2">
+				<n>Niv. 2</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
+				<e>+1 en Intuition pour 1 tour</e>
+			</p>
+			<p class="niv3">
+				<n>Niv. 3</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
+				<e>Il gagne désormais 3 points de Concentration</e>
+			</p>
+			<p class="niv4">
+				<n>Niv. 4</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
+				<e>+1 en Intuition pour 2 tours</e>
+			</p>
+			<p class="niv5">
+				<n>Niv. 5</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
+				<e>Il regagne toute sa Concentration</e>
+			</p>
+			<p class="niv6">
+				<n>Niv. 6+</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
+				<e>Chaque niveau augmente de 1 tour la durée du bonus en Intuition</e>
+			</p>
+		</div>
+		
+		<div class="comp">
+			<h4 class="nom">Pour l’honneur, et la gloire !</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Vigueur, 30)</span></span>
+			<p class="niv1">
+				<n>Niv. 1</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
+				<e>Dès que le personnage a deux blessures critiques, il ajoute +2 dans deux de ses statistiques.</e>
+			</p>
+			<p class="niv2">
 				<n>Niv. 2</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>L’augmentation des caractéristiques passe à +4.</e>
 			</p>
-			<p>
+			<p class="niv3">
 				<n>Niv. 3</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>4 statistiques sont maintenant augmentées.</e>
 			</p>
-			<p>
-				<n>Niv. 4</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
-				<e>Les bonus s’appliquent également dès que le personnage possède moins de 25% de sa Concentration ou de son Souffle.</e>
+			<p class="niv4">
+				<n>Niv. 4</n><ad title="Adrénaline">2</ad><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
+				<e>Le personnage peut déclencher la compétence en dépensant 2 points d'adrénaline à condition d'avoir au moins une blessure critique.</e>
 			</p>
-			<p>
+			<p class="niv5">
 				<n>Niv. 5</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Toutes les statistiques sont boostées par cette compétence.</e>
 			</p>
-			<p>
+			<p class="niv6">
 				<n>Niv. 6+</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Les seuils de déclenchement sont augmentés de 5% par niveau.</e>
 			</p>
 		</div>
+		
+		<div class="comp">
+			<h4 class="nom">Mutilation</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Vigueur, 20)</span></span>
+			<p class="niv1">
+				<n>Niv. 1</n><s title="Souffle">1</s><c title="Concentration">0</c><r title="Exécution">1</r>
+				<e>Le personnage s'inflige lui même une blessure pour générer de l'adrénaline. Sur un test de Vigueur à 20 réussi, il s'inflige une blessure superficielle sur la localisation de son choix et gagne 2 points d'adrénaline. Le personnage doit également réaliser le test de résistance à la douleur lié à la blessure.</e>
+			</p>
+			<p class="niv2">
+				<n>Niv. 2</n><s title="Souffle">1</s><c title="Concentration">0</c><r title="Exécution">1</r>
+				<e>Test de Vigueur + 5.</e>
+			</p>
+			<p class="niv3">
+				<n>Niv. 3</n><s title="Souffle">1</s><c title="Concentration">0</c><r title="Exécution">1</r>
+				<e>Le personnage peut s'infliger 2 blessure superficielles pour un gain de 4 en adrénaline. Un seul test de douleur ne sera à réaliser avec les malus les plus importants des 2 blessures.</e>
+			</p>
+			<p class="niv4">
+				<n>Niv. 4</n><s title="Souffle">1</s><c title="Concentration">0</c><r title="Exécution">1</r>
+				<e>Test de résistance à la douleur +5</e>
+			</p>
+			<p class="niv5">
+				<n>Niv. 5</n><s title="Souffle">1</s><c title="Concentration">0</c><r title="Exécution">1</r>
+				<e></e>
+			</p>
+			<p class="niv6">
+				<n>Niv. 6+</n><s title="Souffle">1</s><c title="Concentration">0</c><r title="Exécution">1</r>
+				<e></e>
+			</p>
+		</div>
+		
+		<div class="comp">
+			<h4 class="nom">Frénésie</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Vigueur, 15)</span></span>
+			<p class="niv1">
+				<n>Niv. 1</n><s title="Souffle">-</s><c title="Concentration">-</c><r title="Exécution">-</r>
+				<e>Le personnage décide de rentrer en furie au début de son tour sans cout. A partir de ce moment et jusqu'à ce que le personne ne dispose de plus aucun point d'Adrénaline, chaque point d'Adrénaline augmente les dégâts infligés par une attaque au corps à corps de +2. En contrepartie, chaque attaque échouée ou chaque action autre qu'une attaque fait perdre 1 point d'Adrénaline.</e>
+			</p>
+			<p class="niv2">
+				<n>Niv. 2</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
+				<e>Les dégâts passent à +3.</e>
+			</p>
+			<p class="niv3">
+				<n>Niv. 3</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
+				<e>Le personnage peut décider en début de tour et sans cout de stopper la frénésie.</e>
+			</p>
+			<p class="niv4">
+				<n>Niv. 4</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
+				<e>Une attaque infligeant une blessure à un ennemi fait gagner 1 point d'adrénaline.</e>
+			</p>
+			<p class="niv5">
+				<n>Niv. 5</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
+				<e>Les dégâts passent à +4.</e>
+			</p>
+			<p class="niv6">
+				<n>Niv. 6+</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
+				<e></e>
+			</p>
+		</div>
+		
+		<div class="comp">
+			<h4 class="nom">Furie guerrière</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Vigueur, 15)</span></span>
+			<p class="niv1">
+				<n>Niv. 1</n><ad title="Adrenaline">2</ad><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
+				<e>A déclencher au début de son tour sans dépenser d'action. Chaque ennemi defait au combat dans un rayon de 10m donne un bonus de +5 pour résister à la douleur pour 3 tours (les effets se cumulent et chaque nouvel effet renouvelle la durée).</e>
+			</p>
+			<p class="niv2">
+				<n>Niv. 2</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
+				<e>Chaque ennemi défait donne également un bonus de +2 au seuil de blessure légère.</e>
+			</p>
+			<p class="niv3">
+				<n>Niv. 3</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
+				<e>Chaque ennemi défait donne également un bonus de +2 au seuil de blessure grave.</e>
+			</p>
+			<p class="niv4">
+				<n>Niv. 4</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
+				<e></e>
+			</p>
+			<p class="niv5">
+				<n>Niv. 5</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
+				<e></e>
+			</p>
+			<p class="niv6">
+				<n>Niv. 6+</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
+				<e></e>
+			</p>
+		</div>
 				
 		<div class="comp">
-			<h4>Retenir</h4>
-			<p>
-				<n>Niv. 1</n><s title="Souffle">4</s><c title="Concentration">0</c><r title="Exécution">3</r>
-				<e>Empêche un adversaire de rompre le combat. Lorsqu'un ennemi tente une action qui lui ferait quitter le corps à corps avec le personnage celui-ci peut tenter de le retenir. Il effectue alors un test de puissance. La marge par rapport au seuil de réussite (qu'elle soit positive ou négative) est alors appliquée en malus au test de vivacité de l'adversaire. En cas d'échec de ce dernier, l'adversaire perd son action (le souffle, la concentration, réactivité, ... sont quand même dépensés).</e>
+			<h4 class="nom">Retenir</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Vigueur, 15)</span></span>
+			<p class="niv1">
+				<n>Niv. 1</n><s title="Souffle">2</s><c title="Concentration">0</c><r title="Exécution">3</r>
+				<e>Empêche un adversaire de rompre le combat. Lorsqu'un ennemi tente une action qui lui ferait quitter le corps à corps avec le personnage celui-ci peut tenter de le retenir. Le personnage réalise un test opposé de sa Vigueur contre la Vivacité ou la Vigueur de sa cible (au choix de la cible). En cas du succès, l'adversaire perd son action (le souffle, la concentration, réactivité, ... sont quand même dépensés).</e>
 			</p>
-			<p>
-				<n>Niv. 2</n><s title="Souffle">4</s><c title="Concentration">0</c><r title="Exécution">3</r>
+			<p class="niv2">
+				<n>Niv. 2</n><s title="Souffle">2</s><c title="Concentration">0</c><r title="Exécution">3</r>
 				<e></e>
 			</p>
-			<p>
-				<n>Niv. 3</n><s title="Souffle">4</s><c title="Concentration">0</c><r title="Exécution">3</r>
+			<p class="niv3">
+				<n>Niv. 3</n><s title="Souffle">2</s><c title="Concentration">0</c><r title="Exécution">3</r>
 				<e></e>
 			</p>
-			<p>
-				<n>Niv. 4</n><s title="Souffle">4</s><c title="Concentration">0</c><r title="Exécution">3</r>
+			<p class="niv4">
+				<n>Niv. 4</n><s title="Souffle">2</s><c title="Concentration">0</c><r title="Exécution">3</r>
 				<e></e>
 			</p>
-			<p>
-				<n>Niv. 5</n><s title="Souffle">4</s><c title="Concentration">0</c><r title="Exécution">3</r>
+			<p class="niv5">
+				<n>Niv. 5</n><s title="Souffle">2</s><c title="Concentration">0</c><r title="Exécution">3</r>
 				<e></e>
 			</p>
-			<p>
-				<n>Niv. 6+</n><s title="Souffle">4</s><c title="Concentration">0</c><r title="Exécution">3</r>
-				<e></e>
-			</p>
-		</div>
-		
-		<div class="comp">
-			<h4>Prise au corps</h4>
-			<p>
-				<n>Niv. 1</n><s title="Souffle">10</s><c title="Concentration">0</c><r title="Exécution">4</r>
-				<e>Le personnage se sait d'un adversaire pour l'empecher d'agir. Il effectue alors un test de puissance. La marge par rapport au seuil de réussite (qu'elle soit positive ou négative) est alors appliquée en malus à un test de vivacité ou  puissance ou technique de combat de l'adversaire. En cas d'échec de ce dernier, l'adversaire ne pourra que tenter de se libérer (action attaquer en termes de souffle et récupération) en réussissant un test de puissance opposé. Le personnage peut maintenir cette position à chaque tour tant qu'il continue à dépenser son souffle.</e>
-			</p>
-			<p>
-				<n>Niv. 2</n><s title="Souffle">4</s><c title="Concentration">0</c><r title="Exécution">3</r>
-				<e></e>
-			</p>
-			<p>
-				<n>Niv. 3</n><s title="Souffle">4</s><c title="Concentration">0</c><r title="Exécution">3</r>
-				<e></e>
-			</p>
-			<p>
-				<n>Niv. 4</n><s title="Souffle">4</s><c title="Concentration">0</c><r title="Exécution">3</r>
-				<e></e>
-			</p>
-			<p>
-				<n>Niv. 5</n><s title="Souffle">4</s><c title="Concentration">0</c><r title="Exécution">3</r>
-				<e></e>
-			</p>
-			<p>
-				<n>Niv. 6+</n><s title="Souffle">4</s><c title="Concentration">0</c><r title="Exécution">3</r>
+			<p class="niv6">
+				<n>Niv. 6+</n><s title="Souffle">2</s><c title="Concentration">0</c><r title="Exécution">3</r>
 				<e></e>
 			</p>
 		</div>
 		
 		<div class="comp">
-			<h4>Fauchage</h4>
-			<span class="comp_req">10 en Puissance</span>
-			<p>
-				<n>Niv. 1</n><s title="Souffle">5</s><c title="Concentration">0</c><r title="Exécution">+1</r>
-				<e>Le personnage lance une attaque circulaire en direction des jambes de son adversaire. Les localisations atteignables ne sont que les jambes et l’attaque subit un malus de -4 mais si celle-ci touche, l’ennemi doit réussir un test de Vigueur ou tomber au sol. De plus, si celui-ci venait de se déplacer, sa Vigueur est divisée par 2.<br />Cette action ne peut être tentée avec une arme légère.</e>
+			<h4 class="nom">Prise au corps</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Vigueur, 15)</span></span>
+			<p class="niv1">
+				<n>Niv. 1</n><s title="Souffle">2</s><c title="Concentration">0</c><r title="Exécution">4</r>
+				<e>Le personnage se sait d'un adversaire pour l'empecher d'agir. Le personnage effectue un test opposé de sa Vigueur ccontre la Vigueur ou Adresse de l'adversaire (au choix de ce dernier). En cas de réussite, l'adversaire ne pourra que tenter de se libérer (action 1 execution, 2 Souffle) en réussissant un test de Vigueur opposé. Le personnage peut maintenir cette position à chaque tour tant qu'il continue à dépenser son souffle.</e>
 			</p>
-			<p>
-				<n>Niv. 2</n><s title="Souffle">5</s><c title="Concentration">0</c><r title="Exécution">+1</r>
-				<e>Le malus à l’attaque passe à -3.</e>
+			<p class="niv2">
+				<n>Niv. 2</n><s title="Souffle">2</s><c title="Concentration">0</c><r title="Exécution">3</r>
+				<e></e>
 			</p>
-			<p>
-				<n>Niv. 3</n><s title="Souffle">5</s><c title="Concentration">0</c><r title="Exécution">+1</r>
+			<p class="niv3">
+				<n>Niv. 3</n><s title="Souffle">2</s><c title="Concentration">0</c><r title="Exécution">3</r>
+				<e></e>
+			</p>
+			<p class="niv4">
+				<n>Niv. 4</n><s title="Souffle">2</s><c title="Concentration">0</c><r title="Exécution">3</r>
+				<e></e>
+			</p>
+			<p class="niv5">
+				<n>Niv. 5</n><s title="Souffle">2</s><c title="Concentration">0</c><r title="Exécution">3</r>
+				<e></e>
+			</p>
+			<p class="niv6">
+				<n>Niv. 6+</n><s title="Souffle">2</s><c title="Concentration">0</c><r title="Exécution">3</r>
+				<e></e>
+			</p>
+		</div>
+		
+		<div class="comp">
+			<h4 class="nom">Fauchage</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Vigueur, 30)</span>, <span class="comp_spec">Profil puissant</span></span>
+			<p class="niv1">
+				<n>Niv. 1</n><s title="Souffle">3</s><c title="Concentration">0</c><r title="Exécution">6</r>
+				<e>Le personnage lance une attaque circulaire en direction des jambes de son adversaire. Les localisations atteignables ne sont que les jambes et l’attaque subit un malus de -5 mais si celle-ci touche, l’ennemi doit réussir un test de Vigueur à 20 ou tomber au sol. De plus, si celui-ci venait de se déplacer, sa Vigueur est divisée par 2.</e>
+			</p>
+			<p class="niv2">
+				<n>Niv. 2</n><s title="Souffle">3</s><c title="Concentration">0</c><r title="Exécution">6</r>
+				<e>Le test de Vigueur passe  à 25.</e>
+			</p>
+			<p class="niv3">
+				<n>Niv. 3</n><s title="Souffle">3</s><c title="Concentration">0</c><r title="Exécution">6</r>
 				<e>L’attaque touche tout ennemi au corps à corps.</e>
 			</p>
-			<p>
-				<n>Niv. 4</n><s title="Souffle">5</s><c title="Concentration">0</c><r title="Exécution">+1</r>
-				<e>Le malus à l’attaque passe à -2.</e>
+			<p class="niv4">
+				<n>Niv. 4</n><s title="Souffle">3</s><c title="Concentration">0</c><r title="Exécution">6</r>
+				<e>Le test de Vigueur passe  à 30.</e>
 			</p>
-			<p>
-				<n>Niv. 5</n><s title="Souffle">5</s><c title="Concentration">0</c><r title="Exécution">+1</r>
+			<p class="niv5">
+				<n>Niv. 5</n><s title="Souffle">3</s><c title="Concentration">0</c><r title="Exécution">6</r>
 				<e>L’attaque touche tout ennemi à portée.</e>
 			</p>
-			<p>
-				<n>Niv. 6+</n><s title="Souffle">5</s><c title="Concentration">0</c><r title="Exécution">+1</r>
+			<p class="niv6">
+				<n>Niv. 6+</n><s title="Souffle">3</s><c title="Concentration">0</c><r title="Exécution">6</r>
 				<e>Chaque niveau diminue le malus à l’attaque de 1.</e>
 			</p>
 		</div>
 		
 		<div class="comp">
-			<h4>Repousser</h4>
-			<span class="comp_req">10 en Puissance</span>
-			<p>
-				<n>Niv. 1</n><s title="Souffle">5</s><c title="Concentration">0</c><r title="Exécution">-1</r>
-				<e>Le personnage sacrifie les dégâts qu’il cause pour repousser son adversaire. Il porte ainsi une attaque normale, ci celle-ci touche, l’adversaire doit réussir un test de Puissance avec un malus de -5 ou reculer d’un mètre. L’attaque n’inflige pas de dégâts.</e>
+			<h4 class="nom">Frappe lourde</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Vigueur, 20)</span>, <span class="comp_spec">Profil puissant</span></span>
+			<p class="niv1">
+				<n>Niv. 1</n><s title="Souffle">3</s><c title="Concentration">0</c><r title="Exécution">6</r>
+				<e>Une frappe difficile à parer. Enfin, ils peuvent toujours essayer... -4 à l'attaque mais -5 à la parade adverse</e>
 			</p>
-			<p>
-				<n>Niv. 2</n><s title="Souffle">5</s><c title="Concentration">0</c><r title="Exécution">-1</r>
-				<e>Le personnage peut repousser jusqu’à deux adversaires au contact. Ils devront tous les deux effectuer le test sur la Puissance.</e>
+			<p class="niv2">
+				<n>Niv. 2</n><s title="Souffle">3</s><c title="Concentration">0</c><r title="Exécution">6</r>
+				<e>-7 à la parade.</e>
 			</p>
-			<p>
-				<n>Niv. 3</n><s title="Souffle">5</s><c title="Concentration">0</c><r title="Exécution">-1</r>
-				<e>Les adversaires sont repoussés de 2 mètres.</e>
+			<p class="niv3">
+				<n>Niv. 3</n><s title="Souffle">3</s><c title="Concentration">0</c><r title="Exécution">6</r>
+				<e>-10 à la parade</e>
 			</p>
-			<p>
-				<n>Niv. 4</n><s title="Souffle">5</s><c title="Concentration">0</c><r title="Exécution">-1</r>
-				<e>Le malus au test passe à -10.</e>
+			<p class="niv4">
+				<n>Niv. 4</n><s title="Souffle">3</s><c title="Concentration">0</c><r title="Exécution">6</r>
+				<e></e>
 			</p>
-			<p>
-				<n>Niv. 5</n><s title="Souffle">5</s><c title="Concentration">0</c><r title="Exécution">-1</r>
+			<p class="niv5">
+				<n>Niv. 5</n><s title="Souffle">3</s><c title="Concentration">0</c><r title="Exécution">6</r>
+				<e>.</e>
+			</p>
+			<p class="niv6">
+				<n>Niv. 6+</n><s title="Souffle">3</s><c title="Concentration">0</c><r title="Exécution">6</r>
+				<e></e>
+			</p>
+		</div>
+		
+		<div class="comp">
+			<h4 class="nom">Repousser</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Vigueur, 30)</span></span>
+			<p class="niv1">
+				<n>Niv. 1</n><s title="Souffle">3</s><c title="Concentration">0</c><r title="Exécution">-1</r>
+				<e>Le personnage sacrifie les dégâts qu’il cause pour repousser son adversaire. En cas de réussite d'un test opposé sur la Vigueur, l'adversaire doit reculer de deux mètres.</e>
+			</p>
+			<p class="niv2">
+				<n>Niv. 2</n><s title="Souffle">3</s><c title="Concentration">0</c><r title="Exécution">-1</r>
+				<e>Le personnage peut repousser jusqu’à deux adversaires au contact. Ils devront tous les deux effectuer le test opposé avec un bonus de +5.</e>
+			</p>
+			<p class="niv3">
+				<n>Niv. 3</n><s title="Souffle">3</s><c title="Concentration">0</c><r title="Exécution">-1</r>
+				<e>Les adversaires sont repoussés de 4 mètres.</e>
+			</p>
+			<p class="niv4">
+				<n>Niv. 4</n><s title="Souffle">3</s><c title="Concentration">0</c><r title="Exécution">-1</r>
+				<e>Le personnage gagne un bonus de 5 en Vigueur pour le test.</e>
+			</p>
+			<p class="niv5">
+				<n>Niv. 5</n><s title="Souffle">3</s><c title="Concentration">0</c><r title="Exécution">-1</r>
 				<e>En plus d’être repoussés, les adversaires tombent à terre en cas d’échec du test.</e>
 			</p>
-			<p>
-				<n>Niv. 6+</n><s title="Souffle">5</s><c title="Concentration">0</c><r title="Exécution">-1</r>
-				<e>Chaque niveau augmente le malus de 5 points.</e>
+			<p class="niv6">
+				<n>Niv. 6+</n><s title="Souffle">3</s><c title="Concentration">0</c><r title="Exécution">-1</r>
+				<e>Chaque niveau augmente la Vigueur de 5 points.</e>
 			</p>
 		</div>
-		
+				
 		<div class="comp">
-			<h4>Coup au sol</h4>
-			<span class="comp_req">5 en Puissance</span>
-			<p>
-				<n>Niv. 1</n><s title="Souffle">5</s><c title="Concentration">5</c><r title="Exécution">+1</r>
-				<e>Utilisée lorsque l’ennemi est au sol, cette compétence permet d’ajouter sa Puissance aux dégâts infligés.</e>
-			</p>
-			<p>
-				<n>Niv. 2</n><s title="Souffle">5</s><c title="Concentration">5</c><r title="Exécution">+1</r>
-				<e></e>
-			</p>
-			<p>
-				<n>Niv. 3</n><s title="Souffle">5</s><c title="Concentration">5</c><r title="Exécution">+1</r>
-				<e></e>
-			</p>
-			<p>
-				<n>Niv. 4</n><s title="Souffle">5</s><c title="Concentration">5</c><r title="Exécution">+1</r>
-				<e></e>
-			</p>
-			<p>
-				<n>Niv. 5</n><s title="Souffle">5</s><c title="Concentration">5</c><r title="Exécution">+1</r>
-				<e></e>
-			</p>
-			<p>
-				<n>Niv. 6+</n><s title="Souffle">5</s><c title="Concentration">5</c><r title="Exécution">+1</r>
-				<e></e>
-			</p>
-		</div>
-		
-		<div class="comp">
-			<h4>Expert en armures</h4>
-			<span class="comp_req">10 en Puissance</span>
-			<p>
+			<h4 class="nom">Expert en armures</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Vigueur, 15)</span></span>
+			<p class="niv1">
 				<n>Niv. 1</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
-				<e></e>
+				<e>La protection des armures est augmentée de 1.</e>
 			</p>
-			<p>
+			<p class="niv2">
 				<n>Niv. 2</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
-				<e></e>
+				<e>Le poids de l'armure est réduit de 2 pour déterminer l'encombrement du personnage.</e>
 			</p>
-			<p>
+			<p class="niv3">
 				<n>Niv. 3</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
-				<e></e>
+				<e>La protection des armures est augmentée de 2.</e>
 			</p>
-			<p>
+			<p class="niv4">
 				<n>Niv. 4</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
-				<e></e>
+				<e>Le poids de l'armure est divisé par deux pour déterminer l'encombrement.</e>
 			</p>
-			<p>
+			<p class="niv5">
 				<n>Niv. 5</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e></e>
 			</p>
-			<p>
+			<p class="niv6">
 				<n>Niv. 6+</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e></e>
 			</p>
 		</div>
-		
+				
 		<div class="comp">
-			<h4>Maîtrise des armes lourdes</h4>
-			<span class="comp_req">10 en Puissance</span>
-			<p>
-				<n>Niv. 1</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
-				<e>+4 en dégâts</e>
+			<h4 class="nom">Charge enragée</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Vigueur, 30)</span></span>
+			<p class="niv1">
+				<n>Niv. 1</n><s title="Souffle">3</s><c title="Concentration">3</c><r title="Exécution">2</r>
+				<e>Le personnage charge son ennemi en engageant toute sa puissance (déplacement minimal de 5m et maximal de 10). L’adversaire devra réussir un test de Vigueur opposé ou être déstabilisé pour 1 tour.<br />L'attaquant subit des dégâts égaux au quart de sa Vigueur mais augmente les dégâts de son attaque de la moitié de sa Vigueur.</e>
 			</p>
-			<p>
-				<n>Niv. 2</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
-				<e>-4 à la parade adverse</e>
+			<p class="niv2">
+				<n>Niv. 2</n><s title="Souffle">3</s><c title="Concentration">3</c><r title="Exécution">2</r>
+				<e></e>
 			</p>
-			<p>
-				<n>Niv. 3</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
-				<e>+4 en dégâts</e>
+			<p class="niv3">
+				<n>Niv. 3</n><s title="Souffle">3</s><c title="Concentration">3</c><r title="Exécution">2</r>
+				<e>Tous les ennemis en contact avec le personnage à la fin de la charge doivent tenter un test de Vigueur opposé ou être déstabilisés.</e>
 			</p>
-			<p>
-				<n>Niv. 4</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
-				<e>Les attaques divisent la Vigueur de la cible par 2 pour déterminer si celle-ci doit effectuer un test lorsqu’elle encaisse le coup.</e>
+			<p class="niv4">
+				<n>Niv. 4</n><s title="Souffle">3</s><c title="Concentration">3</c><r title="Exécution">2</r>
+				<e>Les dégâts à la cible sont égaux à la Vigueur de l'attaquant.</e>
 			</p>
-			<p>
-				<n>Niv. 5</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
-				<e>-4 à la parade adverse</e>
-			</p>
-			<p>
-				<n>Niv. 6+</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
-				<e>+2 dégâts et -2 parade adverse par niveau</e>
-			</p>
-		</div>
-		
-		<div class="comp">
-			<h4>Charge enragée</h4>
-			<span class="comp_req">15 en Puissance</span>
-			<p>
-				<n>Niv. 1</n><s title="Souffle">10</s><c title="Concentration">5</c><r title="Exécution">+1</r>
-				<e>Le personnage charge son ennemi en engageant toute sa Puissance. Si son attaque touche, l’adversaire devra réussir un test de Vigueur ou être déstabilisé pour 1 tour.<br />Néanmoins, le personnage s’expose dans cette charge et verra sa Technique de Combat réduite de -5.</e>
-			</p>
-			<p>
-				<n>Niv. 2</n><s title="Souffle">10</s><c title="Concentration">5</c><r title="Exécution">+1</r>
-				<e>L’attaque gagne un bonus de +4 aux dégâts.</e>
-			</p>
-			<p>
-				<n>Niv. 3</n><s title="Souffle">15</s><c title="Concentration">5</c><r title="Exécution">+1</r>
-				<e>Tous les ennemis en contact avec le personnage à la fin de la charge doivent tenter un test de Vigueur ou être déstabilisés.</e>
-			</p>
-			<p>
-				<n>Niv. 4</n><s title="Souffle">15</s><c title="Concentration">5</c><r title="Exécution">+1</r>
-				<e>Le bonus de dégâts infligé par l’attaque est égal à la Puissance du personnage divisée par deux.</e>
-			</p>
-			<p>
-				<n>Niv. 5</n><s title="Souffle">10</s><c title="Concentration">5</c><r title="Exécution">+1</r>
+			<p class="niv5">
+				<n>Niv. 5</n><s title="Souffle">3</s><c title="Concentration">3</c><r title="Exécution">2</r>
 				<e>Le personnage peut charger à travers les ennemis. Tous les ennemis en contact avec le personnage pendant le déplacement et à la fin doivent tenter un test de Vigueur ou être déséquilibrés.</e>
 			</p>
-			<p>
-				<n>Niv. 6+</n><s title="Souffle">20</s><c title="Concentration">5</c><r title="Exécution">+1</r>
-				<e>Les dégâts de l’attaque sont augmentés de +4 par niveau.</e>
+			<p class="niv6">
+				<n>Niv. 6+</n><s title="Souffle">3</s><c title="Concentration">3</c><r title="Exécution">2</r>
+				<e></e>
 			</p>
 		</div>
 		
@@ -1438,116 +1688,234 @@
 		<h3 class="comp_cat">Prestance</h3>
 		
 		<div class="comp">
-			<h4>Chant fortifiant</h4>
-			<span class="comp_req">10 en Prestance</span>
-			<p>
-				<n>Niv. 1</n><s title="Souffle">0</s><c title="Concentration">5</c><r title="Exécution">3</r>
-				<e>Lorsque le personnage chante cette mélodie, ses alliés ressentent une paix intérieure revigorante.<br />Tout allié à moins de 5 mètres regagne 2 points de Concentration et de Souffle.<br />Cette action peut également être utilisée en même temps qu'une action innée.</e>
+			<h4 class="nom">Chant fortifiant</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Prestance, 15)</span></span>
+			<p class="niv1">
+				<n>Niv. 1</n><s title="Souffle">0</s><c title="Concentration">2</c><r title="Exécution">3</r>
+				<e>Lorsque le personnage chante cette mélodie, ses alliés ressentent une paix intérieure revigorante.<br />Tout allié à moins de 5 mètres regagne 1 point de Concentration et de Souffle.<br />Cette action peut également être utilisée en même temps qu'une action innée.</e>
 			</p>
-			<p>
-				<n>Niv. 2</n><s title="Souffle">0</s><c title="Concentration">5</c><r title="Exécution">3</r>
+			<p class="niv2">
+				<n>Niv. 2</n><s title="Souffle">0</s><c title="Concentration">3</c><r title="Exécution">3</r>
 				<e>La compétence s’applique également au personnage.</e>
 			</p>
-			<p>
-				<n>Niv. 3</n><s title="Souffle">0</s><c title="Concentration">5</c><r title="Exécution">3</r>
-				<e>Les alliés à 10 mètres regagnent 3 points de Concentration et de Souffle.</e>
+			<p class="niv3">
+				<n>Niv. 3</n><s title="Souffle">0</s><c title="Concentration">3</c><r title="Exécution">3</r>
+				<e>Les alliés à 10 mètres regagnent 1 point de Concentration et de Souffle.</e>
 			</p>
-			<p>
-				<n>Niv. 4</n><s title="Souffle">0</s><c title="Concentration">5</c><r title="Exécution">3</r>
-				<e>Les alliés à 10 mètres regagnent 4 points de Concentration et de Souffle.</e>
+			<p class="niv4">
+				<n>Niv. 4</n><s title="Souffle">0</s><c title="Concentration">3</c><r title="Exécution">3</r>
+				<e>Les alliés à 10 mètres regagnent 2 points de Concentration et de Souffle.</e>
 			</p>
-			<p>
-				<n>Niv. 5</n><s title="Souffle">0</s><c title="Concentration">5</c><r title="Exécution">3</r>
+			<p class="niv5">
+				<n>Niv. 5</n><s title="Souffle">0</s><c title="Concentration">3</c><r title="Exécution">3</r>
 				<e>Tant que le personnage chante, les alliés dans l’aire d’effet divisent les coûts en Concentration et Souffle.</e>
 			</p>
-			<p>
-				<n>Niv. 6+</n><s title="Souffle">0</s><c title="Concentration">5</c><r title="Exécution">3</r>
+			<p class="niv6">
+				<n>Niv. 6+</n><s title="Souffle">0</s><c title="Concentration">3</c><r title="Exécution">3</r>
 				<e>Chaque niveau agrandit la zone d’effet de 1 mètre.</e>
 			</p>
 		</div>
 		
 		<div class="comp">
-			<h4>Tenez bon !</h4>
-			<span class="comp_req">10 en Prestance</span>
-			<p>
-				<n>Niv. 1</n><s title="Souffle">5</s><c title="Concentration">5</c><r title="Exécution">1</r>
-				<e>Le personnage encourage ses alliés dans la bataille. Tous les aliés à 5m du personnage verront les dégâts inférieurs ou égaux à la prestance/10 annulés pour 2D6 tours.</e>
+			<h4 class="nom">Tenez bon !</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Prestance, 15)</span></span>
+			<p class="niv1">
+				<n>Niv. 1</n><s title="Souffle">2</s><c title="Concentration">2</c><r title="Exécution">1</r>
+				<e>Le personnage encourage ses alliés dans la bataille. Tous les aliés à 5m du personnage gagnent un bonus de +2 pour résister à la peur et à la douleur pendant 2 tours.<br />Cette action peut également être utilisée en même temps qu'une action innée.</e>
 			</p>
-			<p>
-				<n>Niv. 2</n><s title="Souffle">5</s><c title="Concentration">5</c><r title="Exécution">1</r>
-				<e>Tous les dégâts sont désormais réduis d'un montant égal à la prestance/10.</e>
+			<p class="niv2">
+				<n>Niv. 2</n><s title="Souffle">3</s><c title="Concentration">3</c><r title="Exécution">1</r>
+				<e>La compétence s’applique également au personnage.</e>
 			</p>
-			<p>
-				<n>Niv. 3</n><s title="Souffle">5</s><c title="Concentration">5</c><r title="Exécution">1</r>
-				<e>A la place de réduire tous les dégâts pour les 2D6 tours, le personnage peut décider de réduire les dégâts de la prochaine attaque d'un montant égal à sa prestance. Il est impossible de relancer cette compétence tant que le délai des 2D6 tours n'est pas écoulé.</e>
+			<p class="niv3">
+				<n>Niv. 3</n><s title="Souffle">3</s><c title="Concentration">3</c><r title="Exécution">1</r>
+				<e>L'aire d'effet passe à 10m.</e>
 			</p>
-			<p>
-				<n>Niv. 4</n><s title="Souffle">5</s><c title="Concentration">5</c><r title="Exécution">1</r>
-				<e></e>
+			<p class="niv4">
+				<n>Niv. 4</n><s title="Souffle">3</s><c title="Concentration">3</c><r title="Exécution">1</r>
+				<e>Les bonus montent à +5.</e>
 			</p>
-			<p>
-				<n>Niv. 5</n><s title="Souffle">5</s><c title="Concentration">5</c><r title="Exécution">1</r>
-				<e></e>
+			<p class="niv5">
+				<n>Niv. 5</n><s title="Souffle">3</s><c title="Concentration">3</c><r title="Exécution">1</r>
+				<e>Les effets durent 4 tours.</e>
 			</p>
-			<p>
-				<n>Niv. 6+</n><s title="Souffle">5</s><c title="Concentration">5</c><r title="Exécution">1</r>
+			<p class="niv6">
+				<n>Niv. 6+</n><s title="Souffle">3</s><c title="Concentration">3</c><r title="Exécution">1</r>
 				<e></e>
 			</p>
 		</div>
 		
 		<div class="comp">
-			<h4>Provoquer</h4>
-			<span class="comp_req">10 en Prestance</span>
-			<p>
-				<n>Niv. 1</n><s title="Souffle">0</s><c title="Concentration">3</c><r title="Exécution">3</r>
-				<e>Le personnage provoque ses adversaires pour les forcer à se concentrer sur lui. S’il applique la compétence à tous les ennemis dans l’aire d’effet, ceux-ci doivent réussir un test d’Intelligence avec en malus -3. Si le personnage cible un ennemi en particulier, il est le seul à devoir réussir un test d’Intelligence avec un malus -6. L’aire d’effet est un disque centré sur le personnage et d’un rayon de 5m.</e>
+			<h4 class="nom">Chant entrainant</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Prestance, 15)</span></span>
+			<p class="niv1">
+				<n>Niv. 1</n><s title="Souffle">0</s><c title="Concentration">2</c><r title="Exécution">3</r>
+				<e>Lorsque le personnage chante cette mélodie, ses alliés ressentent bouffée d'énergie nouvelle.<br />Tout allié à moins de 5 mètres regagne 1 point de Moral.<br />Cette action peut également être utilisée en même temps qu'une action innée.<br />Ce bonus ne peut être appliqué qu'une fois par jour par personnage.</e>
 			</p>
-			<p>
+			<p class="niv2">
 				<n>Niv. 2</n><s title="Souffle">0</s><c title="Concentration">3</c><r title="Exécution">3</r>
+				<e>La compétence s’applique également au personnage.</e>
+			</p>
+			<p class="niv3">
+				<n>Niv. 3</n><s title="Souffle">0</s><c title="Concentration">3</c><r title="Exécution">3</r>
+				<e>Les alliés à 10 mètres regagnent 1 point de Moral.</e>
+			</p>
+			<p class="niv4">
+				<n>Niv. 4</n><s title="Souffle">0</s><c title="Concentration">3</c><r title="Exécution">3</r>
+				<e>Les alliés à 10 mètres regagnent 2 points de Moral.</e>
+			</p>
+			<p class="niv5">
+				<n>Niv. 5</n><s title="Souffle">0</s><c title="Concentration">3</c><r title="Exécution">3</r>
+				<e>Tant que le personnage chante, les alliés dans l’aire d’effet ne peuvent pas perdre de point de Moral.</e>
+			</p>
+			<p class="niv6">
+				<n>Niv. 6+</n><s title="Souffle">0</s><c title="Concentration">3</c><r title="Exécution">3</r>
+				<e>Chaque niveau agrandit la zone d’effet de 1 mètre.</e>
+			</p>
+		</div>
+		
+		<div class="comp">
+			<h4 class="nom">Provoquer</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Prestance, 15)</span></span>
+			<p class="niv1">
+				<n>Niv. 1</n><s title="Souffle">0</s><c title="Concentration">2</c><r title="Exécution">3</r>
+				<e>Le personnage provoque ses adversaires pour les forcer à se concentrer sur lui. S’il applique la compétence à tous les ennemis dans l’aire d’effet, ceux-ci doivent réussir un test opposé de leur Intelligence+5 contre la Prestance du lanceur. Si le personnage cible un ennemi en particulier, il est le seul à devoir réussir le test sans aucun bonus. L’aire d’effet est un disque centré sur le personnage et d’un rayon de 5m.</e>
+			</p>
+			<p class="niv2">
+				<n>Niv. 2</n><s title="Souffle">0</s><c title="Concentration">2</c><r title="Exécution">3</r>
 				<e>L’aire d’effet passe à un disque de 10m de rayon.</e>
 			</p>
-			<p>
-				<n>Niv. 3</n><s title="Souffle">0</s><c title="Concentration">3</c><r title="Exécution">3</r>
+			<p class="niv3">
+				<n>Niv. 3</n><s title="Souffle">0</s><c title="Concentration">2</c><r title="Exécution">3</r>
 				<e></e>
 			</p>
-			<p>
-				<n>Niv. 4</n><s title="Souffle">0</s><c title="Concentration">3</c><r title="Exécution">3</r>
+			<p class="niv4">
+				<n>Niv. 4</n><s title="Souffle">0</s><c title="Concentration">2</c><r title="Exécution">3</r>
 				<e></e>
 			</p>
-			<p>
-				<n>Niv. 5</n><s title="Souffle">0</s><c title="Concentration">3</c><r title="Exécution">3</r>
+			<p class="niv5">
+				<n>Niv. 5</n><s title="Souffle">0</s><c title="Concentration">2</c><r title="Exécution">3</r>
 				<e></e>
 			</p>
-			<p>
-				<n>Niv. 6+</n><s title="Souffle">0</s><c title="Concentration">3</c><r title="Exécution">3</r>
+			<p class="niv6">
+				<n>Niv. 6+</n><s title="Souffle">0</s><c title="Concentration">2</c><r title="Exécution">3</r>
 				<e></e>
 			</p>
 		</div>
 		
 		<div class="comp">
-			<h4>Discours inspirant</h4>
-			<p>
-				<n>Niv. 1</n><s title="Souffle">4</s><c title="Concentration">8</c><r title="Exécution">10</r>
+			<h4 class="nom">Discours inspirant</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Prestance, 15)</span></span>
+			<p class="niv1">
+				<n>Niv. 1</n><s title="Souffle">2</s><c title="Concentration">3</c><r title="Exécution">10</r>
 				<e>Le personnage prononce un discours qui décuple les capacités de ses alliés. Tout allié à 5m gagne pour 2D6 tours 1D3 + prestance/10 à l'une des caractéristiques de son choix</e>
 			</p>
-			<p>
-				<n>Niv. 2</n><s title="Souffle">4</s><c title="Concentration">8</c><r title="Exécution">10</r>
+			<p class="niv2">
+				<n>Niv. 2</n><s title="Souffle">2</s><c title="Concentration">3</c><r title="Exécution">10</r>
 				<e>La portée passe à 10 mètres.</e>
 			</p>
-			<p>
-				<n>Niv. 3</n><s title="Souffle">4</s><c title="Concentration">8</c><r title="Exécution">10</r>
+			<p class="niv3">
+				<n>Niv. 3</n><s title="Souffle">2</s><c title="Concentration">3</c><r title="Exécution">10</r>
 				<e>2 caractéristiques sont augmentées.</e>
 			</p>
-			<p>
-				<n>Niv. 4</n><s title="Souffle">4</s><c title="Concentration">8</c><r title="Exécution">10</r>
+			<p class="niv4">
+				<n>Niv. 4</n><s title="Souffle">2</s><c title="Concentration">3</c><r title="Exécution">10</r>
 				<e></e>
 			</p>
-			<p>
-				<n>Niv. 5</n><s title="Souffle">4</s><c title="Concentration">8</c><r title="Exécution">10</r>
+			<p class="niv5">
+				<n>Niv. 5</n><s title="Souffle">2</s><c title="Concentration">3</c><r title="Exécution">10</r>
 				<e></e>
 			</p>
-			<p>
-				<n>Niv. 6+</n><s title="Souffle">4</s><c title="Concentration">8</c><r title="Exécution">10</r>
+			<p class="niv6">
+				<n>Niv. 6+</n><s title="Souffle">2</s><c title="Concentration">3</c><r title="Exécution">10</r>
+				<e></e>
+			</p>
+		</div>
+		
+		<div class="comp">
+			<h4 class="nom">Chant de guerre</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Prestance, 20)</span></span>
+			<p class="niv1">
+				<n>Niv. 1</n><s title="Souffle">1</s><c title="Concentration">1</c><r title="Exécution">3</r>
+				<e>Le personnage chante pour inspirer les alliés autour de lui. Le chanteur conscidère la valeur de sa caractéristique la plus élevée (il choisit en cas d'égalité). Tout allié à 5m gagne +1/10 de cette valeur pour lui même pour 1 tour. Pendant cette durée l'allié peut reprendre lui aussi le chant comme s'il disposait de la compétence lui même au niveau 1. Cela prolongera l'effet du chant "principal" et ajoutera un nouveau bonus lié à la caractéristique du nouveau chanteur.
+				<br />Cette action peut également être utilisée en même temps qu'une action innée.</e>
+			</p>
+			<p class="niv2">
+				<n>Niv. 2</n><s title="Souffle">1</s><c title="Concentration">1</c><r title="Exécution">3</r>
+				<e>La portée passe à 10 mètres.</e>
+			</p>
+			<p class="niv3">
+				<n>Niv. 3</n><s title="Souffle">1</s><c title="Concentration">1</c><r title="Exécution">3</r>
+				<e>La durée passe à 2 tours.</e>
+			</p>
+			<p class="niv4">
+				<n>Niv. 4</n><s title="Souffle"></s><c title="Concentration"></c><r title="Exécution">3</r>
+				<e></e>
+			</p>
+			<p class="niv5">
+				<n>Niv. 5</n><s title="Souffle"></s><c title="Concentration"></c><r title="Exécution">3</r>
+				<e></e>
+			</p>
+			<p class="niv6">
+				<n>Niv. 6+</n><s title="Souffle"></s><c title="Concentration"></c><r title="Exécution">3</r>
+				<e></e>
+			</p>
+		</div>
+		
+		<div class="comp">
+			<h4 class="nom">Charge héroïque</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Prestance, 20)</span></span>
+			<p class="niv1">
+				<n>Niv. 1</n><s title="Souffle">2</s><c title="Concentration">3</c><r title="Exécution">3</r>
+				<e>Le personnage charge un ennemi dans un élan d'héroïsme (déplacement minimal de 5m et maximal de 10). Tout allié à 5m gagne pour 2D6 tours + (1 + Prestance/10) aux dégâts lorsqu'ils effectuent une charge</e>
+			</p>
+			<p class="niv2">
+				<n>Niv. 2</n><s title="Souffle">2</s><c title="Concentration">3</c><r title="Exécution">3</r>
+				<e>La portée passe à 10 mètres.</e>
+			</p>
+			<p class="niv3">
+				<n>Niv. 3</n><s title="Souffle">2</s><c title="Concentration">3</c><r title="Exécution">3</r>
+				<e>Le personnage peut réaliser sa charge héroïque en même temps qu'une charge normale (et donc porter un coup puissant) en ajoutant le Souffle et la Concentration.</e>
+			</p>
+			<p class="niv4">
+				<n>Niv. 4</n><s title="Souffle">2</s><c title="Concentration">3</c><r title="Exécution">3</r>
+				<e></e>
+			</p>
+			<p class="niv5">
+				<n>Niv. 5</n><s title="Souffle">2</s><c title="Concentration">3</c><r title="Exécution">3</r>
+				<e></e>
+			</p>
+			<p class="niv6">
+				<n>Niv. 6+</n><s title="Souffle">2</s><c title="Concentration">3</c><r title="Exécution">3</r>
+				<e></e>
+			</p>
+		</div>
+		
+		<div class="comp">
+			<h4 class="nom">Effrayant</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Prestance, 15)</span></span>
+			<p class="niv1">
+				<n>Niv. 1</n><s title="Souffle">-</s><c title="Concentration">-</c><r title="Exécution">-</r>
+				<e>Le personnage inspire la terreur aux ennemis à son contact qui doivent réussir un test opposé de Bravoure contre la caracéristique la plus élevée du personnage au début de leur tour ou gagner un point de peur</e>
+			</p>
+			<p class="niv2">
+				<n>Niv. 2</n><s title="Souffle">-</s><c title="Concentration">-</c><r title="Exécution">-</r>
+				<e>Les ennemis à 3m du personnages sont susceptibles d'être effrayés.</e>
+			</p>
+			<p class="niv3">
+				<n>Niv. 3</n><s title="Souffle">-</s><c title="Concentration">-</c><r title="Exécution">-</r>
+				<e>Le personnage décide ou non s'il inspire la peur à ses ennemis.</e>
+			</p>
+			<p class="niv4">
+				<n>Niv. 4</n><s title="Souffle">-</s><c title="Concentration">-</c><r title="Exécution">-</r>
+				<e></e>
+			</p>
+			<p class="niv5">
+				<n>Niv. 5</n><s title="Souffle">-</s><c title="Concentration">-</c><r title="Exécution">-</r>
+				<e></e>
+			</p>
+			<p class="niv6">
+				<n>Niv. 6+</n><s title="Souffle">-</s><c title="Concentration">-</c><r title="Exécution">-</r>
 				<e></e>
 			</p>
 		</div>
@@ -1558,67 +1926,68 @@
 		
 		
 		<div class="comp">
-			<h4>Connaissance de la magie</h4>
-			<span class="comp_req">10 en Intelligence</span>
-			<p>
+			<h4 class="nom">Connaissance de la magie</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Intelligence, 15)</span></span>
+			<p class="niv1">
 				<n>Niv. 1</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
-				<e>Grâce à ses nombreux apprentissages, le personnage est capable de reconnaître l’ensemble des sorts dont le malus d’apprentissage x2 est inférieur à son score d’Intelligence.</e>
+				<e>Grâce à ses nombreux apprentissages, le personnage est capable de reconnaître l’ensemble des sorts dont le malus d’apprentissage est inférieur ou égal à 20.</e>
 			</p>
-			<p>
+			<p class="niv2">
 				<n>Niv. 2</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
-				<e>Le personnage gagne un bonus de +2 pour résister à un sort.</e>
+				<e>Sur un test de Perception réussi (la difficulté dépend de la puissance de l'objet), le mage est capable de détecter tout enchantement/objet magique/faément présent dans un rayon égal à son Intelligence.</e>
 			</p>
-			<p>
+			<p class="niv3">
 				<n>Niv. 3</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
-				<e>Le personnage gagne un bonus de +2 pour lancer un sort.</e>
+				<e>Le personnage sait identifier les effets magiques sur les objets enchantés.</e>
 			</p>
-			<p>
+			<p class="niv4">
 				<n>Niv. 4</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Le personnage est capable de reconnaitre tous les sorts.</e>
 			</p>
-			<p>
+			<p class="niv5">
 				<n>Niv. 5</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
-				<e>Le personnage gagne un bonus de +2 pour résister à un sort.</e>
+				<e></e>
 			</p>
-			<p>
+			<p class="niv6">
 				<n>Niv. 6+</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
-				<e>Chaque niveau augmente les bonus pour lancer un sort de +1.</e>
+				<e></e>
 			</p>
 		</div>
 		
 		<div class="comp">
-			<h4>Maitrise de la magie XXX</h4>
-			<span class="comp_req">10 en Intelligence</span>
-			<p>
+			<h4 class="nom">Maitrise de la magie XXX</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Intelligence, 15)</span></span>
+			<p class="niv1">
 				<n>Niv. 1</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Le personnage devient spécialiste dans l’utilisation de cette magie. Il gagne automatique un bonus de +1 pour lancer les sorts de ce domaine.</e>
 			</p>
-			<p>
+			<p class="niv2">
 				<n>Niv. 2</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Le personnage gagne un bonus de +3 en Intelligence pour apprendre les sors appartenant à ce domaine.</e>
 			</p>
-			<p>
+			<p class="niv3">
 				<n>Niv. 3</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Le bonus pour lancer les sorts passe à +2.</e>
 			</p>
-			<p>
+			<p class="niv4">
 				<n>Niv. 4</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Le bonus d’apprentissage passe à +5.</e>
 			</p>
-			<p>
+			<p class="niv5">
 				<n>Niv. 5</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Le bonus pour lancer les sorts passe à +3.</e>
 			</p>
-			<p>
+			<p class="niv6">
 				<n>Niv. 6+</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Chaque niveau augmente les bonus pour lancer les sorts et pour les apprendre de +1.</e>
 			</p>
 		</div>
 		
 		<div class="comp">
-			<h4>Faément mineur</h4>
-			<div class="bloc">
-				<n>Niv. 1</n><s title="Souffle">0</s><c title="Concentration">10</c><r title="Exécution">*</r>
+			<h4 class="nom">Faément mineur</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Intelligence, 15)</span></span>
+			<div class="bloc niv1">
+				<n>Niv. 1</n><s title="Souffle">0</s><c title="Concentration">4</c><r title="Exécution">*</r>
 				<e>Le personnage charge un sort dans un réceptacle pour que celui-ci soit déclenché lorsque les conditions nécessaires seront remplies.<br />Pour préparer le faément, le personnage doit au préalable :
 				<ul>
 					<li>connaitre le sort qu'il veut inscrire</li>
@@ -1627,37 +1996,38 @@
 					<li>accéder à une surface dure (metal, roche, bois, ...)</li>
 				</ul>
 				<br />
-				La préparation du Faément aura pour durée un nombre de temps d'action égal au seuil de puissance du sort. Durant cette préparation, le personnage défini la condition de déclenchement du faément ainsi que ses modalités de déclenchement (direction du projectile, zone d'effet). La condition de déclenchement est une condition simple (pas de "ET" ni de "OU" et ne doit impliquer que des éléments à moins de 20m du faément).
-				Un test d'intelligence avec en malus le malus d'apprentissage du sort doit être réussi pour inscrire le faément. En cas d'échec le réceptacle perd 50% de ses charges.
-				Lque le faément est terminé, dès que la condition de déclenchement est remplie, le sort est lancé et le faément est détruit.
+				La préparation du Faément aura pour durée un nombre de temps d'action égal au seuil de puissance du sort. Durant cette préparation, le personnage définit la condition de déclenchement du faément ainsi que ses modalités de déclenchement (direction du projectile, zone d'effet). La condition de déclenchement est une condition simple (pas de "ET" ni de "OU" et ne doit impliquer que des éléments à moins de 20m du faément).
+				Un test d'Intelligence avec comme cible le seuil de puissance du sort doit être réussi pour inscrire le faément. En cas d'échec le réceptacle perd 50% de ses charges.
+				Lorsque le faément est terminé, dès que la condition de déclenchement est remplie, le sort est lancé et le faément est détruit.
 				</e>
 			</div>
-			<p>
-				<n>Niv. 2</n><s title="Souffle">0</s><c title="Concentration">10</c><r title="Exécution">*</r>
+			<p class="niv2">
+				<n>Niv. 2</n><s title="Souffle">0</s><c title="Concentration">4</c><r title="Exécution">*</r>
 				<e>Le faément peut déclencher un sort en seuil critique. Dans ce cas, la durée de préparation et la charge nécessaire dépendent du seuil critique et plus du seuil de puissance</e>	
 			</p>
-			<p>
-				<n>Niv. 3</n><s title="Souffle">0</s><c title="Concentration">10</c><r title="Exécution">*</r>
+			<p class="niv3">
+				<n>Niv. 3</n><s title="Souffle">0</s><c title="Concentration">4</c><r title="Exécution">*</r>
 				<e>En cas d'échec, un test de vivacité réussi permet de ne perdre aucune charge.</e>	
 			</p>
-			<p>
-				<n>Niv. 4</n><s title="Souffle">0</s><c title="Concentration">10</c><r title="Exécution">*</r>
+			<p class="niv4">
+				<n>Niv. 4</n><s title="Souffle">0</s><c title="Concentration">4</c><r title="Exécution">*</r>
 				<e>La condition de déclenchement peut cibler un élément allant jusqu'à 50m</e>	
 			</p>
-			<p>
-				<n>Niv. 5</n><s title="Souffle">0</s><c title="Concentration">10</c><r title="Exécution">*</r>
+			<p class="niv5">
+				<n>Niv. 5</n><s title="Souffle">0</s><c title="Concentration">4</c><r title="Exécution">*</r>
 				<e></e>	
 			</p>
-			<p>
-				<n>Niv. 6+</n><s title="Souffle">0</s><c title="Concentration">10</c><r title="Exécution">*</r>
+			<p class="niv6">
+				<n>Niv. 6+</n><s title="Souffle">0</s><c title="Concentration">4</c><r title="Exécution">*</r>
 				<e></e>	
 			</p>
 		</div>
 		
 		<div class="comp">
-			<h4>Faément majeur</h4>
-			<div class="bloc">
-				<n>Niv. 1</n><s title="Souffle">0</s><c title="Concentration">10</c><r title="Exécution">*</r>
+			<h4 class="nom">Faément majeur</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Intelligence, 30)</span></span>
+			<div class="bloc niv1">
+				<n>Niv. 1</n><s title="Souffle">0</s><c title="Concentration">4</c><r title="Exécution">*</r>
 				<e>Le fonctionnement ets le même que le faément mineur avec les différences suivantes :
 				<ul>
 					<li>La charge nécessaire n'est plus le seuil de puissance x2 mais x10</li>
@@ -1666,257 +2036,384 @@
 				</ul>
 				</e>
 			</div>
-			<p>
-				<n>Niv. 2</n><s title="Souffle">0</s><c title="Concentration">10</c><r title="Exécution">*</r>
+			<p class="niv2">
+				<n>Niv. 2</n><s title="Souffle">0</s><c title="Concentration">4</c><r title="Exécution">*</r>
 				<e>Le faément peut déclencher un sort en seuil critique. Dans ce cas, la durée de préparation et la charge nécessaire dépendent du seuil critique et plus du seuil de puissance</e>	
 			</p>
-			<p>
-				<n>Niv. 3</n><s title="Souffle">0</s><c title="Concentration">10</c><r title="Exécution">*</r>
+			<p class="niv3">
+				<n>Niv. 3</n><s title="Souffle">0</s><c title="Concentration">4</c><r title="Exécution">*</r>
 				<e>En cas d'échec, un test de vivacité réussi permet de ne perdre aucune charge.</e>	
 			</p>
-			<p>
-				<n>Niv. 4</n><s title="Souffle">0</s><c title="Concentration">10</c><r title="Exécution">*</r>
+			<p class="niv4">
+				<n>Niv. 4</n><s title="Souffle">0</s><c title="Concentration">4</c><r title="Exécution">*</r>
 				<e>La condition de déclenchement peut cibler un élément allant jusqu'à 50m</e>	
 			</p>
-			<p>
-				<n>Niv. 5</n><s title="Souffle">0</s><c title="Concentration">10</c><r title="Exécution">*</r>
+			<p class="niv5">
+				<n>Niv. 5</n><s title="Souffle">0</s><c title="Concentration">4</c><r title="Exécution">*</r>
 				<e></e>	
 			</p>
-			<p>
-				<n>Niv. 6+</n><s title="Souffle">0</s><c title="Concentration">10</c><r title="Exécution">*</r>
+			<p class="niv6">
+				<n>Niv. 6+</n><s title="Souffle">0</s><c title="Concentration">4</c><r title="Exécution">*</r>
 				<e></e>	
 			</p>
 		</div>
 		
 		<div class="comp">
-			<h4>Analyse</h4>
-			<span class="comp_req">10 en Intelligence</span>
-			<p>
-				<n>Niv. 1</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
-				<e>Le personnage analyse le comportement de son adversaire pour déterminer ses forces et faiblesses. Il lance un D20 auquel il somme son intelligence. Toutes les caractéristiques de la cible inférieures au résultat seront connues du personnage. Pour les jauges, le résultat est à multiplier par deux.</e>
+			<h4 class="nom">Chargement</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Intelligence, 20)</span></span>
+			<div class="bloc niv1">
+				<n>Niv. 1</n><s title="Souffle">-</s><c title="Concentration">-</c><r title="Exécution">-</r>
+				<e>Charge un réceptacle d'énergie. Un réceptacle d'énergie est une pierre précieuse.<br />
+				<br /> - 1h -> +10 énergie -> test d'Intelligence 20
+				<br /> - 1h -> +15 énergie -> test d'Intelligence 25
+				<br /> - 1h -> +20 énergie -> test d'Intelligence 30
+				<br /><br />En cas d'échec du test, le réceptacle perde 1D10 points d'énergie.
+				
+				<table>
+					<tr><th>Pierre</th><th>Propriétés</th></tr>
+					<tr><td>Diamand</td><td>Charge max = 400</td></tr>
+					<tr><td>Rubis</td><td>Charge max = 600, test pour charger -5</td></tr>
+					<tr><td>Améthyste</td><td>Charge max = 300, test pour charger +2</td></tr>
+					<tr><td>Topaze</td><td>Charge max = 200, en cas d'échec de chargement perte seulement 1D6.</td></tr>
+				</table>
+				</e>
+			</div>
+			<p class="niv2">
+				<n>Niv. 2</n><s title="Souffle">0</s><c title="Concentration">+10</c><r title="Exécution">-1</r>
+				<e></e>
 			</p>
-			<p>
+			<p class="niv3">
+				<n>Niv. 3</n><s title="Souffle">0</s><c title="Concentration">+10</c><r title="Exécution">-1</r>
+				<e></e>
+			</p>
+			<p class="niv4">
+				<n>Niv. 4</n><s title="Souffle">0</s><c title="Concentration">+10</c><r title="Exécution">-1</r>
+				<e></e>
+			</p>
+			<p class="niv5">
+				<n>Niv. 5</n><s title="Souffle">0</s><c title="Concentration">+10</c><r title="Exécution">-1</r>
+				<e></e>
+			</p>
+			<p class="niv6">
+				<n>Niv. 6+</n><s title="Souffle">0</s><c title="Concentration">+10</c><r title="Exécution">-1</r>
+				<e></e>
+			</p>
+		</div>
+		
+		<div class="comp">
+			<h4 class="nom">Analyse</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Intelligence, 15)</span></span>
+			<p class="niv1">
+				<n>Niv. 1</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
+				<e>Le personnage analyse le comportement de son adversaire pour déterminer ses forces et faiblesses. Il lance un D20 auquel il somme son Intelligence/2. Toutes les caractéristiques de la cible inférieures au résultat seront connues du personnage.</e>
+			</p>
+			<p class="niv2">
 				<n>Niv. 2</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Le personnage peut déterminer les compétences de sa cible.</e>
 			</p>
-			<p>
+			<p class="niv3">
 				<n>Niv. 3</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
-				<e>Le personnage peut voir l'équipement de sa cible (y compris les propriétés magiques).</e>
-			</p>
-			<p>
-				<n>Niv. 4</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Chaque action défensive effectuée par le personnage contre un adversaire qui a été analysé dans le combat donne un bonus de +2 pour les prochaines tentatives.</e>
 			</p>
-			<p>
+			<p class="niv4">
+				<n>Niv. 4</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
+				<e></e>
+			</p>
+			<p class="niv5">
 				<n>Niv. 5</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Chaque action défensive effectuée contre le personnage par un adversaire qui a été analysé dans le combat inflige un malus de -2 pour les prochaines tentatives.</e>
 			</p>
-			<p>
+			<p class="niv6">
 				<n>Niv. 6+</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e></e>
 			</p>
 		</div>
 		
 		<div class="comp">
-			<h4>Science des antidotes</h4>
-			<span class="comp_req">20 en Intelligence</span>
-			<p>
+			<h4 class="nom">Expert en canalisation</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Intelligence, 15)</span></span>
+			<p class="niv1">
+				<n>Niv. 1</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
+				<e>Les durées de canalisation sont réduites de 1.</e>
+			</p>
+			<p class="niv2">
+				<n>Niv. 2</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
+				<e>Si le personnage ne gagne pas de point de douleur lorsqu'il subit une blessure, la canalisation n'est pas interrompue.</e>
+			</p>
+			<p class="niv3">
+				<n>Niv. 3</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
+				<e>Le personnage peut se déplacer de 2m à l'issue de la canalisation et avant de lancer le sort</e>
+			</p>
+			<p class="niv4">
+				<n>Niv. 4</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
+				<e>Les durées de canalisation sont réduites de 2.</e>
+			</p>
+			<p class="niv5">
+				<n>Niv. 5</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
+				<e></e>
+			</p>
+			<p class="niv6">
+				<n>Niv. 6+</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
+				<e></e>
+			</p>
+		</div>
+		<div class="comp">
+			<h4 class="nom">Survie</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Intelligence, 15)</span></span>
+			<p class="niv1">
+				<n>Niv. 1</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
+				<e>Le personnage peut démarrer un feu en 1D6 minutes sans matériel particulier.</e>
+			</p>
+			<p class="niv2">
+				<n>Niv. 2</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
+				<e>1 fois par jour, sait utiliser les plantes et ressources naturelles à disposition pour réduire la Faim de 1 point.</e>
+			</p>
+			<p class="niv3">
+				<n>Niv. 3</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
+				<e>Si le personnage sait dormir sans le confort d'un feu de camp et ptofiter tout de même du bonus de +2 au test de repos.</e>
+			</p>
+			<p class="niv4">
+				<n>Niv. 4</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
+				<e></e>
+			</p>
+			<p class="niv5">
+				<n>Niv. 5</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
+				<e></e>
+			</p>
+			<p class="niv6">
+				<n>Niv. 6+</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
+				<e></e>
+			</p>
+		</div>
+		
+		<div class="comp">
+			<h4 class="nom">Science des antidotes</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Intelligence, 20)</span></span>
+			<p class="niv1">
 				<n>Niv. 1</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Le personnage sait reconnaitre la majorité des poisons rien qu’en étudiant une personne victime des symptomes.</e>
 			</p>
-			<p>
+			<p class="niv2">
 				<n>Niv. 2</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Le personnage peut stopper les effets de n’importe quel poison pendant 1 heure grâce à un antidote commun.</e>
 			</p>
-			<p>
+			<p class="niv3">
 				<n>Niv. 3</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>En utilisant un antidote commun et une dose du poison qui touche une victime, le personnage peut la guérir.</e>
 			</p>
-			<p>
+			<p class="niv4">
 				<n>Niv. 4</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Lorsqu’il utilise un bandage ou un baume de soin, les effets d’un antidote commun s’ajoutent. Cet antidote commun ne peut être combiné avec les précédentes compétences, il ne peut donc pas être utilisé pour ralentir ou soigner un poison puissant.</e>
 			</p>
-			<p>
+			<p class="niv5">
 				<n>Niv. 5</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Lorsqu’il utilise un antidote, la cible est immunisée contre ce poison pendant 1 heure.</e>
 			</p>
-			<p>
+			<p class="niv6">
 				<n>Niv. 6+</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Chaque niveau augmente de 1 heure la durée d’immunité au poison.</e>
 			</p>
 		</div>
 		
+		<div class="comp">
+			<h4 class="nom">Médecine de guerre</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Intelligence, 20)</span></span>
+			<p class="niv1">
+				<n>Niv. 1</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
+				<e>Le personnage gagne un bonus de +5 lorsqu'il utilise un bandage de premiers secours.</e>
+			</p>
+			<p class="niv2">
+				<n>Niv. 2</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
+				<e>Le baume de soin soigne 1 blessure superficielle supplémentaire</e>
+			</p>
+			<p class="niv3">
+				<n>Niv. 3</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
+				<e>Utiliser un équipement de soin nécessite une action de moins.</e>
+			</p>
+			<p class="niv4">
+				<n>Niv. 4</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
+				<e>Le personnage gagne un bonus de +5 lorsqu'il utilise un bandage de premiers secours.</e>
+			</p>
+			<p class="niv5">
+				<n>Niv. 5</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
+				<e>Le baume de soin soigne également 1 blessure grave.</e>
+			</p>
+			<p class="niv6">
+				<n>Niv. 6+</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
+				<e>Chaque niveau augmente de +2 le bonus d'utilisation d'un bandage de premiers secours.</e>
+			</p>
+		</div>
 		
 		<div class="comp">
-			<h4>Apprenti</h4>
-			<span class="comp_req">10 en Intelligence</span>
-			<p>
+			<h4 class="nom">Apprenti</h4>
+			<span class="specifs"><span class="comp_req"><span class="comp_req">Apprentissage (Intelligence, 20)</span></span></span>
+			<p class="niv1">
 				<n>Niv. 1</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Le personnage bénéficie d’une capacité d’apprentissage supérieure à la moyenne. A chaque tentative d'apprentissage d'une compétence, il gagne d’un bonus de +1 pour la maîtriser.</e>
 			</p>
-			<p>
+			<p class="niv2">
 				<n>Niv. 2</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Le bonus passe à +2.</e>
 			</p>
-			<p>
+			<p class="niv3">
 				<n>Niv. 3</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Le personnage lance deux dés et utilise le meilleur résultat pour apprendre la compétence.</e>
 			</p>
-			<p>
+			<p class="niv4">
 				<n>Niv. 4</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Le bonus d’apprentissage passe à +3.</e>
 			</p>
-			<p>
+			<p class="niv5">
 				<n>Niv. 5</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Le personnage lance deux dés et utilise leur somme.</e>
 			</p>
-			<p>
+			<p class="niv6">
 				<n>Niv. 6+</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Chaque niveau donne un bonus de +1 pour apprendre la compétence.</e>
 			</p>
 		</div>
 		
 		<div class="comp">
-			<h4>Professeur</h4>
-			<span class="comp_req">10 en Intelligence</span>
-			<p>
+			<h4 class="nom">Professeur</h4>
+			<span class="specifs"><span class="comp_req"><span class="comp_req">Apprentissage (Intelligence, 20)</span></span></span>
+			<p class="niv1">
 				<n>Niv. 1</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>S’il le souhaite, le personnage peut aider une personne à apprendre une compétence. S’il la connait déjà, le personnage aidé gagnera un bonus de +2 pour apprendre, sinon ce bonus sera de +1.</e>
 			</p>
-			<p>
+			<p class="niv2">
 				<n>Niv. 2</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Les bonus passent à +4 et +2.</e>
 			</p>
-			<p>
+			<p class="niv3">
 				<n>Niv. 3</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Après un échec, le personnage aidé qui apprend peut quand même retenter un deuxième test sans avoir à observer la compétence une nouvelle fois.</e>
 			</p>
-			<p>
+			<p class="niv4">
 				<n>Niv. 4</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Les bonus passent à +6 et +4.</e>
 			</p>
-			<p>
+			<p class="niv5">
 				<n>Niv. 5</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Les bonus passent à +8 et +6.</e>
 			</p>
-			<p>
+			<p class="niv6">
 				<n>Niv. 6+</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Chaque niveau augmentent les bonus de +1.</e>
 			</p>
 		</div>
 		
 		<div class="comp">
-			<h4>Connaissances métallurgiques</h4>
-			<span class="comp_req">5 en Intelligence</span>
-			<p>
+			<h4 class="nom">Connaissances métallurgiques</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Intelligence, 15)</span></span>
+			<p class="niv1">
 				<n>Niv. 1</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Permet au personnage d’entretenir une pièce d’équipement afin de conserver sa qualité.<br />
 				Permet au personnage de fabriquer des éléments simples des armes et armures. (Sangles, flèches, lame simples, …).</e>
 			</p>
-			<p>
+			<p class="niv2">
 				<n>Niv. 2</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
-				<e>Permet au personnage d’aiguiser une arme (toute arme non contondante) la rendant perforante.</e>
+				<e>Permet au personnage d'améliorer une arme pour qu'elle inflige 2 dégâts supplémentaire sur un type de profil.</e>
 			</p>
-			<p>
+			<p class="niv3">
 				<n>Niv. 3</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Le personnage est capable de renforcer une armure, augmentant la défense de 1 sur chaque zone.</e>
 			</p>
-			<p>
+			<p class="niv4">
 				<n>Niv. 4</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
-				<e></e>
+				<e>Permet au personnage d'améliorer une arme pour qu'elle inflige 2 dégâts supplémentaire sur tous les profils.</e>
 			</p>
-			<p>
+			<p class="niv5">
 				<n>Niv. 5</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e></e>
 			</p>
-			<p>
+			<p class="niv6">
 				<n>Niv. 6+</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e></e>
 			</p>
 		</div>
 		
 		<div class="comp">
-			<h4>Orientation</h4>
-			<span class="comp_req">5 en Intelligence</span>
-			<p>
+			<h4 class="nom">Orientation</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Intelligence, 15)</span></span>
+			<p class="niv1">
 				<n>Niv. 1</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Le personnage connaît parfaitement la géographie de son pays.</e>
 			</p>
-			<p>
+			<p class="niv2">
 				<n>Niv. 2</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Le personnage est capable de se repérer dans toutes les situations, que ce soit grâce au soleil, aux étoiles ou autre.</e>
 			</p>
-			<p>
+			<p class="niv3">
 				<n>Niv. 3</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Le personnage est toujours capable de pointer le nord. Même dans un espace clos sans visibilité sur l’extérieur.</e>
 			</p>
-			<p>
+			<p class="niv4">
 				<n>Niv. 4</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e></e>
 			</p>
-			<p>
+			<p class="niv5">
 				<n>Niv. 5</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e></e>
 			</p>
-			<p>
+			<p class="niv6">
 				<n>Niv. 6+</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e></e>
 			</p>
 		</div>
 		
 		<div class="comp">
-			<h4>Connaissances naturelles</h4>
-			<span class="comp_req">5 en Intelligence</span>
-			<p>
+			<h4 class="nom">Connaissances naturelles</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Intelligence, 15)</span></span>
+			<p class="niv1">
 				<n>Niv. 1</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Habitué aux milieux naturels, le personnage est capable de reconnaître la plupart des animaux, plantes, minéraux de son pays. Il connaît également leurs principales vertus et leur potentiel de vente.</e>
 			</p>
-			<p>
+			<p class="niv2">
 				<n>Niv. 2</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Le personnage sait désormais prélever et préparer les parties intéressantes de son environnement naturel. Il peut ensuite en faire de petits objets d’utilisation courante (bandages de secour, bijoux de faible qualité, peaux de bêtes, …).</e>
 			</p>
-			<p>
+			<p class="niv3">
 				<n>Niv. 3</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Le personnage devient un véritable artisan avec les matériaux naturels. En particulier, il est capable de sculpter, tailler, coudre, graver pour fabriquer des objets de valeur supérieure.</e>
 			</p>
-			<p>
+			<p class="niv4">
 				<n>Niv. 4</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e></e>
 			</p>
-			<p>
+			<p class="niv5">
 				<n>Niv. 5</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e></e>
 			</p>
-			<p>
+			<p class="niv6">
 				<n>Niv. 6+</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e></e>
 			</p>
 		</div>
 		
 		<div class="comp">
-			<h4>Incantation rapide</h4>
-			<span class="comp_req">10 en Intelligence</span>
-			<p>
-				<n>Niv. 1</n><s title="Souffle">0</s><c title="Concentration">+10</c><r title="Exécution">-1</r>
-				<e>Au prix d'un effort de concentration supplémentaire, le personnage tente de lancer son sort plus rapidement. Le sort nécessitera 10 points de concentration supplémentaire pour atteindre le seuil critique ou le seuil de puissance. Le temps de récupération est alors réduit de 1.</e>
+			<h4 class="nom">Incantation rapide</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Intelligence, 30)</span></span>
+			<p class="niv1">
+				<n>Niv. 1</n><s title="Souffle">0</s><c title="Concentration">+1</c><r title="Exécution">-1</r>
+				<e>Au prix d'un effort de concentration supplémentaire, le personnage tente de lancer son sort plus rapidement. En dépensant 1 point de Concentration supplémentaire, le temps d'exécution est alors réduit de 1. Quel que soit le résultat du lancement du sort, celui-ci ne pourra pas être lancé avec son seuil critique.</e>
 			</p>
-			<p>
+			<p class="niv2">
 				<n>Niv. 2</n><s title="Souffle">0</s><c title="Concentration">+10</c><r title="Exécution">-1</r>
 				<e></e>
 			</p>
-			<p>
+			<p class="niv3">
 				<n>Niv. 3</n><s title="Souffle">0</s><c title="Concentration">+10</c><r title="Exécution">-1</r>
-				<e></e>
+				<e>Peut être lancé en seuil critique</e>
 			</p>
-			<p>
+			<p class="niv4">
 				<n>Niv. 4</n><s title="Souffle">0</s><c title="Concentration">+10</c><r title="Exécution">-1</r>
 				<e></e>
 			</p>
-			<p>
+			<p class="niv5">
 				<n>Niv. 5</n><s title="Souffle">0</s><c title="Concentration">+10</c><r title="Exécution">-1</r>
 				<e></e>
 			</p>
-			<p>
+			<p class="niv6">
 				<n>Niv. 6+</n><s title="Souffle">0</s><c title="Concentration">+10</c><r title="Exécution">-1</r>
 				<e></e>
 			</p>
@@ -1927,92 +2424,120 @@
 		<h3 class="comp_cat">Intuition</h3>
 		
 		<div class="comp">
-			<h4>Pistage</h4>
-			<span class="comp_req">10 en Intuition</span>
-			<p>
+			<h4 class="nom">Pistage</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Intuition, 15)</span></span>
+			<p class="niv1">
 				<n>Niv. 1</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
-				<e></e>
+				<e>Permet au personnage de suivre une piste fraiche.</e>
 			</p>
-			<p>
+			<p class="niv2">
 				<n>Niv. 2</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
-				<e></e>
+				<e>Le personnage sait déterminer les circonstances qui ont laissé les traces (personne blessée, ligotée, ...)</e>
 			</p>
-			<p>
+			<p class="niv3">
 				<n>Niv. 3</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
-				<e></e>
+				<e>Le personnage peut suivre une piste quasie effacée (après une pluie ou une semaine)</e>
 			</p>
-			<p>
+			<p class="niv4">
 				<n>Niv. 4</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e></e>
 			</p>
-			<p>
+			<p class="niv5">
 				<n>Niv. 5</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e></e>
 			</p>
-			<p>
+			<p class="niv6">
 				<n>Niv. 6+</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e></e>
 			</p>
 		</div>
 		
 		<div class="comp">
-			<h4>Regard pénétrant</h4>
-			<span class="comp_req">8 en Intuition</span>
-			<p>
+			<h4 class="nom">Regard pénétrant</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Intuition, 15)</span></span>
+			<p class="niv1">
 				<n>Niv. 1</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Lorsque le personnage doit réussir un test d’Intuition basé sur la vue, il gagne un bonus de +2 au test.</e>
 			</p>
-			<p>
+			<p class="niv2">
 				<n>Niv. 2</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
-				<e>Lorsqu’il attaque un adversaire au corps à corps, le personnage détecte les zones les moins protégées de son adversaire. Si un coup atteint la zone la mieux protégée de son adversaire, il peut relancer le jet de localisation.</e>
+				<e>Lorsqu’il attaque un adversaire au corps à corps, le personnage détecte les zones les moins protégées de son adversaire. Au début du combat il détecte une zone fragilisée (lancer un dé de localisation). Cette zone offre une protection diminuée de 2.</e>
 			</p>
-			<p>
+			<p class="niv3">
 				<n>Niv. 3</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Le bonus au test d’Intuition passe à +4.</e>
 			</p>
-			<p>
+			<p class="niv4">
 				<n>Niv. 4</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Lorsqu’il utilise une arme à distance, les malus dus à la longue portée sont divisés par deux.</e>
 			</p>
-			<p>
+			<p class="niv5">
 				<n>Niv. 5</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Le bonus au test d’Intuition passe à +6.</e>
 			</p>
-			<p>
+			<p class="niv6">
 				<n>Niv. 6+</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e>Chaque niveau apporte un bonus de +2 au test d’Intuition.</e>
 			</p>
-		</div>
-		
+		</div>		
+
 		<div class="comp">
-			<h4>Furie guerrière</h4>
-			<span class="comp_req">10 en Intuition</span>
-			<p>
+			<h4 class="nom">Compagnon animal</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Intuition, 15)</span></span>
+			<p class="niv1">
 				<n>Niv. 1</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
-				<e>Bonus temporaire pour chaque ennemi défait.</e>
+				<e>Le personnage se lie d'amitié avec un petit mammifère (chat, chien, furet, ...) et est capable de lui communiquer des instructions simples. Pour se lier le personnage doit réussir un test de Prestance à 25.</e>
 			</p>
-			<p>
+			<p class="niv2">
 				<n>Niv. 2</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
-				<e></e>
+				<e>Le personnage peut désormais se lier avec n'importe quelle créature animale de petite taille (oiseau, poisson, ...).</e>
 			</p>
-			<p>
+			<p class="niv3">
 				<n>Niv. 3</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
-				<e></e>
+				<e>Le personnage peut désormais se lier avec des créatures animales de taille moyenne (biche, rapace, félin, ...). Il est de plus capable de lui communiquer des ordres plus complexes. Pour se lier le personnage doit réussir un test de Prestance à 30.</e>
 			</p>
-			<p>
+			<p class="niv4">
 				<n>Niv. 4</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
-				<e></e>
+				<e>Le personnage peut désormais se lier avec des créatures animales de grande taille. De plus en méditant, le personnage est capable de percevoir à travers les sens de son compagnon. Pour se lier le personnage doit réussir un test de Prestance à 40.</e>
 			</p>
-			<p>
+			<p class="niv5">
 				<n>Niv. 5</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e></e>
 			</p>
-			<p>
+			<p class="niv6">
 				<n>Niv. 6+</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
 				<e></e>
 			</p>
-		</div>
-				
+		</div>	
+
+		<div class="comp">
+			<h4 class="nom">Présentiment</h4>
+			<span class="specifs"><span class="comp_req">Apprentissage (Intuition, 15)</span></span>
+			<p class="niv1">
+				<n>Niv. 1</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
+				<e>Le personnage sait détecter tout élément naturel influencé par un élément étranger. Cette connaissance lui permet d'anticiper les potentielles agressions et d'y réagir. Il gagne un bonus de +1 à tous ses tests défensifs. (Parade, esquive, résister à un sort, détection, ...). Ce bonus ne s'applique qu'en milieu naturel</e>
+			</p>
+			<p class="niv2">
+				<n>Niv. 2</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
+				<e>Le bonus passe à +2</e>
+			</p>
+			<p class="niv3">
+				<n>Niv. 3</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
+				<e>Dans un milieu non naturel, le bonus s'applique mais divisé par 2.</e>
+			</p>
+			<p class="niv4">
+				<n>Niv. 4</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
+				<e>Le bonus passe à +3</e>
+			</p>
+			<p class="niv5">
+				<n>Niv. 5</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
+				<e>Le bonus passe à +4</e>
+			</p>
+			<p class="niv6">
+				<n>Niv. 6+</n><s title="Souffle">0</s><c title="Concentration">0</c><r title="Exécution">-</r>
+				<e>+1 par niveau</e>
+			</p>
+		</div>			
 	</div>
 	<script type="text/javascript" src="data/custom_navigation.js"></script>
 </body>

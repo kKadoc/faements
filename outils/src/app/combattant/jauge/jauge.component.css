@@ -1,0 +1,114 @@
+div {
+	margin-left : 3px;	
+}
+
+span {
+	display : inline-block;
+	width : 6px;
+	height : 6px;
+	
+	border : 1px solid grey;
+	border-radius : 3px;
+	margin : 0;
+	position : relative;
+	top : -6px;
+}
+
+p {
+	display : inline-block;
+}
+
+img {
+	width : 20px;
+}
+
+:host {
+	text-align : center;
+}
+
+
+button {
+	margin : 0 3px;
+	width : 10px;
+	background :  transparent;
+	border : none;
+	font-weight : bold;
+	color: grey;
+	
+	position : relative;
+	top : -5px;
+	cursor:pointer;
+}
+
+button:hover {
+	color : orange;
+}
+
+p {
+	text-align : center;
+	margin : 0;
+}
+
+.positive.lvl0 span {
+	border : 1px solid #D50000;
+}
+
+.positive.lvl1 .v1 {
+	background : #D50000;
+}
+
+.positive.lvl2 .v1, .positive.lvl2 .v2 {
+	background : #FF6D00;
+}
+
+.positive.lvl3 .v1, .positive.lvl3 .v2, .positive.lvl3 .v3 {
+	background : #FF6D00;
+}
+
+.positive.lvl4 .v1, .positive.lvl4 .v2, .positive.lvl4 .v3, .positive.lvl4 .v4 {
+	background : #00C853;
+}
+
+.positive.lvl5 .v1, .positive.lvl5 .v2, .positive.lvl5 .v3, .positive.lvl5 .v4, .positive.lvl5 .v5 {
+	background : #00C853;
+}
+
+.neutre.lvl1 .v1 {
+	background : #00B8D4;
+}
+
+.neutre.lvl2 .v1, .neutre.lvl2 .v2 {
+	background : #00B8D4;
+}
+
+.neutre.lvl3 .v1, .neutre.lvl3 .v2, .neutre.lvl3 .v3 {
+	background : #00B8D4;
+}
+
+.neutre.lvl4 .v1, .neutre.lvl4 .v2, .neutre.lvl4 .v3, .neutre.lvl4 .v4 {
+	background : #00B8D4;
+}
+
+.neutre.lvl5 .v1, .neutre.lvl5 .v2, .neutre.lvl5 .v3, .neutre.lvl5 .v4, .neutre.lvl5 .v5 {
+	background : #00B8D4;
+}
+
+.negative.lvl1 .v1 {
+	background : #00C853;
+}
+
+.negative.lvl2 .v1, .negative.lvl2 .v2 {
+	background : #00C853;
+}
+
+.negative.lvl3 .v1, .negative.lvl3 .v2, .negative.lvl3 .v3 {
+	background : #FF6D00;
+}
+
+.negative.lvl4 .v1, .negative.lvl4 .v2, .negative.lvl4 .v3, .negative.lvl4 .v4 {
+	background : #FF6D00;
+}
+
+.negative.lvl5 .v1, .negative.lvl5 .v2, .negative.lvl5 .v3, .negative.lvl5 .v4, .negative.lvl5 .v5 {
+	background : #D50000;
+}

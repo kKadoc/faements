@@ -1,23 +1,19 @@
-.comp n, .comp s, .comp c, .comp r , .comp e{
+.comp n, .comp s, .comp c, .comp r , .comp e, .comp ad{
 	
 	display : inline-block;
 	padding : 5px;
 }
 
 
-.comp s, .comp c, .comp r{
+.comp s, .comp c, .comp r, .comp ad{
 	cursor : default;
-	float : right;
-	width : 20px;
-	height : 20px;
-	text-align : center;
 	
-	margin : 2px;
-	
-	font-weight : bold;
-
-	border: 1px solid #2d251b;
 	color:white;
+	
+	position : relative;
+	top : -3px;
+	
+	float:right;
 }
 
 .comp p {
@@ -27,18 +23,40 @@
 	margin : 10px 0:
 }
 
+.comp s:before, .comp r:before, .comp c:before, .comp ad:before {
+	width : 20px;
+	height : 20px;
+	
+	background-size: 20px 20px;
+	display : inline-block;
+	width: 20px; 
+    height: 20px;
+    content:"";
+	margin-right : 5px;
+	
+	position : relative;
+	top : 3px;
+}
+
+.comp s:before {
+	background-image:url(souffle.png);
+}
+
+.comp ad:before {
+	background-image:url(adrenaline.png);
+}
+
+.comp c:before {
+	background-image:url(concentration.png);
+}
+
+.comp r:before {
+	background-image:url(execution.png);
+}
+
+
 .comp s {
 	text-decoration : none;
-	
-	border-bottom : 2px solid orange;
-}
-
-.comp c {
-	border-bottom : 2px solid blue;
-}
-
-.comp r {
-	border-bottom : 2px solid green;
 }
 
 .comp n {

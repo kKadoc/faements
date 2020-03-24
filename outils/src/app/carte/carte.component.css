@@ -1,0 +1,28 @@
+img {
+	position : absolute;
+	top : 0;
+	left : 120px;
+}
+
+#left {
+	position : fixed;
+	left : 10px;
+	top : 70px;
+	bottom : 23px;
+	width : 120px;
+	background : black;
+	
+	border-right : 1px solid grey;
+	color : grey;
+}
+
+#left label {
+	display : block;
+}
+
+#left h3 {
+	margin : 0;
+	background:rgba(255,255,255,0.1);
+	padding : 0 5px;
+	margin : 5px 0;
+}

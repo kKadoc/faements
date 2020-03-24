@@ -19,7 +19,7 @@
 			<a href="spells.html" title="sorts"><img src="data/icons/spells.png" />Sorts</a>
 			<a href="equipment.html" title="équipement" class="current"><img src="data/icons/equipment.png" />Equipement</a>
 			<a href="beasts.html" title="bestiaire"><img src="data/icons/beasts.png" />Bestiaire</a>
-			<a href="craft.html" title="Artisanat"><img src="data/icons/craft.png" />Artisanat</a>
+			<a href="aventure.html" title="Aventure"><img src="data/icons/craft.png" />Aventure</a>
 			<a href="sheets.html" title="Feuilles de personnage"><img src="data/icons/sheets.png" />Feuilles de personnages</a>
 		</div>
 	</div>
@@ -46,66 +46,119 @@
 		</p>
 		<div class="bloc">
 			<ul>
-				<li><b>Profil rapide :</b> Une attaque qui splus rapide que la moyenne mais qui fera moins de dégâts. Le score d'attaque sera basé sur la vivacité (Vivacité + D20) et les dégâts infligés sont renseignés dans la colonne "Profil rapide".</li>
-				<li><b>Profil précis :</b> Une attaque focalisée sur une point sensible de l'adversaire. Le score d'attaque sera basé sur l'adresse (Adresse + D20) et les dégâts infligés sont renseignés dans la colonne "Profil précis".</li>
-				<li><b>Profil puissant :</b> Pas de finesse, des dégâts ! Le score d'attaque sera basé sur la vigueur (Vigueur + D20) et les dégâts infligés sont renseignés dans la colonne "Profil puissant"</li>
-				<li><b>Profil distant :</b> Attaque à distance. Le score d'attaque sera basé sur l'adresse (Adresse + D20) et les dégâts infligés sont renseignés dans la colonne "Profil distant".</li>
+				<li><b>Profil rapide :</b> Une attaque plus rapide que la moyenne mais qui fait moins de dégâts. Le score d'attaque est basé sur la vivacité (Vivacité + D20) et les dégâts infligés sont renseignés dans la colonne "Profil rapide".</li>
+				<li><b>Profil précis :</b> Une attaque focalisée sur une point sensible de l'adversaire. Le score d'attaque est basé sur l'adresse (Adresse + D20) et les dégâts infligés sont renseignés dans la colonne "Profil précis".</li>
+				<li><b>Profil puissant :</b> Pas de finesse, des dégâts ! Le score d'attaque est basé sur la vigueur (Vigueur + D20) et les dégâts infligés sont renseignés dans la colonne "Profil puissant"</li>
+				<li><b>Profil distant :</b> Attaque à distance. Le score d'attaque est basé sur l'adresse (Adresse + D20) et les dégâts infligés sont renseignés dans la colonne "Profil distant".</li>
 			</ul>
 		</div>
 		
-		<h4>Armes légères</h4>
-		<table class="tab_equip fixed">
+		
+		
+		<h4>Armes rudimentaires</h4>
+		<table class="tab_equip tab_arme fixed">
+		<tr><th>Nom</th><th>Profil rapide</th><th>Profil précis</th><th>Profil puissant</th><th>Profil distance</th><th>Parade</th><th>Poids</th><th>Nombre de mains</th><th>Pré-requis</th><th>Particularités</th></tr>
+		<tr><td>Couteau</td><td class="rapide">2D4</td><td class="precis">2D4</td><td class="puissant">1D4</td><td class="distance">3D4</td><td class="parade">-2</td><td>0.5kg</td><td>1</td><td></td><td></td></tr>
+<tr><td>Dague</td><td class="rapide">3D4</td><td class="precis">2D4</td><td class="puissant">1D4</td><td class="distance">2D4</td><td class="parade">0</td><td>0.5kg</td><td>1</td><td></td><td></td></tr>
+<tr><td>Epée courte</td><td class="rapide">3D4</td><td class="precis">2D4</td><td class="puissant">2D4+2</td><td class="distance">1D4</td><td class="parade">2</td><td>1kg</td><td>1</td><td></td><td></td></tr>
+<tr><td>Hachette</td><td class="rapide">3D4+2</td><td class="precis">1D4</td><td class="puissant">1D4</td><td class="distance">3D4+2</td><td class="parade">-4</td><td>1kg</td><td>1</td><td></td><td></td></tr>
+<tr><td>Rondache</td><td class="rapide">1D4</td><td class="precis">1D4</td><td class="puissant">1D4</td><td class="distance">1D4</td><td class="parade">4</td><td>2kg</td><td>0</td><td></td><td></td></tr>
+<tr><td>Fronde</td><td class="rapide">1D4</td><td class="precis">1D4</td><td class="puissant">1D4</td><td class="distance">4D4</td><td class="parade">-4</td><td>0.5kg</td><td>2</td><td></td><td></td></tr>
+<tr><td>Masse</td><td class="rapide">1D4</td><td class="precis">2D4</td><td class="puissant">3D4+2</td><td class="distance">1D4</td><td class="parade">0</td><td>2kg</td><td>1</td><td></td><td></td></tr>
+<tr><td>Bâton</td><td class="rapide">2D4+2</td><td class="precis">2D4+2</td><td class="puissant">2D4+4</td><td class="distance">1D4</td><td class="parade">2</td><td>2kg</td><td>2</td><td></td><td></td></tr>
+
+</table>
+<h4>Armes standard</h4>
+		<table class="tab_equip tab_arme fixed">
+		<tr><th>Nom</th><th>Profil rapide</th><th>Profil précis</th><th>Profil puissant</th><th>Profil distance</th><th>Parade</th><th>Poids</th><th>Nombre de mains</th><th>Pré-requis</th><th>Particularités</th></tr>
+<tr><td>Sabre</td><td class="rapide">3D8</td><td class="precis">2D8</td><td class="puissant">1D6</td><td class="distance">1D6</td><td class="parade">0</td><td>1kg</td><td>1</td><td>15 Vivacité</td><td></td></tr>
+<tr><td>Arc court</td><td class="rapide">1D4</td><td class="precis">1D4</td><td class="puissant">1D4</td><td class="distance">4D8+2</td><td class="parade">-4</td><td>1kg</td><td>2</td><td>8 Vigueur
+8 Adresse</td><td>Perforant, Tir(3, 0), Projectile</td></tr>
+<tr><td>Glaive</td><td class="rapide">2D8</td><td class="precis">2D8</td><td class="puissant">2D8+2</td><td class="distance">1D6</td><td class="parade">2</td><td>1kg</td><td>1</td><td>12 Vivacité</td><td></td></tr>
+<tr><td>Francisque</td><td class="rapide">1D6</td><td class="precis">1D6</td><td class="puissant">2D8+4</td><td class="distance">3D8+2</td><td class="parade">-4</td><td>1.5kg</td><td>1</td><td>15 Adresse</td><td></td></tr>
+<tr><td>Javeline</td><td class="rapide">2D8</td><td class="precis">1D6</td><td class="puissant">1D6</td><td class="distance">3D8</td><td class="parade">0</td><td>1kg</td><td>1</td><td>15 Adresse</td><td>Perforant</td></tr>
+<tr><td>Epée longue</td><td class="rapide">1D6</td><td class="precis">3D8</td><td class="puissant">2D8+2</td><td class="distance">1D4</td><td class="parade">2</td><td>1.5kg</td><td>1</td><td>10 Vigueur<br />
+10 Adresse</td><td></td></tr>
+<tr><td>Hache de guerre</td><td class="rapide">1D6</td><td class="precis">1D6</td><td class="puissant">3D8+4</td><td class="distance">1D4</td><td class="parade">-4</td><td>2kg</td><td>1</td><td>15 Vigueur</td><td></td></tr>
+<tr><td>Arc long</td><td class="rapide">1D4</td><td class="precis">1D4</td><td class="puissant">1D4</td><td class="distance">4D10+4</td><td class="parade">-4</td><td>2kg</td><td>2</td><td>12 Vigueur
+12 Adresse</td><td>Tir(4, 2), Perforant, Projectile</td></tr>
+<tr><td>Lance</td><td class="rapide">1D6</td><td class="precis">3D8+2</td><td class="puissant">2D8+4</td><td class="distance">1D6</td><td class="parade">0</td><td>3kg</td><td>2</td><td>12 Vigueur
+10 Adresse</td><td>Arme d’hast</td></tr>
+<tr><td>Ecu</td><td class="rapide">1D4</td><td class="precis">1D4</td><td class="puissant">1D4</td><td class="distance">1D4</td><td class="parade">6</td><td>3kg</td><td>1</td><td>15 Vigueur</td><td></td></tr>
+<tr><td>Marteau</td><td class="rapide">1D6</td><td class="precis">2D8</td><td class="puissant">3D8+2</td><td class="distance">1D4</td><td class="parade">0</td><td>4kg</td><td>1</td><td>15 Vigueur</td><td></td></tr>
+<tr><td>Epée à deux mains</td><td class="rapide">1D6</td><td class="precis">2D8+2</td><td class="puissant">3D8+4</td><td class="distance">1D4</td><td class="parade">0</td><td>2kg</td><td>2</td><td>12 Vigueur<br />
+12 Adresse</td><td></td></tr>
+
+</table>
+<h4>Armes d'élite</h4>
+		<table class="tab_equip tab_arme fixed">
+		<tr><th>Nom</th><th>Profil rapide</th><th>Profil précis</th><th>Profil puissant</th><th>Profil distance</th><th>Parade</th><th>Poids</th><th>Nombre de mains</th><th>Pré-requis</th><th>Particularités</th></tr>
+<tr><td>Griffe</td><td class="rapide">3D12+2</td><td class="precis">1D6</td><td class="puissant">1D6</td><td class="distance">1D4</td><td class="parade">2</td><td>0.5kg</td><td>1</td><td>20 Vivacité</td><td></td></tr>
+<tr><td>Rapière</td><td class="rapide">2D10</td><td class="precis">3D12</td><td class="puissant">1D6</td><td class="distance">1D6</td><td class="parade">2</td><td>1kg</td><td>1</td><td>20 Vivacité</td><td>Perforant</td></tr>
+<tr><td>Arbalète de poing</td><td class="rapide">1D4</td><td class="precis">1D4</td><td class="puissant">1D4</td><td class="distance">4D8</td><td class="parade">-4</td><td>1kg</td><td>1</td><td>18 Vigueur<br />
+15 Adresse</td><td>Perforant, Tir(2, 7), Projectile</td></tr>
+<tr><td>Fléau d'arme</td><td class="rapide">2D10</td><td class="precis">1D6</td><td class="puissant">3D12+2</td><td class="distance">1D4</td><td class="parade">-4</td><td>2.5kg</td><td>1</td><td>20 Vigueur</td><td></td></tr>
+<tr><td>Masse de guerre</td><td class="rapide">1D6</td><td class="precis">2D10+2</td><td class="puissant">3D12+4</td><td class="distance">1D4</td><td class="parade">0</td><td>5kg</td><td>2</td><td>20 Vigueur</td><td></td></tr>
+<tr><td>Claymore</td><td class="rapide">1D6</td><td class="precis">2D10+2</td><td class="puissant">3D12+4</td><td class="distance">1D4</td><td class="parade">0</td><td>3kg</td><td>2</td><td>18 Vigueur<br />
+18 Adresse</td><td></td></tr>
+<tr><td>Hache de bataille</td><td class="rapide">1D6</td><td class="precis">1D6</td><td class="puissant">3D12+6</td><td class="distance">1D6</td><td class="parade">-4</td><td>3kg</td><td>2</td><td>20 Vigueur</td><td></td></tr>
+<tr><td>Arbalète</td><td class="rapide">1D4</td><td class="precis">1D4</td><td class="puissant">1D4</td><td class="distance">4D12+4</td><td class="parade">-4</td><td>3kg</td><td>2</td><td>20 Vigueur
+18 Adresse</td><td>Tir(5, 5), Perforant, Projectile</td></tr>
+<tr><td>Pique</td><td class="rapide">1D6</td><td class="precis">3D12+2</td><td class="puissant">2D10+2</td><td class="distance">1D4</td><td class="parade">0</td><td>5kg</td><td>2</td><td>18 Adresse
+15 Vigueur</td><td>Arme d’hast</td></tr>
+<tr><td>Hallebarde</td><td class="rapide">1D6</td><td class="precis">2D10</td><td class="puissant">3D12+4</td><td class="distance">1D4</td><td class="parade">0</td><td>5kg</td><td>2</td><td>18 Vigueur<br />
+15 Adresse</td><td>Arme d’hast</td></tr>
+<tr><td>Pavois</td><td class="rapide">1D4</td><td class="precis">1D4</td><td class="puissant">1D4</td><td class="distance">1D4</td><td class="parade">10</td><td>5kg</td><td>1</td><td>20 Vigueur</td><td></td></tr>
+
+</table>
+		
+		<!--<h4>Armes légères</h4>
+		<table class="tab_equip tab_arme fixed">
 			<tr><th>Nom</th><th>Profil rapide</th><th>Profil précis</th><th>Profil puissant</th><th>Profil distance</th><th>Parade</th><th>Poids</th><th>Nombre de mains</th><th>Pré-requis</th><th>Particularités</th></tr>
-			<tr><td>Couteau</td><td class="rapide">2D6</td><td class="precis">1D6</td><td class="puissant">1D8</td><td class="distance">2D6</td><td>-2</td><td>0.5kg</td><td>1</td><td>-</td><td></td></tr>
-			<tr><td>Dague</td><td class="rapide">2D8</td><td class="precis">1D8</td><td class="puissant">1D10</td><td class="distance">1D8</td><td>0</td><td>0.5kg</td><td>1</td><td>-</td><td>-</td></tr>
-			<tr><td>Epée courte</td><td class="rapide">2D8</td><td class="precis">2D8</td><td class="puissant">2D6</td><td class="distance">1D8</td><td>2</td><td>1kg</td><td>1</td><td>5 Adresse</td><td>-</td></tr>
-			<tr><td>Hachette</td><td class="rapide">2D8+3</td><td class="precis">1D8</td><td class="puissant">1D10+3</td><td class="distance">1D8+3</td><td>0</td><td>1kg</td><td>1</td><td>5 Vigueur</td><td></td></tr>
-			<tr><td>Arc court</td><td class="rapide">1D4</td><td class="precis">1D4</td><td class="puissant">1D4</td><td class="distance">3D10+3</td><td>-2</td><td>1kg</td><td>2</td><td>10 Vigueur<br />6 Adresse</td><td>Perforant, Tir(3, 1), Projectile</td></tr>
+			<tr><td>Couteau</td><td class="rapide">2D6</td><td class="precis">1D6</td><td class="puissant">1D8</td><td class="distance">2D6</td><td>-2</td><td>0.5kg</td><td>1</td><td></td><td></td></tr>
+			<tr><td>Dague</td><td class="rapide">2D8</td><td class="precis">1D8</td><td class="puissant">1D10</td><td class="distance">2D8</td><td>0</td><td>0.5kg</td><td>1</td><td></td><td></td></tr>
+			<tr><td>Epée courte</td><td class="rapide">2D8</td><td class="precis">2D8</td><td class="puissant">2D8</td><td class="distance">2D6</td><td>2</td><td>1kg</td><td>1</td><td>5 Adresse</td><td></td></tr>
+			<tr><td>Hachette</td><td class="rapide">2D8+3</td><td class="precis">1D8</td><td class="puissant">1D10+3</td><td class="distance">2D8+3</td><td>-2</td><td>1kg</td><td>1</td><td>5 Vigueur</td><td></td></tr>
+			<tr><td>Sabre</td><td class="rapide">2D10</td><td class="precis">1D8</td><td class="puissant">1D8</td><td class="distance">1D8</td><td>0</td><td>1kg</td><td>1</td><td>10 Adresse</td><td></td></tr>
+			<tr><td>Arc court</td><td class="rapide">1D4</td><td class="precis">1D4</td><td class="puissant">1D4</td><td class="distance">3D10+3</td><td>-2</td><td>1kg</td><td>2</td><td>8 Vigueur<br />6 Adresse</td><td>Perforant, Tir(3, 1), Projectile</td></tr>
 			<tr><td>Arbalète de poing</td><td class="rapide">1D4</td><td class="precis">1D4</td><td class="puissant">1D4</td><td class="distance">3D10</td><td>-2</td><td>1kg</td><td>2</td><td>10 Vigueur</td><td>Perforant, Tir(2, 5), Projectile</td></tr>
 			<tr><td>Javeline</td><td class="rapide">2D8</td><td class="precis">1D8</td><td class="puissant">1D10</td><td class="distance">2D10</td><td>0</td><td>1kg</td><td>1</td><td>8 Adresse</td><td>Perforant, Tir(2)</td></tr>
-			<tr><td>Rondache</td><td class="rapide">1D4</td><td class="precis">1D4</td><td class="puissant">1D4</td><td class="distance">1D4</td><td>4</td><td>2kg</td><td>0</td><td>5 Vigueur</td><td>-</td></tr>
+			<tr><td>Rondache</td><td class="rapide">1D4</td><td class="precis">1D4</td><td class="puissant">1D4</td><td class="distance">1D4</td><td>2</td><td>2kg</td><td>0</td><td>5 Vigueur</td><td></td></tr>
 		</table>
 
 		<h4>Armes d’assaut</h4>
-		<table class="tab_equip fixed">
+		<table class="tab_equip tab_arme fixed">
 			<tr><th>Nom</th><th>Profil rapide</th><th>Profil précis</th><th>Profil puissant</th><th>Profil distance</th><th>Parade</th><th>Poids</th><th>Nombre de mains</th><th>Pré-requis</th><th>Particularités</th></tr>
-			<tr><td>Epée longue</td><td class="rapide">2D6</td><td class="precis">2D10</td><td class="puissant">2D10</td><td class="distance">1D6</td><td>2</td><td>1.5kg</td><td>1</td><td>6 Adresse</td><td>-</td></tr>
-			<tr><td>Hache de guerre</td><td class="rapide">1D8</td><td class="precis">2D10+3</td><td class="puissant">2D10</td><td class="distance">1D6</td><td>-4</td><td>2kg</td><td>1</td><td>8 Vigueur</td><td></td></tr>
-			<tr><td>Masse</td><td class="rapide">1D8</td><td class="precis">2D10</td><td class="puissant">2D12</td><td class="distance">1D4</td><td>0</td><td>2kg</td><td>1</td><td>10 Vigueur</td><td>Contondant</td></tr>
+			<tr><td>Epée longue</td><td class="rapide">2D6</td><td class="precis">2D10</td><td class="puissant">2D10+3</td><td class="distance">1D6</td><td>2</td><td>1.5kg</td><td>1</td><td>6 Adresse</td><td></td></tr>
+			<tr><td>Hache de guerre</td><td class="rapide">1D8</td><td class="precis">2D8</td><td class="puissant">2D10+6</td><td class="distance">1D6</td><td>-4</td><td>2kg</td><td>1</td><td>7 Vigueur</td><td></td></tr>
+			<tr><td>Masse</td><td class="rapide">1D8</td><td class="precis">1D10</td><td class="puissant">2D12</td><td class="distance">1D4</td><td>0</td><td>2kg</td><td>1</td><td>7 Vigueur</td><td></td></tr>
 			<tr><td>Arc long</td><td class="rapide">1D4</td><td class="precis">1D4</td><td class="puissant">1D4</td><td class="distance">3D12+3</td><td>-2</td><td>2kg</td><td>2</td><td>12 Vigueur<br />8 Adresse</td><td>Tir(4, 2), Perforant, Projectile</td></tr>
 			<tr><td>Lance</td><td class="rapide">1D8</td><td class="precis">2D10+3</td><td class="puissant">2D8</td><td class="distance">1D10</td><td>0</td><td>3kg</td><td>2</td><td>10 Vigueur<br />10 Adresse</td><td>Arme d’hast</td></tr>
-			<tr><td>Bâton</td><td class="rapide">2D6</td><td class="precis">2D10</td><td class="puissant">2D8</td><td class="distance">1D4</td><td>2</td><td>2kg</td><td>2</td><td>-</td><td>Contondant</td></tr>
-			<tr><td>Ecu</td><td class="rapide">1D4</td><td class="precis">1D4</td><td class="puissant">1D4</td><td class="distance">1D4</td><td>4</td><td>3kg</td><td>1</td><td>7 Adresse</td><td>-</td></tr>
+			<tr><td>Bâton</td><td class="rapide">2D6</td><td class="precis">2D10</td><td class="puissant">2D8</td><td class="distance">1D4</td><td>2</td><td>2kg</td><td>2</td><td></td><td></td></tr>
+			<tr><td>Ecu</td><td class="rapide">1D4</td><td class="precis">1D4</td><td class="puissant">1D4</td><td class="distance">1D4</td><td>4</td><td>3kg</td><td>1</td><td>7 Adresse</td><td></td></tr>
 		</table>
 		
 		<h4>Armes lourdes</h4>
-		<table class="tab_equip fixed">
+		<table class="tab_equip tab_arme fixed">
 			<tr><th>Nom</th><th>Profil rapide</th><th>Profil précis</th><th>Profil puissant</th><th>Profil distance</th><th>Parade</th><th>Poids</th><th>Nombre de mains</th><th>Pré-requis</th><th>Particularités</th></tr>
-			<tr><td>Marteau</td><td class="rapide">1D6</td><td class="precis">1D8</td><td class="puissant">2D12</td><td class="distance">1D6</td><td>0</td><td>4kg</td><td>1</td><td>12 Vigueur</td><td>Contondant</td></tr>
+			<tr><td>Marteau</td><td class="rapide">1D6</td><td class="precis">1D8</td><td class="puissant">2D12</td><td class="distance">1D6</td><td>0</td><td>4kg</td><td>1</td><td>8 Vigueur</td><td></td></tr>
+			<tr><td>Masse de guerre</td><td class="rapide">1D6</td><td class="precis">1D8</td><td class="puissant">2D12+3</td><td class="distance">1D6</td><td>0</td><td>5kg</td><td>2</td><td>12 Vigueur</td><td></td></tr>
 			<tr><td>Hache de bataille</td><td class="rapide">1D6</td><td class="precis">1D8</td><td class="puissant">2D12+6</td><td class="distance">1D6</td><td>-4</td><td>3kg</td><td>2</td><td>12 Vigueur</td><td></td></tr>
-			<tr><td>Epée à deux mains</td><td class="rapide">1D8</td><td class="precis">2D8</td><td class="puissant">2D12+3</td><td class="distance">1D6</td><td>2</td><td>2kg</td><td>2</td><td>10 Vigueur<br/>12 Adresse</td><td>-</td></tr>
+			<tr><td>Epée à deux mains</td><td class="rapide">1D8</td><td class="precis">2D8</td><td class="puissant">2D12+3</td><td class="distance">1D6</td><td>2</td><td>2kg</td><td>2</td><td>10 Vigueur<br/>12 Adresse</td><td></td></tr>
 			<tr><td>Arbalète</td><td class="rapide">1D4</td><td class="precis">1D4</td><td class="puissant">1D4</td><td class="distance">4D12+6</td><td>-2</td><td>3kg</td><td>2</td><td>12 Vigueur<br />8 Adresse</td><td>Tir(5, 5), Perforant, Projectile</td></tr>
 			<tr><td>Pique</td><td class="rapide">1D6</td><td class="precis">2D10+6</td><td class="puissant">2D10</td><td class="distance">1D6</td><td>0</td><td>5kg</td><td>2</td><td>14 Vigueur<br />16 Adresse</td><td>Arme d’hast</td></tr>
-			<tr><td>Pavois</td><td class="rapide">1D4</td><td class="precis">1D4</td><td class="puissant">1D8</td><td class="distance">1D4</td><td>10</td><td>5kg</td><td>1</td><td>10 Adresse<br />15 Vigueur</td><td>-</td></tr>
-		</table>
-		
+			<tr><td>Pavois</td><td class="rapide">1D4</td><td class="precis">1D4</td><td class="puissant">1D8</td><td class="distance">1D4</td><td>10</td><td>5kg</td><td>1</td><td>10 Adresse<br />15 Vigueur</td><td></td></tr>
+		</table>-->
 		<h4>Spécificités d’armes</h4>
 		<div class="bloc">
 			<b>Arme d’hast :</b> les armes d’hast sont suffisamment longues pour permettre à son porteur de tenir ses ennemis à distance. Celui-ci peut ainsi les atteindre depuis une distance de 2m. De plus lorsqu’il subit une charge, l’attaquant perd ses bonus dus à la charge.
 			<br /><br />
-			<b>Contondant :</b> la Robustesse est divisée par deux pour encaisser un coup d'une arme contondante.
+			<b>Perforant :</b> l’arme est étudiée pour passer les armures les plus fragiles. Les armures avec une protection de 4 ou moins ne réduisent pas les dégâts de ce type d’armes.
 			<br /><br />
-			<b>Perforant :</b> l’arme est étudiée pour passer les armures les plus fragiles. Les armures légères ne réduisent pas les dégâts de ce type d’armes.
+			<b>Projectile :</b> l’arme utilise des projectiles qui viendront s’enfoncer dans le corps de la victime. Si l’attaque blesse, et inflige une blessure grave, le projectile reste enfoncé et inflige une blessure légère à la prochaine action de la cible. La cible peut se protéger des dégâts en retirant le projectile. Pour cela il utilise une action (temps d'exécution 1) et doit de réussir un test de Vigueur avec pour cible les dégâts subis.
 			<br /><br />
-			<b>Projectile :</b> l’arme utilise des projectiles qui viendront s’enfoncer dans le corps de la victime. Si l’attaque blesse, et inflige plus de dégâts que la Robustesse de la cible, le projectile reste enfoncé et inflige à la prochaine action de la cible nombre de dégâts égal à la moitié des dégâts initiaux. La cible peut se protéger des dégâts en retirant le projectile. Pour cela il utilise une action (temps de récupération 1) et doit de réussir un test de Robustesse.
-			<br /><br />
-			<b>Tir(A, B) :</b> l’arme est spécialement étudiée pour atteindre un ennemi à distance. Le coefficient de portée (chiffre A entre parenthèses) permet de déterminer les distances caractéristiques de l’arme :
-			<br />
-			<ul>
-				<li><b>Courte portée :</b> 0 - (coefficient A x Vigueur)</li>
-				<li><b>Longue portée :</b> (coefficient A x Vigueur) -  (2 x coefficient A x Vigueur)</li>
-			</ul>
-			<br />. Le deuxième chiffre entre parenthèses indique la durée de l'action de recharge de l'arme. Si ce chiffre est non nul, le personnage devra passer une action (temps d'execution B + réactivité) pour recharger.
+			<b>Tir(A, B) :</b> l’arme est spécialement étudiée pour atteindre un ennemi à distance. Le coefficient de portée (chiffre A entre parenthèses) permet de déterminer la distance maximale de l’arme : (coefficient A x Vigueur).
+			<br />Le deuxième chiffre entre parenthèses indique la durée de l'action de recharge de l'arme. Si ce chiffre est non nul, le personnage devra passer une action (temps d'execution B + réactivité) pour recharger. Recharger dans des conditions négatives (par exemple au corps à corps) nécessite la réussite d'un test d'adresse à 25.
 		</div>
 
 		<h3>Les armures</h3>
@@ -115,8 +168,8 @@
 		<div class="bloc">
 			<ul>
 				<li><b>Légère :</b> l’armure est étudiée pour ne pas entraver les mouvements de son porteur. Malheureusement cette propriété doit être compensée par une protection tout aussi allégée.</li>
-				<li><b>Assaut :</b> une partie de la mobilité du personnage est sacrifié pour lui permettre d’encaisser quelques coups. Elle s’adapte parfaitement aux fantassins mobiles. Une armure d’assaut,  donne un malus de -3 en Vivacité à son porteur.</li>
-				<li><b>Blindée :</b> à l’intérieur, le personnage est protégé de toutes les agressions extérieures. Malheureusement il subit un malus de -5 en Vivacité et Adresse.</li>
+				<li><b>Assaut :</b> une partie de la mobilité du personnage est sacrifié pour lui permettre d’encaisser quelques coups. Elle s’adapte parfaitement aux fantassins mobiles. Une armure d’assaut, donne un malus de -2 en Vivacité et -1 à la distance maximale de déplacement.</li>
+				<li><b>Blindée :</b> à l’intérieur, le personnage est protégé de toutes les agressions extérieures. Malheureusement il subit un malus de -3 en Vivacité et Adresse et -2 à la distance maximale de déplacement.</li>
 			</ul>
 		</div>
 			
@@ -149,11 +202,11 @@
 
 		<table class="tab_equip">
 			<tr><th>Matériau</th><th>Protection</th><th>Poids d’une unité en kg</th></tr>
-			<tr><td>Revêtement matelassé</td><td>2</td><td>0.5</td></tr>
-			<tr><td>Cuir solide</td><td>4</td><td>0.5</td></tr>
-			<tr><td>Mailles de fer</td><td>8</td><td>1</td></tr>
-			<tr><td>Acier</td><td>12</td><td>1</td></tr>
-			<tr><td>Acier trempé</td><td>14</td><td>2</td></tr>
+			<tr><td>Revêtement matelassé</td><td>1</td><td>0.5</td></tr>
+			<tr><td>Cuir solide</td><td>2</td><td>0.5</td></tr>
+			<tr><td>Mailles de fer</td><td>4</td><td>1</td></tr>
+			<tr><td>Acier</td><td>6</td><td>1</td></tr>
+			<tr><td>Acier trempé</td><td>7</td><td>2</td></tr>
 		</table>
 		
 		<h4>Schéma des localisations</h4>
@@ -162,10 +215,11 @@
 		<h4>Armures courantes</h4>
 		<table class="tab_equip">
 			<tr><th>Nom</th><th>Protection</th><th>Zones protégées</th><th>Poids total en kg</th></tr>
-			<tr><td>Armure de cuir</td><td>4</td><td>2, 3, 6</td><td>1.5</td></tr>
-			<tr><td>Armure du chasseur</td><td>4<br />2</td><td>2, 3, 6<br />4, 5, 9,10</td><td>3.5</td></tr>
-			<tr><td>Cotte de maille</td><td>8<br />4</td><td>2, 3, 6, 9, 10<br />4, 5</td><td>6</td></tr>
-			<tr><td>Armure de tournoi</td><td>12<br />8</td><td>2, 3, 6, 7, 8, 9, 10, 11, 12<br />4, 5</td><td>11</td></tr>
+			<tr><td>Tunique matelassée</td><td>1</td><td>2, 3, 6</td><td>1.5</td></tr>
+			<tr><td>Armure de cuir</td><td>2</td><td>2, 3, 6</td><td>1.5</td></tr>
+			<tr><td>Armure du chasseur</td><td>2<br />1</td><td>2, 3, 6<br />4, 5, 9,10</td><td>3.5</td></tr>
+			<tr><td>Cotte de maille</td><td>4<br />2</td><td>2, 3, 6, 9, 10<br />4, 5</td><td>6</td></tr>
+			<tr><td>Armure de tournoi</td><td>6<br />4</td><td>2, 3, 6, 7, 8, 9, 10, 11, 12<br />4, 5</td><td>11</td></tr>
 		</table>
 		
 		<h3>L‘inventaire</h3>
@@ -182,31 +236,47 @@
 		<h4>Soins</h4>
 		<table class="tab_equip fixed2">
 			<tr><th>Objet</th><th>Effets</th><th>Poids</th><th>Particularités</th></tr>
-			<tr><td>Bandage de premier secours</td><td>Appliqué sur une blessure, permet d’arrêter tout saignement et de soigner la personne d’un nombre de points de Vitalité égal à l’Intelligence de celui qui le pose.</td><td>Négligeable</td><td>Utilisation unique (10)</td></tr>
-			<tr><td>Baume de soin</td><td>Redonne 3D6 points de Vitalité à son utilisateur.</td><td>Négligeable</td><td>Utilisation unique (5)</td></tr>
-			<tr><td>Injection d’adrénaline</td><td>Permet à l’utilisateur de récupérer 3 points de Souffle et Concentration par round pendant 5 rounds.</td><td>Négligeable</td><td>Utilisation unique (1)</td></tr>
-			<tr><td>Antidote commun</td><td>Soigne tous les poisons communs et en annule les effets. A noter que si le poison entrainait une perte de points de Vitalité, Concentration ou Souffle, l’antidote ne restore pas les points perdus mais empêche de nouvelles pertes.</td><td>Négligeable</td><td>Utilisation unique (2)</td></tr>
-			<tr><td>Antidote puissant</td><td>Soigne tous les poisons communs et puissants et en annule les effets. A noter que si le poison entrainait une perte de points de Vitalité, Concentration ou Souffle, l’antidote ne restore pas les points perdus mais empêche de nouvelles pertes.</td><td>Négligeable</td><td>Utilisation unique (3)</td></tr>
+			<tr><td>Bandage de premier secours</td><td>Permet de supprimer 1 blessure superficielle/grave/critique en cas de test d'Intelligence à 15/25/30 réussi.</td><td>Négligeable</td><td>Utilisation unique (10)</td></tr>
+			<tr><td>Baume de soin</td><td>Permet de retirer 1D3 blessures superficielles.</td><td>Négligeable</td><td>Utilisation unique (5)</td></tr>
+			<tr><td>Potion appaisante</td><td>Réduit de 1 les jauges de Peur et Douleur.</td><td>Négligeable</td><td>Utilisation unique (1)</td></tr>
+			<tr><td>Injection d’adrénaline</td><td>Permet à l’utilisateur de récupérer 1 point de Souffle, de Concentration et d'Adrénaline supplémentaire par round pendant 5 rounds.</td><td>Négligeable</td><td>Utilisation unique (1)</td></tr>
+			<tr><td>Antidote commun</td><td>Soigne tous les poisons communs et en annule les effets. A noter que si le poison entrainait une perte de points de Concentration, Souffle ou autre, l’antidote ne restore pas les points perdus mais empêche de nouvelles pertes.</td><td>Négligeable</td><td>Utilisation unique (2)</td></tr>
+			<tr><td>Antidote puissant</td><td>Soigne tous les poisons communs et puissants et en annule les effets. A noter que si le poison entrainait une perte de points de Concentration, de Souffle ou autre, l’antidote ne restore pas les points perdus mais empêche de nouvelles pertes.</td><td>Négligeable</td><td>Utilisation unique (3)</td></tr>
+			<tr><td>Potion de chaleur</td><td>Retire 3 points de Froid.</td><td>Négligeable</td><td>Utilisation unique (3)</td></tr>
+			<tr><td>Potion de résistance au froid</td><td>Pendant 1 heure, le personnage ne peut gagner de point de Froid.</td><td>Négligeable</td><td>Utilisation unique (3)</td></tr>
+			<tr><td>Hydromel</td><td>-1 Froid, +1 Moral</td><td>Négligeable</td><td>Utilisation unique (3)</td></tr>
+			<tr><td>Potion de XXX</td><td>+1 à la statistique XXX pour 1 heure.</td><td>Négligeable</td><td>Utilisation unique (3)</td></tr>
+			<tr><td>Morphine</td><td>Ignore les effets des points de Douleur pour 3D6 minutes.</td><td>Négligeable</td><td>Utilisation unique (3)</td></tr>
 		</table>
 		
 		<h4>Poisons</h4>
+		<div class="content">
+			Les poisons doivent entrer dans l'oganisme de leur victime pour faire effet. Soit en enduisant une lame qui inflige une blessure, soit en faisant ingérer une dose. Une fois dans son organisme, la victime peut tenter de résister aux effets en réussissant un test de Vigueur dont le seuil dépend du poinson. Pour les poisons appliquant plusieurs fois leurs effets, à chaque effet, le personnage peut se protéger des effets avec le test de Vigueur.
+		</div>
 		<table class="tab_equip fixed2">
 			<tr><th>Objet</th><th>Effets</th><th>Poids</th><th>Particularités</th></tr>
-			<tr><td>Poison mortel</td><td>Une personne victime de ce poison devra réussir un test de Robustesse à chaque round ou perdre 10 points de Vitalité.</td><td>Négligeable</td><td>Poison puissant</td></tr>
-			<tr><td>Poison étourdissant</td><td>Ce poison réduit sensiblement les capacités de réaction et de réflexion de sa victime qui voit sa Vivacité, et son Intelligence divisée par deux.</td><td>Négligeable</td><td>Poison commun</td></tr>
-			<tr><td>Poison hallucinant</td><td>La victime de ce poison se croit tout à coup victime d’attaques par des êtres démoniaques et cherchera à s’en protéger. Elle attaquera (au corps à corps, sans compétence) toute personne s’approchant de lui.</td><td>Négligeable</td><td>Poison puissant</td></tr>
-			<tr><td>Poison urticant</td><td>Le poison entraine des démangeaisons incontrôlables. Les effets s’estompent naturellement au bout de 10 min durant lesquelles, la victime doit réussir un test de Robustesse au début de chaque tour ou perdre son round.</td><td>Négligeable</td><td>Poison commun</td></tr>
-			<tr><td>Poison de mollesse</td><td>La cible perd la moitié de sa Vigueur pendant 5min.</td><td>Négligeable</td><td>Poison commun</td></tr>
-			<tr><td>Poison de faiblesse</td><td>La cible perd la moitié de sa Vigueur pendant 10min. Si au bout de 10min, elle n’a pas reçu d’antidote, elle perd définitivement 2 points en Vigueur.</td><td>Négligeable</td><td>Poison puissant</td></tr>
-			<tr><td>Poison de frisson</td><td>La cible devient fiévreuse pendant 2 heures.</td><td>Négligeable</td><td>Poison commun</td></tr>
-			<tr><td>Poison de fard</td><td>Souvent utilisé pour faire de mauvaises blagues, la victime de ce poison devient rouge pendant 20 minutes.</td><td>Négligeable</td><td>Poison commun</td></tr>
+			<tr><td>Poison mortel</td><td>Une personne victime de ce poison perdra 1 point de Vigueur toutes les 5 minutes. Si la Vigueur tombe à 0, le personnage meurt.</td><td>Négligeable</td><td>Poison puissant (30)</td></tr>
+			<tr><td>Poison étourdissant</td><td>Ce poison réduit sensiblement les capacités de réaction et de réflexion de sa victime qui voit sa Vivacité, et son Intelligence divisée par deux pour 2D6 minutes.</td><td>Négligeable</td><td>Poison commun (20)</td></tr>
+			<tr><td>Poison hallucinant</td><td>La victime de ce poison se croit tout à coup victime d’attaques par des êtres démoniaques et cherchera à s’en protéger. Elle attaquera (au corps à corps, sans compétence) toute personne s’approchant de lui pendant 3 tours.</td><td>Négligeable</td><td>Poison puissant (30)</td></tr>
+			<tr><td>Poison urticant</td><td>Le poison entraine des démangeaisons incontrôlables. Les effets s’estompent naturellement au bout de 10 min durant lesquelles, la victime doit réussir un test de Vigueur au début de chaque tour ou perdre son round.</td><td>Négligeable</td><td>Poison commun (20)</td></tr>
+			<tr><td>Poison de mollesse</td><td>La cible perd la moitié de sa Vigueur pour 5min.</td><td>Négligeable</td><td>Poison commun (25)</td></tr>
+			<tr><td>Poison de faiblesse</td><td>La cible perd la moitié de sa Vigueur pendant 10min. Si au bout de 10min, elle n’a pas reçu d’antidote, elle perd définitivement 2 points en Vigueur.</td><td>Négligeable</td><td>Poison puissant (40)</td></tr>
+			<tr><td>Poison de frisson</td><td>La cible devient fiévreuse pendant 2 heures.</td><td>Négligeable</td><td>Poison commun (20)</td></tr>
+			<tr><td>Poison d'extra-sensibilité</td><td>Pendant 1D10 tours, les points de Douleur sont gagnés par paire.</td><td>Négligeable</td><td>Poison puissant (30)</td></tr>
+			<tr><td>Poison d'angoisse</td><td>Pendant 10min, à chaque tour, le personnage doit réussir un test de Bravoure ou gagner un point de peur.</td><td>Négligeable</td><td>Poison puissant (30)</td></tr>
+			<tr><td>Poison de fard</td><td>Souvent utilisé pour faire de mauvaises blagues, la victime de ce poison devient rouge pendant 20 minutes.</td><td>Négligeable</td><td>Poison commun (30)</td></tr>
 		</table>
 		
 		<h4>Survie</h4>
 		<table class="tab_equip fixed2">
 			<tr><th>Objet</th><th>Effets</th><th>Poids</th><th>Particularités</th></tr>
-			<tr><td>Ration de survie</td><td>Une ration de survie contient assez de nourriture pour alimenter son utilisateur pendant un jour</td><td>0.5 kg</td><td>Utilisation unique (20)</td></tr>
-			<tr><td>Allume feu</td><td>Ce petit mécanisme frottant rapidement deux pierres spéciales entre elles permet d’allumer un feu.</td><td>Négligeable</td><td>Utilisation unique (3)</td></tr>
+			<tr><td>Ration de survie</td><td>Une ration de survie contient assez de nourriture pour alimenter son utilisateur pendant un jour. Le personnage retire 2 points de faim.</td><td>0.5 kg</td><td>Utilisation unique (20)</td></tr>
+			<tr><td>Allume feu</td><td>Ce petit mécanisme frottant rapidement deux pierres spéciales entre elles permet d’allumer un feu.</td><td>Négligeable</td><td></td></tr>
+			<tr><td>Torche</td><td>Permet de s'éclairer pendant 1h mais craint les intempéries.</td><td>Négligeable</td><td>Utilisation unique</td></tr>
+			<tr><td>Lampe à huile</td><td>Permet de s'éclairer sans craindre les intempéries. Doit être rechargée.</td><td>Négligeable</td><td></td></tr>
+			<tr><td>Fiole d'huile</td><td>Permet de recharger une lampe à huile pour 1h.</td><td>Négligeable</td><td>Utilisation unique (5)</td></tr>
+			<tr><td>Piège à lapins</td><td>A laisser la nuit pour attraper des lapins. Lancer 1D10 - 6 +1/h. Si le résultat est positif, un lapin est attrapé.</td><td>1kg</td><td></td></tr>
+			<tr><td>Piège à oiseaux</td><td>A laisser la nuit pour attraper des oiseaux. Lancer 1D10 - 6 +1/h. Si le résultat est positif, un oiseau est attrapé.</td><td>1kg</td><td></td></tr>
 		</table>
 		
 		<h4>Soutien</h4>
@@ -221,7 +291,9 @@
 		<table class="tab_equip fixed2">
 			<tr><th>Objet</th><th>Effets</th><th>Poids</th><th>Particularités</th></tr>
 			<tr><td>Fourreau à injection</td><td>Ce fourreau spécial contient un petit réservoir pouvant contenir jusqu’à 10 doses de poison. Dès que l’arme est placée dedans, une dose de poison est appliquée</td><td>1 kg</td><td></td></tr>
+			<tr><td>Carquoi à injection</td><td>10 flèches sont empoisonnées.</td><td>1 kg</td><td></td></tr>
 			<tr><td>Sac de voyage</td><td>Astucieusement agencé, ce sac permet d’augmenter de 5 le nombre d’éléments au poids négligeable que le personnage peut porter avant d’être ralenti.</td><td>2 kg</td><td>Actif si porté</td></tr>
+			<tr><td>Sac d'herboriste</td><td>Permet de conserver les plantes ramassées plus longtemps.</td><td>0.5 kg</td><td>Actif si porté</td></tr>
 		</table>
 		
 		<h4>Pièges</h4>

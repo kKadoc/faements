@@ -1,0 +1,10 @@
+<p>
+	<label>Filtre : </label><input type="text" [(ngModel)]="filterText"><i class="mdi mdi-close" (click)="filterText =''"></i>
+</p>
+<div *ngFor="let tresor of tresors | filter: filterText" class="{{tresor.type}}">
+	<span>{{tresor.num}}</span>
+	<h2>{{tresor.nom}}</h2>
+	<img *ngIf="tresor.img" src="images/armes/{{tresor.img}}.png"/>
+	<p *ngIf="tresor.description" class="desc">{{tresor.description}}</p>
+	
+</div>

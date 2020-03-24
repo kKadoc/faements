@@ -1,0 +1,34 @@
+
+<div class="left">
+	<div class="creatures">
+		<h3>Créatures</h3>
+		
+		<select  [ngModel]="selectedCreature" (ngModelChange)="selectCreature($event)">
+			<option *ngFor="let creature of creatures | orderBy : 'nom'" [ngValue]="creature">{{creature.nom}}</option> 
+		</select>
+		
+		<button (click)="addCombattant(selectedCreature)">+</button>
+		
+		<h3>Ennemis</h3>
+		<select  [ngModel]="selectedEnnemi" (ngModelChange)="selectEnnemi($event)">
+			<option *ngFor="let creature of ennemis | orderBy : 'nom'" [ngValue]="creature">{{creature.nom}}</option> 
+		</select>
+		
+		<button (click)="addCombattant(selectedEnnemi)">+</button>
+	</div>
+	
+	<div class="log scroll">
+		<h3>Actions</h3>
+		<div *ngFor="let message of messages; let first = first" [ngClass]="{first:first}" >
+			<p *ngFor="let sub of message" [innerHTML]="sub"></p>
+		</div>
+	</div>
+</div>
+<div class="mid">
+	<div class="wrapper scroll">
+		<div class="combattant" *ngFor="let combattant of combattants">
+			<combattant [combattant]="combattant" (onDeleted)="deleteCombattant($event)" (onMessage)="addMessage($event)"></combattant>
+		</div>
+	</div>
+	
+</div>

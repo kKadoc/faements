@@ -19,7 +19,7 @@
 			<a href="spells.html" title="sorts"><img src="data/icons/spells.png" />Sorts</a>
 			<a href="equipment.html" title="équipement"><img src="data/icons/equipment.png" />Equipement</a>
 			<a href="beasts.html" title="bestiaire"><img src="data/icons/beasts.png" />Bestiaire</a>
-			<a href="craft.html" title="Artisanat"><img src="data/icons/craft.png" />Artisanat</a>
+			<a href="aventure.html" title="Aventure"><img src="data/icons/craft.png" />Aventure</a>
 			<a href="sheets.html" title="Feuilles de personnage"><img src="data/icons/sheets.png" />Feuilles de personnages</a>
 		</div>
 	</div>
@@ -44,59 +44,39 @@
 				<li>Un dé à 10 faces prend ses valeurs entre 1 et 10 mais le résultat d’un dé à 100 faces sera compris entre 00 et 99.</li>
 				<li>Les arrondis se feront à l’arrondi le plus proche avec pour convention 0.5 arrondi à 1.</li>
 				<li>Lorsque plusieurs opérations sont à appliquer pour un test ou pour une caractéristiques, appliquer d’abord les multiplications et divisions puis en dernier les additions et soustractions.</li>
-				<li>Sauf indication contraire un bonus ou un malus sur un test est à appliquer à la caractéristique servant au test. Ex : un test d’Adresse avec un malus de -2 signifie appliquer un malus de -2 à la caractéristique Adresse puis considérer cette nouvelle valeur pour le test.</li>
 			</ul>
 		</div>
 		<h3>Les caractéristiques</h3>
 		<div>
-			<h4>Les jauges</h4>
-			<h5>Vitalité</h5>
-			<div class="content">
-				La Vitalité représente la santé du personnage. Elle baissera à chaque fois que le personnage subit des dégâts. Moins il en a, plus vous pouvez vous inquiéter. 
-				<br />Lorsque le personnage arrive à moins du quart de ses points de Vitalité maximums, il doit réussir un test de Vigueur. En cas d’échec, il tombera inconscient pour 1D6 tours.
-				<br />Si sa Vitalité tombe à zéro, le personnage meurt.
-			</div>
-			<h5>Concentration</h5>
-			<div class="content">
-				Beaucoup d’actions demandent un surplus d’attention afin d’être correctement exécutées. Malheureusement une telle concentration ne peut être conservée indéfiniment. Dès que cette jauge est vide, le personnage n’a plus assez de ressources mentales pour se focaliser sur une action.
-				<br />Lorsque le personnage arrive à moins du quart de ses points de Concentration maximums, il doit réussir un test d'Intelligence. En cas d’échec, il sera fatigué pour 1D6 tours.
-			</div>
-			<h5>Souffle</h5>
-			<div class="content">
-				Le Souffle traduit l’énergie physique nécessaire à réaliser de nombreuses actions. Une personne endurante possèdera une grande jauge de souffle et pourra enchaîner de nombreuses actions avant de réclamer du repos.
-				<br />Lorsque le personnage arrive à moins du quart de ses points de Souffle maximums, il doit réussir un test de Vigueur. En cas d’échec, il sera déstabilisé pour 1D6 tours.
-			</div>
-			<h5>Expérience</h5>
-			<div class="content">
-				L’expérience d’un personnage regroupe tous les souvenirs d’aventure de celui-ci. Plus la personne possède d’expérience, plus elle a développé de nouvelles techniques pour faire face à de nouvelles situations.
-			</div>
-			<div class="content">
-				Afin de fluidifier le jeu, il sera intéressant de disposer de 3 piles de pions de couleur pour représenter les jauges. Ainsi il suffira de défausser/piocher les pions pour représenter les nombreuses utilisations et récupérations.
-			</div>
+			<!-- STATISTIQUES -->
 			<h4>Les statistiques</h4>
+			<div class="content">
+				Les statistiques permettent de mesurer les capacités physiques du personnage. Elles deviennent définitivement plus élevées au fur et à mesure que le personnage gagne des niveaux et peuvent gagner des bonus/malus temporaires grâce à un sort ou à ue pièce d'équipement.
+			</div>
 			<h5>Adresse</h5>
 			<div class="content">
 				L’adresse traduit l’habileté et la précision du personnage. C’est la caractéristique utilisée pour attaquer avec précision, tirer à l’arc ou pour opérer avec minutie.
 			</div>
 			<h5>Vivacité</h5>
 			<div class="content">
-				La vivacité représente la vitesse de réaction du personnage. Aussi bien l’analyse de la situation que la mise en mouvement du corps pour y réagir. La vivacité permet de se déplacer rapidement sur le champ de bataille et de réussir de nombreuses esquives.<br />
-				Depuis la vivacité, découle la réactivité. La réactivité traduit la capacité du personnage à enchainer les actions.<br /><br />	
-				<div class="bloc">
-					<b>Réactivité</b>
-					<table class="tab1">
-						<tr><th>0-10</th><th>11-20</th><th>21-30</th><th>31 et +</th></tr>
-						<tr><td>5</td><td>4</td><td>3</td><td>2</td></tr>
-					</table>
-				</div>
+				La vivacité représente la vitesse de réaction du personnage. Aussi bien l’analyse de la situation que la mise en mouvement du corps pour y réagir. La vivacité permet de porter des coups fulgurants et de réussir de nombreuses esquives.<br />
+				Depuis la vivacité, découle la réactivité qui traduit la capacité du personnage à enchainer les actions.<br /><br />	
+				
+				<b>Réactivité</b>
+				<table class="tab1">
+					<tr><th>0-10</th><th>11-20</th><th>21-30</th><th>31 et +</th></tr>
+					<tr><td>5</td><td>4</td><td>3</td><td>2</td></tr>
+				</table>
 			</div>  
 			<h5>Vigueur</h5>
 			<div class="content">
 				Représentant aussi bien la force physique du personnage que la résistance de son organisme, elle lui permet de soulever des objets lourds et de limiter les effets des poisons, de la douleur et des coups. 
-				Elle est indispensable à tout personnage subissant de nombreuses agressions.<br />
-				Deux seuils dépendent de la vigueur.<br />
-				<b>Seuil de coup</b> : égal à la valeur de la vigueur. Seuil utilisé pour résister aux assaults physiques (cf. encaisser un coup).<br />
-				<b>Seuil de blessure</b> : égal au double de la vigueur, il permet de déterminer si le personnage est blessé par le coup qu'il reçoit.
+				Elle est indispensable à tout personnage subissant de nombreuses agressions ou voulant porter des coups aux impacts colossaux.<br />
+				<br />
+				Trois seuils de blessure dépendent de la Vigueur : <br /><br />
+				<b>Seuil de blessure superficielle</b> : 2.<br />
+				<b>Seuil de blessure grave</b> : égal à la valeur de la Vigueur.<br />
+				<b>Seuil de blessure critique</b> : égal à la valeur de la Vigueur multipliée par 2.
 			</div>
 			<h5>Prestance</h5>
 			<div class="content">
@@ -104,80 +84,263 @@
 			</div>
 			<h5>Intelligence</h5>
 			<div class="content">
-				« Savoir c’est pouvoir ». Ceux qui croient en cette maxime développent leur intelligence. Celle-ci traduit les possibilités de raisonnement, la capacité à se souvenir ou encore les facultés à réfléchir vite.
+				« Savoir c’est pouvoir ». Ceux qui croient en cette maxime développent leur intelligence. Celle-ci traduit les possibilités de raisonnement, la capacité à se souvenir ou encore les facultés à réfléchir vite.<br />
+				Un personnage avec une intelligence inférieure à 6 ne sait ni lire ni écrire.
 			</div>
 			<h5>Intuition</h5>
 			<div class="content">
 				Grâce à son intuition, le personnage va être capable de sentir les choses avant leur arrivée. Elle l’aidera ainsi à détecter un piège, un mensonge ou les traces de sa proie.
 			</div>
-		 
+			<h5>Bravoure</h5>
+			<div class="content">
+				Sans une bravoure suffisament élevée, le personnage fuira à chaque altercation. Ce serait dommage...
+			</div>
+			
+			<!-- JAUGES -->
+			
+			<h4>Les jauges</h4>
+			<div class="content">
+				Les jauges sont des indicateurs de l'état du personnage. Leurs valeurs évoluent entre 0 et 5 et seront amenées à changer de nombreuses fois au cours d'un combat ou d'une aventure. On distingues trois types de jauges :
+				<ul>
+					<li>Les jauges d'énergie : rassemblant la Concentration, le Souffle et l'Adrénaline, ces jauges traduisent les ressources que peut utiliser le personnage. Il est interessant de les garder les plus remplies possible !</li>
+					<li>Les jauges d'alerte de combat : les Blessures, la Douleur, le Moral et la Peur. Ces jauges permettent de mesurer les effets du combat sur le personnage. A surveiller de près sachant que des pénalités apparaissent lorsqu'elles atteignent un seuil critique.</li>
+					<li>Les jauges d'alerte d'aventure : la Faim, la Fatigue et le Froid. Trois variables à garder basses pour s'assurer pour que le personnage reste en pleine possession de ses moyens.</li>
+				</ul>
+			</div>
+			
+			<h5>Concentration</h5>
+			<div class="content">
+				Beaucoup d’actions demandent un surplus d’attention afin d’être correctement exécutées. Malheureusement une telle concentration ne peut être conservée indéfiniment. 
+				<ul>
+					<li>Au début de chaque tour, le personnage récupère 2 points de Concentration.</li>
+					<li>A la fin d'un combat, le personnage récupère tous les points de Concentration manquants.</li>
+					<li>Si cette jauge tombe à 0, le personnage gagne un point de fatigue (une seule fois par combat).</li>
+				</ul>
+			</div>
+			<h5>Souffle</h5>
+			<div class="content">
+				Le Souffle traduit l’énergie physique nécessaire à réaliser de nombreuses actions. Tout comme la concentration, cette ressource n'est pas infinie.
+				<ul>
+					<li>Au début de chaque tour, le personnage récupère 2 points de Souffle.</li>
+					<li>A la fin d'un combat, le personnage récupère tous les points de Souffle manquants.</li>
+					<li>Si cette jauge tombe à 0, le personnage gagne un point de fatigue (une seule fois par combat).</li>
+				</ul>
+			</div>
+			<h5>Adrénaline</h5>
+			<div class="content">
+				La ferveur du combat a de quoi rendre électrique le guerrier le plus téméraire. L'Adrénaline accumulée lui permettra alors d'ignorer la douleur ou de disposer d'une force exceptionelle.
+				<ul>
+					<li>Le personnage gagne un point d'Adrénaline à chaque blessure subie ainsi qu'à chaque ennemi abattu.</li>
+					<li>Le personnage perd un point d'Adrénaline à chaque fois qu'il gagne un point de Fatigue.</li>
+					<li>Avant de réaliser un test de résistance à la douleur le personnage peut dépenser 1 point d'Adrénaline pour lancer deux dés et choisir parmis les deux résultats.</li>
+					<li>Avant de réaliser une action, le personnage peut dépenser un point d'Adrénaline pour gagner un bonus de +5 à une statistique pour la durée de l'action.</li>
+					<li>A la fin d'un combat, le personnage perd tous ses points d'Adrénaline.</li>
+				</ul>
+			</div>
+			
+			<h5>Blessures</h5>
+			<div class="content">
+				Pouvant se remplir jusqu'à 5 points, ces jauges tiennent le compte des assauts subis par le personnage. Il existe 6 jauges de blessures réparties sur l'ensemble du corps (la tête, le torse, le bras gauche, le bras droit, la jambe gauche et la jambe droite). Lorsqu'une attaque atteint le personnage si les dégâts subis (après réduction d'armure, compétences, ...) sont supérieurs à un seuil de blessure, une blessure de son type est ajoutée.
+				Les blessures sont de trois sortes :
+				<ul>
+					<li>Superficielles : correspondant aux deux premiers points de la jauge. Simples avertissements, ces blessures n'ont pas d'effet sur le personnage. Attention cependant, si le personnage a déjà subit 2 blessures superficielles, la prochaine blessure superficielle sera automatiquement transformée en blessure grave.</li>
+					<li>Graves : les deux points suivants dans la jauge. Ce coup-ci ces blessures sont à prendre au sérieux car elles infligent des malus au personnage. Ces malus seront présents jusqu'à ce que la blessure soit soignée. Comme pour les blessures superficielles, si le personnage a déjà subi 2 blessures graves, la suivante sera transformée en critique.</li>
+					<li>Critiques : le dernier point de la jauge. Le personnage sera dans un sale état suite à ces blessures. Une blessure critique inflige un effet temporaire jusqu'à ce qu'elle soit soignée, ainsi qu'un malus permanent qui ne pourra être soigné. Si le personnage cumule 3 blessures critiques sur son corps, il meurt. Une fois qu'une jauge de blessure est remplie pour une zone, un nouvel assaut ne se traduit pas par une nouvelle blessure mais donne lieu au test de douleur associé (considéré comme provenant d'une blessure critique).</li>
+				</ul>
+				
+				<b>Tableau des blessures</b>
+				<table>
+					<tr><th>Zone</th><th></th><th>Blessure grave</th><th>Blessure critique</th></tr>
+					<tr>
+						<td rowspan="3">Tête</td>
+						<td>1</td>
+						<td>Commotion : -2 Intelligence et Vivacité<br />sonné pour 1D6 tours</td>
+						<td>Mort
+						<br />
+						<b>Effet permanent</b> : cf. ci-dessus</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Désorienté : -6 Perception<br />sonné pour 1D3 tours</td>
+						<td>Evanoui pour 1D10 tours
+						<br />
+						<b>Effet permanent</b> Défiguré : -2 en Prestance </td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Chair à vif : -5 test de résistance à la douleur</td>
+						<td>Evanoui pour 1D10 tours
+						<br />
+						<b>Effet permanent</b> Amnésie : le personnage oublie 1 compétence (non innée) choisie au hasard.</td>
+					</tr>
+					
+					<tr>
+						<td rowspan="3">Torse</td>
+						<td>1</td>
+						<td>Souffle coupé : jauge de Souffle vidée et valeur maximale réduite de 1</td>
+						<td>Mort
+						<br />
+						<b>Effet permanent</b> : cf. ci-dessus</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Côte fracturée : -2 en Vigueur</td>
+						<td>Evanoui pour 1D10 tours
+						<br />
+						<b>Effet permanent</b> Torse enfoncé : -2 en Vigueur</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Chair à vif : -5 test de résistance à la douleur</td>
+						<td>Evanoui pour 1D10 tours
+						<br />
+						<b>Effet permanent</b> Estomac perforé : récupération des points de Faim divisée par 2</td>
+					</tr>
+					
+					<tr>
+						<td rowspan="3">Bras</td>
+						<td>1</td>
+						<td>Poignet foulé : -5 au score d'attaque/parade avec ce bras</td>
+						<td>Poignet fracturé : aucune compétence active sur l'Adresse ne peut être utilisée.
+						<br />
+						<b>Effet permanent</b> : -3 à tous les tests d'apprentissage sur les compétences de coup</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Doigt cassé : -2 en Adresse</td>
+						<td>Doigt arraché : le personnage gagne automatiquement un point de Peur et de Douleur
+						<br />
+						<b>Effet permanent</b> Douleur du membre fantome : chaque jet de repos avec un résultat de 1 ou 2 ne donne aucun repos au personnage</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Chair à vif : -5 test de résistance à la douleur</td>
+						<td>Fracture ouverte : le bras ne peut plus être utilisé et lache ce qu'il tenait
+						<br />
+						<b>Effet permanent</b> : à chaque jet de dé d'attaque avec cette main qui donne un résultat de 1, le personnage subit une blessure superficielle</td>
+					</tr>
+					
+					<tr>
+						<td rowspan="3">Jambe</td>
+						<td>1</td>
+						<td>Déchirure : -2 à toutes les attaques et défenses</td>
+						<td>Cheville fracturée : -3 en déplacement
+						<br />
+						<b>Effet permanent</b> : -3 à tous les tests d'apprentissage sur les compétences de Vigueur</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Entorse : -2 en déplacement</td>
+						<td>Genou disloqué : le personnage s'écroule et la jambe ne peut être utilisée
+						<br />
+						<b>Effet permanent</b> : -2 en déplacement</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Chair à vif : -5 test de résistance à la douleur</td> 
+						<td>Hémorragie : si pas de soin reçu pendant 3D3 tours, le personnage meurt.
+						<br />
+						<b>Effet permanent</b> : -2 en Vigueur</td>
+					</tr>
+				</table>
+			</div>
+			
+			<h5>Douleur</h5>
+			<div class="content">
+				Impossible de subir toutes les attaques sans broncher. Vient un certain point où même le personnage le plus résistant viendra à craindre la douleur. A chaque blessure subie, le personnage doit réussir un test de Vigueur avec les seuils suivants :
+				<ul>
+					<li>25 si la blessure est une blessure légère.</li>
+					<li>30 si la blessure est une blessure grave.</li>
+					<li>35 si la blessure est une blessure critique</li>
+				</ul>
+				Si le test est un échec, le personnage gagne un point de Douleur.
+				<ul>
+					<li>Si le personnage a 5 points de Douleur, il tombe évanoui pour 2D10 tours. A son réveil, il perd 1 point de Douleur.</li>
+					<li>A la fin d'un combat, le personnage perd tous ses points de Douleur sauf :
+						<ul>
+							<li>1 s'il a une blessure grave</li>
+							<li>2 s'il a une blessure critique</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			
+			<h5>Peur</h5>
+			La peur est omniprésente sur le champ de bataille. Reste que seuls les meilleurs aventuriers savent la dompter efficacement.
+			<div class="content">
+				<ul>
+					<li>A chaque fois que le personnage décide de ne pas parer ou esquiver une attaque qui lui est destinée, il doit réussir un test de Bravoure à 20 ou gagner un point de Peur.</li>
+					<li>Si le personnage a 5 points de Peur, il fuit en ligne droite celui qui a généré le dernier point de Peur. Il continuera sa fuite à chaque tour jusqu'à ce qu'il réussisse un test de Bravoure et perde alors 1 point de Peur</li>
+					<li>Si le personnage passe un tour sans agir, il peut retirer un point de Peur en réussissant un test de Bravoure à 20.</li>
+					<li>A la fin d'un combat, le personnage perd tous ses points de Peur</li>
+				</ul>
+			</div>
+			
+			<h5>Moral</h5>
+			Souvent le dernier rempart contre l'abandon, un moral élevé sera propice aux plus grands exploits.
+			<div class="content">
+				<ul>
+					<li>Si le personnage a 0 point de Moral, il subit un malus de -1 à tous ses jets (ne s'applique que sur les dés à 20 faces, le résultat ne peut descendre en dessous de 1).<br />De plus il ne peut utiliser d'action héroïque.</li>
+					<li>Si le personnage a 5 points de Moral, il gagne un bonus de +2 à tous ses jets (ne s'applique que sur les dés à 20 faces, le résultat ne peut monter au dessus de 20.).<br />De plus toute action héroïque utilisée a 1 chance sur 3 de ne pas dépenser le point d'action héroïque.</li>
+					<li>Si le personnage obtient un résultat de 1 sur un D20 il perd 1 point de Moral.</li>
+					<li>Si un allié meurt, le personnage perd 2 points de moral.</li>
+					<li>Si le personnage obtient un résultat de 20 sur un D20, il gagne 1 point de Moral.</li>
+				</ul>
+			</div>
+			
+			<h5>Faim</h5>
+			<div class="content">
+				<ul>
+					<li>2 points de Faim sont générés par journée.</li>
+					<li>Un repas correct réduit de 2 points la Faim.</li>
+					<li>Si le personnage a au moins 4 points en Faim, il gagne 1 point en Fatigue. Il continuera a en gagner 1 point toutes les deux heures.</li>
+					<li>Si le personnage a 5 points en Faim, il s'évanouit pendant 1D10 minutes et ne peut agir tant qu'il n'a pas mangé quelque chose.</li>
+				</ul>
+			</div>
+			
+			<h5>Fatigue</h5>
+			<div class="content">
+				<li>2 points de Fatigue sont générés par journée.</li>
+				<li>Se reposer permet de réduire les points de fatigue (cf. repos).</li>
+				<li>Si le personnage a au moins 4 points en Fatigue, il ne peut plus utiliser ses capacités à leur plein potentiel. Toutes ses compétences perdent 1 niveau jusqu'à ce que le personnage ne se repose. Les actions innées ne peuvent descendre en dessous de 1 mais les autres compétences le peuvent et devenir ainsi inutilisables.</li>
+				<li>Si le personnage a au moins 5 points de Fatigue, toutes ses caractéristiques sont descendues à 5.</li>
+			</div>
+			
+			<h5>Froid</h5>
+			<div class="content">
+				<ul>
+					<li>Si le personnage a au moins 4 points en Froid, il doit relancer tous ses tests de caractéristiques réussis.</li>
+					<li>Si le personnage a 5 points en Froid, il s'évanouit jusqu'à être réchauffé. S'il n'est pas réchauffé en moins de 2 heures, le personnage meurt.</li>
+				</ul>
+			</div>
+
 			<h4>Les tests de caractéristiques</h4>
 			<div class="content">
-				De nombreuses actions demanderont à votre personnage de réussir un test selon une caractéristique.<br />
-				Pour ce faire, lancer un D20 et reportez vous au tableau ci-dessous.<br />
+				De nombreuses actions demanderont à votre personnage de réussir un test selon une caractéristique avec un seuil cible Par exemple un test d'Adresse à 20.<br />
+				Pour ce faire, lancer un D20 et additioner la valeur de caractéristique du personnage. Si le résultat est supérieur ou égal au seuil indiqué, le test est un succès.<br />
 				<br />
-				<table class="tab1 float_left">
-					<tr><th>Valeur de la caractéristique</th><th>Résultat à obtenir</th></tr>
-					<tr><td>0 et -</td><td>20</td></tr>
-					<tr><td>1</td><td>19+</td></tr>
-					<tr><td>2</td><td>19+</td></tr>
-					<tr><td>3</td><td>18+</td></tr>
-					<tr><td>4</td><td>18+</td></tr>
-					<tr><td>5</td><td>16+</td></tr>
-					<tr><td>6</td><td>16+</td></tr>
-					<tr><td>7</td><td>14+</td></tr>
-					<tr><td>8</td><td>14+</td></tr>
-					<tr><td>9</td><td>12+</td></tr>
-				</table>
-				<table class="tab1 float_left middle1">
-					<tr><th>Valeur de la caractéristique</th><th>Résultat à obtenir</th></tr>
-					<tr><td>10</td><td>12+</td></tr>
-					<tr><td>11</td><td>10+</td></tr>
-					<tr><td>12</td><td>10+</td></tr>
-					<tr><td>13</td><td>9+</td></tr>
-					<tr><td>14</td><td>9+</td></tr>
-					<tr><td>15</td><td>8+</td></tr>
-					<tr><td>16</td><td>8+</td></tr>
-					<tr><td>17</td><td>7+</td></tr>
-					<tr><td>18</td><td>7+</td></tr>
-					<tr><td>19</td><td>6+</td></tr>
-				</table>
-				<table class="tab1 float_left middle2">
-					<tr><th>Valeur de la caractéristique</th><th>Résultat à obtenir</th></tr>
-					<tr><td>20</td><td>6+</td></tr>
-					<tr><td>21</td><td>5+</td></tr>
-					<tr><td>22</td><td>5+</td></tr>
-					<tr><td>23</td><td>5+</td></tr>
-					<tr><td>24</td><td>5+</td></tr>
-					<tr><td>25</td><td>4+</td></tr>
-					<tr><td>26</td><td>4+</td></tr>
-					<tr><td>27</td><td>4+</td></tr>
-					<tr><td>28</td><td>4+</td></tr>
-					<tr><td>29</td><td>3+</td></tr>
-				</table>
-				<table class="tab1 float_left">
-					<tr><th>Valeur de la caractéristique</th><th>Résultat à obtenir</th></tr>
-					<tr><td>30</td><td>3+</td></tr>
-					<tr><td>31</td><td>3+</td></tr>
-					<tr><td>32</td><td>3+</td></tr>
-					<tr><td>33</td><td>2+</td></tr>
-					<tr><td>34</td><td>2+</td></tr>
-					<tr><td>35</td><td>2+</td></tr>
-					<tr><td>36 et +</td><td>2+</td></tr>	
-				</table>
-				<p class="float_left"><i>Un  résultat de 10+ signifie que le test est réussi si le résultat du dé est supérieur ou égal à 10.</i></p>
+				Seuils classiques :
+				<ul>
+					<li><b>10 : </b>test enfantin (se souvenir d'un évènement de la veille, lancer un objet à quelqu'un de proche, ...)</li>
+					<li><b>20 : </b>un minimum de concentration est nécessaire pour un personnage débutant mais l'expérience rendra bientôt le test facile. (tirer à l'arc, nager 25m en apnée, ...)</li>
+					<li><b>30 : </b>un test qui n'est pas accessible au premier venu.</li>
+					<li><b>40 : </b>un test particulièrement ardu. Mieux vaut se préparer avant de le tenter.</li>
+					<li><b>50 : </b>Est-ce seulement possible !?</li>
+				</ul>
+				<br />
+				Un résultat de 1 sur un dé 20 sera toujours un échec quel que soit le seuil.<br />
+				Un résultat de 20 sur un dé 20 sera toujours un succès quel que soit le seuil.<br />
 			</div>
 			
 			<h4>Les duels de caractéristiques</h4>
 			<div class="content">
-				Ces duels permettent de mettre en comparaison les caractéristiques de deux personnages. Pour réaliser un duel sur une caractéristique, chaque personnage effectue un test de caractéristique et note la marge de succès (ou d'échec dans ce cas le nombre est négatif). Celui avec la marge la plus élevée remporte le duel. En cas d'égalité, c'est le personnage à l'origine du duel qui l'emporte.<br />
+				Ces duels permettent de mettre en comparaison les caractéristiques de deux personnages. Pour réaliser un duel sur une caractéristique, chaque personnage effectue un test de caractéristique. Le plus haut résultat l'emporte. En cas d'égalité, c'est le personnage à l'origine du duel qui l'emporte.<br />
 			</div>
 		</div>
 		
-		
 		<h3>Actions héroïques</h3>
 		<div class="content">
-			Même s'il ne le sait pas encore, votre personnage est promis à une destinée hors du commun. Et rien de mieux pour y accéder que quelques actions héroïques bien placées. A n'importe quel moment de la partie, le joueur pourra décider de réaliser une action héroïque. A ce moment là, le jet de dé nécessaire à la réalisation de l'action (quelle que soit la difficulté) sera réussi ! De quoi ouvrir de belles perspectives. Bien sûr, ce genre d'action est très rare, et le nombre d'actions héroïques disponibles à la charge du MJ. Une bonne méthode consiste à accorder en début de séance 1D3 actions héroïques par personnage.
+			Même s'il ne le sait pas encore, votre personnage est promis à une destinée hors du commun. Et rien de mieux pour y accéder que quelques actions héroïques bien placées. A n'importe quel moment de la partie, le joueur pourra décider de réaliser une action héroïque. A ce moment là, le jet de dé nécessaire à la réalisation de l'action (quelle que soit la difficulté) sera réussi ! De quoi ouvrir de belles perspectives. <br />Le personnage peut également décider d'utiliser une action héroïque pour déplacer sa position sur la timeline de 1 à 4 points.<br /><br />Bien sûr, ce genre d'action est très rare, et le nombre d'actions héroïques disponibles à la charge du MJ. Une bonne méthode consiste à accorder en début de séance 1D3 actions héroïques par personnage.
 		</div>
 
 		<h3>Déroulement du jeu</h3>
@@ -216,11 +379,11 @@
 		<h3>Les actions</h3>
 		<div class="content">
 			Lorsqu’un personnage souhaite agir, il utilise ses actions. Par défaut, chacun en possède une qu’il peut utiliser à son tour de jeu. Chaque action qu’elle soit innée ou provenant d’un entrainement spécifique se décline en 5 niveaux de maitrise. Le tout premier correspondant aux bases de la technique est connu dès l’acquisition de celle-ci. Ensuite, le personnage doit s’entrainer pour progresser dans sa maîtrise. A noter qu’après le 5eme degré de maîtrise, une formule apparait pour déterminer les effets d’un éventuel 6eme ou 7eme degré. Bien qu’il soit impossible de se spécialiser directement au dessus du 5eme niveau, certains objets ou compétences peuvent booster artificiellement ces niveaux.
-			Il est à noter que le niveau de maîtrise de l'action est le niveau maximal connu mais pas forcément celui utilisé. Selon la situation, le personnage peut choisir d'utiliser la technique à un niveau moins élevé (par exemple pour économiser son souffle). Ceci n'est valable uniquement pour les actions actives.
+			Il est à noter que le niveau de maîtrise de l'action est le niveau maximal connu mais pas forcément celui utilisé. Selon la situation, le personnage peut choisir d'utiliser la technique à un niveau moins élevé (par exemple pour économiser son Souffle). Ceci n'est valable uniquement pour les actions actives.
 			<br /><br />
-			Beaucoup d’actions sont éprouvantes pour l’organisme et demandent de la concentration et de l’endurance (souffle). A chaque fois que la description le mentionne, le personnage doit dépenser le nombre de points de souffle et de concentration pour réussir l’action.
+			Beaucoup d’actions sont éprouvantes pour l’organisme et demandent de la Concentration et du Souffle. A chaque fois que la description le mentionne, le personnage doit dépenser le nombre de points de souffle et de concentration pour réussir l’action.
 			<br /><br />
-			De plus il faut un certain pour éxécuter l'action, ce temps sera ajouté à la réactivité du personnage pour déterminer quand jouer la prochaine action du personnage.
+			De plus il faut un certain temps pour éxécuter l'action, ce temps sera ajouté à la réactivité du personnage pour déterminer quand jouer la prochaine action du personnage.
 			<br />
 			Le personnage peut décider de ne faire aucune action. Dans ce cas son action aura un temps d'exécution de 0 et il ne se déplacera que de sa réactivité dans la barre des temps.
 			<br /><br />
@@ -232,24 +395,31 @@
 			De nombreux évènements peuvent influencer l’état d’un personnage. Que ce soit en provenance d’une compétence, de la fatigue ou encore un d’un poison, la liste est longue.
 			<table class="small_tab">
 				<tr><th>Nom</th><th>Effets</th></tr>
-				<tr><td>Sonné</td><td>Le personnage voit sa Technique de combat, son Adresse et sa Vivacité divisées par deux.</td></tr>
+				<tr><td>Sonné</td><td>Le personnage voit sa Vigueur, son Adresse et sa Vivacité divisées par deux.</td></tr>
 				<tr><td>Déstabilisé</td><td>Lorsque le personnage vient d’être déstabilisé, si sa prochaine action est une action de combat (attaque, défense, compétence de combat …) celle-ci subira un malus de -10.</td></tr>
-				<tr><td>Fatigué</td><td>Toute action tentée autre que se déplacer a 5% de chance d’échouer.</td></tr>
-				<tr><td>Enragé</td><td>Le personnage est pris d’une folle envie de combattre. Il attaquera la dernière personne ayant été une menace pour lui ou à défaut, la personne la plus proche de lui.</td></tr>
-				<tr><td>Fiévreux</td><td>La personne subit les effets de la Fatigue. En plus de ça, les jauges de Souffle et de Concentration verront leur score maximal réduit de 10.</td></tr>
-				<tr><td>Evanoui</td><td>Le personnage tombe au sol et perd connaissance. Il ne pourra plus agir tant qu’il n’aura pas réussi un test de Résistance. Ce test sera effectué toutes les minutes ou à chaque fois qu’il perd 10 points de Vitalité (cette perte peut-être étalée sur plusieurs coups).</td></tr>
+				<tr><td>Dément</td><td>Le personnage est pris d’une folle envie de combattre. Il attaquera la dernière personne ayant été une menace pour lui ou à défaut, la personne la plus proche de lui.</td></tr>
+				<tr><td>Fiévreux</td><td>La personne voit toutes ses statistiques baissées de -2.</td></tr>
+				<tr><td>Evanoui</td><td>Le personnage tombe au sol et perd connaissance. Il ne pourra plus agir tant qu’il n’aura pas réussi un test de Vigueur. Ce test sera effectué toutes les minutes ou à chaque fois qu’il subit une nouvelle blessure.</td></tr>
 			</table>
 		</div>
 
-		<h3>La récupération</h3>
+		<h3>Le repos</h3>
 		<div class="content">
-			La récupération est une part importante d'un combat. Que ce soit pour la vitalité, afin de pouvoir combattre à nouveau ou au niveau du souffle et de la concentration qui s'épuise très vite en combat.<br /><br />
-			<b>En cours de combat</b> : pas de récupération de vitalité.<br />
-			Si pas d'action récupération d'un quart de Concentration et Souffle manquants.<br /><br />
-			<b>En fin de combat</b> : récupération de la moitié des points de vitalité perdu dans le combat.<br />
-			3/4 du Souffle et Concentration perdus dans le combat.<br /><br />
-			<b>Avec du repos</b> : le reste peut être récupéré en dormant (1h -> Souffle et Concentration à fond)
-			Récupération de vitalité à 1D6 point dans de bonnes conditions (1D4 sinon)
+			Récupérer est indispensable pour tout aventurier qui souhaite faire long feu. Mais selon les conditions le résultat n'est pas le même. A chaque repos (minimum 4h) lancer 1D10 avec les modificateurs décrits ci-dessous et se reporter au tableau de résultat.<br />
+			<h4>Modificateurs</h4>
+			<ul>
+				<li><b>Longue durée</b> (6h de sommeil) : +2</li>
+				<li><b>Confort</b> (camp de base ou lit) : +2</li>
+				<li><b>Intempéries</b> : -3 (à adapter par le MJ)</li>
+				<li><b>Froid/Faim/Peur/Douleur</b> (chaque jauge avec 4 points ou +) : -2</li>
+			</ul>
+			<h4>Résultats</h4>
+			<ul>
+				<li><b>de 3 à 8</b> : Retire 2 points de Fatigue + Retire 1 points de blessure*.</li>
+				<li><b>de 9 à 13</b> : Retire 3 points de Fatigue + Retire 2 points de blessure* + Ajoute 1 point de Moral.</li>
+				<li><b>14 et +</b> : Retire 4 points de Fatigue + Retire 4 points de blessure* + Ajoute 2 points de Moral.</li>
+			</ul>
+			<span class="help">* avec 1/2/4 point de blessure le personnage peut retirer un blessure superficielle/grave/critique.</span>
 		</div>
 	</div>
 	<script type="text/javascript" src="data/custom_navigation.js"></script>

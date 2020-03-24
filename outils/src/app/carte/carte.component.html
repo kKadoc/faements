@@ -1,0 +1,22 @@
+
+<img *ngIf="fond" src="app/carte/fond.png" />
+<img *ngIf="cercles" src="app/carte/cercles_puissance.png" />
+<img *ngIf="anneaux" src="app/carte/anneaux.png" />
+<img *ngIf="zones" src="app/carte/zones.png" />
+<img src="app/carte/cadre.png" />
+
+<div id="left">
+	<h3>Affichage</h3>
+	<label>
+        <input type="checkbox" name="fond"  [(ngModel)]="fond">Fond
+    </label>
+	<label>
+        <input type="checkbox" name="zones"  [(ngModel)]="zones">Zones
+    </label>
+	<label>
+        <input type="checkbox" name="cercles"  [(ngModel)]="cercles">Cercles
+    </label>
+	<label>
+        <input type="checkbox" name="anneaux"  [(ngModel)]="anneaux">Anneaux
+    </label>
+</div>

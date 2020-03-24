@@ -1,0 +1,92 @@
+
+
+.left {
+	height : 100%;
+	position : fixed;
+
+	width : 240px;
+
+	border-right : 1px solid grey;
+	color : grey;
+	padding : 0;
+}
+
+.left h3 {
+	margin : 0;
+	background:rgba(255,255,255,0.1);
+	padding : 0 5px;
+	margin : 5px 0;
+}
+
+.left button {
+	background : transparent;
+	color : grey;
+	float : right;
+	margin-right : 5px;
+	border : 1px solid grey;
+	border-radius : 4px;
+	
+	cursor : pointer;
+}
+
+.left select {
+	margin-left: 5px;
+	border-radius: 3px;
+	background-color: grey;
+	border : 1px solid black;
+}
+
+.log {
+	overflow : auto;
+	max-height: 100%;
+}
+
+.log p {
+	margin : 0;
+	padding : 0 5px;
+	font-size : 0.8em;
+	font-family : Consolas;
+
+	color : white;
+
+	opacity : 0.6;
+}
+
+.log .first p {
+	opacity : 1;
+}
+
+.log p b {
+	color : #A17222;
+}
+
+.log p i {
+	color : #628CA5;
+}
+
+
+.mid {
+	margin-left: 250px;
+
+	height : 100%;
+	position : fixed;
+}
+
+.mid .wrapper {
+
+	overflow : auto;
+	max-height:90%;
+
+}
+
+.scroll::-webkit-scrollbar {
+  width: 5px;
+}
+ 
+.scroll::-webkit-scrollbar-track {
+  background: #ddd;
+}
+ 
+.scroll::-webkit-scrollbar-thumb {
+  background: #666; 
+}

@@ -1,0 +1,52 @@
+<compteur id="cpt5" [max]="'42'" [valeur]="time" [interval]="'10000'"></compteur>
+
+<div id="all">
+
+<div id="line"></div>
+<compteur id="cpt4" [max]="'240'" [valeur]="time" [interval]="'1000'"></compteur>
+
+<compteur id="cpt2" [max]="'3'" [valeur]="time" [interval]="'540000'"></compteur>
+
+<compteur id="cpt1" [max]="'60'" [valeur]="time" [interval]="'60000'"></compteur>
+
+<compteur id="cpt3" [max]="'17'" [valeur]="time" [interval]="'180000'"></compteur>
+
+
+
+
+</div>
+
+
+<!--
+
+t0 = j - 19 à 8h
+tf = j + 25 à 23h
+durée totale d'un cycle = 64260 minutes = 44 jours 15 heures
+
+cpt1
+	cycle complet = 60min
+	frequence de maj = 1 fois par min
+	nb graduations = 60
+	
+cpt2
+	cycle complet = 27min
+	frequence de maj = 1 fois toutes les 9min
+	nb graduations = 3
+	
+cpt3
+	cycle complet = 51min
+	frequence de maj = 1 fois toutes les 3min
+	nb graduations = 17
+
+cpt4
+	cycle complet = 4min
+	frequence de maj = 1 fois par seconde
+	nb graduations = 240
+	
+cpt5
+	caché
+	cycle complet = 7min
+	frequence de maj = 1 fois toutes les 10 sec
+	nb graduations = 42
+	
+-->

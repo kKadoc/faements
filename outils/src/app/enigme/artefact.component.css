@@ -1,0 +1,116 @@
+:host {
+	position : relative;
+}
+
+#all {
+	padding : 15px;
+	margin : 45px auto;
+	
+	position : relative;
+	
+	border : 1px solid grey;
+	
+	width : 610px;
+	height : 610px;
+	
+	background : rgba(100,100,100,0.1);
+}
+
+#line {
+	height : 3px;
+	background : #5DADE2;
+
+	border : 2px solid grey;
+	border-left : none;
+	border-right : none;
+	
+	position : absolute;
+	
+	top : 317px;
+	left : -1px;
+	right : -1px;
+}
+compteur {
+	border-radius:50%;
+	position : absolute;
+	
+	box-shadow : 2px 2px 6px black;
+}
+
+#cpt4 {
+	left : 20px;
+	top : 20px;
+	width:600px;
+	height:600px;
+	border:2px solid #4D5656; 
+	
+	background : #1B2631;
+}
+
+#cpt4 /deep/ #trait, #cpt4 /deep/ #point {
+	background-color : #4D5656;
+}
+
+#cpt2 {
+	left : 20px;
+	top : 125px;
+	width:390px;
+	height:390px;
+	border:2px solid #5F6A6A; 
+	
+	background : #212F3C;
+}
+
+#cpt2 /deep/ #trait, #cpt2 /deep/ #point {
+	background-color : #5F6A6A;
+}
+
+#cpt1 {
+	left : 20px;
+	top : 240px;
+	
+	width:160px;
+	height:160px;
+	border:2px solid #717D7E; 
+	
+	background : #283747;
+}
+
+#cpt1 /deep/ #trait, #cpt1 /deep/ #point {
+	background-color : #717D7E;
+}
+
+#cpt3 {
+	left : 520px;
+	top : 270px;
+
+	width:100px;
+	height:100px;
+	border:2px solid #839192; 
+	
+	background : #2E4053;
+}
+
+#cpt3 /deep/ #trait, #cpt3 /deep/ #point {
+	background-color : #839192;
+}
+
+
+
+
+#cpt5 {	
+	
+	
+	left : 30px;
+	top : 30px;
+	
+	width:60px;
+	height:60px;
+	border:2px solid #78281F; 
+	
+	background : rgba(217, 136, 128, 0.5);
+}
+
+#cpt5 /deep/ #trait, #cpt5 /deep/ #point {
+	background-color : #78281F;
+}

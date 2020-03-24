@@ -1,0 +1,39 @@
+img {
+	vertical-align : bottom;
+	height : 45px;
+}
+
+.de {
+	width : 35px;
+	line-height : 35px;
+	
+	display : inline-block;
+	
+	border: 1px solid #b07b38;
+	border-radius : 7px;
+	
+	margin : 5px;
+	
+	background : #332314;
+	color: #a99877;
+	
+	text-align : center;
+	
+	cursor : pointer;
+}
+
+.resultat {
+	width : 35px;
+	line-height : 35px;
+	
+	margin : 5px 10px;
+	text-align : center;
+	
+	background : #000;
+	color: #fff;
+	
+	border : 1px solid grey;
+	
+	
+	display : inline-block;
+}

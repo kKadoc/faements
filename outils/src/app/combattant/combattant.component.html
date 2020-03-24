@@ -1,0 +1,163 @@
+<div class="header">
+	<input class="name" type="text" [(ngModel)]="combattant.nom">
+	<span class="timeline">Timeline<input type="text" [(ngModel)]="combattant.timeline"></span>
+	<span class="right"><i (click)="delete();" class="mdi mdi-close"></i></span>
+</div>
+<div class="bloc">
+	<h4>Caractéristiques</h4>
+	<table class="caracs">
+		<tr><td class="pointer" (click)="lancerTest('adresse')">Adresse</td><td class="adresse"><input type="text" [(ngModel)]="combattant.adresse"></td></tr>
+		<tr><td class="pointer" (click)="lancerTest('vivacite')">Vivacité</td><td class="vivacite"><input type="text" [(ngModel)]="combattant.vivacite"></td></tr>
+		<tr><td colspan="2" class="secondaire"><span>- Réactivité</span>{{combattant.vivacite | reactivitePipe}}</td></tr>
+		<tr><td class="pointer" (click)="lancerTest('vigueur')">Vigueur</td><td class="vigueur"><input type="text" [(ngModel)]="combattant.vigueur"></td></tr>
+		<tr><td colspan="2" class="secondaire"><span>- Seuil de blessure</span><i class="pointer" (click)="lancerTestDouleur('superficielle')">2</i> / <i class="pointer" (click)="lancerTestDouleur('grave')">{{combattant.vigueur*1}}</i> / <i class="pointer" (click)="lancerTestDouleur('critique')">{{combattant.vigueur*2}}</i></td></tr>
+		<tr><td class="pointer" (click)="lancerTest('prestance')">Prestance</td><td class="prestance"><input type="text" [(ngModel)]="combattant.prestance"></td></tr>
+		<tr><td class="pointer" (click)="lancerTest('intelligence')">Intelligence</td><td class="intelligence"><input type="text" [(ngModel)]="combattant.intelligence"></td></tr>
+		<tr><td class="pointer" (click)="lancerTest('intuition')">Intuition</td><td class="intuition"><input type="text" [(ngModel)]="combattant.intuition"></td></tr>
+		<tr><td class="pointer" (click)="lancerTest('bravoure')">Bravoure</td><td class="bravoure"><input type="text" [(ngModel)]="combattant.bravoure"></td></tr>
+	</table>
+</div><div class="bloc jauges">
+	<h4>Jauges</h4>
+	<br />
+	<jauge [type]="'positive'" [nom]="'Souffle'" [valeur]="combattant.souffle" (jaugeChange)="combattant.souffle = jaugeChange($event);"></jauge>
+	<jauge [type]="'positive'" [nom]="'Concentration'" [valeur]="combattant.concentration" (jaugeChange)="combattant.concentration = jaugeChange($event);"></jauge>
+	<jauge [type]="'neutre'" [nom]="'Adrenaline'" [valeur]="combattant.adrenaline" (jaugeChange)="combattant.adrenaline = jaugeChange($event);"></jauge>
+	<br />
+	<jauge [type]="'positive'" [nom]="'Moral'" [valeur]="combattant.moral" (jaugeChange)="combattant.moral = jaugeChange($event);"></jauge>
+	<jauge [type]="'negative'" [nom]="'Douleur'" [valeur]="combattant.douleur" (jaugeChange)="combattant.douleur = jaugeChange($event);"></jauge>
+	<jauge [type]="'negative'" [nom]="'Peur'" [valeur]="combattant.peur" (jaugeChange)="combattant.peur = jaugeChange($event);"></jauge>
+	<br />
+	<jauge [type]="'negative'" [nom]="'Fatigue'" [valeur]="combattant.fatigue" (jaugeChange)="combattant.fatigue = jaugeChange($event);"></jauge>
+	<jauge [type]="'negative'" [nom]="'Froid'" [valeur]="combattant.froid" (jaugeChange)="combattant.froid = jaugeChange($event);"></jauge>
+	<jauge [type]="'negative'" [nom]="'Faim'" [valeur]="combattant.faim" (jaugeChange)="combattant.faim = jaugeChange($event);"></jauge>
+</div><div class="bloc">
+	<h4>Actions</h4>
+	<table class="actions">
+		<tr *ngFor="let comp of combattant.actions"><td (click)="helpComp(comp)">{{comp.competence.nom}}</td><td><input type="text" [(ngModel)]="comp.niveau"></td><td><i (click)="useComp(comp)" class="mdi mdi-play pointer"></i></td></tr>
+	</table>
+</div>
+<div class="bloc">
+	<h4>Blessures</h4>
+	<label>Tête (1)</label><br />
+	<input type="checkbox" [(ngModel)]="combattant.blessures['tete'][0]" >
+	<input type="checkbox" [(ngModel)]="combattant.blessures['tete'][1]" >
+	<input type="checkbox" [(ngModel)]="combattant.blessures['tete'][2]" >
+	<input type="checkbox" [(ngModel)]="combattant.blessures['tete'][3]" >
+	<input type="checkbox" [(ngModel)]="combattant.blessures['tete'][4]" >
+	
+	<br /><label>Torse (2,3,6)</label><br />
+	<input type="checkbox" [(ngModel)]="combattant.blessures['torse'][0]" >
+	<input type="checkbox" [(ngModel)]="combattant.blessures['torse'][1]" >
+	<input type="checkbox" [(ngModel)]="combattant.blessures['torse'][2]" >
+	<input type="checkbox" [(ngModel)]="combattant.blessures['torse'][3]" >
+	<input type="checkbox" [(ngModel)]="combattant.blessures['torse'][4]" >
+	
+	<br /><label>Bras droit (4,7)</label><br />
+	<input type="checkbox" [(ngModel)]="combattant.blessures['bras_droit'][0]" >
+	<input type="checkbox" [(ngModel)]="combattant.blessures['bras_droit'][1]" >
+	<input type="checkbox" [(ngModel)]="combattant.blessures['bras_droit'][2]" >
+	<input type="checkbox" [(ngModel)]="combattant.blessures['bras_droit'][3]" >
+	<input type="checkbox" [(ngModel)]="combattant.blessures['bras_droit'][4]" >
+	
+	<br /><label>Bras gauche (5,8)</label><br />
+	<input type="checkbox" [(ngModel)]="combattant.blessures['bras_gauche'][0]" >
+	<input type="checkbox" [(ngModel)]="combattant.blessures['bras_gauche'][1]" >
+	<input type="checkbox" [(ngModel)]="combattant.blessures['bras_gauche'][2]" >
+	<input type="checkbox" [(ngModel)]="combattant.blessures['bras_gauche'][3]" >
+	<input type="checkbox" [(ngModel)]="combattant.blessures['bras_gauche'][4]" >
+	
+	<br /><label>Jambe droite (9,11)</label><br />
+	<input type="checkbox" [(ngModel)]="combattant.blessures['jambe_droite'][0]" >
+	<input type="checkbox" [(ngModel)]="combattant.blessures['jambe_droite'][1]" >
+	<input type="checkbox" [(ngModel)]="combattant.blessures['jambe_droite'][2]" >
+	<input type="checkbox" [(ngModel)]="combattant.blessures['jambe_droite'][3]" >
+	<input type="checkbox" [(ngModel)]="combattant.blessures['jambe_droite'][4]" >
+	
+	<br /><label>Jambe gauche (10,12)</label><br />
+	<input type="checkbox" [(ngModel)]="combattant.blessures['jambe_gauche'][0]" >
+	<input type="checkbox" [(ngModel)]="combattant.blessures['jambe_gauche'][1]" >
+	<input type="checkbox" [(ngModel)]="combattant.blessures['jambe_gauche'][2]" >
+	<input type="checkbox" [(ngModel)]="combattant.blessures['jambe_gauche'][3]" >
+	<input type="checkbox" [(ngModel)]="combattant.blessures['jambe_gauche'][4]" >
+</div>
+<div class="bloc">
+	<h4>Compétences</h4>
+	<table class="actions">
+		<tr *ngFor="let comp of combattant.competences"><td (click)="helpComp(comp)">{{comp.competence.nom}}</td><td><input type="text" [(ngModel)]="comp.niveau"></td><td><i (click)="useComp(comp)" class="mdi mdi-play pointer"></i></td></tr>
+		<tr>
+			<td>
+				<select [(ngModel)]="selectedSkill">
+					<option *ngFor="let competence of competences | orderBy : 'nom'" [ngValue]="competence">{{competence.nom}}</option> 
+				</select>
+			</td>
+			<td><i (click)="addSkill()" class="mdi mdi-plus pointer"></i></td>
+		</tr>
+	</table>
+	<h4>Sorts</h4>
+	<table class="actions">
+		<tr *ngFor="let sort of combattant.sorts"><td (click)="helpSpell(sort)">{{sort.sort.nom}}</td><td><input type="text" [(ngModel)]="sort.niveau"></td><td><i class="mdi mdi-play pointer"></i></td></tr>
+		<tr>
+			<td>
+				<select [(ngModel)]="selectedSpell">
+					<option *ngFor="let sort of sorts  | orderBy : 'nom'" [ngValue]="sort">{{sort.nom}}</option> 
+				</select>
+			</td>
+			<td><i (click)="addSpell()" class="mdi mdi-plus pointer"></i></td>
+		</tr>
+	
+	</table>	
+</div>
+<div class="bloc">
+	<h4>Notes</h4>
+	<textarea class="notes" [(ngModel)]="combattant.notes"></textarea>
+</div>
+
+<div class="bloc">
+	<h4>Armes</h4>
+	<table class="weapons">
+		<tr *ngFor="let arme of combattant.armes"><td><input type="checkbox" [(ngModel)]="arme.selected"><span (click)="helpWeapon(arme)">{{arme.nom}}</span></td><td><i class="mdi mdi-close" (click)="removeArme(arme)"></i></td></tr>
+		<tr>
+			<td>
+				<select [(ngModel)]="selectedArme">
+					<option *ngFor="let arme of armes  | orderBy : 'nom'" [ngValue]="arme">{{arme.nom}}</option> 
+				</select>
+			</td>
+			<td><i (click)="addArme()" class="mdi mdi-plus pointer"></i></td>
+		</tr>
+	
+	</table>
+</div>
+
+<div *ngIf="helpedSkill" class="help" (click)="closeHelp()">
+	<h4>{{helpedSkill.competence.nom}}</h4>
+	<table>
+		<tr><td>1</td><td>{{helpedSkill.competence.niv1.description}}</td><td><span *ngIf="helpedSkill.competence.niv1.adrenaline" class="adrenaline">{{helpedSkill.competence.niv1.adrenaline}}</span><span class="souffle">{{helpedSkill.competence.niv1.souffle}}</span><span class="concentration">{{helpedSkill.competence.niv1.concentration}}</span><span class="execution">{{helpedSkill.competence.niv1.execution}}</span></td></tr>
+		<tr><td>2</td><td>{{helpedSkill.competence.niv2.description}}</td><td><span *ngIf="helpedSkill.competence.niv2.adrenaline" class="adrenaline">{{helpedSkill.competence.niv2.adrenaline}}</span><span class="souffle">{{helpedSkill.competence.niv2.souffle}}</span><span class="concentration">{{helpedSkill.competence.niv2.concentration}}</span><span class="execution">{{helpedSkill.competence.niv2.execution}}</span></td></tr>
+		<tr><td>3</td><td>{{helpedSkill.competence.niv3.description}}</td><td><span *ngIf="helpedSkill.competence.niv3.adrenaline" class="adrenaline">{{helpedSkill.competence.niv3.adrenaline}}</span><span class="souffle">{{helpedSkill.competence.niv3.souffle}}</span><span class="concentration">{{helpedSkill.competence.niv3.concentration}}</span><span class="execution">{{helpedSkill.competence.niv3.execution}}</span></td></tr>
+		<tr><td>4</td><td>{{helpedSkill.competence.niv4.description}}</td><td><span *ngIf="helpedSkill.competence.niv4.adrenaline" class="adrenaline">{{helpedSkill.competence.niv4.adrenaline}}</span><span class="souffle">{{helpedSkill.competence.niv4.souffle}}</span><span class="concentration">{{helpedSkill.competence.niv4.concentration}}</span><span class="execution">{{helpedSkill.competence.niv4.execution}}</span></td></tr>
+		<tr><td>5</td><td>{{helpedSkill.competence.niv5.description}}</td><td><span *ngIf="helpedSkill.competence.niv5.adrenaline" class="adrenaline">{{helpedSkill.competence.niv5.adrenaline}}</span><span class="souffle">{{helpedSkill.competence.niv5.souffle}}</span><span class="concentration">{{helpedSkill.competence.niv5.concentration}}</span><span class="execution">{{helpedSkill.competence.niv5.execution}}</span></td></tr>
+		<tr><td>6+</td><td>{{helpedSkill.competence.niv6.description}}</td><td><span *ngIf="helpedSkill.competence.niv6.adrenaline" class="adrenaline">{{helpedSkill.competence.niv6.adrenaline}}</span><span class="souffle">{{helpedSkill.competence.niv6.souffle}}</span><span class="concentration">{{helpedSkill.competence.niv6.concentration}}</span><span class="execution">{{helpedSkill.competence.niv6.execution}}</span></td></tr>
+	</table>
+</div>
+
+<div *ngIf="helpedSpell" class="help" (click)="closeHelp()">
+	<h4>{{helpedSpell.sort.nom}}</h4>
+	<table>
+		<tr><th></th><th>Description</th><th>SP</th><th>SC</th></tr>
+		<tr><td>1</td><td>{{helpedSpell.sort.niv1.description}}</td><td>{{helpedSpell.sort.niv1.seuilPuissance}}</td><td>{{helpedSpell.sort.niv1.seuilCritique}}</td></tr>
+		<tr><td>2</td><td>{{helpedSpell.sort.niv2.description}}</td><td>{{helpedSpell.sort.niv2.seuilPuissance}}</td><td>{{helpedSpell.sort.niv2.seuilCritique}}</td></tr>
+		<tr><td>3</td><td>{{helpedSpell.sort.niv3.description}}</td><td>{{helpedSpell.sort.niv3.seuilPuissance}}</td><td>{{helpedSpell.sort.niv3.seuilCritique}}</td></tr>
+		<tr><td>4</td><td>{{helpedSpell.sort.niv4.description}}</td><td>{{helpedSpell.sort.niv4.seuilPuissance}}</td><td>{{helpedSpell.sort.niv4.seuilCritique}}</td></tr>
+		<tr><td>5</td><td>{{helpedSpell.sort.niv5.description}}</td><td>{{helpedSpell.sort.niv5.seuilPuissance}}</td><td>{{helpedSpell.sort.niv5.seuilCritique}}</td></tr>
+		<tr><td>6+</td><td>{{helpedSpell.sort.niv6.description}}</td><td>{{helpedSpell.sort.niv6.seuilPuissance}}</td><td>{{helpedSpell.sort.niv6.seuilCritique}}</td></tr>
+	</table>
+</div>
+
+<div *ngIf="helpedWeapon" class="help" (click)="closeHelp()">
+	<h4>{{helpedWeapon.nom}}</h4>
+	<table>
+		<tr><th>Profil rapide</th><th>Profil précis</th><th>Profil puissant</th><th>Profil distance</th><th>parade</th><th>poids</th><th>nb. mains</th><th>Prérequis</th><th>Particularités</th></tr>
+		<tr><td>{{helpedWeapon.profilRapide}}</td><td>{{helpedWeapon.profilPrecis}}</td><td>{{helpedWeapon.profilPuissant}}</td><td>{{helpedWeapon.profilDistance}}</td><td>{{helpedWeapon.parade}}</td><td>{{helpedWeapon.poids}}</td><td>{{helpedWeapon.nbMains}}</td><td>{{helpedWeapon.prerequis}}</td><td>{{helpedWeapon.specificites}}</td></tr>
+	</table>
+</div>
+

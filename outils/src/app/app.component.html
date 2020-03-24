@@ -1,0 +1,33 @@
+<nav>
+	<a [routerLink]="['/histoire']" [routerLinkActive]="['is-active']">
+		Histoire
+	</a>
+	<a [routerLink]="['/combat']" [routerLinkActive]="['is-active']">
+		Combat
+	</a>
+	<a [routerLink]="['/butin']" [routerLinkActive]="['is-active']">
+		Butin
+	</a>
+	<a [routerLink]="['/carte']" [routerLinkActive]="['is-active']">
+		Carte
+	</a>
+	<a [routerLink]="['/artefact']" [routerLinkActive]="['is-active']">
+		Artefact
+	</a>
+</nav>
+
+<des></des>
+
+<!--
+<table class="caracs_ref">
+	<tr *ngFor="let res of resCaracs; let i = index; let f = first; let l = last">
+		<td (click)="testCarac(i)" >{{i}}<span *ngIf="f">-</span><span *ngIf="l">+</span></td>
+		<td>{{res}}<span *ngIf="!f">+</span></td>
+	</tr>
+</table>
+
+-->
+
+<main>
+	<router-outlet></router-outlet>
+</main>

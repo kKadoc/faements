@@ -1,0 +1,363 @@
+(François) Jundarh l'honette	29 ans
+	+ Mémorise très bien les chiffres
+	- Ne sait pas mentir
+	+ passionné d'anatomie
+
+(Thomas) Naloc 17 ans
+	+ soigneux
+	- maniaque
+	
+(JC) Jimmy Chang 25 ans
+	+ Bon grimpeur
+	- Ne peut pas dormir sans ses hachettes
+
+(Matthieu) Balerian 27 ans
+	+ Connaissances astronomie
+	- ne supporte pas l'alcool
+	
+(Sarah) Philipa 24 ans
+	+ accrobate
+	- ne supporte pas les bruits stridents
+
+(Flora) Lina-brora 27 ans
+	+ appliquée
+	- obnubilée par les animaux
+	+ passionnée d'animaux
+
+
+
+
+
+
+
+
+1 des rituels nécessite une manipulation de l'artefact transmettant la malédiction 
+Blessure grave des grosses araignés -> maladie
+
+Prévoir des temps ou les joueurs ne peuvent pas avancer la quete principale -> occas pour les quetes secondaires
+
+Quand le groupe sera connu ils vont commencer à être menacé puis attaqué pour arrêter de sauver la fille
+
+Jouer avce lxp 
+
+
+
+	
++ lartefact se fait voler.
+
+
+
+
+
+
+INTRO
+
+14 mars 1236
+La magie a été accepté dans le monde. 300 ans apres ses premieres manifestations, les gens ont compris que la magie et donc les monstres seraient désormais toujours présents. 
+La seule question qui demeure est de savoir d'où elle provient et pourquoi ?
+Face à ces interrogations, certaines expliquent un "don" divin qu'il faut entretenir, d'autre une "punition" qu'il faut subir. Au final beaucoup explications religieuses et beaucoup de croyances qui ouvrent la porte à de nombreux fanatismes...
+
+
+
+
+Vous êtes tous nés dans la ville d'Elusa. Très proches et amis de longue date, vous formez un groupe hétéroclite lié par une belle amitié. Il y a quelques années certains se sont séparés pour trouver du travail ou pour des raisons plus personnelles mais sans jamais affecter les liens qui vous unissent. C'est notament le choix qu'a pris Pacôme à la mort de ses parents. Pacôme Lucain est le plus jeune de la bande. A peine agé de 17 ans lors de son départ, il s'est rendu il y a 6 mois à Aumetz dans l'espoir de devenir mage. 
+Vous n'avez pas eu trop de nouvelles de lui depuis. Il vit chez sa tante Olga en utilisant l'imposant héritage laigué par ses parents. Vous savez qu'il a beaucoup travaillé pour atteindre son rêve mais que malheureusement la route semble plus dure que prévue.
+
+Les dernières nouvelles de lui sont assez inquiétantes et vous proviennent d'Olga :
+
+"Mes chers amis,
+
+Si je fais appel à vous c'est que je ne sais plus vers qui me tourner à présent. Voilà quelques jours que Pacôme est tombé dans un sommeil profond dont il est impossible de le sortir.
+Le médecin du village ne parvient pas à déterminer son mail et le mage du village voisin que j'ai fait venir en urgence a disparu. Je suis morte d'inquiétude.
+J'ai payé d'avance une place pour chacun d'entre vous dans la caravane qui partira d'Elusa le 16.
+
+Je vous en prie, venez aider Pacôme.
+
+Olga"
+
+
+François : tu as juste eu le temps de faire la route depuis village de Chalignat. Tu y résides depuis 2 ans pour le boulot qui se fait rare et surtout chercher un peu d'aventure. Depuis 1 mois, ton village est térrorisé par une créature gigantesque qui attaque les imprudents. Plusieurs expéditions de chasse se sont rétrouvées infructueuses voire certaines désastreuses. Tu n'est pas de couleur pleutre, tu t'es quand même retrouvé dans les bois environnements. Tu étais à la recherche de Valériane officinale, une plante rare qui permet de guérir des maladies transmises par les araignées géantes lorsqu'elle est bue en tisane. Outre la tisane qui ne t'interesse pas plus que ça, le plant de Valériane se vend surtout 10 pièce d'argent chez ton acheteur habituel... Pendant ton expédition, un bruit sourd a attiré ton attention et tu y as trouvé la créature écrasée par un énorme rocher. Le rocher avait sans doute été fragilisé par les récents orages. Pas de chance pour la bestiole mais une sacrée aubaine pour toi ! Tu as récupéré la tête en trophé que tu as péniblement trainée jusqu'au au village pour annoncer la bonne nouvelle. Tu as été apperçu par des bergers qui ont annoncé la bonne nouvelle. Tu n'as même pas le temps d'expliquer ton aventure que tu y accueilli en héros pourfendeur des enfers.
+Tu parviens enfin à donner ta version de l'histoire. Quelle va-t-elle être ? 
+	"C'était un acte de courage pur. Je suis bien le héros que tout le monde acclame." -> +100 po + prestige
+	"Désolé mais je n'ai eu que de la chance, mais le village est enfin libre !" -> +10 po prestige faible
+	
+	
+JC et Matthieu : vous êtes frères/soeurs. Votre stock d'actions héroïques est partagé. De plus chaque fois qu'un de vous rempli sa jaude de moral l'autre gagne automatiquement un point de moral. A l'inverse, si l'un d'entre vous vide sa jauge, l'autre perd également un point.
+
+
+Sarah : tu es celle qui est restée la plus proche de Pacome. Tu as régulièrement échangé avec lui pendant ces six mois. Tu sais qu'il n'a pas été pris par le mage qu'il souhaitait après quelques mois de test. Il en a été particulièrement touché. Après la mort de ces parents, devenir mage lui avait procuré un bon échapatoire. Echapatoire qui s'effondrait de nouveau. Tu sais qu'il a rencontré par chance une autre sorcière qui elle a décidé de l'aider. D'après ce que tu as compris elle habitait avant la tour de Saken-nasia. Et même si cette tour a mauvaise réputation, la présence de la sorcière lui a redonné espoir et lui a fait beaucou de bien. Avec lui elle a traveille à mettre au point une technique pour révéler son vrai pouvoir. Pacome est depuis super excité, il te disait qu'il bossait jour et nuit pour pouvoir l'utiliser au plus vite. Depuis plus de nouvelles.
+
+
+Thomas : fils d'historien et anticaire-> bcp de connaissances sur les villes + bonus tests intell rumeurs identification 
+Flora : enfant du temple. Entre eux forte solidarité. 1 bonus + 1 malus résistance (rc rm feu froid foudre) 
+
+Prédiction météos ? Lien avce le temple ?
+
+Thomas : prophétie
+
+
+
+
+SESSION 0
+
+Faire une session de présentation des nouveautés + constitution d'équipe
+
+Gestion de la mort ->
+ -1 à toutes les compétences (les actions innées ne peuvent descendre à 0)
+ ou
+ -2 à toutes les caractéristiques
+ 
+Possibilité de retraite en RP -> certains malus selon le niveau de difficulté
+ 
+ 
+Vous avez tous 10D20pa.
+
+Dernier souvenir avec Pacôme = combat intro 
+
+
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+Arrivée à Aumetz
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+la famille Lucain est une famille aisée de la ville de Aumetz. Le fils unique Pacome est tombé dans un mystérieux coma. Devant l'incompréhension générale, la tante de Pacome Olga vous appele à l'aide (les parents sont morts).
+Flora + JC vous êtes cousin avec Pacome. Les autres des amis d'enfance. Même si vous ne l'avez pas vu depuis un moment (il a déménagé avec ses parents il y a 3 ans lorsuq'il a voulu commencer une formation de mage) vous avez été très proches et vous répondez à l'appel de détresse.
+
+La tante vous accueille. Elle a déjà embauché le mage du coin nommé Guéthenoc avec son apprentie Anaclet. D'après eux, Pacome est la victime d'un enchantement qui le plonge dans ce sommeil. Il a un drôle de bracelet magique au poignet qu'on ne parvient pas à enlever. Guéthenoc ne veut pas qu'on essaye d'ailleurs il craint que cela déclenche quelque chose de plus grave. En plus de ce bracelet, ils ont trouvé une étrange boite avec des motifs similaires qui porte un sceptre. Guéthenoc saura bcp mieux en parler que moi mais justement depuis quelques jours on ne l'a plus vu. Il venait habituellement au moins une fois par jour mais depuis 3 jours plus rien. Je crains qu'il lui soit arrivé quelque chose et sa demeure est trop éloignée pour que j'y aille seule. 
+Proposition = aller prendre des nouvelles du mage -> 20 po et si besoin l'aider (et partager la récompense de 200 po avec lui). Il habite à Lasmond
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+Le mage à Lasmond
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Le mage a bonne réputation ainsi que son apprenti un peu grande gueule
+
+6h de marche jusqu'au mage
+jet de rencontre ?
+
+Arrivé chez lui, c'est un mec assez désagréable qui vout reçoit. Assez grand chauve et ac une cicatrice sur la tempe. Pas le stéréotype du mage
+"qu'est ce que vous radinnez par ici ?" "elle a pas autre chose a branlé l'autre cruche plutot que de venir me casser les sabots ?"
+"je taffe comme je peux et comme je veux, inutile de venir me tenir la main." "cassez vous". Aucune trace de l'apprenti.
+Si on lui demande il n'a jamais eu d'apprenti.
+
+Test intuition 25 -> les fringues dans l'entrée semblent bien trop petit pour le mec.
+
+En fait le vrai mage (Guéthenoc) et son apprenti (Anaclet) sont capturés et ligotés dans la cave. Le jaulier a une équipe de 3 bourrins dans la piece a coté.
+
+Vous allez vous rendre compte que quelque chose est louche.
+
+Faire un plan de la maison.
+
+
+Les ravisseurs ont été recrutés en prison dans la ville de Miraval. Un jour ils ont eu une conversation avec un homme masqué qui leur a promis la liberté en échange de ce service.
+Le mage principal (Conrad) utilise cette technique pour sélectionner de la main d'oeuvre "gratuite". Il propose aux milices de s'assurer de l'innocence ou non des prisonniers. En échnage il a le droit de prendre avec lui quelques un des coupables. 
+	la milice a des prisons moins pleines et a une justice plus juste
+	lui a des mecs gratuits
+
+A sa maison
+	Nouvelle apprentie = gamine de 14 ans. Nouvelle depuis 3 mois (l'ancien s'est barré suite à un désacord avec son maitre il y a 2 ans)
+
+siege de transport. 2 chaises dont 1 chez le mage et une dans une grange pas loin de chez Pacome.
+	
+
+	Boite vampirise le sceptre. En mode compte à rebour
+	
+	--> faire en sorte qu'ils doivent calculer ce temps
+	En fait pacome est un catalyseur de pouvoir. Sensible à la magie mais pas très douée (il l'a lui même étudiée pendant 2 mois pour tester son potentiel à la demande de ses parents). Il a été en contact de cet artefact magique très puissant. 
+	
+	Pendant la traque des mages un mage très puissant (Ilosdir le puissant) a réussi à cacher son pouvoir dans cet objet. Il espérait le récupérer plus tard et en attendant ne plus être considéré comme mage et etre laissé tranquille. Il est mort avant d'avoir pu le récupérer par contre cet artefact a été l'objet de nombreuses comvoitises y comppris d'autres mages qui espèrent s'approprier ce pouvoir.
+	Les tentatives jusqu'au aujourdh'ui infructueuses ont à chaque fois absorbé le pouvoir de ceux qui ont tenté la procédure -> pouvoir absorbé collosal et corrompu -> instable
+	
+	Sauf qu'aujourdh'ui le comportement est différent. Il semblerait que quelqu'un controle l'objet et puise progressivement l'énergie de pacome. En étudiant l'objet on décelle un écoulement qui arrivera à son terme dans les 24 jours. L'évolution de l'écoulement correspond à la faiblesse de plus ene plus grande de pacome.
+	Ce quelqu'un veut le pouvoir et semble avoir trouvé le moyen au détriment de pacome. En ultime recours, ils auront le choix de tuer pacome avant la fin du compte à rebour pour peut-être annuler le transfert.
+	
+	le chef mechant (Conrad oeil malin) est un mage pas tres puissant mais tres intelligenct qui a retrouvé le sceptre et qui a fait des experiences sur des apprentis qui ont ainsi perdu leurs pouvoirs.
+	Il a toujours aimé mettre en place des techniques/stratagemes pour protéger/pieger/attaquer des choses. Déjà de base il avait une mauvaise réput (ses potentiels apprentis devaient arriver jusqu'a lui en passant une série de pièges parfois mortels qu'il testait)
+	-> plaintes
+	-> sanctions de l'ordre des mages
+	-> interdiction d'exercer la magie et obligation de rendre l'artefact
+	-> il fuit avec on se doute qu'il est dans cette region mais comme il a fait profil bas, personne n'a eu le cran d'aller lui casser les noix
+
+	En fait il a été aperçu rodant autour de la tour de Saken-nascia une sorciere (Strigoaica) qui a disparu depuis. Il se sont alliés et la sorciere a quitté sa tour pour approcher lucain et le manipuler.
+
+	C'etait il y a 10 ans. Plus de nouvelles de lui depuis ni du sceptre.
+	
+
+	
+
+
+	Il explique les rituels :
+	
+	il faut donc récupérer son ancien apprenti qui ne sera p-e pas hyper chaud pour nous aider -> mais gros bonus
+	Apprenti assez loin -> aller-retour doit aller assez vite.
+	
+	
+
+
+
+
+Rituel plus simple pour stopper le compte à rebour seuil = 100.
+	Mage leader = obligatoire
+	Artefact = obligatoire
+	Apprenti du mage = 20pts
+	+D100
+	Catalyseur 1 = Iris x 5 = 20pts
+	Catalyseur 2 = oeufs d'arraignées géantes 20pts
+	Pas d'interruption du mage = 10pts
+	Pas touche à la fille = 30pts
+
+	Résultat > 120 : succès
+	Résultat - 70 : = jours de répis en plus (ne pas donner le nombre exacte)
+	Résultat < 50 : - 1D20 jours
+	
+	
+Rituel pour éveiller la fille
+	Réussite = un test général avec différents bonus
+	
+	
+	Mage leader = obligatoire
+	Artefact = obligatoire
+	Mage qui aide = 5pts/mage
+	Apprenti du mage (= connait la procédure) = 40pts
+	Site de puissance = 30pts
+	Catalyseur 3 = Belladone = 1pt/Belladone
+	Catalyseur 4 = oeufs d'arraignées géantes = 20pts
+	Catalyseur 5 = sang de démon des glaces = 20pts
+	Pas d'interruption du mage = 10pts
+	Pas touche à la fille = 30pts
+	
+	Résultat > 170 : victime sauvée + pouvoir moindre
+	100 < Résultat < 150 : victime sauvée mais pouvoir plein
+	Résultat < 100 : pouvoir libéré + victime morte
+
+
+	
+Pendant vos missions, il peut faire des recherches sur les sujets de votre choix
+
+recherche sur le compte à rebour -> rituel pour ralentir
+recherche sur les éléments actuels du rituel -> donne les différents bonus (approximation)
+recherche sur la conduite du riteul  -> bonus pour le rituel
+recherche sur le mal de Pacôme et son état pendant le rituel -> indique les 3 stades de succès
+recherche sur les mages qui ont perdu leur pouvoir -> savoir le pouvoir qui est enfermé -> indiquer 2 mages avec des pouvoirs exclusifs
+recherche sur le mage principal qui a créé l'artefact -> puissance approximative, magie de prédilection
+idée de ce qui va se passer pendant le rituel -> imaginer que les ames vont être libérées très violement (quelle sera leur matérialisation et leur comportezment ?) ->
+recherche plus poussée sur l'artefact (détection d'un trackeur bien caché dedans)
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+Tour Saken-nasia
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+	Cimetière/Morts vivants/exploration/pieges/enigmes
+
+	Au bout du compte on se rend compte qu'il a testé bcp de systèmes de défense et quand on arrive dans son labo on trouve 
+	- on trouve des travaux sur le sceptre
+	- on trouve des schémas sur le mecanisme qui corromp l'objet
+	- 1 element d'un rituel ?
+	- affrontement de la magicienne
+		full invocations + faément invoque immédiatement X créatures
+		elle a hébergé Conrad pendant un temps et l'a aidé. Elle sait qu'il ne l'oubliera pas quand il aura son pouvoir.
+		
+		
+		
+---------------------------------------------------------------------------------------------------------------------------------------------
+Recherche de l'apprenti
+---------------------------------------------------------------------------------------------------------------------------------------------
+Il habite à Montrouveau
+Arrivé dans son village, vous apprenez qu'on ne le voit plus trop ces derniers temps. Quelques infos plus tard vous apprenez qu'il a établit un campement à l'Ouest de la ville sur le sentier qui part vers le col de Peon juste après l'embranchement pour Buloup.
+
+Il se sent observé mais il pense qu'il touche au but. Raison de plus pour ne pas abandonner la mission qu'il menne. Si vous voulez, aidez moi et ça ira plus vite et je peux vous promettre une belle récompense.
+
+Je suis en train d'explorer un ancien temple qui appartenait à une vieille secte : les porteurs de la foi.
+C'était une sorte de guilde qui se vouait à sauver les personnes en cas de dernier recours. C'était souvent des missions suicides mais l'idée était que si on avait suffisament la foi ça passait. Le côté intervension désespérée les a rendu populaires et riches. Par contre le succès trop limité a vote fait retombé le soufflet. En tout cas pendant leur période de gloire, ils ont recç bcp de soutien notament de personnes très influentes. Trésors + artefacts et en particulier ce qui m'interesse c'est une corne d'abondance qu'un de leur mage était en train de concevoir. A priori ce n'était qu'un prototype mais des récits en font mention lors de certains de leurs voyages.
+
+J'ai réussi à passer les 3 premières pièces. Il semblerait que les porteurs de la foi étaient assez jaloux de leurs richesses. Normalement il ne me reste que la dernière salle à explorer mais son entrée m'oblige à manipuler et garder actifs des leviers et je ne peux me dédoubler pour entrer dans la salle.
+
+Les leviers utilisent le courant du torrent pour faire lever une lourde porte en pierre. En cas d'échec -> 1 jour pour que ça se remette en place. Il lui a fallut 2 semaines pour sentir comment bien utiliser les leviers. Il peut garder la porte ouverte pendant 1h. Après ça devient plus aléatoire surtout qu'il commence à fatiguer ou à perdre en concentration.
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+Combat final
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Combat en 3 phases
+
+Phase 1 : ouverture du sceptre
+	-> bruit tonitruant -> onde choc -> toute personne à 20m test de Vigueur à 30 ou être renversé + test Vigueur à 20 ou blessure légère tête
+Phase 2 : sortie des esprits faibles
+	une boule d'énergie d'1m50 de diamètre semblant canaliser de l'énergie. Elle flotte à 1m au dessus du sceptre. vibration dans l'air
+	des boules d'énergies s'échappent du sceptre en mode volcan et là ou elles atterissent une forme humaine apparait. Elles tentent tout pour aller dans la boule qui gagne en intensité à chaque fois
+	10 esprits sortent
+		2 atteingentn directement
+		pour chaque esprit qui atteind bonus pour le boss final
+Phase 3 : boss magique
+	
+	
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+Les héros oubliés
+---------------------------------------------------------------------------------------------------------------------------------------------
+Lors de la fouille d'un lieu. Récupération d'un anneau. + bouquin expliquant la quête en cours sur un cadavre.
+Les 3 sont d'anciens héros de la 1ere vague de monstres. Ils ont eut quelques années plus tard des anneaux magiques bien particuliers. En effet leur puissance augmente en fonction de la présence des autres. Chacun a son propre tombeau. Mais bon... les pillages font qu'on craint qu'on ne les y retrouve pas. Le rédacteur du journal a pris pour tache de restaurer leur honneur en les réunissant pour les confier à l'évèque de Paris (1er fervent défenseur de la réhabilitation de la foi et de la magie) qui saura les protéger où les confier à des personnes justes. Il faut néanmoins qu'il rassemble les 3 où il craint que de réveller leur existance ne lance des chercheurs de trésors à leur quête. La carte en montre 3. Le 4eme n'ets pas officiel. Sur les temple symbole à 4 symboles pour mettre sur la piste.
+
+
+anneau 1 : temple de la justice (trouvé)
+anneau 2 : temple du sacrifice
+	Sacrifice d'une personne à faire. Si sacrifice volontaire bonus ? 
+anneau 3 : temple de la vérité
+	Devoir se mettre nu pour entrer 
+anneau 4 (caché) : temple du courage
+	Bocal de 3l de sang à remplir 
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	Stat the scene. Give it dimensions and a category the players will recognize. The dimensions can be specific ("you're in a 5x50 corridor") or general ("you're in a long, narrow corridor").
+Zoom in. Describe the most important thing in the room. Is there a feature that dominates the centre of the room? Are there orcs? Pick whatever the thing is that will influence player's behaviour.
+Zoom out. Describe a detail of the room that isn't important, but ads flavour and deepens the verisimilitude of the place. Decorations on the wall. An insignia on the floor. A fire crackles in the corner. The scent of decaying bodies. A strange accent.
+Prompt them for action. This can be anything from the classic "what do you do" to starting combat to a specific choice.
+
+
+So for example:
+"You are escorted by the steward to the large hall where the King is hosting the Autumn Feast. There are noblemen milling about, with ladies on their arms in fine dress. You hear shrill, gay laughter from the circle of dancing courtiers in the centre. What do you do?"
+"The door opens into a 5x50 corridor. There are two orcs at the far end of the hall, one kneels in front of the other, with crossbows pointing directly at you. There is a long crack running through the stone floor, that must have opened as the keep settled. Roll initiative."
+"The forest opens into a large clearing and you see that the dryad's directions were true. In the centre there is the tallest tree you have ever seen, as thick at the base as Castle Lerndelve. You see through the trees that the sun is setting. Will you make camp or press on?"
+
+
+

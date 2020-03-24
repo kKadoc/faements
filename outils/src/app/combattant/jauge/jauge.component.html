@@ -1,0 +1,9 @@
+<div [class.lvl5]="valeur >= 5" [class.lvl4]="valeur == 4" [class.lvl3]="valeur == 3" [class.lvl2]="valeur == 2" [class.lvl1]="valeur == 1" [class.lvl0]="valeur < 1" [ngClass]="type">
+	<img src="../../images/{{nom}}.png" title="{{nom}}" />
+	<span class="v1" title="{{valeur}}"></span>
+	<span class="v2" title="{{valeur}}"></span>
+	<span class="v3" title="{{valeur}}"></span>
+	<span class="v4" title="{{valeur}}"></span>
+	<span class="v5" title="{{valeur}}"></span>
+	<p><button (click)="down()">-</button><button (click)="up()">+</button></p>
+</div>
