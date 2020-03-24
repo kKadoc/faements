@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Temps de Faéments</title>
+	<link rel="stylesheet" href="data/faements1.css">
+	<link rel="stylesheet" href="data/sheets.css">
+
+	<script type="text/javascript" src="data/jquery.min.js"></script>
+	<script type="text/javascript" src="data/animate.js"></script>
+	<script type="text/javascript" src="data/jquery.toc.js"></script>
+	
+	<style>
+	@media print {
+		#fastmenu, #fastnav, #fastnav_trigger {
+			display : none;
+		}
+		
+		#all {
+			margin : 0px;
+		}
+		
+		.bloc {
+			background : white;
+			border : 0px;
+			box-shadow: none; 
+		}
+		
+		.hr {
+			page-break-after : always;
+			border: none;
+			margin : 0;
+		}
+	}
+ 
+	
+	
+	</style>
+	
+	
+	
+</head>
+
+<body>
+	<div id="fastmenu">
+		<a href="home.html" title="menu"><img src="data/icons/home.png" /></a>
+		<a href="system.html" title="système de jeu"><img src="data/icons/system.png" /></a>
+		<a href="evolution.html" title="évolution"><img src="data/icons/evolution.png" /></a>
+		<a href="skills.html" title="compétences"><img src="data/icons/skills.png" /></a>
+		<a href="spells.html" title="sorts"><img src="data/icons/spells.png" /></a>
+		<a href="equipment.html" title="équipement"><img src="data/icons/equipment.png" /></a>
+		<a href="beasts.html" title="bestiaire"><img src="data/icons/beasts.png" /></a>
+		<a href="sheets.html" title="Feuilles de personnage" class="current" ><img src="data/icons/sheets.png" /></a>
+	</div>
+
+
+	<div id="fastnav">
+		<div id="nav_wrap">
+			<div id="nav">
+			</div>
+		</div>
+	</div>
+	<a id="fastnav_trigger" href="#"><img src="data/icons/map.png" /></a>
+	
+	<div id="all">
+		<h1>Temps de Faéments</h1>
+
+		<h2><input type="text" class="title_input" value="Feuille de personnage" /></h2>
+		<div id="caracs" class="bloc">
+			<h3>Caractéristiques</h3>
+			<table class="carac_tab">
+				<tr><th></th><th>Nat.</th><th>Tot.</th></tr>
+				<tr><td>Vitalité</td><td><input type="text"></input></td><td><input type="text"></input></td></tr>
+				<tr><td>Concentration</td><td><input type="text"></input></td><td><input type="text"></input></td></tr>
+				<tr><td>Souffle</td><td><input type="text"></input></td><td><input type="text"></input></td></tr>
+			</table>
+			<table class="carac_tab">
+				<tr><th></th><th>Nat.</th><th>Tot.</th></tr>
+				<tr><td>Technique de combat</td><td><input type="text"></input></td><td><input type="text"></input></td></tr>
+				<tr><td>Adresse</td><td><input type="text"></input></td><td><input type="text"></input></td></tr>
+				<tr><td>Vivacité</td><td><input type="text"></input></td><td><input type="text"></input></td></tr>
+				<tr><td>Puissance</td><td><input type="text"></input></td><td><input type="text"></input></td></tr>
+				<tr><td>Robustesse</td><td><input type="text"></input></td><td><input type="text"></input></td></tr>
+				<tr><td>Prestance</td><td><input type="text"></input></td><td><input type="text"></input></td></tr>
+				<tr><td>Intelligence</td><td><input type="text"></input></td><td><input type="text"></input></td></tr>
+				<tr><td>Intuition</td><td><input type="text"></input></td><td><input type="text"></input></td></tr>
+			</table>
+		</div>
+		
+		<div class="hr">
+		</div>
+		
+		<div id="comp" class="bloc">
+			<h3>Compétences</h3>
+			<div class="comp_bloc">
+				<table>
+					<tr class="help_top_tr">
+						<td>Nom</td>
+						<td></td>
+						<td>Niv.</td>
+						<td>+</td>
+						<td></td>
+						<td>C.</td>
+						<td>S.</td>
+						<td>R.</td>
+					</tr>
+					<tr class="content_tr">
+						<td class="comp_name"><input type="text"></input></td>
+						<td class="space_full"></td>
+						<td class="comp_lvl"><input type="text"></input></td>
+						<td class="comp_lvl"><input type="text"></input></td>
+						<td class="space_td"></td>
+						<td class="comp_stat"><input type="text"></input></td>
+						<td class="comp_stat"><input type="text"></input></td>
+						<td class="comp_stat"><input type="text"></input></td>
+					</tr>
+					<tr><td class="content_bot" colspan="8">
+						<textarea rows="3">
+						</textarea> 
+					</td></tr>
+				</table>
+			</div>
+			<div class="comp_bloc">
+				<table>
+					<tr class="help_top_tr">
+						<td>Nom</td>
+						<td></td>
+						<td>Niv.</td>
+						<td>+</td>
+						<td></td>
+						<td>C.</td>
+						<td>S.</td>
+						<td>R.</td>
+					</tr>
+					<tr class="content_tr">
+						<td class="comp_name"><input type="text"></input></td>
+						<td class="space_full"></td>
+						<td class="comp_lvl"><input type="text"></input></td>
+						<td class="comp_lvl"><input type="text"></input></td>
+						<td class="space_td"></td>
+						<td class="comp_stat"><input type="text"></input></td>
+						<td class="comp_stat"><input type="text"></input></td>
+						<td class="comp_stat"><input type="text"></input></td>
+					</tr>
+					<tr><td class="content_bot" colspan="8">
+						<textarea rows="3">
+						</textarea> 
+					</td></tr>
+				</table>
+			</div>
+			<div class="comp_bloc">
+				<table>
+					<tr class="help_top_tr">
+						<td>Nom</td>
+						<td></td>
+						<td>Niv.</td>
+						<td>+</td>
+						<td></td>
+						<td>C.</td>
+						<td>S.</td>
+						<td>R.</td>
+					</tr>
+					<tr class="content_tr">
+						<td class="comp_name"><input type="text"></input></td>
+						<td class="space_full"></td>
+						<td class="comp_lvl"><input type="text"></input></td>
+						<td class="comp_lvl"><input type="text"></input></td>
+						<td class="space_td"></td>
+						<td class="comp_stat"><input type="text"></input></td>
+						<td class="comp_stat"><input type="text"></input></td>
+						<td class="comp_stat"><input type="text"></input></td>
+					</tr>
+					<tr><td class="content_bot" colspan="8">
+						<textarea rows="3">
+						</textarea> 
+					</td></tr>
+				</table>
+			</div>
+			<div class="comp_bloc">
+				<table>
+					<tr class="help_top_tr">
+						<td>Nom</td>
+						<td></td>
+						<td>Niv.</td>
+						<td>+</td>
+						<td></td>
+						<td>C.</td>
+						<td>S.</td>
+						<td>R.</td>
+					</tr>
+					<tr class="content_tr">
+						<td class="comp_name"><input type="text"></input></td>
+						<td class="space_full"></td>
+						<td class="comp_lvl"><input type="text"></input></td>
+						<td class="comp_lvl"><input type="text"></input></td>
+						<td class="space_td"></td>
+						<td class="comp_stat"><input type="text"></input></td>
+						<td class="comp_stat"><input type="text"></input></td>
+						<td class="comp_stat"><input type="text"></input></td>
+					</tr>
+					<tr><td class="content_bot" colspan="8">
+						<textarea rows="3">
+						</textarea> 
+					</td></tr>
+				</table>
+			</div>
+			<div class="comp_bloc">
+				<table>
+					<tr class="help_top_tr">
+						<td>Nom</td>
+						<td></td>
+						<td>Niv.</td>
+						<td>+</td>
+						<td></td>
+						<td>C.</td>
+						<td>S.</td>
+						<td>R.</td>
+					</tr>
+					<tr class="content_tr">
+						<td class="comp_name"><input type="text"></input></td>
+						<td class="space_full"></td>
+						<td class="comp_lvl"><input type="text"></input></td>
+						<td class="comp_lvl"><input type="text"></input></td>
+						<td class="space_td"></td>
+						<td class="comp_stat"><input type="text"></input></td>
+						<td class="comp_stat"><input type="text"></input></td>
+						<td class="comp_stat"><input type="text"></input></td>
+					</tr>
+					<tr><td class="content_bot" colspan="8">
+						<textarea rows="3">
+						</textarea> 
+					</td></tr>
+				</table>
+			</div>
+			<div class="comp_bloc">
+				<table>
+					<tr class="help_top_tr">
+						<td>Nom</td>
+						<td></td>
+						<td>Niv.</td>
+						<td>+</td>
+						<td></td>
+						<td>C.</td>
+						<td>S.</td>
+						<td>R.</td>
+					</tr>
+					<tr class="content_tr">
+						<td class="comp_name"><input type="text"></input></td>
+						<td class="space_full"></td>
+						<td class="comp_lvl"><input type="text"></input></td>
+						<td class="comp_lvl"><input type="text"></input></td>
+						<td class="space_td"></td>
+						<td class="comp_stat"><input type="text"></input></td>
+						<td class="comp_stat"><input type="text"></input></td>
+						<td class="comp_stat"><input type="text"></input></td>
+					</tr>
+					<tr><td class="content_bot" colspan="8">
+						<textarea rows="3">
+						</textarea> 
+					</td></tr>
+				</table>
+			</div>
+			<div class="comp_bloc">
+				<table>
+					<tr class="help_top_tr">
+						<td>Nom</td>
+						<td></td>
+						<td>Niv.</td>
+						<td>+</td>
+						<td></td>
+						<td>C.</td>
+						<td>S.</td>
+						<td>R.</td>
+					</tr>
+					<tr class="content_tr">
+						<td class="comp_name"><input type="text"></input></td>
+						<td class="space_full"></td>
+						<td class="comp_lvl"><input type="text"></input></td>
+						<td class="comp_lvl"><input type="text"></input></td>
+						<td class="space_td"></td>
+						<td class="comp_stat"><input type="text"></input></td>
+						<td class="comp_stat"><input type="text"></input></td>
+						<td class="comp_stat"><input type="text"></input></td>
+					</tr>
+					<tr><td class="content_bot" colspan="8">
+						<textarea rows="3">
+						</textarea> 
+					</td></tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#fastnav_trigger").hover(function(){
+				$("#fastnav").show("fast");
+				$(this).toggleClass("active");
+			},function(){
+				$(this).toggleClass("active");
+			});
+			
+			$("#fastnav").hover(function(){
+
+			},function(){
+				$(this).hide("fast");
+			});
+			
+			$('#nav').toc({
+				'selectors': 'h3,h4,h5', //elements to use as headings
+				'container': '#all', //element to find all selectors in
+				'smoothScrolling': true, //enable or disable smooth scrolling on click
+				'prefix': 'nav', //prefix for anchor tags and class names
+				'onHighlight': function(el) {}, //called when a new section is highlighted 
+				'highlightOnScroll': false, //add class to heading that is currently in focus
+				'highlightOffset': 100, //offset to trigger the next headline
+				'anchorName': function(i, heading, prefix) { //custom function for anchor name
+					return prefix+i;
+				},
+				'headerText': function(i, heading, $heading) { //custom function building the header-item text
+					return $heading.text();
+				} 
+			});
+			
+			$('#nav .nav-h3').click(function(){
+				$(this).find('.nav-h5').toggleClass("active");
+			});
+		});
+	</script>
+</body>
+</html>

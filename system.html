@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Temps de Faéments</title>
+	<link rel="stylesheet" href="data/faements1.css">
+	<link rel="stylesheet" href="data/system.css">
+	<script type="text/javascript" src="data/jquery.min.js"></script>
+	<script type="text/javascript" src="data/animate.js"></script>
+	<script type="text/javascript" src="data/jquery.toc.js"></script>
+</head>
+
+<body>
+	<div id="fastmenu">
+		<a href="home.html" title="menu"><img src="data/icons/home.png" /></a>
+		<a href="system.html" title="système de jeu" class="current"><img src="data/icons/system.png" /></a>
+		<a href="evolution.html" title="évolution"><img src="data/icons/evolution.png" /></a>
+		<a href="skills.html" title="compétences"><img src="data/icons/skills.png" /></a>
+		<a href="spells.html" title="sorts"><img src="data/icons/spells.png" /></a>
+		<a href="equipment.html" title="équipement"><img src="data/icons/equipment.png" /></a>
+		<a href="beasts.html" title="bestiaire"><img src="data/icons/beasts.png" /></a>
+		<a href="sheets.html" title="Feuilles de personnage"><img src="data/icons/sheets.png" /></a>
+	</div>
+		
+	<div id="fastnav">
+		<div id="nav_wrap">
+			<div id="nav">
+			</div>
+		</div>
+	</div>
+	<a id="fastnav_trigger" href="#"><img src="data/icons/map.png" /></a>
+	
+	<div id="all">
+		<h1>Temps de Faéments</h1>
+
+		<h2>Système de jeu</h2>
+		<h3>Conventions</h3>
+		<div>
+			<ul>
+				<li>L’écriture xDy comme dans 1D6 signifie « un dé à 6 faces ». De la même façon 2D8 + 3 signifie « deux dés à 8 faces auxquels on ajoute 3 à leur somme».</li>
+				<li>Un dé à 10 faces prend ses valeurs entre 1 et 10 mais le résultat d’un dé à 100 faces sera compris entre 00 et 99.</li>
+				<li>Les arrondis se feront à l’arrondi le plus proche avec pour convention 0.5 arrondi à 1.</li>
+				<li>Lorsque plusieurs opérations sont à appliquer pour un test ou pour une caractéristiques, appliquer d’abord les multiplications et divisions puis en dernier les additions et soustractions.</li>
+				<li>Sauf indication contraire un bonus ou un malus sur un test est à appliquer à la caractéristique servant au test. Ex : un test d’Adresse avec un malus de -2 signifie appliquer un malus de -2 à la caractéristique Adresse puis considérer cette nouvelle valeur pour le test.</li>
+			</ul>
+		</div>
+		<h3>Les caractéristiques</h3>
+		<div>
+			<h4>Les jauges</h4>
+			<h5>Vitalité</h5>
+			<div class="content">
+				La Vitalité représente la santé du personnage. Elle baissera à chaque fois que le personnage subit des dégâts. Moins il en a, plus vous pouvez vous inquiéter. 
+				<br />Lorsque le personnage possède moins du quart de ses points de Vitalité maximums, il doit réussir un test de Robustesse (cf. ci-après) avec sa Robustesse divisée par 2. En cas d’échec, il tombera inconscient pour 1D6 tours.
+				<br />Si sa Vitalité tombe à zéro, le personnage meurt.
+			</div>
+			<h5>Concentration</h5>
+			<div class="content">
+				Beaucoup d’actions demandent un surplus d’attention afin d’être correctement exécutées. Malheureusement une telle concentration ne peut être conservée indéfiniment. Dès que cette jauge est vide, le personnage n’a plus assez de ressources mentales pour se focaliser sur une action.
+				<br />Si la Concentration tombe à 0, le personnage doit réussir un test d’Intelligence ou être fatigué jusqu’à ce qu’il regagne le quart de sa Concentration maximale.
+			</div>
+			<h5>Souffle</h5>
+			<div class="content">
+				Le Souffle traduit l’énergie physique nécessaire à réaliser de nombreuses actions. Une personne endurante possèdera une grande jauge de souffle et pourra enchaîner de nombreuses actions avant de réclamer du repos.
+				<br />Si le Souffle tombe à 0, le personnage doit réussir un test de Robustesse ou être sonné jusqu’à ce qu’il regagne le quart de son Souffle maximal.
+			</div>
+			<h5>Expérience</h5>
+			<div class="content">
+				L’expérience d’un personnage regroupe tous les souvenirs d’aventure de celui-ci. Plus la personne possède d’expérience, plus elle a développé de nouvelles techniques pour faire face à de nouvelles situations.
+			</div>
+			<h4>Les statistiques</h4>
+			<h5>Technique de combat</h5> 
+			<div class="content">
+				La technique de combat est l’entrainement aux armes du personnage. Une caractéristique élevée permettra de placer ses attaques dans le bon timing, de frapper de façon optimale et de parer les attaques adverses.
+			</div>
+			<h5>Vivacité</h5>
+			<div class="content">
+				La vivacité représente la vitesse de réaction du personnage. Aussi bien l’analyse de la situation que la mise en mouvement du corps pour y réagir. La vivacité permet de se déplacer rapidement sur le champ de bataille et de réussir de nombreuses esquives.<br />
+				<h6>Réactivité</h6>
+				<table class="tab1">
+					<tr><th>0-5</th><th>6-10</th><th>11-15</th><th>16-20</th><th>21-25</th><th>26-30</th><th>31 et +</th></tr>
+					<tr><td>10</td><td>9</td><td>8</td><td>7</td><td>6</td><td>5</td><td>4</td></tr>
+				</table>
+			</div>       
+			<h5>Adresse</h5>
+			<div class="content">
+				L’adresse traduit l’habileté et la précision du personnage. C’est la caractéristique utilisée pour tirer à l’arc ou pour opérer avec minutie.
+			</div>
+			<h5>Robustesse</h5>
+			<div class="content">
+				La robustesse représente la résistance de l’organisme que ce soit aux poisons, à la douleur ou aux coups. Elle définit également la faculté à se rétablir plus ou moins rapidement après une blessure. Elle est indispensable à tout personnage subissant de nombreuses agressions.
+			</div>
+			<h5>Puissance</h5>
+			<div class="content">
+				La puissance permet de mesurer la force physique du personnage. Elle lui permet de soulever des objets lourds, de porter des armures lourdes sans être ralenti ou encore de manier des armes lourdes.
+			</div>
+			<h5>Prestance</h5>
+			<div class="content">
+				La prestance définit la façon dont les gens vont remarquer votre personnage. Une forte prestance permettra de faire immédiatement bonne impression et suscitera l’adhésion de votre auditoire à vos idées.
+			</div>
+			<h5>Intelligence</h5>
+			<div class="content">
+				« Savoir c’est pouvoir ». Ceux qui croient en cette maxime développent leur intelligence. Celle-ci traduit les possibilités de raisonnement, la capacité à se souvenir ou encore les facultés à réfléchir vite.
+			</div>
+			<h5>Intuition</h5>
+			<div class="content">
+				Grâce à son intuition, le personnage va être capable de sentir les choses avant leur arrivée. Elle l’aidera ainsi à détecter un piège, un mensonge ou les traces de sa proie.
+			</div>
+		 
+			<h4>Les tests de caractéristiques</h4>
+			<div class="content">
+				De nombreuses actions demanderont à votre personnage de réussir un test selon une caractéristique.<br />
+				Pour ce faire, lancer un D20 et reportez vous au tableau ci-dessous.<br />
+				<br />
+				<table class="tab1 float_left">
+					<tr><th>Valeur de la caractéristique</th><th>Résultat à obtenir</th></tr>
+					<tr><td>0 et -</td><td>20</td></tr>
+					<tr><td>1</td><td>19+</td></tr>
+					<tr><td>2</td><td>19+</td></tr>
+					<tr><td>3</td><td>18+</td></tr>
+					<tr><td>4</td><td>18+</td></tr>
+					<tr><td>5</td><td>16+</td></tr>
+					<tr><td>6</td><td>16+</td></tr>
+					<tr><td>7</td><td>14+</td></tr>
+					<tr><td>8</td><td>14+</td></tr>
+					<tr><td>9</td><td>12+</td></tr>
+				</table>
+				<table class="tab1 float_left">
+					<tr><th>Valeur de la caractéristique</th><th>Résultat à obtenir</th></tr>
+					<tr><td>10</td><td>12+</td></tr>
+					<tr><td>11</td><td>10+</td></tr>
+					<tr><td>12</td><td>10+</td></tr>
+					<tr><td>13</td><td>9+</td></tr>
+					<tr><td>14</td><td>9+</td></tr>
+					<tr><td>15</td><td>8+</td></tr>
+					<tr><td>16</td><td>8+</td></tr>
+					<tr><td>17</td><td>7+</td></tr>
+					<tr><td>18</td><td>7+</td></tr>
+					<tr><td>19</td><td>6+</td></tr>
+				</table>
+				<table class="tab1 float_left">
+					<tr><th>Valeur de la caractéristique</th><th>Résultat à obtenir</th></tr>
+					<tr><td>20</td><td>6+</td></tr>
+					<tr><td>21</td><td>5+</td></tr>
+					<tr><td>22</td><td>5+</td></tr>
+					<tr><td>23</td><td>5+</td></tr>
+					<tr><td>24</td><td>5+</td></tr>
+					<tr><td>25</td><td>4+</td></tr>
+					<tr><td>26</td><td>4+</td></tr>
+					<tr><td>27</td><td>4+</td></tr>
+					<tr><td>28</td><td>4+</td></tr>
+					<tr><td>29</td><td>3+</td></tr>
+				</table>
+				<table class="tab1 float_left">
+					<tr><th>Valeur de la caractéristique</th><th>Résultat à obtenir</th></tr>
+					<tr><td>30</td><td>3+</td></tr>
+					<tr><td>31</td><td>3+</td></tr>
+					<tr><td>32</td><td>3+</td></tr>
+					<tr><td>33</td><td>2+</td></tr>
+					<tr><td>34</td><td>2+</td></tr>
+					<tr><td>35</td><td>2+</td></tr>
+					<tr><td>36 et +</td><td>2+</td></tr>	
+				</table>
+				<p class="float_left"><i>Un  résultat de 10+ signifie que le test est réussi si le résultat du dé est supérieur ou égal à 10.</i></p>
+			</div>
+		</div>
+		<h3>Actions héroïques</h3>
+		<div class="content">
+			Même s'il ne le sait pas encore, votre personnage est promis à une destinée hors du commun. Et rien de mieux pour y accéder que quelques actions héroïques bien placées. A n'importe quel moment de la partie, le joueur pourra décider de réaliser une action héroïque. A ce moment là, le jet de dé nécessaire à la réalisation de l'action (quelle que soit la difficulté) sera réussi ! De quoi ouvrir de belles perspectives. Bien sûr, ce genre d'action est très rare, et le nombre d'action héroïque disponnible à la charge du MJ. Une bonne méthode consiste à accorder en début de séance 1D3 actions héroïque par personnage.
+		</div>
+
+		<h3>Déroulement du jeu</h3>
+		<div>
+			<h4>Barre de temps</h4>
+			<div class="content">
+				La barre de temps représente l'avancement du combat dans le temps. Au début du combat elle est à 0 et ne cessera de progresser.
+			</div>
+			<h4>Tour de jeu</h4>
+			<div class="content">
+				Il sera souvent fait référence à des actions durant ou s'appliquant en fonction de tours. Un tour de jeu est une tranche de 10 points dans la barre du temps.
+				Ainsi si un personnage est sonné au temps 24 pour 3 tours, il pourra jouer dès qu'on aura dépassé le temps 54.
+				De même si un mage lance au temps 5 un sort produisant ses effets au début de chaque tour, les effets seront appliqués en même temps et pour tout le monde dès qu'on aura franchi 15, 25, etc.
+			</div>
+			<h4>Débuter un combat</h4>
+			<div class="content">
+				Chaque personnage dispose de sa Réactivité. Celle-ci traduit la capacité à enchainer les actions et à réagir promptement en combat.
+				Au début du combat, chaque personnage se place sur la barre des temps au niveau de sa Réactivité.
+				Par exemple un personnage avec 3 de Réactivité jouera lorsque la barre de temps passera 3.
+			</div>
+			<h4>A qui de jouer ?</h4>
+			<div class="content">
+				Une fois le combat débuté, les joueurs joueront les uns après les autres selon leur ordre de la barre de temps (le plus petit joue en premier). En cas d'égalité, c'est celui ayant la plus grande Vivacité qui commence.
+				Un personnage doit jouer à ce moment là. Même s'il ne fait aucune action, il continuera à progresser dans la barre de temps.
+			</div>
+			<h4>Avancer dans la barre de temps</h4>
+			<div class="content">
+				Dès qu'un personnage achève son action, il progresse dans la barre de temps de son score de Réactivité.
+			</div>
+			<h4>Réagir</h4>
+			<div class="content">
+				Certaines actions comme parer, ou résister à un sort sont réalisées en riposte à une action adverse. Elles ne peuvent être tentées que lorsque le personnage dispose d'action dans le tour, c'est à dire si son score sur la barre de temps n'est pas supérieur de 10 points au score de son adversaire.
+			</div>
+		</div>
+		
+		<h3>Les actions</h3>
+		<div class="content">
+			Lorsqu’un personnage souhaite agir, il utilise ses actions. Par défaut, chacun en possède une qu’il peut utiliser à son tour de jeu. Chaque action qu’elle soit innée ou provenant d’un entrainement spécifique se décline en 5 niveaux de maitrise. Le tout premier correspondant aux bases de la technique est connu dès l’acquisition de celle-ci. Ensuite, le personnage doit s’entrainer pour progresser dans sa maîtrise. A noter qu’après le 5eme degré de maîtrise, une formule apparait pour déterminer les effets d’un éventuel 6eme ou 7eme degré. Bien qu’il soit impossible de se spécialiser directement au dessus du 5eme niveau, certains objets ou compétences peuvent booster artificiellement ces niveaux.
+			<br /><br />
+			Beaucoup d’actions sont éprouvantes pour l’organisme et demandent de la concentration et de l’endurance (souffle). A chaque fois que la description le mentionne, le personnage doit dépenser le nombre de points de souffle et de concentration pour réussir l’action.
+			<br /><br />
+			Les effets des différents niveaux de maîtrise sont cumulatifs.
+		</div>
+		<h4 class="comp_cat">Les actions innées</h3>
+		Ces actions sont les gestes, mouvements, postures que chaque personne sait effectuer. Ce sont des actions basiques mais qui peuvent être améliorées comme n’importe quelle compétence.
+		<br />
+		<br />
+		<div class="comp">
+			<h5>Courir</h5>
+			<table class="tab2">
+				<tr><th>Niv.</th><th>Effets</th><th>S</th><th>C</th></tr>
+				<tr><td>1</td><td>Le personnage se déplace d’un mouvement égal à sa Vivacité. Si le terrain est difficilement praticable (gravats, végétation dense, …) le personnage doit diviser sa vitesse par deux ou réussir un test d’Adresse pour ne pas chuter.<br />S’agenouiller et s’accroupir se font sans pénalité, par contre s’allonger et se relever réduisent la distance de déplacement de 3m.</td><td>2</td><td>0</td></tr>
+				<tr><td>2</td><td>Si le déplacement du personnage l’amène à portée d’un ennemi, il peut placer une attaque avec un bonus en attaque égal à la distance parcourue.</td><td>2</td><td>0</td></tr>
+				<tr><td>3</td><td>En utilisant 2 points de Souffle supplémentaires, le personnage augmente sa distance de déplacement de 2 points.</td><td>2</td><td>0</td></tr>
+				<tr><td>4</td><td>Le personnage n’est plus ralentit lorsqu’il porte une armure (cf. section équipement).</td><td>2</td><td>0</td></tr>
+				<tr><td>5</td><td>Le personnage peut se déplacer gratuitement de la moitié de sa Vivacité au début de son tour. Dans ce cas, sa prochaine action ne pourra pas être un déplacement.</td><td>2</td><td>0</td></tr>
+				<tr><td>6+</td><td>Le personnage peut se déplacer gratuitement de la moitié de sa Vivacité au début de son tour. Dans ce cas, sa prochaine action ne pourra pas être un déplacement.</td><td>-</td><td>0</td></tr>
+			</table>
+		</div>
+		
+		<div class="comp">
+			<h5>Attaquer</h5>
+			<table class="tab2">
+				<tr><th>Niv.</th><th>Effets</th><th>S</th><th>C</th></tr>
+				<tr><td>1</td><td>Un coup simple en direction de l’adversaire dans le but de le blesser. L’attaque primaire n’est pas la plus efficace mais elle possède l’avantage d’être instinctive.<br />L’attaquant lance un D12 qui détermine la zone du corps qui est visée.<br />Le personnage lance alors un D20 et ajoute son score de Technique de Combat. Si le résultat est supérieur à la valeur de défense de l’adversaire (cf. Défendre) l’attaque touche et inflige des dégâts.<br />Il prend ensuite la protection de l’armure qui protège la zone touchée et la retranche des dégâts de son arme.</td><td>2</td><td>0</td></tr>
+				<tr><td>2</td><td>Dès qu’un adversaire à portée effectue une action non dédiée au corps à corps (attaquer, parer, etc…) le personnage peut choisir de placer une de ses attaques restantes avant.</td><td>2</td><td>0</td></tr>
+				<tr><td>3</td><td>Lorsque le personnage utilise une attaque classique (sans compétence), le temps de récupération est réduit de 1 point.</td><td>2</td><td>0</td></tr>
+				<tr><td>4</td><td>Le personnage peut viser une zone plus sensible de l’adversaire. Avant de lancer son dé de localisation pour une attaque simple (sans compétence active), il choisit un nombre de points qui permettront de modifier le jet de localisation. Pour chaque point dépensé, il souffrira d’un malus de 2 points en attaque.</td><td>2</td><td>5</td></tr>
+				<tr><td>5</td><td>Si le dé d’attaque ne convient pas au personnage, celui-ci peut choisir de le relancer une fois.</td><td>2</td><td>0</td></tr>
+				<tr><td>6+</td><td>Le dé d’attaque gagne un bonus de +2 points par niveau.</td><td>2</td><td>0</td></tr>
+			</table>
+		</div>
+		
+		<div class="comp">
+			<h5>Défendre</h5>
+			<table class="tab2">
+				<tr><th>Niv.</th><th>Effets</th><th>S</th><th>C</th></tr>
+				<tr><td>1</td><td>Face à une menace, le personnage adopte instinctivement une posture défensive pour résister à l’agression. <br />Lorsqu’il est attaqué au corps à corps il tentera de dévier ou d’éviter l’attaque. Pour cela, il oppose soit sa Vivacité soit sa Technique de Combat au score d’attaque de son ennemi. Si sa statistique est plus élevée ou égale, l’attaque échoue.<br />Cette défense, n’est pas une action. Elle est utilisée pour chaque attaque à condition que le personnage soit en position de se défendre (libre de mouvement, non pris par surprise, …).</td><td>0</td><td>0</td></tr>
+				<tr><td>2</td><td>Le personnage gagne un bonus de +2 en défense.</td><td>0</td><td>0</td></tr>
+				<tr><td>3</td><td>Le personnage peut décider d’attendre de voir le jet de localisation de son adversaire avant de décider s’il tente une parade ou une esquive. Dans ce cas, cette défense subira un malus de -4.</td><td>0</td><td>0</td></tr>
+				<tr><td>4</td><td>Le personnage gagne un bonus de +2 en défense.</td><td>0</td><td>0</td></tr>
+				<tr><td>5</td><td>Lorsque l’attaquant vise une zone plus sensible du personnage, il doit utiliser 3 points d’attaque pour modifier la localisation de 1.</td><td>0</td><td>0</td></tr>
+				<tr><td>6+</td><td>La personne gagne un bonus de +2 en défense par niveau.</td><td>0</td><td>0</td></tr>
+			</table>
+		</div>
+		
+		<div class="comp">
+			<h5>Parer</h5>
+			<table class="tab2">
+				<tr><th>Niv.</th><th>Effets</th><th>S</th><th>C</th></tr>
+				<tr><td>1</td><td>Au corps à corps, si le personnage pense pouvoir bloquer l’attaque de son adversaire, il peut utiliser une action pour tenter de la parer. Dans ce cas, il doit utiliser une arme ou un bouclier et son score de défense sera égal à sa Technique de Combat augmenté du bonus de son arme plus un D20.<br />Si sa défense est plus grande que l’attaque, le coup est paré, l’action n’est pas dépensée mais sa prochaine action sera retardée de 1 point sur la barre de temps. Dans le cas contraire, la parade est ratée et le personnage perd son action.<br />Si l’attaque vise la partie basse du corps (zones 11 et 12) la parade subit un malus de -2.</td><td>2</td><td>0</td></tr>
+				<tr><td>2</td><td>Habitué à parer, le personnage gagne en efficacité avec un bonus de +2 à toutes ses parades.</td><td>2</td><td>0</td></tr>
+				<tr><td>3</td><td>Le personnage peut parer l’attaque sans arme. Il aura néanmoins un malus de -3 en défense.</td><td>2</td><td>0</td></tr>
+				<tr><td>4</td><td>Habitué à parer, le personnage gagne en efficacité avec un bonus de +2 à toutes ses parades.</td><td>2</td><td>0</td></tr>
+				<tr><td>5</td><td>Le personnage peut parer les flèches, les carreaux et les projectiles de petite taille. Il aura néanmoins un malus de -6  en défense.</td><td>2</td><td>0</td></tr>
+				<tr><td>6+</td><td>Le personnage gagne un bonus de +1 par niveau à toutes ses parades.</td><td>2</td><td>0</td></tr>
+			</table>
+		</div>
+		
+		<div class="comp">
+			<h5>Esquiver</h5>
+			<table class="tab2">
+				<tr><th>Niv.</th><th>Effets</th><th>S</th><th>C</th></tr>
+				<tr><td>1</td><td>Au corps à corps, si le personnage pense pouvoir éviter l’attaque de son adversaire, il peut utiliser une action pour tenter de l’esquiver. Dans ce cas, son score de défense sera égal à sa Vivacité plus un D20. <br />Si sa défense est plus grande que l’attaque, le coup est évité, l’action n’est pas dépensée mais sa prochaine action sera retardée de 1 point sur la barre de temps. Dans le cas contraire, l’esquive est ratée et le personnage perd son action.<br />Un personnage en armure lourde ne peut pas esquiver.<br />Si l’attaque vise le buste du personnage (zones 2,3 et 6), l’esquive subit un malus de -2.</td><td>2</td><td>0</td></tr>
+				<tr><td>2</td><td>Avant de tenter une esquive, le personnage peut annoncer qu’il va plonger. Dans ce cas, il subit un malus de -4 en Vivacité mais si l’esquive est réussie, il pourra se déplacer gratuitement d’1m. Ce mouvement peut l’amener à rompre le combat.</td><td>2</td><td>0</td></tr>
+				<tr><td>3</td><td>Si le personnage est la cible d’un projectile magique ciblé (appliqué à une localisation), il peut tenter de l’esquiver avec un malus de -4.</td><td>2</td><td>0</td></tr>
+				<tr><td>4</td><td>Le personnage peut désormais tenter des esquives en armure lourde. Il subira néanmoins un malus de -4.</td><td>2</td><td>0</td></tr>
+				<tr><td>5</td><td>L’esquive est instinctive pour le personnage qui ne se fatigue plus lorsqu’il réussit l’esquive et qui gagne un bonus de +2 pour ses esquives.</td><td>-</td><td>0</td></tr>
+				<tr><td>6+</td><td>Le personnage gagne un bonus de +2 par niveau en Agilité pour esquiver.</td><td>-</td><td>0</td></tr>
+			</table>
+		</div>
+		
+		<div class="comp">
+			<h5>Encaisser un coup</h5>
+			<table class="tab2">
+				<tr><th>Niv.</th><th>Effets</th><th>S</th><th>C</th></tr>
+				<tr><td>1</td><td>Lorsqu’il subit une attaque (coup, projectile, ...) celle-ci atteint une zone précise selon le schéma de localisation. Pour déterminer cette zone, lancer un dé à 12 faces et référez vous au tableau suivant (illustration dans la section Equipement – Armures). Il se peut de plus qu’un coup ait des effets supplémentaires selon la localisation touchée. Les effets sont explicités dans ce même tableau et ne seront appliqués <u>que si les dégâts subits sont supérieurs à la Robustesse de la cible</u>.
+							<br />
+							<table class="tab_reset stab1">
+								<tr><th>Zone</th><th>Nom</th><th>Effets</th></tr>
+								<tr><td>1</td><td>Tête</td><td>La cible doit réussir un test de Robustesse ou être sonnée pour 1D3 round.</td></tr>
+								<tr><td>2,&nbsp;3,&nbsp;6</td><td>Buste</td><td>En plus de perdre les points de Vitalité normalement, la cible perd un nombre équivalent de points de Souffle.
+								<tr><td>4,&nbsp;5</td><td>Epaules</td><td>-</td></tr>
+								<tr><td>7,&nbsp;8</td><td>Bras</td><td>La cible doit réussir un test de Robustesse ou lâcher ce qu’elle tenait dans la main.</td></tr>  
+								<tr><td>9,&nbsp;10</td><td>Cuisses</td><td>-</td></tr>
+								<tr><td>11,&nbsp;12</td><td>Pieds</td><td>La cible doit réussir un test de Robustesse ou tomber au sol.</td></tr>
+							</table>
+							A la fin d’un combat, le personnage regagne le quart des points de Vitalité qu’il vient de perdre.
+							</td><td>0</td><td>0</td></tr>
+				<tr><td>2</td><td>Lorsqu’il porte un casque, le personnage ajoute la défense du casque à sa Robustesse pour déterminer s’il est sonné.</td><td>0</td><td>0</td></tr>
+				<tr><td>3</td><td>Le personnage ne chute plus à cause d’un coup dans les pieds.</td><td>0</td><td>0</td></tr>
+				<tr><td>4</td><td>Le personnage peut utiliser sa Concentration plutôt que son Souffle lorsqu’il est touché au buste.</td><td>0</td><td>0</td></tr>
+				<tr><td>5</td><td>A la fin d’un combat, le personnage regagne la moitié des points de Vitalité qu’il vient de perdre.</td><td>0</td><td>0</td></tr>
+				<tr><td>6+</td><td>Le personnage gagne un bonus de +1 par niveau en Robustesse pour encaisser un coup.</td><td>0</td><td>0</td></tr>
+			</table>
+		</div>
+		
+		<div class="comp">
+			<h5>Attaquer à distance</h5>
+			<table class="tab2">
+				<tr><th>Niv.</th><th>Effets</th><th>S</th><th>C</th></tr>
+				<tr><td>1</td><td>Le personnage utilise une arme à projectile (arc, javelot …) pour atteindre un ennemi à distance. Pour déterminer s’il touche, il doit réussir un test d’Adresse avec les bonus/malus suivants
+								<br />
+								<table class="tab_reset stab1">
+									<tr><th>Situation</th><th>Bonus/malus</th></tr>
+									<tr><td>Cible à courte portée</td><td>+6</td></tr>
+									<tr><td>Cible à longue portée</td><td>-4</td></tr>
+									<tr><td>Cible en mouvement*</td><td>-4</td></tr>
+									<tr><td>Cible sprintant*</td><td>-6</td></tr>
+									<tr><td>Cible agenouillée</td><td>-2</td></tr>
+									<tr><td>Cible allongée</td><td>-4</td></tr>
+									<tr><td>Cible de grande taille/td><td>+4</td></tr>
+									<tr><td>Cible de petite taille/td><td>-4</td></tr>
+								</table>
+
+								<i>* est considéré comme en mouvement tout personnage ayant passé sa dernière action à se déplacer.</i>
+								<br />
+								<br />
+								Une fois la cible touchée, la résolution des dégâts est identique à une attaque au corps à corps (localisation, armure, …).</td><td>2</td><td>2</td></tr>
+				<tr><td>2</td><td>Le personnage peut viser pour améliorer sa précision. Dans ce cas, le tir nécessite 6 points de concentration et augmente de 2 le temps de récupération mais le personnage gagne un bonus de +6 pour toucher sa cible.</td><td>2</td><td>6</td></tr>
+				<tr><td>3</td><td>Le tir devient instinctif pour le personnage qui n’a plus besoin de se concentrer pour tirer. Lorsqu’il vise, la concentration nécessaire passe à 3 et le temps de récupération supplémentaire à 1.</td><td>2</td><td>0</td></tr>
+				<tr><td>4</td><td>La Puissance du tireur est ajoutée aux dégâts du projectile.</td><td>2</td><td>0</td></tr>
+				<tr><td>5</td><td>Le personnage peut combiner l’action courir avec un tir.</td><td>2</td><td>0</td></tr>
+				<tr><td>6+</td><td>Chaque niveau augmente la portée de l’arme de 5 ainsi que le bonus pour toucher la cible de +1.</td><td>2</td><td>0</td></tr>
+			</table>
+		</div>
+		
+		<div class="comp">
+			<h5>Lancer un sort</h5>
+			<table class="tab2">
+				<tr><th>Niv.</th><th>Effets</th><th>S</th><th>C</th></tr>
+				<tr><td>1</td><td>Bien que cette action semble accessible à tous les individus, seuls les rares mages dotés de talent et de savoir peuvent réellement manipuler l’énergie magique.<br />Lorsque le personnage souhaite lancer un sort, il doit réussir à canaliser assez d’énergie en lui : c’est le seuil de puissance du sort. Pour générer cette énergie, le mage additionne son intelligence, un D20 ainsi qu’un nombre de points de concentrations au choix. (Le mage choisit ce nombre avant de lancer son dé).<br />Si ce score est inférieur au seuil de puissance du sort, le mage n’a pas réussi à se concentrer assez rapidement et le sort est perdu (l’action est perdue et les points de concentrations aussi). Sinon, le sort est lancé avec succès.<br />Si de plus le score est supérieur au seuil critique du sort, celui-ci est lancé à sa puissance maximale.<br />Enfin si le sort lancé est un projectile magique, le mage doit également toucher sa cible avec. Le principe est identique à l’attaque à distance (test d’Adresse, bonus/malus, …) à la différence près que le mage utilise son Intelligence et non son Adresse pour effectuer le test.<br />Pour lancer un sort, le personnage a besoin de parler et doit pouvoir faire suffisamment de mouvements. Ainsi, s’il se retrouve ligoté ou bâillonné, il ne pourra utiliser cette compétence.<br />Le mage ne peut dépenser plus de points de Concentration que son score d’Intelligence.</td><td>0</td><td>*</td></tr>
+				<tr><td>2</td><td>Pour les projectiles magiques, la moitié des points de Concentration dépensés est utilisée en bonus pour déterminer si le projectile atteint sa cible.</td><td>0</td><td>*</td></tr>
+				<tr><td>3</td><td>Après avoir jeté son dé, le mage peut décider de rajouter des points de concentration pour réussir à lancer le sort. Chaque point ajouté à la puissance du sort coûte 2 points de Concentration.<br />Là encore, le mage ne peut dépenser plus de points de Concentration que son score d’Intelligence.</td><td>0</td><td>*</td></tr>
+				<tr><td>4</td><td>Pour chaque sort, le seuil critique est abaissé de 2 points.</td><td>0</td><td>*</td></tr>
+				<tr><td>5</td><td>Lorsqu’il lance un sort à la puissance maximale, la moitié des points de Concentration en trop ne sont pas dépensés.</td><td>0</td><td>*</td></tr>
+				<tr><td>6+</td><td>Le personnage gagne un bonus de +2 par niveau pour lancer un sort.</td><td>0</td><td>*</td></tr>
+			</table>
+		</div>
+		
+		<div class="comp">
+			<h5>Résister à un sort</h5>
+			<table class="tab2">
+				<tr><th>Niv.</th><th>Effets</th><th>S</th><th>C</th></tr>
+				<tr><td>1</td><td>Se sentant affecté par les effets d’un sort, le personnage peut décider de lui résister. Comme pour la défense, il possède d’une part une résistance passive qui est utilisée dans toutes les situations et d’autre part une résistance active plus efficace mais plus contraignante. <br />Lorsqu’un sort autre qu’un projectile magique atteint le personnage, si la puissance du sort (Intelligence du lanceur  + D20 + points de concentration) est inférieure à l’Intelligence de la cible, celle-ci résiste à ses effets. Sinon, le personnage peut dépenser une action et focaliser son attention à se protéger (il doit le décider avant que l’attaquant jette son dé). Dans ce cas, il additionne son Intelligence, un D20 et un nombre de points de Concentration de son choix (Attention ce nombre ne peut être supérieur à son score d’Intelligence.). Si le résultat est supérieur à la puissance du sort, ses effets sont contrés et le personnage conserve son action. Sinon, action et points de Concentration sont perdus et le sort est appliqué.<br />Un personnage ne peut résister activement (càd avec bonus de Concentration) que 2 fois par tour.</td><td>0</td><td>*</td></tr>
+				<tr><td>2</td><td>Lorsqu’il utilise ses points de Concentration pour résister aux effets d’un sort, leur nombre n’est plus limité que par le double de l’Intelligence.</td><td>0</td><td>*</td></tr>
+				<tr><td>3</td><td>Lorsqu’il tente de résister passivement à un sort, le personnage ajoute un D20 à son Intelligence.</td><td>0</td><td>*</td></tr>
+				<tr><td>4</td><td>Si le nombre de points de Concentration est supérieur au résultat du D20 et que le sort est néanmoins appliqué, l’action n’est pas perdue.</td><td>0</td><td>*</td></tr>
+				<tr><td>5</td><td>Le personnage peut résister à 4 sorts par tour.</td><td>0</td><td>*</td></tr>
+				<tr><td>6+</td><td>Toutes les défenses contre les sorts gagnent un bonus de +2 par niveau.</td><td>0</td><td>*</td></tr>
+			</table>
+		</div>
+		
+		
+		
+		
+		<h3>Les changements d’état</h3>
+		<div class="content">
+			De nombreux évènements peuvent influencer l’état d’un personnage. Que ce soit en provenance d’une compétence, de la fatigue ou encore un d’un poison, la liste est longue.
+			<table class="small_tab">
+				<tr><th>Nom</th><th>Effets</th></tr>
+				<tr><td>Sonné</td><td>Le personnage voit sa Technique de combat, son Adresse et sa Vivacité divisée par deux.</td></tr>
+				<tr><td>Déstabilisé</td><td>Lorsque le personnage vient d’être déstabilisé, si sa prochaine action est une action de combat (attaque, défense, compétence de combat, …) celle-ci subira un malus de -10.</td></tr>
+				<tr><td>Fatigué</td><td>Toute action tentée autre que se déplacer a 5% de chance d’échouer.</td></tr>
+				<tr><td>Enragé</td><td>Le personnage est pris d’une folle envie de combattre. Il attaquera la dernière personne ayant été une menace pour lui ou à défaut, la personne la plus proche de lui.</td></tr>
+				<tr><td>Fiévreux</td><td>La personne subit les effets de la Fatigue. En plus de ça, les jauges de Souffle et de Concentration verront leur score maximal réduit de 10.</td></tr>
+				<tr><td>Evanoui</td><td>Le personnage tombe au sol et perds connaissance. Il ne pourra plus agir tant qu’il n’aura pas réussi un test de Résistance. Ce test sera effectué toutes les minutes ou à chaque fois qu’il perd 10 points de Vitalité (cette perte peut-être étalée sur plusieurs coups).</td></tr>
+			</table>
+		</div>
+
+		<h3>La récupération</h3>
+		<div class="content">
+			La récupération permet au personnage de rester au combat plus longtemps en restaurant son énergie. A la fin de son tour, toutes les jauges qui n’ont pas été sollicitées regagnent automatiquement un nombre de points égal à leur bonus de profil. Attention, une jauge qui baisse d’un montant mais qui augmente du même montant ne régénère pas même si le total ne semble pas avoir  varié dans le tour.
+			<br /><br />
+			A la fin d’un combat, le personnage regagne la totalité de sa Concentration et de son Souffle.
+			<br /><br />
+			Pour la vitalité, le personnage a besoin de repos et de confort. Dans de bonnes conditions (lit ou bivouac) le personnage regagne (Robustesse/4 D6) par heure. Sinon les D6 sont remplacés par des D4.
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#fastnav_trigger").hover(function(){
+				$("#fastnav").show("fast");
+				$(this).toggleClass("active");
+			},function(){
+				$(this).toggleClass("active");
+			});
+			
+			$("#fastnav").hover(function(){
+
+			},function(){
+				$(this).hide("fast");
+			});
+			
+			$('#nav').toc({
+				'selectors': 'h3,h4,h5', //elements to use as headings
+				'container': '#all', //element to find all selectors in
+				'smoothScrolling': true, //enable or disable smooth scrolling on click
+				'prefix': 'nav', //prefix for anchor tags and class names
+				'onHighlight': function(el) {}, //called when a new section is highlighted 
+				'highlightOnScroll': false, //add class to heading that is currently in focus
+				'highlightOffset': 100, //offset to trigger the next headline
+				'anchorName': function(i, heading, prefix) { //custom function for anchor name
+					return prefix+i;
+				},
+				'headerText': function(i, heading, $heading) { //custom function building the header-item text
+					return $heading.text();
+				} 
+			});
+			
+			$('#nav .nav-h3').click(function(){
+				$(this).find('.nav-h5').toggleClass("active");
+			});
+		});
+	</script>
+</body>
+</html>

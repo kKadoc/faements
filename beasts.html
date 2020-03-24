@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Temps de Faéments</title>
+	<link rel="stylesheet" href="data/faements1.css">
+	<link rel="stylesheet" href="data/beasts.css">
+	<script type="text/javascript" src="data/jquery.min.js"></script>
+	<script type="text/javascript" src="data/animate.js"></script>
+	<script type="text/javascript" src="data/jquery.toc.js"></script>
+</head>
+
+<body>
+	<div id="fastmenu">
+		<a href="home.html" title="menu"><img src="data/icons/home.png" /></a>
+		<a href="system.html" title="système de jeu"><img src="data/icons/system.png" /></a>
+		<a href="evolution.html" title="évolution"><img src="data/icons/evolution.png" /></a>
+		<a href="skills.html" title="compétences"><img src="data/icons/skills.png" /></a>
+		<a href="spells.html" title="sorts"><img src="data/icons/spells.png" /></a>
+		<a href="equipment.html" title="équipement"><img src="data/icons/equipment.png" /></a>
+		<a href="beasts.html" title="bestiaire" class="current"><img src="data/icons/beasts.png" /></a>
+		<a href="sheets.html" title="Feuilles de personnage"><img src="data/icons/sheets.png" /></a>
+	</div>
+
+
+	<div id="fastnav">
+		<div id="nav_wrap">
+			<div id="nav">
+			</div>
+		</div>
+	</div>
+	<a id="fastnav_trigger" href="#"><img src="data/icons/map.png" /></a>
+	
+	<div id="all">
+		<h1>Temps de Faéments</h1>
+
+		<h2>Bestiaire</h2>
+		<div class="content">
+			Très peu d’études sérieuses ont pu être menées sur les créatures qui ont envahi le monde. Néanmoins, tandis que certaines personnes faisaient des découvertes, d’autres ont arpenté le monde pour rassembler et compiler ces informations.
+		</div>
+		
+		<div class="beast">
+			<h4>Molosse</h4>
+			
+			<p class="desc">
+				Le nom de cette créature vient de sa ressemblance troublante avec certains gros chiens sauvages. C’est d’ailleurs un piège qui couta la vie à de nombreux paysans. Croyant avoir affaire à un chien errant, ils ne se sont pas alarmés assez tôt.<br />
+				Le molosse peut vivre seul, mais préfère généralement se déplacer en meutes de 5 à 10 individus.
+			</p>
+
+			<table class="tab3 float_left">
+				<tr><th colspan="2">Caractéristiques</th></tr>
+				<tr><td>Vitalité</td><td>30</td></tr>
+				<tr><td>Concentration</td><td>10</td></tr>
+				<tr><td>Souffle</td><td>50</td></tr>
+				<tr><td>Technique de combat</td><td>10</td></tr>
+				<tr><td>Vivacité</td><td>12</td></tr>
+				<tr><td>Adresse</td><td>6</td></tr>
+				<tr><td>Robustesse</td><td>8</td></tr>
+				<tr><td>Puissance</td><td>8</td></tr>
+				<tr><td>Prestance</td><td>6</td></tr>
+				<tr><td>Intelligence</td><td>4</td></tr>
+				<tr><td>Intuition</td><td>10</td></tr>
+			</table>
+
+			<table class="tab3 float_left">
+				<tr><th colspan="2">Actions</th></tr>
+				<tr><td>Courir</td><td>4</td></tr>
+				<tr><td>Sprinter</td><td>3</td></tr>
+				<tr><td>Attaquer</td><td>3</td></tr>
+				<tr><td>Défendre</td><td>1</td></tr>
+				<tr><td>Parer</td><td>1</td></tr>
+				<tr><td>Esquiver</td><td>2</td></tr>
+				<tr><td>Encaisser un coup</td><td>2</td></tr>
+				<tr><td>Lancer un sort</td><td>1</td></tr>
+				<tr><td>Résister à un sort</td><td>1</td></tr>
+			</table>
+
+			<div class="equip">
+				<b>Profil :</b> 1D3 (tête, corps, jambes)<br />
+				<b>Armes :</b> griffes et crocs (1D10)<br />
+				<b>Armure :</b> - 
+			</div>
+		</div>
+		
+		<div class="beast">
+			<h4>Hurleur</h4>
+			
+			<p class="desc">
+				Cette créature effrayante est le cauchemar des aventuriers solitaires. Se déplaçant à grande vitesse, les fines crêtes sur son dos vibrent dans le vent et produisent un sifflement similaire à un cri de détresse. Sa méthode de traque est toujours la même, il commence par harceleur sa proie en lui tournant autour. La panique suffit généralement pour que cette dernière commette une erreur qui donne l’opportunité de frapper. 
+			</p>
+
+			<table class="tab3 float_left">
+				<tr><th colspan="2">Caractéristiques</th></tr>
+				<tr><td>Vitalité</td><td>20</td></tr>
+				<tr><td>Concentration</td><td>5</td></tr>
+				<tr><td>Souffle</td><td>5</td></tr>
+				<tr><td>Technique de combat</td><td>10</td></tr>
+				<tr><td>Vivacité</td><td>20</td></tr>
+				<tr><td>Adresse</td><td>10</td></tr>
+				<tr><td>Robustesse</td><td>6</td></tr>
+				<tr><td>Puissance</td><td>4</td></tr>
+				<tr><td>Prestance</td><td>4</td></tr>
+				<tr><td>Intelligence</td><td>4</td></tr>
+				<tr><td>Intuition</td><td>15</td></tr>
+			</table>
+
+			<table class="tab3 float_left">
+				<tr><th colspan="2">Actions</th></tr>
+				<tr><td>Courir</td><td>5</td></tr>
+				<tr><td>Attaquer</td><td>2</td></tr>
+				<tr><td>Défendre</td><td>1</td></tr>
+				<tr><td>Parer</td><td>1</td></tr>
+				<tr><td>Esquiver</td><td>3</td></tr>
+				<tr><td>Encaisser un coup</td><td>1</td></tr>
+				<tr><td>Lancer un sort</td><td>1</td></tr>
+				<tr><td>Résister à un sort</td><td>1</td></tr>
+			</table>
+
+			<div class="equip">
+				<b>Profil :</b> 1D3 1D3 (tête, corps, corps)<br />
+				<b>Armes :</b> dard empoisonné (1D8, poison urticant)<br />
+				<b>Armure :</b> - 
+			</div>
+		</div>
+		
+		<div class="beast">
+			<h4>Géant</h4>
+			
+			<p class="desc">
+				Rares sont ceux qui peuvent se vanter d’avoir combattu un géant et de lui avoir survécu. Certains disent qu’ils étaient auparavant des gens normaux, métamorphosés par la magie tant la ressemblance avec l’homme est troublante. A ceci près qu’ils peuvent mesurer jusqu’à 5 mètres de haut. Livrés avec une force et une agressivité assortie à leur taille, le seul conseil à suivre est de commencer à fuir lorsque leurs pas indiquent leur présence.
+			</p>
+
+			<table class="tab3 float_left">
+				<tr><th colspan="2">Caractéristiques</th></tr>
+				<tr><td>Vitalité</td><td>130</td></tr>
+				<tr><td>Concentration</td><td>50</td></tr>
+				<tr><td>Souffle</td><td>150</td></tr>
+				<tr><td>Technique de combat</td><td>20</td></tr>
+				<tr><td>Vivacité</td><td>10</td></tr>
+				<tr><td>Adresse</td><td>12</td></tr>
+				<tr><td>Robustesse</td><td>15</td></tr>
+				<tr><td>Puissance</td><td>20</td></tr>
+				<tr><td>Prestance</td><td>6</td></tr>
+				<tr><td>Intelligence</td><td>4</td></tr>
+				<tr><td>Intuition</td><td>10</td></tr>
+			</table>
+
+			<table class="tab3 float_left">
+				<tr><th colspan="2">Actions</th></tr>
+				<tr><td>Courir</td><td>4</td></tr>
+				<tr><td>Attaquer</td><td>3</td></tr>
+				<tr><td>Défendre</td><td>1</td></tr>
+				<tr><td>Parer</td><td>1</td></tr>
+				<tr><td>Esquiver</td><td>1</td></tr>
+				<tr><td>Encaisser un coup</td><td>3</td></tr>
+				<tr><td>Lancer un sort</td><td>1</td></tr>
+				<tr><td>Résister à un sort</td><td>3</td></tr>
+			</table>
+			
+			<table class="tab3 float_left">
+				<tr><th colspan="2">Compétences</th></tr>
+				<tr><td>Attaque en puissance</td><td>3</td></tr>
+				<tr><td>Fauchage</td><td>1</td></tr>
+			</table>
+
+			<div class="equip">
+				<b>Profil :</b> humanoïde avec +4 au jet de localisation au corps à corps.<br />
+				<b>Armes :</b> arme improvisée (2D10, lourde)<br />
+				<b>Armure :</b> - 
+			</div>
+		</div>
+
+		<div class="beast">
+			<h4>Etre de cristal</h4>
+			
+			<p class="desc">
+				Colosses de deux mètres de haut, les êtres de cristal hantent les régions particulièrement liées à la magie. Les récits racontent que leur corps serait formé de magie pure à l’état solide.
+			</p>
+
+			<table class="tab3 float_left">
+				<tr><th colspan="2">Caractéristiques</th></tr>
+				<tr><td>Vitalité</td><td>50</td></tr>
+				<tr><td>Concentration</td><td>0</td></tr>
+				<tr><td>Souffle</td><td>150</td></tr>
+				<tr><td>Technique de combat</td><td>12</td></tr>
+				<tr><td>Vivacité</td><td>6</td></tr>
+				<tr><td>Adresse</td><td>12</td></tr>
+				<tr><td>Robustesse</td><td>15</td></tr>
+				<tr><td>Puissance</td><td>10</td></tr>
+				<tr><td>Prestance</td><td>15</td></tr>
+				<tr><td>Intelligence</td><td>10</td></tr>
+				<tr><td>Intuition</td><td>10</td></tr>
+			</table>
+
+			<table class="tab3 float_left">
+				<tr><th colspan="2">Actions</th></tr>
+				<tr><td>Courir</td><td>4</td></tr>
+				<tr><td>Attaquer</td><td>3</td></tr>
+				<tr><td>Défendre</td><td>1</td></tr>
+				<tr><td>Parer</td><td>3</td></tr>
+				<tr><td>Esquiver</td><td>1</td></tr>
+				<tr><td>Encaisser un coup</td><td>3</td></tr>
+				<tr><td>Lancer un sort</td><td>0</td></tr>
+				<tr><td>Résister à un sort</td><td>10</td></tr>
+			</table>
+			
+			<table class="tab3 float_left">
+				<tr><th colspan="2">Compétences</th></tr>
+				<tr><td>Double coup</td><td>3</td></tr>
+				<tr><td>Pour l’honneur, et la gloire !</td><td>3</td></tr>
+				<tr><td>Position défensive</td><td>1</td></tr>
+			</table>
+
+			<div class="equip">
+				<b>Profil :</b> humanoïde avec +1 au jet de localisation au corps à corps.<br />
+				<b>Armes :</b> lame (1D10, arme d’assaut, perforante), poing (2D6, arme lourde, contondante)<br />
+				<b>Armure :</b> - <br />
+				<b>Insensible à toute forme de magie.</b>
+			</div>
+		</div>
+		
+		<div class="beast">
+			<h4>Arctodus</h4>
+			
+			<p class="desc">
+				Sorte d’ours monstrueux, l’arctodus est capable de ravager un troupeau de vache en quelques minutes. Rapide, agressif et particulièrement puissant, il faut une bonne dose de courage (ou de folie) pour se dresser devant un de ces spécimens.
+			</p>
+
+			<table class="tab3 float_left">
+				<tr><th colspan="2">Caractéristiques</th></tr>
+				<tr><td>Vitalité</td><td>100</td></tr>
+				<tr><td>Concentration</td><td>20</td></tr>
+				<tr><td>Souffle</td><td>100</td></tr>
+				<tr><td>Technique de combat</td><td>15</td></tr>
+				<tr><td>Vivacité</td><td>15</td></tr>
+				<tr><td>Adresse</td><td>8</td></tr>
+				<tr><td>Robustesse</td><td>15</td></tr>
+				<tr><td>Puissance</td><td>16</td></tr>
+				<tr><td>Prestance</td><td>6</td></tr>
+				<tr><td>Intelligence</td><td>10</td></tr>
+				<tr><td>Intuition</td><td>13</td></tr>
+			</table>
+
+			<table class="tab3 float_left">
+				<tr><th colspan="2">Actions</th></tr>
+				<tr><td>Courir</td><td>3</td></tr>
+				<tr><td>Attaquer</td><td>2</td></tr>
+				<tr><td>Défendre</td><td>1</td></tr>
+				<tr><td>Parer</td><td>1</td></tr>
+				<tr><td>Esquiver</td><td>1</td></tr>
+				<tr><td>Encaisser un coup</td><td>3</td></tr>
+				<tr><td>Lancer un sort</td><td>0</td></tr>
+				<tr><td>Résister à un sort</td><td>1</td></tr>
+			</table>
+			
+			<table class="tab3 float_left">
+				<tr><th colspan="2">Compétences</th></tr>
+				<tr><td>Charge enragée</td><td>5</td></tr>
+				<tr><td>Fauchage</td><td>1</td></tr>
+				<tr><td>Attaque puissante</td><td>1</td></tr>
+				<tr><td>Coup au sol</td><td>1</td></tr>
+			</table>
+
+			<div class="equip">
+				<b>Profil :</b> 1D6 (tête, corps, corps, corps, jambes, jambes)<br />
+				<b>Armes :</b> griffes et crocs (2D10 + 5)<br />
+				<b>Armure :</b> - 
+			</div>
+		</div>
+		
+		<div class="beast">
+			<h4>Difforme</h4>
+			
+			<p class="desc">
+				Créatures humanoïdes, les difformes semblent être le résultat d’expériences mêlant singes et humains. Voûtés, aux membres démesurés, ils errent sans but et rodent près des villages. Trop lents pour chasser, ils se contentent des cadavres laissés par d’autres créatures ou s’en prennent aux proies sans défense.
+			</p>
+
+			<table class="tab3 float_left">
+				<tr><th colspan="2">Caractéristiques</th></tr>
+				<tr><td>Vitalité</td><td>20</td></tr>
+				<tr><td>Concentration</td><td>5</td></tr>
+				<tr><td>Souffle</td><td>100</td></tr>
+				<tr><td>Technique de combat</td><td>6</td></tr>
+				<tr><td>Vivacité</td><td>5</td></tr>
+				<tr><td>Adresse</td><td>2</td></tr>
+				<tr><td>Robustesse</td><td>10</td></tr>
+				<tr><td>Puissance</td><td>6</td></tr>
+				<tr><td>Prestance</td><td>1</td></tr>
+				<tr><td>Intelligence</td><td>1</td></tr>
+				<tr><td>Intuition</td><td>5</td></tr>
+			</table>
+
+			<table class="tab3 float_left">
+				<tr><th colspan="2">Actions</th></tr>
+				<tr><td>Courir</td><td>1</td></tr>
+				<tr><td>Attaquer</td><td>1</td></tr>
+				<tr><td>Défendre</td><td>1</td></tr>
+				<tr><td>Parer</td><td>1</td></tr>
+				<tr><td>Esquiver</td><td>1</td></tr>
+				<tr><td>Encaisser un coup</td><td>2</td></tr>
+				<tr><td>Lancer un sort</td><td>0</td></tr>
+				<tr><td>Résister à un sort</td><td>1</td></tr>
+			</table>
+			
+			<table class="tab3 float_left">
+				<tr><th colspan="2">Compétences</th></tr>
+				<tr><td>Longévité</td><td>1</td></tr>
+			</table>
+
+			<div class="equip">
+				<b>Profil :</b> humanoïde<br />
+				<b>Armes :</b> armes improvisées (1D10)<br />
+				<b>Armure :</b> - 
+			</div>
+		</div>
+
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#fastnav_trigger").hover(function(){
+				$("#fastnav").show("fast");
+				$(this).toggleClass("active");
+			},function(){
+				$(this).toggleClass("active");
+			});
+			
+			$("#fastnav").hover(function(){
+
+			},function(){
+				$(this).hide("fast");
+			});
+			
+			$('#nav').toc({
+				'selectors': 'h3,h4,h5', //elements to use as headings
+				'container': '#all', //element to find all selectors in
+				'smoothScrolling': true, //enable or disable smooth scrolling on click
+				'prefix': 'nav', //prefix for anchor tags and class names
+				'onHighlight': function(el) {}, //called when a new section is highlighted 
+				'highlightOnScroll': false, //add class to heading that is currently in focus
+				'highlightOffset': 100, //offset to trigger the next headline
+				'anchorName': function(i, heading, prefix) { //custom function for anchor name
+					return prefix+i;
+				},
+				'headerText': function(i, heading, $heading) { //custom function building the header-item text
+					return $heading.text();
+				} 
+			});
+			
+			$('#nav .nav-h3').click(function(){
+				$(this).find('.nav-h5').toggleClass("active");
+			});
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,376 @@
+html {
+	background : url(back.png);
+	
+	color : #191919;
+	letter-spacing: 1px;
+	font-family: helvetica,arial,sans-serif;
+	font-size : 13px;
+	line-height : 20px;
+	padding : 0;
+	margin : 0;
+	height : 100%;
+}
+
+body {
+	height : 100%;
+	padding : 0;
+	margin : 0;
+}
+
+#all {
+	margin : 40px 80px;
+	padding : 20px;
+
+	height : 100%;
+}
+
+/**      MENU       **/
+#fastmenu {
+	position : fixed;
+	left : -2px;
+	margin-top : 50px;
+}
+
+#fastmenu a {
+	display : block;
+	width : 40px;
+
+	border-left : none;
+	margin : 10px 0;
+	padding : 5px;
+	border-radius : 0 5px 5px 0;
+	
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	
+	box-shadow: inset 1px 1px 0 rgba(255, 255, 255, .3),1px 1px 0 rgba(255, 255, 255, .3);
+	
+	background: transparent -moz-linear-gradient(rgba(255, 255, 255, .2),rgba(255, 255, 255, .1)) 0 0 repeat;
+	background: transparent -webkit-gradient(linear,left top,left bottom,color-stop(0%,rgba(255, 255, 255, .2)),color-stop(100%,rgba(255, 255, 255, .1))) 0 0 repeat;
+}
+
+#fastmenu a.current {
+	background: transparent -moz-linear-gradient(rgba(255, 150, 150, .2),rgba(255, 150, 150, .1)) 0 0 repeat;
+	background: transparent -webkit-gradient(linear,left top,left bottom,color-stop(0%,rgba(255, 150, 150, .2)),color-stop(100%,rgba(255, 150, 150, .1))) 0 0 repeat;
+	
+	width : 60px;
+}
+
+#fastmenu a:hover {
+	width : 60px;
+	background: transparent -moz-linear-gradient(rgba(255, 255, 255, .3),rgba(255, 255, 255, .2)) 0 0 repeat;
+	background: transparent -webkit-gradient(linear,left top,left bottom,color-stop(0%,rgba(255, 255, 255, .3)),color-stop(100%,rgba(255, 255, 255, .2))) 0 0 repeat;
+}
+
+#fastmenu a.current img {
+	margin-left : 10px;
+}
+
+#fastmenu a:hover img {
+	margin-left : 10px;
+}
+
+#fastmenu a img {
+	margin : 0;
+	width : 40px;
+}
+/**      NAVIGATION       **/
+
+#fastnav {
+	position: fixed;
+	top: 0;
+	bottom : 0;
+	right: 0;
+	overflow : auto;
+	display: none;
+	
+	background : url(back.png);
+	
+	border-left: 1px solid rgba(0, 0, 0, 0.3);
+
+	
+	width: 400px;
+	
+	margin : 0;
+	padding : 0;
+	
+	
+	z-index : 10;
+}
+
+#nav {
+padding: 10px 120px 10px 20px;
+	
+}
+
+#nav_wrap {
+	background :  rgba(255,255,255,0.3);
+	min-height : 100%;
+	margin : 0;
+}
+
+#fastnav_trigger {
+	position : fixed;
+	top : 10px;
+	right : 20px;
+	
+	display : block;
+	height : 40px;
+
+	border-right : none;
+	padding : 5px;
+	border-radius : 5px;
+	
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	
+	box-shadow: inset 1px 1px 0 rgba(255, 255, 255, .3),1px 1px 0 rgba(255, 255, 255, .3);
+	
+	background: transparent -moz-linear-gradient(rgba(255, 255, 255, .2),rgba(255, 255, 255, .1)) 0 0 repeat;
+	background: transparent -webkit-gradient(linear,left top,left bottom,color-stop(0%,rgba(255, 255, 255, .2)),color-stop(100%,rgba(255, 255, 255, .1))) 0 0 repeat;
+	
+	z-index : 11;
+}
+
+#fastnav_trigger img {
+	margin : 0;
+	width : 40px;
+}
+
+#fastnav_trigger:hover {
+	background: transparent -moz-linear-gradient(rgba(255, 150, 150, .2),rgba(255, 150, 150, .1)) 0 0 repeat;
+	background: transparent -webkit-gradient(linear,left top,left bottom,color-stop(0%,rgba(255, 150, 150, .2)),color-stop(100%,rgba(255, 150, 150, .1))) 0 0 repeat;
+}
+
+#nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#nav a {
+    text-decoration: none;
+    display: block;
+	color : #000;
+}
+
+#nav .nav-h3 a, #nav .nav-h4 a , #nav .nav-h5 a {
+	padding : 2px 0;
+}
+
+#nav .nav-h3 a {
+	border : 1px solid rgba(0,0,0,0.5);	
+	border-top : none;
+	border-bottom : none;
+	padding : 5px;
+	margin-bottom : 5px;
+	border-radius : 5px;
+	
+	background: -moz-linear-gradient(left,  rgba(240,249,255,0.1) 0%, rgba(255,255,255,0.59) 75%, rgba(255,255,255,0.6) 76%, rgba(255,255,255,0.1) 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(240,249,255,0.1)), color-stop(75%,rgba(255,255,255,0.59)), color-stop(76%,rgba(255,255,255,0.6)), color-stop(100%,rgba(255,255,255,0.1)));
+	background: -webkit-linear-gradient(left,  rgba(240,249,255,0.1) 0%,rgba(255,255,255,0.59) 75%,rgba(255,255,255,0.6) 76%,rgba(255,255,255,0.1) 100%);
+	background: -o-linear-gradient(left,  rgba(240,249,255,0.1) 0%,rgba(255,255,255,0.59) 75%,rgba(255,255,255,0.6) 76%,rgba(255,255,255,0.1) 100%);
+	background: -ms-linear-gradient(left,  rgba(240,249,255,0.1) 0%,rgba(255,255,255,0.59) 75%,rgba(255,255,255,0.6) 76%,rgba(255,255,255,0.1) 100%);
+	background: linear-gradient(to right,  rgba(240,249,255,0.1) 0%,rgba(255,255,255,0.59) 75%,rgba(255,255,255,0.6) 76%,rgba(255,255,255,0.1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1af0f9ff', endColorstr='#1affffff',GradientType=1 );
+}
+
+#nav .nav-h3 a:hover, #nav .nav-h4 a:hover, #nav .nav-h5 a:hover {
+	color : #962F1F;
+}
+
+#nav .nav-h4 a {
+	margin-left : 20px;
+	font-size : 0.9em;	
+}
+#nav .nav-h5 a {
+	margin-left : 40px;
+	font-size : 0.9em;	
+	font-style : italic;
+}
+
+
+
+h1, h2, h3 {
+	text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+h1 {
+	border-top : #931111;
+	border-bottom : #931111;
+	
+	text-align : center;
+	margin : 0 -20px;
+	padding : 10px;
+	
+	font-size : 3.0em;
+	color : white;
+	text-shadow: #000 2px 2px 2px;
+	
+	display : none;
+}
+
+h2 {
+	border-top : 1px solid rgb(144,0,0);
+	border-bottom : 1px solid rgb(144,0,0);
+	border-left : 12px solid rgb(144,0,0);
+	border-right : 6px solid rgb(144,0,0);
+	padding : 5px 10px;
+	margin : 0 0 40px 0;
+	
+	box-shadow: inset 1px 1px 0 rgba(255, 255, 255, .3),1px 1px 0 rgba(255, 255, 255, .3);
+	
+	background: transparent -moz-linear-gradient(rgba(255, 0, 0, .2),rgba(255, 0, 0, .1)) 0 0 repeat;
+	background: transparent -webkit-gradient(linear,left top,left bottom,color-stop(0%,rgba(255, 0, 0, .2)),color-stop(100%,rgba(255, 0, 0, .1))) 0 0 repeat;
+}
+
+h3 {
+	margin-top : 50px;
+}
+
+h4 {
+	text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
+	color : #DC5100;
+	padding-left : 20px;
+}
+
+h5 {
+	margin : 10px 0 3px 25px;
+	padding: 0;
+}	
+
+.content {
+	padding: 5px 10px;
+	margin : 0 20px 20px 20px;
+	
+	color: black;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	box-shadow: inset 1px 1px 0 rgba(255, 255, 255, .3),1px 1px 0 rgba(255, 255, 255, .3);
+	
+	border-radius: 6px;
+
+	background: transparent -moz-linear-gradient(rgba(255, 255, 255, .2),rgba(255, 255, 255, .1)) 0 0 repeat;
+	background: transparent -webkit-gradient(linear,left top,left bottom,color-stop(0%,rgba(255, 255, 255, .2)),color-stop(100%,rgba(255, 255, 255, .1))) 0 0 repeat;
+	
+	overflow : auto;
+	
+	text-align : justify;
+}
+
+table {
+	margin-bottom : 10px;
+}
+
+table td, table th {
+	padding : 3px 5px;
+	text-align : center;
+}
+
+.float_left {
+	float : left;
+}
+
+.tab1 {
+	margin : 10px;
+	border-collapse : collapse;
+	border-radius : 10px;
+	overflow : hidden;
+}
+
+.tab1 th {
+	width : 120px;
+	border-bottom : 1px solid #DC5100;
+}
+
+.tab1 tr:nth-child(even) td {
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.tab1 tr:nth-child(odd) td{
+	background-color: rgba(255, 255, 255, 0.4);
+}
+
+/** SMALL_TAB   */
+.small_tab {
+	margin : 20px;
+}
+
+.small_tab td, .small_tab th{
+	background : rgba(255,255,255,0.1);
+	font-size : 0.9em;
+	border : 1px solid rgba(0,0,0,0.2);
+}
+
+.small_tab th {
+	background : rgba(255,255,255,0.4);
+}
+
+
+/**  TAB_2  (comp et sorts) */
+.tab2 {
+	border-collapse: separate;
+	border-spacing : 0 0px;
+	width : 100%;
+	border-bottom : 1px solid rgba(255,255,255,0.4);
+}
+
+.tab2 td {
+	border-bottom : 1px solid rgba(100,100,100,0.4);
+	border-top : 1px solid rgba(255,255,255,0.4);
+	padding : 15px 5px 7px 5px;
+}
+
+.tab2 th {
+	border-bottom : 1px solid rgba(100,100,100,0.4);
+}
+
+.tab2 td:first-child {
+	font-size : 1.2em;
+	width : 50px;
+}
+
+.tab2 td:nth-child(2){
+	text-align : justify;
+	width : 847px;
+}
+
+.tab2 th {
+	padding : 5px 20px;
+}
+
+
+
+
+/** TAB_RESET   */
+
+.tab_reset{
+	margin : 20px auto;
+	border : none;
+}	
+
+.tab_reset td, .tab_reset th {
+	font-size : 1em;
+	background : rgba(255,255,255,0.2);
+	border-radius : 0;
+	border : none;
+}
+
+.tab_reset th {
+	background : rgba(255,255,255,0.4);
+}
+
+.tab_reset td:nth-child(1) {
+	text-align : center;
+	width : auto;
+	font-size : 1em;
+}
+
+.tab_reset td:nth-child(2) {
+	text-align : center;
+	width : auto;
+	font-size : 1em;
+}
+
+.tab_reset td:nth-child(3) {
+	text-align : center;
+	width : auto;
+	font-size : 1em;
+}

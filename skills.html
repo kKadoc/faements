@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Temps de Faéments</title>
+	<link rel="stylesheet" href="data/faements1.css">
+	<link rel="stylesheet" href="data/spells.css">
+	<script type="text/javascript" src="data/jquery.min.js"></script>
+	<script type="text/javascript" src="data/animate.js"></script>
+	<script type="text/javascript" src="data/jquery.toc.js"></script>
+</head>
+
+<body>
+	<div id="fastmenu">
+		<a href="home.html" title="menu"><img src="data/icons/home.png" /></a>
+		<a href="system.html" title="système de jeu"><img src="data/icons/system.png" /></a>
+		<a href="evolution.html" title="évolution"><img src="data/icons/evolution.png" /></a>
+		<a href="skills.html" title="compétences" class="current"><img src="data/icons/skills.png" /></a>
+		<a href="spells.html" title="sorts"><img src="data/icons/spells.png" /></a>
+		<a href="equipment.html" title="équipement"><img src="data/icons/equipment.png" /></a>
+		<a href="beasts.html" title="bestiaire"><img src="data/icons/beasts.png" /></a>
+		<a href="sheets.html" title="Feuilles de personnage"><img src="data/icons/sheets.png" /></a>
+	</div>
+	
+	<div id="fastnav">
+		<div id="nav_wrap">
+			<div id="nav">
+			</div>
+		</div>
+	</div>
+	<a id="fastnav_trigger" href="#"><img src="data/icons/map.png" /></a>
+	
+	<div id="all">
+		<h1>Temps de Faéments</h1>
+
+		<h2>Les compétences</h2>
+		<h3 class="comp_cat">Technique de combat</h3>
+		<div class="comp">
+		<h5>Double coup</h5>
+		<span class="comp_req">10 en Technique de combat</span>
+		<table class="tab2">
+			<tr><th>Niv.</th><th>Effets</th><th>S</th><th>C</th></tr>
+			<tr><td>1</td><td>Equipé de deux armes de corps à corps identiques, le personnage place successivement une attaque avec chacune d’elles. Les deux attaques sont distinctes (défenses différentes, localisations différentes, ...) mais doivent cibler la même cible. Chaque attaque aura un malus de -5 en attaque et -5 dégâts.</td><td>5</td><td>2</td></tr>
+			<tr><td>2</td><td>Les malus descendent à -3.</td><td>5</td><td>2</td></tr>
+			<tr><td>3</td><td>Les deux armes n’ont plus besoin d’être identiques.</td><td>5</td><td>2</td></tr>
+			<tr><td>4</td><td>La première attaque ne subit plus de malus.</td><td>5</td><td>2</td></tr>
+			<tr><td>5</td><td>Les deux attaques ne subissent plus de malus.</td><td>3</td><td>0</td></tr>
+			<tr><td>6+</td><td>Chaque niveau donne un bonus de +1 en attaque.</td><td>3</td><td>0</td></tr>
+		</table>
+		</div>
+		<div class="comp">
+		<h5>Feinte</h5>
+		<span class="comp_req">8 en Technique de combat</span>
+		<table class="tab2">
+			<tr><th>Niv.</th><th>Effets</th><th>S</th><th>C</th></tr>
+			<tr><td>1</td><td>Le personnage change au dernier moment la trajectoire de son attaque pour tromper son adversaire. Celui-ci aura un malus de -4 en défense En contrepartie, le personnage ne peut utiliser toute sa force et perd 4 points de dégâts. Cette action ne peut être tentée qu’avec une arme légère.</td><td>5</td><td>2</td></tr>
+			<tr><td>2</td><td>L’adversaire subit un malus de -5 en défense.</td><td>5</td><td>2</td></tr>
+			<tr><td>3</td><td>Cette attaque peut être utilisée avec une arme d’assaut.</td><td>5</td><td>2</td></tr>
+			<tr><td>4</td><td>L’adversaire subit un malus de -6 en défense.</td><td>3</td><td>2</td></tr>
+			<tr><td>5</td><td>Cette attaque peut être utilisée avec toutes les armes.</td><td>3</td><td>2</td></tr>
+			<tr><td>6+</td><td>Chaque niveau augmente le malus en défense de 1.</td><td>3</td><td>2</td></tr>
+		</table>
+		</div>
+		<div class="comp">
+			<h5>Coup de pommeau</h5>
+			<span class="comp_req">12 en Technique de combat</span>
+			<table class="tab2">
+				<tr><th>Niv.</th><th>Effets</th><th>S</th><th>C</th></tr>
+				<tr><td>1</td><td>Le personnage profite de la parade d’un adversaire pour glisser sur le coté pour asséner un coup de pommeau à son adversaire. Pour cela, le personnage doit réussir un test de Technique de Combat et sa victime doit rater un test de Robustesse. Un succès sonne la cible pour 1D3 tours.</td><td>2</td><td>5</td></tr>
+				<tr><td>2</td><td></td><td></td><td></td></tr>
+				<tr><td>3</td><td></td><td></td><td></td></tr>
+				<tr><td>4</td><td></td><td></td><td></td></tr>
+				<tr><td>5</td><td></td><td></td><td></td></tr>
+				<tr><td>6+</td><td></td><td></td><td></td></tr>
+			</table>
+		</div>
+		<div class="comp">		
+			<h5>Déstabilisation</h5>
+			<span class="comp_req">20 en Technique de combat</span>
+			<table class="tab2">
+				<tr><th>Niv.</th><th>Effets</th><th>S</th><th>C</th></tr>
+				<tr><td>1</td><td>En utilisant cette technique, le personnage cherche à mettre en péril l’équilibre de son adversaire. Il commencera par tenter une attaque normale. Si celle-ci échoue, il tentera de déstabiliser son adversaire. Pour cela il devra réussir un test de Technique de combat avec en malus la demi de la Technique de combat de son adversaire.</td><td>5</td><td>5</td></tr>
+				<tr><td>2</td><td></td><td>0</td><td>5</td></tr>
+				<tr><td>3</td><td></td><td>0</td><td>5</td></tr>
+				<tr><td>4</td><td></td><td>0</td><td>5</td></tr>
+				<tr><td>5</td><td></td><td>0</td><td>5</td></tr>
+				<tr><td>6+</td><td></td><td>0</td><td>5</td></tr>
+			</table>
+		</div>
+		<div class="comp">		
+			<h5>Position offensive</h5>
+			<span class="comp_req">10 en Technique de combat</span>
+			<table class="tab2">
+				<tr><th>Niv.</th><th>Effets</th><th>S</th><th>C</th></tr>
+				<tr><td>1</td><td>Dure 3 tours, +2 en Attaque</td><td>0</td><td>0</td></tr>
+				<tr><td>2</td><td></td><td>0</td><td>0</td></tr>
+				<tr><td>3</td><td></td><td>0</td><td>0</td></tr>
+				<tr><td>4</td><td></td><td>0</td><td>0</td></tr>
+				<tr><td>5</td><td>1 attaque (avec ou sans competence) en plus. Celle-ci nécessecitera le double de Souffle et Concentration.</td><td>0</td><td>0</td></tr>
+				<tr><td>6+</td><td></td><td>0</td><td>0</td></tr>
+			</table>
+		</div>
+		<div class="comp">		
+			<h5>Position défensive</h5>
+			<span class="comp_req">10 en Technique de combat</span>
+			<table class="tab2">
+				<tr><th>Niv.</th><th>Effets</th><th>S</th><th>C</th></tr>
+				<tr><td>1</td><td>Dure 3 tours, +2 en Défense</td><td>0</td><td>0</td></tr>
+				<tr><td>2</td><td></td><td>0</td><td>0</td></tr>
+				<tr><td>3</td><td>Le défenseur peut déplacer la localisation des attaques subies de 1.</td><td>0</td><td>0</td></tr>
+				<tr><td>4</td><td></td><td>0</td><td>0</td></tr>
+				<tr><td>5</td><td>Le défenseur choisit une localisation avant l’attaque. Si son adversaire tente de le toucher à cet emplacement, l’attaque sera automatiquement défendue.</td><td>0</td><td>0</td></tr>
+				<tr><td>6+</td><td></td><td>0</td><td>0</td></tr>
+			</table>
+		</div>
+		<div class="comp">		
+			<h5>Maîtrise des armes d'assaut</h5>
+			<span class="comp_req">10 en Technique de combat</span>
+			<table class="tab2">
+				<tr><th>Niv.</th><th>Effets</th><th>S</th><th>C</th></tr>
+				<tr><td>1</td><td>+2 dégâts lorsque le personnage utilise une arme d’assaut.</td><td>0</td><td>0</td></tr>
+				<tr><td>2</td><td>+1 pour déplacer la localisation</td><td>0</td><td>0</td></tr>
+				<tr><td>3</td><td></td><td>0</td><td>0</td></tr>
+				<tr><td>4</td><td>+2 dégâts, parade et attaque</td><td>0</td><td>0</td></tr>
+				<tr><td>5</td><td>+2 dégâts, parade et attaque</td><td>0</td><td>0</td></tr>
+				<tr><td>6+</td><td>+2 dégâts, parade et attaque</td><td>0</td><td>0</td></tr>
+			</table>
+		</div>
+		<div class="comp">		
+			<h5>Tradition martiale</h5>
+			<span class="comp_req">5 en Technique de combat</span>
+			<table class="tab2">
+				<tr><th>Niv.</th><th>Effets</th><th>S</th><th>C</th></tr>
+				<tr><td>1</td><td>Les humains apprennent très tôt à manier des armes. Ainsi dès qu’ils tenteront d’apprendre une nouvelle compétence basée sur la Technique de combat, ils gagnent un bonus de +2 au test.</td><td>0</td><td>0</td></tr>
+				<tr><td>2</td><td></td><td>0</td><td>0</td></tr>
+				<tr><td>3</td><td></td><td>0</td><td>0</td></tr>
+				<tr><td>4</td><td></td><td>0</td><td>0</td></tr>
+				<tr><td>5</td><td></td><td>0</td><td>0</td></tr>
+				<tr><td>6+</td><td></td><td>0</td><td>0</td></tr>
+			</table>
+		</div>
+		<div class="comp">		
+			<h5>Contre attaque</h5>
+			<span class="comp_req">10 en Technique de combat</span>
+			<table class="tab2">
+				<tr><th>Niv.</th><th>Effets</th><th>S</th><th>C</th></tr>
+				<tr><td>1</td><td>Après une défense réussie, le personnage peut tenter de porter un coup à son adversaire. Pour l’attaque portée (sans compétence), le personnage subira des malus de -5 en Vivacité, Technique de combat, Puissance et dégâts.</td><td>2</td><td>2</td></tr>
+				<tr><td>2</td><td></td><td>0</td><td>0</td></tr>
+				<tr><td>3</td><td></td><td>0</td><td>0</td></tr>
+				<tr><td>4</td><td></td><td>0</td><td>0</td></tr>
+				<tr><td>5</td><td></td><td>0</td><td>0</td></tr>
+				<tr><td>6+</td><td></td><td>0</td><td>0</td></tr>
+			</table>
+		</div>
+		<div class="comp">		
+			<h5>Coup de bouclier</h5>
+			<span class="comp_req">10 en Technique de combat</span>
+			<table class="tab2">
+				<tr><th>Niv.</th><th>Effets</th><th>S</th><th>C</th></tr>
+				<tr><td>1</td><td>Le personnage porte un coup à l'aide de son bouclier. L'attaque touche alors deux localisations. (Le dé est lancé une unique fois puis l'attaquant choisit la zone adjacente touchée).</td><td>10</td><td>0</td></tr>
+				<tr><td>2</td><td>Le coup gagne un bonus aux dégâts de +5</td><td>10</td><td>0</td></tr>
+				<tr><td>3</td><td></td><td>10</td><td>0</td></tr>
+				<tr><td>4</td><td>Le bonus aux dégâts passe à de +10</td><td>10</td><td>0</td></tr>
+				<tr><td>5</td><td></td><td>10</td><td>0</td></tr>
+				<tr><td>6+</td><td>Chaque niveau augmente les dégâts de +5</td><td>10</td><td>0</td></tr>
+			</table>
+		</div>
+		<h3 class="comp_cat">Vivacité</h3>
+		<div class="comp">		
+		<h5>Rush</h5>
+		<span class="comp_req">8 en Vivacité</span>
+		<table class="tab2">
+			<tr><th>Niv.</th><th>Effets</th><th>S</th><th>C</th></tr>
+			<tr><td>1</td><td>Le personnage se précipite sur son adversaire pour le surprendre. Celui-ci subira un malus de -4 en défense mais l’attaquant ne pourra placer son attaque avec précision. Si l’attaquant touche, il jette 2 dés de localisation et laisse le défenseur choisir lequel utiliser.</td><td>5</td><td>0</td></tr>
+			<tr><td>2</td><td>L’adversaire subit un malus de -5 en défense.</td><td>5</td><td>0</td></tr>
+			<tr><td>3</td><td>Cette attaque peut être combinée avec la charge.</td><td>5</td><td>0</td></tr>
+			<tr><td>4</td><td>L’adversaire subit un malus de -6 en défense.</td><td>5</td><td>0</td></tr>
+			<tr><td>5</td><td>L’attaquant lance désormais un dé pour la localisation. Le défenseur peut alors décider de relancer ou non ce dé. Dans ce cas, le deuxième résultat sera appliqué.</td><td>3</td><td>0</td></tr>
+			<tr><td>6+</td><td>Chaque niveau augmente le malus en défense de 1.</td><td>3</td><td>0</td></tr>
+		</table>
+		</div>
+		<div class="comp">		
+		<h5>Attaque éclair</h5>
+		<span class="comp_req">15 en Vivacité</span>
+		<table class="tab2">
+			<tr><th>Niv.</th><th>Effets</th><th>S</th><th>C</th></tr>
+			<tr><td>1</td><td>La vitesse de l’attaque permet au personnage de se replacer très rapidement après son attaque. La Réactivité sera diminuée de 1 pour la prochaine action. L’attaque ainsi portée infligera 5 dégâts de moins.</td><td>5</td><td>5</td></tr>
+			<tr><td>2</td><td>Le malus en dégâts passe à -4.</td><td></td><td></td></tr>
+			<tr><td>3</td><td>La Réactivité sera diminuée de 2.</td><td></td><td></td></tr>
+			<tr><td>4</td><td>Le malus en dégâts passe à -3.</td><td></td><td></td></tr>
+			<tr><td>5</td><td>Le personnage peut décider d’appliquer la réduction de Réactivité sur sa prochaine action. L’attaque ne sera pas plus rapide (malgré les malus d’attaque) mais la prochaine action effectuée (y compris une défense active échouée) verra son temps de récupération diminué.</td><td></td><td></td></tr>
+			<tr><td>6+</td><td>Le malus en dégâts est diminué de 1 par niveau.</td><td></td><td></td></tr>	
+		</table>
+		</div>
+		<div class="comp">		
+		<h5>Interception</h5>
+		<span class="comp_req">10 en Vivacité</span>
+		<table class="tab2">
+			<tr><th>Niv.</th><th>Effets</th><th>S</th><th>C</th></tr>
+			<tr><td>1</td><td>Cette attaque peut être placée une fois par round à la place d’une défense. Le personnage tente de prendre de vitesse son adversaire et porte un coup au moment où ce dernier prépare son attaque. L’interception est réussie si le personnage réussit un test de Vivacité avec en malus la Vivacité de l’attaquant. Dans ce cas, l’attaque est perdue et le personnage inflige une attaque normale avec un malus de -5 en dégâts.</td><td>5</td><td>5</td></tr>
+			<tr><td>2</td><td>Le personnage gagne un bonus de +1 en Vivacité pour tenter l’interception.</td><td>5</td><td>5</td></tr>
+			<tr><td>3</td><td>Le personnage qui intercepte l’attaque peut utiliser sa Technique de combat au lieu de sa Vivacité.</td><td>5</td><td>5</td></tr>
+			<tr><td>4</td><td>Le personnage gagne un bonus de +1 en Vivacité pour tenter l’interception.</td><td>3</td><td>3</td></tr>
+			<tr><td>5</td><td>Si l’interception est ratée, le personnage peut utiliser sa défense naturelle pour résister au coup.</td><td>1</td><td>1</td></tr>
+			<tr><td>6+</td><td>A chaque niveau, le personnage gagne un bonus de +1 en Vivacité pour tenter l’interception.</td><td>0</td><td>0</td></tr>
+		</table>
+		</div>
+		<div class="comp">		
+			<h5>Enchaînements</h5>
+			<span class="comp_req">8 en Vivacité</span>
+			<table class="tab2">
+				<tr><th>Niv.</th><th>Effets</th><th>S</th><th>C</th></tr>
+				<tr><td>1</td><td>2 attaques enchaînées sur une même cible. Celles-ci subissent un malus de -5 en Technique de Combat et dégâts. Si la première blesse, l'adversaire subira -5 en défense pour la deuxième.</td><td>5</td><td>5</td></tr>
+				<tr><td>2</td><td>Les malus de Technique de Combat passent à 0 pour la première attaque.</td><td>5</td><td>5</td></tr>
+				<tr><td>3</td><td>Les malus de dégâts sont supprimés</td><td>5</td><td>5</td></tr>
+				<tr><td>4</td><td>Les deux attaques peuvent être portées sur deux cibles différentes à condition qu’elles soient à portée. Dans ce cas, même après une première attaque réussie, la deuxième conservera ses malus.</td><td>3</td><td>3</td></tr>
+				<tr><td>5</td><td>Les malus de la deuxième attaque passent à 0.</td><td>1</td><td>1</td></tr>
+				<tr><td>6+</td><td>Chaque niveau augmente le malus en défense de l’adversaire de 2.</td><td>0</td><td>0</td></tr>
+			</table>
+		</div>
+		<div class="comp">		
+			<h5>Maîtrise des armes légères</h5>
+			<span class="comp_req">10 en Vivacité</span>
+			<table class="tab2">
+				<tr><th>Niv.</th><th>Effets</th><th>S</th><th>C</th></tr>
+				<tr><td>1</td><td>+4 en attaque</td><td>0</td><td>0</td></tr>
+				<tr><td>2</td><td>+2 dégâts</td><td>0</td><td>0</td></tr>
+				<tr><td>3</td><td>+4 en attaque</td><td>0</td><td>0</td></tr>
+				<tr><td>4</td><td>Lorsqu’il retarde une défense pour connaître la localisation qui sera atteinte (cf. défendre niveau 3), le personnage ne subit aucun malus.</td><td>0</td><td>0</td></tr>
+				<tr><td>5</td><td>+4 en attaque</td><td>0</td><td>0</td></tr>
+				<tr><td>6+</td><td>+2 attaque et +2 dégâts par niveau</td><td>0</td><td>0</td></tr>
+			</table>
+		</div>
+		
+		<h3 class="comp_cat">Adresse</h3>
+		<div class="comp">		
+			<h5>Tir double</h5>
+			<span class="comp_req">10 en Adresse</span>
+			<table class="tab2">
+				<tr><th>Niv.</th><th>Effets</th><th>S</th><th>C</th></tr>
+				<tr><td>1</td><td>Le personnage enclenche deux flèches sur son arc et les décoche vers une cible unique. La portée est alors réduite de 10, les dégâts de chaque flèche de 4 et l’Adresse de 4.</td><td>5</td><td>5</td></tr>
+				<tr><td>2</td><td>L’Adresse n’est réduite que de 2 points.</td><td>5</td><td>5</td></tr>
+				<tr><td>3</td><td>Les dégâts ne sont réduits que de 2 points.</td><td>5</td><td>2</td></tr>
+				<tr><td>4</td><td>Le personnage n’a plus de malus d’Adresse.</td><td>3</td><td>2</td></tr>
+				<tr><td>5</td><td>Le personnage n’a plus de malus aux dégâts.</td><td>3</td><td>0</td></tr>
+				<tr><td>6+</td><td>Chaque niveau augmente de 1 les dégâts de chaque flèche.</td><td>3</td><td>0</td></tr>
+			</table>
+		</div>
+		<div class="comp">		
+			<h5>Tir précis</h5>
+			<span class="comp_req">10 en Adresse</span>
+			<table class="tab2">
+				<tr><th>Niv.</th><th>Effets</th><th>S</th><th>C</th></tr>
+				<tr><td>1</td><td>+4 pour toucher la cible</td><td>5</td><td>5</td></tr>
+				<tr><td>2</td><td>+1 déviation de localisation</td><td>5</td><td>5</td></tr>
+				<tr><td>3</td><td>Les malus cumulés ne peuvent pas dépasser -5.</td><td>5</td><td>2</td></tr>
+				<tr><td>4</td><td></td><td>3</td><td>2</td></tr>
+				<tr><td>5</td><td></td><td>3</td><td>0</td></tr>
+				<tr><td>6+</td><td></td><td>3</td><td>0</td></tr>
+			</table>
+		</div>
+		<div class="comp">		
+			<h5>Tir rapide</h5>
+			<span class="comp_req">5 en Adresse</span>
+			<table class="tab2">
+				<tr><th>Niv.</th><th>Effets</th><th>S</th><th>C</th></tr>
+				<tr><td>1</td><td>La vitesse de l’attaque permet au personnage de se replacer très rapidement après son attaque. La Réactivité sera diminuée de 1 pour la prochaine action. L’attaque ainsi portée infligera 5 dégâts de moins.</td><td>5</td><td>5</td></tr>
+				<tr><td>2</td><td>Le malus en dégâts passe à -4.</td><td>5</td><td>5</td></tr>
+				<tr><td>3</td><td>La Réactivité sera diminuée de 2.</td><td>5</td><td>2</td></tr>
+				<tr><td>4</td><td>Le malus en dégâts passe à -3.</td><td>3</td><td>2</td></tr>
+				<tr><td>5</td><td>Le personnage peut décider d’appliquer la réduction de Réactivité sur sa prochaine action. L’attaque ne sera pas plus rapide (malgré les malus d’attaque) mais la prochaine action effectuée (y compris une défense active échouée) verra son temps de récupération diminué.</td><td>3</td><td>0</td></tr>
+				<tr><td>6+</td><td>Le malus en dégâts est diminué de 1 par niveau.</td><td>3</td><td>0</td></tr>
+			</table>
+		</div>
+		<div class="comp">		
+			<h5>Tir incapacitant</h5>
+			<span class="comp_req">10 en Adresse</span>
+			<table class="tab2">
+				<tr><th>Niv.</th><th>Effets</th><th>S</th><th>C</th></tr>
+				<tr><td>1</td><td>Utilisé avec une arme à projectile, si celui-ci se plante dans la cible, celle-ci doit réussir le test de robustesse à chaque tour ou appliquer les effets d’encaisser un coup sur la localisation.</td><td>5</td><td>5</td></tr>
+				<tr><td>2</td><td></td><td></td><td></td></tr>
+				<tr><td>3</td><td></td><td></td><td></td></tr>
+				<tr><td>4</td><td></td><td></td><td></td></tr>
+				<tr><td>5</td><td></td><td></td><td></td></tr>
+				<tr><td>6+</td><td></td><td></td><td></td></tr>
+			</table>
+		</div>
+		<div class="comp">		
+			<h5>Attaque en finesse</h5>
+			<span class="comp_req">10 en Adresse</span>
+			<table class="tab2">
+				<tr><th>Niv.</th><th>Effets</th><th>S</th><th>C</th></tr>
+				<tr><td>1</td><td>Le personnage tente une attaque particulièrement vicieuse pour infliger le maximum de dégâts. L’attaque subira un malus de -4 mais en cas de succès, les dégâts seront améliorés du quart de l’adresse du personnage. </td><td>5</td><td>5</td></tr>
+				<tr><td>2</td><td>Le malus d’attaque passe à -2.</td><td>5</td><td>5</td></tr>
+				<tr><td>3</td><td>Les dégâts sont majorés de la moitié de l’adresse du personnage.</td><td>5</td><td>5</td></tr>
+				<tr><td>4</td><td></td><td></td><td></td></tr>
+				<tr><td>5</td><td></td><td></td><td></td></tr>
+				<tr><td>6+</td><td></td><td></td><td></td></tr>
+			</table>
+		</div>
+		<div class="comp">		
+		<h5>Fabrication de pièges</h5>
+		<span class="comp_req">10 en Adresse</span>
+		<table class="tab2">
+			<tr><th>Niv.</th><th>Effets</th><th>S</th><th>C</th></tr>
+			<tr><td>1</td><td></td><td>0</td><td>0</td></tr>
+			<tr><td>2</td><td></td><td>0</td><td>0</td></tr>
+			<tr><td>3</td><td></td><td>0</td><td>0</td></tr>
+			<tr><td>4</td><td></td><td>0</td><td>0</td></tr>
+			<tr><td>5</td><td></td><td>0</td><td>0</td></tr>
+			<tr><td>6+</td><td></td><td>0</td><td>0</td></tr>
+		</table>
+		</div>
+		<div class="comp">		
+		<h5>Discrétion</h5>
+		<span class="comp_req">10 en Adresse</span>
+		<table class="tab2">
+			<tr><th>Niv.</th><th>Effets</th><th>S</th><th>C</th></tr>
+			<tr><td>1</td><td>Grâce à cette compétence, le personnage peut diminuer ses chances d’etre repéré. Lorsqu’il utilise une armure légère, il peut se déplacer sans émettre de son et ne sera détecté que par une personne le cherchant activement. Pour le détecter, celle-ci devra alors faire un test d’Intuition basé sur l’ouïe avec en malus -5 à cette caractéristique. A noter que le personnage ne dissimule que les sons qu’il émet. S’il passe devant un vigile celui-ci le verra aussitôt. Pendant la discrétion, le personnage ne peut utiliser d’autre compétence.</td><td>0</td><td>0</td></tr>
+			<tr><td>2</td><td>La discrétion s’applique désormais sur son apparence. Il pourra ainsi passer devant une personne sans se faire détecter si celle-ci ne la cherche pas activement. Un test d’Intuition sur la vue avec un malus de -5 permet de détecter le personnage. Une personne tentant de âsser discrètement devant un vigile pourra être détecté par un test sur l’ouïe ou sur la vue. </td><td>0</td><td>0</td></tr>
+			<tr><td>3</td><td>Les malus pour se faire détecter passent à -8.</td><td>0</td><td>0</td></tr>
+			<tr><td>4</td><td>Lorsque le personnage porte une attaque pendant sa discrétion, il choisit sa localisation et inflige le maximum de dégâts. Le personnage peut désormais lancer des sorts même en étant discret. Dès le lancement du sort, toute personne à proximité tente des tests d’Intuition sur la vue et sur l’ouïe sans malus pour repérer l’origine de ce sort.</td><td>0</td><td>0</td></tr>
+			<tr><td>5</td><td>Les malus pour se faire détecter passent à -10.</td><td>0</td><td>0</td></tr>
+			<tr><td>6+</td><td>Chaque niveau augmente le malus pour être détecté de 1.</td><td>0</td><td>0
+		</table>
+		</div>
+		<div class="comp">		
+		<h5>Crochetage</h5>
+		<span class="comp_req">10 en Adresse</span>
+		<table class="tab2">
+			<tr><th>Niv.</th><th>Effets</th><th>S</th><th>C</th></tr>
+			<tr><td>1</td><td></td><td>0</td><td>0</td></tr>
+			<tr><td>2</td><td></td><td>0</td><td>0</td></tr>
+			<tr><td>3</td><td></td><td>0</td><td>0</td></tr>
+			<tr><td>4</td><td></td><td>0</td><td>0</td></tr>
+			<tr><td>5</td><td></td><td>0</td><td>0</td></tr>
+			<tr><td>6+</td><td></td><td>0</td><td>0</td></tr>
+		</table>
+		</div>
+		<div class="comp">		
+			<h5>Chant des lames</h5>
+			<span class="comp_req">12 en Adresse</span>
+			<table class="tab2">
+				<tr><th>Niv.</th><th>Effets</th><th>S</th><th>C</th></tr>
+				<tr><td>1</td><td>Lorsqu’il utilise une arme légère, le personnage peut utiliser cette attaque redoutable. Cette attaque modifie la localisation de -1 et donne un malus de -4 à la parade adverse.</td><td>5</td><td>2</td></tr>
+				<tr><td>2</td><td></td><td></td><td></td></tr>
+				<tr><td>3</td><td></td><td></td><td></td></tr>
+				<tr><td>4</td><td></td><td></td><td></td></tr>
+				<tr><td>5</td><td></td><td></td><td></td></tr>
+				<tr><td>6+</td><td></td><td></td><td></td></tr>
+			</table>
+		</div>
+		<div class="comp">		
+			<h5>Achever</h5>
+			<span class="comp_req">6 en Adresse</span>
+			<table class="tab2">
+				<tr><th>Niv.</th><th>Effets</th><th>S</th><th>C</th></tr>
+				<tr><td>1</td><td>Si l’ennemi se retrouve sans défense (paralysé, endormi, ...), le personnage peut tenter de lui porter un coup fatal. L’adversaire devra réussir un test de Robustesse avec sa valeur multipliée par 2. En cas de succès de la compétence, la victime meurt.</td><td>0</td><td>5</td></tr>
+				<tr><td>2</td><td>Si la cible est à moins de 25% de ses points de Vitalité maximums, la Robustesse n’est pas multipliée par 2.</td><td>0</td><td>5</td></tr>
+				<tr><td>3</td><td></td><td>0</td><td>5</td></tr>
+				<tr><td>4</td><td></td><td>0</td><td>5</td></tr>
+				<tr><td>5</td><td></td><td>0</td><td>5</td></tr>
+				<tr><td>6+</td><td></td><td>0</td><td>5</td></tr>
+			</table>
+		</div>
+		<h3 class="comp_cat">Robustesse</h3>
+		<div class="comp">		
+		<h5>Santé de fer</h5>
+		<span class="comp_req">10 en Robustesse</span>
+		<table class="tab2">
+			<tr><th>Niv.</th><th>Effets</th><th>S</th><th>C</th></tr>
+			<tr><td>1</td><td>Le personnage est doté d’une constitution à toute épreuve. Il réduit les dégâts provenant d’une attaque physique de 2 points.</td><td>0</td><td>0</td></tr>
+			<tr><td>2</td><td>Les dégâts physiques sont réduis de 3 points et les autres de 2. </td><td></td><td></td></tr>
+			<tr><td>3</td><td>Contre une attaque physique, le personnage peut réduire le nombre de dégâts subits. Pour chaque point de dégâts réduit, il doit dépenser 4 points de Souffle. </td><td>0</td><td>0</td></tr>
+			<tr><td>4</td><td>Les dégâts physiques sont réduis de 4 points et les autres de 2.</td><td>0</td><td>0</td></tr>
+			<tr><td>5</td><td>3 points de Souffle suffisent à réduire 1 point de dégât.</td><td>0</td><td>0</td></tr>
+			<tr><td>6+</td><td> Chaque niveau augmente la résistance aux dégâts physiques et magiques de 1.</td><td>0</td><td>0</td></tr>
+		</table>
+		</div>
+		<div class="comp">		
+		<h5>Longévité</h5>
+		<span class="comp_req">8 en Robustesse</span>
+		<table class="tab2">
+			<tr><th>Niv.</th><th>Effets</th><th>S</th><th>C</th></tr>
+			<tr><td>1</td><td>Lorsque le personnage doit résister à un poison, il peut relancer son jet si le résultat ne lui convient pas. Cette relance sera soumise à un malus de -4 à la statistique testée.</td><td>0</td><td>0</td></tr>
+			<tr><td>2</td><td>Le malus de la relance passe à -3.</td><td></td><td></td></tr>
+			<tr><td>3</td><td></td><td></td><td></td></tr>
+			<tr><td>4</td><td></td><td></td><td></td></tr>
+			<tr><td>5</td><td></td><td></td><td></td></tr>
+			<tr><td>6+</td><td></td><td></td><td></td></tr>
+		</table>
+		</div>
+		<div class="comp">		
+		<h5>Pour l’honneur, et la gloire !</h5>
+		<span class="comp_req">10 en Robustesse</span>
+		<table class="tab2">
+			<tr><th>Niv.</th><th>Effets</th><th>S</th><th>C</th></tr>	
+			<tr><td>1</td><td>Dès que le personnage arrive à moins de 10% de sa Vitalité, il ajoute +2 dans deux de ses statistiques.</td><td>0</td><td>0</td></tr>
+			<tr><td>2</td><td>L’augmentation des caractéristiques passe à +4.</td><td>0</td><td>0</td></tr>
+			<tr><td>3</td><td>4 statistiques sont maintenant augmentées.</td><td>0</td><td>0</td></tr>
+			<tr><td>4</td><td>Les bonus s’appliquent également dès que le personnage possède moins de 10% de sa Concentration ou de son Souffle.</td><td>0</td><td>0</td></tr>
+			<tr><td>5</td><td>Toutes les statistiques sont boostées par cette compétence.</td><td>0</td><td>0</td></tr>
+			<tr><td>6+</td><td>Les seuils de déclenchement sont augmentés de 5% par niveau.</td><td>0</td><td>0</td></tr>
+		</table>
+		</div>
+		<div class="comp">		
+		<h5>Dur à cuire</h5>
+		<span class="comp_req">10 en Robustesse</span>
+		<table class="tab2">
+			<tr><th>Niv.</th><th>Effets</th><th>S</th><th>C</th></tr>
+			<tr><td>1</td><td>Le personnage a appris à immuniser son corps contre les agressions extérieures. Il peut relancer tous les tests pour éviter d’être sonné.</td><td>0</td><td>0</td></tr>
+			<tr><td>2</td><td>Le personnage gagne un bonus de +1 à toutes ses défenses passives (magique ou non).</td><td>0</td><td>0</td></tr>
+			<tr><td>3</td><td>Le personnage peut relancer tous les tests permettant d’éviter les effets d’un poison.</td><td>0</td><td>0</td></tr>
+			<tr><td>4</td><td>Le personnage  gagne un nouveau bonus de +1 à toutes ses défenses passives.</td><td>0</td><td>0</td></tr>
+			<tr><td>5</td><td>Le personnage peut relancer tous les tests permettant d’éviter les effets d’un sort. (On ne parle que des effets, et non du lancement du sort lui-même).</td><td>0</td><td>0</td></tr>
+			<tr><td>6+</td><td>Chaque niveau augmente la robustesse du personnage de 1.</td><td>0</td><td>0</td></tr>
+		</table>
+		</div>
+		<h3 class="comp_cat">Puissance</h3>
+		<div class="comp">	
+		<h5>Attaque puissante</h5>
+		<span class="comp_req">8 en Puissance</span>
+		<table class="tab2">
+			<tr><th>Niv.</th><th>Effets</th><th>S</th><th>C</th></tr>
+			<tr><td>1</td><td>Le personnage engage tout son poids dans son attaque pour infliger le maximum de dégâts. Son attaque subit un malus de -4 mais les dégâts se retrouvent augmentés de 4 points.</td><td>5</td><td>0</td></tr>
+			<tr><td>2</td><td>Lorsque la cible tente de parer le coup, elle subit un malus de -2 en parade.</td><td>5</td><td>0</td></tr>
+			<tr><td>3</td><td>Les dégâts sont augmentés de 6 points</td><td>5</td><td>0</td></tr>
+			<tr><td>4</td><td>La parade adverse subit un malus de -4.</td><td>5</td><td>0</td></tr>
+			<tr><td>5</td><td>La cible ne peut parer cette attaque.</td><td>5</td><td>0</td></tr>
+			<tr><td>6+</td><td>Chaque niveau augmente les dégâts de 2</td><td>5</td><td>0</td></tr>
+		</table>
+		</div>
+		<div class="comp">		
+		<h5>Fauchage</h5>
+		<span class="comp_req">10 en Puissance</span>
+		<table class="tab2">
+			<tr><th>Niv.</th><th>Effets</th><th>S</th><th>C</th></tr>
+			<tr><td>1</td><td>Le personnage lance une attaque circulaire en direction des jambes de son adversaire. Les localisations atteignables ne sont que les jambes et l’attaque subit un malus de -4 mais si celle-ci touche, l’ennemi doit réussir un test de Robustesse ou tomber au sol. De plus, si celui-ci venait de se déplacer, sa Robustesse est divisée par 2.<br />Cette action ne peut être tentée avec une arme légère.</td><td>5</td><td>0</td></tr>
+			<tr><td>2</td><td>Le malus à l’attaque passe à -3.</td><td>5</td><td>0</td></tr>
+			<tr><td>3</td><td>L’attaque touche tout ennemi au corps à corps.</td><td>5</td><td>0</td></tr>
+			<tr><td>4</td><td>Le malus à l’attaque passe à -2.</td><td>5</td><td>0</td></tr>
+			<tr><td>5</td><td>L’attaque touche tout ennemi à portée.</td><td>5</td><td>0</td></tr>
+			<tr><td>6+</td><td>Chaque niveau diminue le malus à l’attaque de 1.</td><td>5</td><td>0</td></tr>
+		</table>
+		</div>
+		<div class="comp">		
+			<h5>Repousser</h5>
+			<span class="comp_req">10 en Puissance</span>
+			<table class="tab2">
+				<tr><th>Niv.</th><th>Effets</th><th>S</th><th>C</th></tr>
+				<tr><td>1</td><td>Le personnage sacrifie les dégâts qu’il cause pour repousser son adversaire. Il porte ainsi une attaque normale, ci celle-ci touche, l’adversire doit réussir un test de Puissance avec un malus de -5 ou reculer d’un mètre. L’attaque n’inflige pas de dégâts.</td><td>3</td><td>0</td></tr>
+				<tr><td>2</td><td>Le personnage peut repousser jusqu’à deux adversaires au contact. Ils devront tous les deux effectuer le test sur la Puissance.</td><td>3</td><td>0</td></tr>
+				<tr><td>3</td><td>Les adversaires sont repoussés de 2 mètres.</td><td>3</td><td>0</td></tr>
+				<tr><td>4</td><td>Le malus au test passe à -10.</td><td>3</td><td>0</td></tr>
+				<tr><td>5</td><td>En plus d’être repoussés, les adversaires tombent à terre en cas d’échec du test.</td><td>3</td><td>0</td></tr>
+				<tr><td>6+</td><td>Chaque niveau augmente le malus de 5 points.</td><td>3</td><td>0</td></tr>
+			</table>
+		</div>
+		<div class="comp">		
+			<h5>Coup au sol</h5>
+			<span class="comp_req">5 en Puissance</span>
+			<table class="tab2">
+				<tr><th>Niv.</th><th>Effets</th><th>S</th><th>C</th></tr>
+				<tr><td>1</td><td>Utilisée lorsque l’ennemi est au sol, cette compétence permet d’ajouter sa Puissance au dégâts infligés.</td><td>5</td><td>0</td></tr>
+				<tr><td>2</td><td></td><td>5</td><td>0</td></tr>
+				<tr><td>3</td><td></td><td>3</td><td>0</td></tr>
+				<tr><td>4</td><td></td><td>3</td><td>0</td></tr>
+				<tr><td>5</td><td></td><td>3</td><td>0</td></tr>
+				<tr><td>6+</td><td></td><td>3</td><td>0</td></tr>
+			</table>
+		</div>
+		<div class="comp">		
+			<h5>Expert en armures</h5>
+			<span class="comp_req">10 en Puissance</span>
+			<table class="tab2">
+				<tr><th>Niv.</th><th>Effets</th><th>S</th><th>C</th></tr>
+				<tr><td>1</td><td></td><td>0</td><td>5</td></tr>
+				<tr><td>2</td><td></td><td>0</td><td>5</td></tr>
+				<tr><td>3</td><td></td><td>0</td><td>5</td></tr>
+				<tr><td>4</td><td></td><td>0</td><td>5</td></tr>
+				<tr><td>5</td><td></td><td>0</td><td>5</td></tr>
+				<tr><td>6+</td><td></td><td>0</td><td>5</td></tr>
+			</table>
+			</table>
+		</div>
+		<div class="comp">		
+			<h5>Maîtrise des armes lourdes</h5>
+			<span class="comp_req">10 en Puissance</span>
+			<table class="tab2">
+				<tr><th>Niv.</th><th>Effets</th><th>S</th><th>C</th></tr>
+				<tr><td>1</td><td>+4 en dégâts</td><td>0</td><td>0</td></tr>
+				<tr><td>2</td><td>-4 à la parade adverse</td><td>0</td><td>0</td></tr>
+				<tr><td>3</td><td>+4 en dégâts</td><td>0</td><td>0</td></tr>
+				<tr><td>4</td><td>Les attaques divisent la Robustesse de la cible par 2 pour déterminer si celle-ci doit effectuer un test lorsqu’elle encaisse le coup.</td><td>0</td><td>0</td></tr>
+				<tr><td>5</td><td>-4 à la parade adverse</td><td>0</td><td>0</td></tr>
+				<tr><td>6+</td><td>+2 dégâts et -2 parade adverse par niveau</td><td>0</td><td>0</td></tr>
+			</table>
+		</div>
+		<div class="comp">		
+			<h5>Charge enragée</h5>
+			<span class="comp_req">15 en Puissance</span>
+			<table class="tab2">
+				<tr><th>Niv.</th><th>Effets</th><th>S</th><th>C</th></tr>
+				<tr><td>1</td><td>Le personnage charge son ennemi en engageant toute sa Puissance. Si son attaque touche, l’adversaire devra réussir un test de Robustesse ou être déstabilisé pour 1 tour.<br />Néanmoins, le personnage s’expose dans cette charge et verra sa Technique de Combat réduite de -5.</td><td>10</td><td>0</td></tr>
+				<tr><td>2</td><td>L’attaque gagne un bonus de +4 aux dégâts.</td><td>10</td><td>0</td></tr>
+				<tr><td>3</td><td>Tous les ennemis en contact avec le personnage à la fin de la charge doivent tenter un test de Robustesse ou être déstabilisés.</td><td>15</td><td>0</td></tr>
+				<tr><td>4</td><td>Le bonus de dégâts infligé par l’attaque est égal à la Puissance du personnage divisée par deux.</td><td>15</td><td>0</td></tr>
+				<tr><td>5</td><td>Le personnage peut charger à travers les ennemis. Tous les ennemis en contact avec le personnage pendant le déplacement et à la fin doivent tenter un test de Robustesse ou être déséquilibrés.</td><td>20</td><td>0</td></tr>
+				<tr><td>6+</td><td>Les dégâts de l’attaque sont augmentés de +4 par niveau.</td><td>20</td><td>0</td></tr>
+			</table>
+		</div>
+		<h3 class="comp_cat">Prestance</h3>
+		<div class="comp">		
+		<h5>Chant fortifiant</h5>
+		<span class="comp_req">10 en Prestance</span>
+		<table class="tab2">
+			<tr><th>Niv.</th><th>Effets</th><th>S</th><th>C</th></tr>
+			<tr><td>1</td><td>Lorsque le personnage chante cette mélodie, ses alliés ressentent une paix intérieure revigorante.<br />Tout allié à moins de 5 mètres regagne 2 points de Concentration et de Souffle.</td><td>0</td><td>5</td></tr>
+			<tr><td>2</td><td>La compétence s’applique également au personnage</td><td>0</td><td>5</td></tr>
+			<tr><td>3</td><td>Les alliés à 10 mètres regagnent 3 points de Concentration et de Souffle.</td><td>0</td><td>5</td></tr>
+			<tr><td>4</td><td>Les alliés à 10 mètres regagnent 4 points de Concentration et de Souffle.</td><td>0</td><td>5</td></tr>
+			<tr><td>5</td><td>Tant que le personnage chante, les alliés dans l’aire d’effet divisent les coûts en Concentration et Souffle.</td><td>0</td><td>5</td></tr>
+			<tr><td>6+</td><td>Chaque niveau agrandit la zone d’effet de 1 mètre.</td><td>0</td><td>5</td></tr>
+		</table>
+		</div>
+		<div class="comp">		
+		<h5>Chef de guerre</h5>
+		<span class="comp_req">10 en Prestance</span>
+		<table class="tab2">
+			<tr><th>Niv.</th><th>Effets</th><th>S</th><th>C</th></tr>
+			<tr><td>1</td><td></td><td>0</td><td>0</td></tr>
+			<tr><td>2</td><td></td><td>0</td><td>0</td></tr>
+			<tr><td>3</td><td></td><td>0</td><td>0</td></tr>
+			<tr><td>4</td><td></td><td>0</td><td>0</td></tr>
+			<tr><td>5</td><td></td><td>0</td><td>0</td></tr>
+			<tr><td>6+</td><td></td><td>0</td><td>0</td></tr>
+		</table>
+		</div>
+		<div class="comp">		
+		<h5>Provoquer</h5>
+		<span class="comp_req">15 en Prestance</span>
+		<table class="tab2">
+			<tr><th>Niv.</th><th>Effets</th><th>S</th><th>C</th></tr>
+			<tr><td>1</td><td>Le personnage provoque ses adversaires pour les forcer à se concentrer sur lui. S’il applique la compétence à tous les ennemis dans l’aire d’effet, ceux-ci doivent réussir un test d’Intelligence avec en malus la Prestance du personnage divisée par 5. Si le personnage cible un ennemi en particulier, il est le seul à devoir réussir un test d’Intelligence avec un malus égal à la Prestance du personnage divisée par 3. L’aire d’effet est un disque centré sur le personnage et d’un rayon de 5m.</td><td>0</td><td>0</td></tr>
+			<tr><td>2</td><td>L’aire d’effet passe à un disque de 10m de rayon.</td><td>0</td><td>0</td></tr>
+			<tr><td>3</td><td></td><td>0</td><td>0</td></tr>
+			<tr><td>4</td><td></td><td>0</td><td>0</td></tr>
+			<tr><td>5</td><td></td><td>0</td><td>0</td></tr>
+			<tr><td>6+</td><td></td><td>0</td><td>0</td></tr>
+		</table>
+		</div>
+
+		<h3 class="comp_cat">Intelligence</h3>
+		<div class="comp">		
+			<h5>Connaissance de la magie</h5>
+			<span class="comp_req">10 en Intelligence</span>
+			<table class="tab2">
+				<tr><th>Niv.</th><th>Effets</th><th>S</th><th>C</th></tr>
+				<tr><td>1</td><td>Grâce à ses nombreux apprentissages, le personnage est capable de reconnaître l’ensemble des sorts dont le malus d’apprentissage x2 est inférieur à son score d’Intelligence.</td><td>0</td><td>0</td></tr>
+				<tr><td>2</td><td>Le personnage gagne un bonus de +2 pour résister à un sort.</td><td>0</td><td>0</td></tr>
+				<tr><td>3</td><td>Le personnage gagne un bonus de +2 pour lancer les sorts.</td><td>0</td><td>0</td></tr>
+				<tr><td>4</td><td>Le personnage gagne un bonus de +2 pour apprendre les sorts.</td><td>0</td><td>0</td></tr>
+				<tr><td>5</td><td></td><td>0</td><td>0</td></tr>
+				<tr><td>6+</td><td>Chaque niveau augmente les bonus de +1.</td><td>0</td><td>0</td></tr>
+			</table>
+		</div>
+		<div class="comp">		
+			<h5>Maitrise de la magie XXX</h5>
+			<span class="comp_req">10 en Intelligence</span>
+			<table class="tab2">
+				<tr><th>Niv.</th><th>Effets</th><th>S</th><th>C</th></tr>
+				<tr><td>1</td><td>Le personnage devient spécialiste dans l’utilisation de cette magie. Il gagne automatique un bonus de +1 pour lancer les sorts de ce domaine.</td><td>0</td><td>0</td></tr>
+				<tr><td>2</td><td>Le personnage gagne un bonus de +3 en Intelligence pour apprendre les sors appartenant à ce domaine.</td><td>0</td><td>0</td></tr>
+				<tr><td>3</td><td>Le bonus pour lancer les sorts passe à +2.</td><td>0</td><td>0</td></tr>
+				<tr><td>4</td><td>Le bonus d’apprentissage passe à +5.</td><td>0</td><td>0</td></tr>
+				<tr><td>5</td><td>Le bonus pour lancer les sorts passe à +3.</td><td>0</td><td>0</td></tr>
+				<tr><td>6+</td><td>Chaque niveau augmente les bonus pour lancer les sorts et pour les apprendre de +1.</td><td>0</td><td>0</td></tr>
+			</table>
+		</div>
+		<div class="comp">		
+			<h5>Analyse</h5>
+			<span class="comp_req">10 en Intelligence</span>
+			<table class="tab2">
+				<tr><th>Niv.</th><th>Effets</th><th>S</th><th>C</th></tr>
+				<tr><td>1</td><td>Le personnage analyse le comportement de son adversaire pour déterminer ses forces et faiblesses. Il lance un D20 auquel il somme son intelligence. Toutes les caractéristiques de la cible inférieures au résultat seront connues du personnage.</td><td>0</td><td>5</td></tr>
+				<tr><td>2</td><td>Le personnage peut voir l'équipement de sa cible.</td><td>0</td><td>0</td></tr>
+				<tr><td>3</td><td>Le personnage peut déterminer les compétences de sa cible.</td><td>0</td><td>0</td></tr>
+				<tr><td>4</td><td></td><td>0</td><td>0</td></tr>
+				<tr><td>5</td><td></td><td>0</td><td>0</td></tr>
+				<tr><td>6+</td><td></td><td>0</td><td>0</td></tr>
+			</table>
+		</div>
+		<div class="comp">		
+			<h5>Science des antidotes</h5>
+			<span class="comp_req">20 en Intelligence</span>
+			<table class="tab2">
+				<tr><th>Niv.</th><th>Effets</th><th>S</th><th>C</th></tr>
+				<tr><td>1</td><td>Le personnage sait reconnaitre la majorité des poisons rien qu’en étudiant une personne victime des symptomes.</td><td>0</td><td>0</td></tr>
+				<tr><td>2</td><td>Le personnage peut stopper les effets de n’importe quel poison pendant 1 heure grâce à un antidote commun.</td><td>0</td><td>0</td></tr>
+				<tr><td>3</td><td>En utilisant un antidote commun et une dose du poison qui touche une victime, le personnage peut la guérir.</td><td>0</td><td>0</td></tr>
+				<tr><td>4</td><td>Lorsqu’il utilise un bandage ou un baume de soin, les effets d’un antidote commun s’ajoutent. Cet antidote commun ne peut être combiné avec les précédentes compétences, il ne peut donc pas être utilisé pour ralentir ou soigner un poison puissant.</td><td>0</td><td>0</td></tr>
+				<tr><td>5</td><td>Lorsqu’il utilise un antidote, la cible est immunisée contre ce poison pendant 1 heure.</td><td>0</td><td>0</td></tr>
+				<tr><td>6+</td><td>Chaque niveau augmente de 1 heure la durée d’immunité au poison.</td><td>0</td><td>0</td></tr>
+			</table>
+		</div>
+		<div class="comp">		
+			<h5>Apprenti</h5>
+			<span class="comp_req">10 en Intelligence</span>
+			<table class="tab2">
+				<tr><th>Niv.</th><th>Effets</th><th>S</th><th>C</th></tr>
+				<tr><td>1</td><td>Le personnage bénéficie d’une capacité d’apprentissage suppérieure à la moyenne. A chaque apprentissage de compétence, il gagne d’un bonus de +1 pour la maîtriser.</td><td>0</td><td>0</td></tr>
+				<tr><td>2</td><td>Le bonus passe à +2</td><td>0</td><td>0</td></tr>
+				<tr><td>3</td><td>Le personnage lance deux dés et utilise le meilleur résultat pour apprendre la compétence.</td><td>0</td><td>0</td></tr>
+				<tr><td>4</td><td>Le bonus d’apprentissage passe à +3.</td><td>0</td><td>0</td></tr>
+				<tr><td>5</td><td>Le personnage lance deux dés et utilise leur somme.</td><td>0</td><td>0</td></tr>
+				<tr><td>6+</td><td>Chaque niveau donne un bonus de +1 pour apprendre la compétence.</td><td>0</td><td>0</td></tr>
+			</table>
+		</div>
+		<div class="comp">		
+			<h5>Professeur</h5>
+			<span class="comp_req">10 en Intelligence</span>
+			<table class="tab2">
+				<tr><th>Niv.</th><th>Effets</th><th>S</th><th>C</th></tr>
+				<tr><td>1</td><td>S’il le souhaite, le personnage peut aider une personne à apprendre une compétence. S’il la connait déjà, le personnage aidé gagnera un bonus de +2 pour apprendre, sinon ce bonus sera de +1.</td><td>0</td><td>0</td></tr>
+				<tr><td>2</td><td>Les bonus passent à +4 et +2.</td><td>0</td><td>0</td></tr>
+				<tr><td>3</td><td>Après un échec, le personnage aidé qui apprend peut quand même retenter un deuxième test sans avoir à observer la compétence une nouvelle fois.</td><td>0</td><td>0</td></tr>
+				<tr><td>4</td><td>Les bonus passent à +6 et +4</td><td>0</td><td>0</td></tr>
+				<tr><td>5</td><td>Les bonus passent à +8 et +6</td><td>0</td><td>0</td></tr>
+				<tr><td>6+</td><td>Chaque niveau augmentent les bonus de +1.</td><td>0</td><td>0</td></tr>
+			</table>
+		</div>
+		<div class="comp">		
+			<h5>Connaissances métallurgiques</h5>
+			<span class="comp_req">5 en Intelligence</span>
+			<table class="tab2">
+				<tr><th>Niv.</th><th>Effets</th><th>S</th><th>C</th></tr>
+				<tr><td>1</td><td>Permet au personnage d’entretenir une pièce d’équipement afin de conserver sa qualité.</td><td>0</td><td>0</td></tr>
+				<tr><td>2</td><td>Permet au personnage de fabriquer des éléments simples des armes et armures. (Sangles, flèches, lame simples, …)</td><td>0</td><td>0</td></tr>
+				<tr><td>3</td><td>Permet au personnage d’aiguiser une arme (toute arme non contondante) la rendant perforante. Le personnage est capable de renforcer une armure, augmentant la défense de 1 sur chaque zone.</td><td>0</td><td>0</td></tr>
+				<tr><td>4</td><td></td><td>0</td><td>0</td></tr>
+				<tr><td>5</td><td></td><td>0</td><td>0</td></tr>
+				<tr><td>6+</td><td></td><td>0</td><td>0</td></tr>
+			</table>
+		</div>
+		<div class="comp">		
+			<h5>Orientation</h5>
+			<span class="comp_req">5 en Intelligence</span>
+			<table class="tab2">
+				<tr><th>Niv.</th><th>Effets</th><th>S</th><th>C</th></tr>
+				<tr><td>1</td><td>Le personnage connaît parfaitement la géographie de son pays.</td><td>0</td><td>0</td></tr>
+				<tr><td>2</td><td>Le personnage est capable de se repérer dans toutes les situations, que ce soit grâce au soleil, aux étoiles ou autre.</td><td>0</td><td>0</td></tr>
+				<tr><td>3</td><td>Le personnage est toujours capable de pointer le nord. Même dans un espace clos sans visibilité sur l’extérieur.</td><td>0</td><td>0</td></tr>
+				<tr><td>4</td><td></td><td>0</td><td>0</td></tr>
+				<tr><td>5</td><td></td><td>0</td><td>0</td></tr>
+				<tr><td>6+</td><td></td><td>0</td><td>0</td></tr>
+			</table>
+		</div>
+		<div class="comp">		
+			<h5>Recyclage naturel</h5>
+			<span class="comp_req">5 en Intelligence</span>
+			<table class="tab2">
+				<tr><th>Niv.</th><th>Effets</th><th>S</th><th>C</th></tr>
+				<tr><td>1</td><td>Habitué aux milieux naturels, le personnage est capable de reconnaître la plupart des animaux, plantes, minéraux de son pays. Il connaît également leurs principales vertus et leur potentiel de vente.</td><td>0</td><td>0</td></tr>
+				<tr><td>2</td><td>Le personnage sait désormais prélever et préparer les parties intéressantes de son environnement naturel. Il peut ensuite en faire de petits objets d’utilisation courante (bandages de secour, bijoux de faible qualité, peaux de bêtes, …).</td><td>0</td><td>0</td></tr>
+				<tr><td>3</td><td>Le personnage devient un véritable artisan avec les matériaux naturels. En particulier, il est capable de sculpter, tailler, coudre, graver pour fabriquer des objets de valeur supérieure.</td><td>0</td><td>0</td></tr>
+				<tr><td>4</td><td></td><td>0</td><td>0</td></tr>
+				<tr><td>5</td><td></td><td>0</td><td>0</td></tr>
+				<tr><td>6+</td><td></td><td>0</td><td>0</td></tr>
+			</table>
+		</div>
+		<h3 class="comp_cat">Intuition</h3>
+		<div class="comp">		
+			<h5>Pistage</h5>
+			<span class="comp_req">10 en Intuition</span>
+			<table class="tab2">
+				<tr><th>Niv.</th><th>Effets</th><th>S</th><th>C</th></tr>
+				<tr><td>1</td><td></td><td>0</td><td>0</td></tr>
+				<tr><td>2</td><td></td><td>0</td><td>0</td></tr>
+				<tr><td>3</td><td></td><td>0</td><td>0</td></tr>
+				<tr><td>4</td><td></td><td>0</td><td>0</td></tr>
+				<tr><td>5</td><td></td><td>0</td><td>0</td></tr>
+				<tr><td>6+</td><td></td><td>0</td><td>0</td></tr>
+			</table>
+		</div>
+		<div class="comp">		
+			<h5>Regard pénatrant</h5>
+			<span class="comp_req">8 en Intuition</span>
+			<table class="tab2">
+				<tr><th>Niv.</th><th>Effets</th><th>S</th><th>C</th></tr>
+			<tr><td>1</td><td>Lorsque le personnage doit réussir un test d’Intuition basé sur la vue, il gagne un bonus de +1 au test.</td><td>0</td><td>0</td></tr>
+			<tr><td>2</td><td>Lorsqu’il attaque un adversaire au corps à corps, le personnage détecte les zones les moins protégées de son adversaire. Si un coup atteint la zone la mieux protégée de son adversaire, il peut relancer le jet de localisation.</td><td>0</td><td>0</td></tr>
+			<tr><td>3</td><td>Le bonus au test d’Intuition passe à +2.</td><td>0</td><td>0</td></tr>
+			<tr><td>4</td><td>Lorsqu’il utilise une arme à distance, les malus dus à la longue portée sont divisés par deux.</td><td>0</td><td>0</td></tr>
+			<tr><td>5</td><td>Le bonus au test d’Intuition passe à +3</td><td>0</td><td>0</td></tr>
+			<tr><td>6+</td><td>Chaque niveau apporte un bonus de +1 au test d’Intuition.</td><td>0</td><td>0</td></tr>
+			</table>
+		</div>
+		<div class="comp">		
+			<h5>Furie guerrière</h5>
+			<span class="comp_req">10 en Intuition</span>
+			<table class="tab2">
+				<tr><th>Niv.</th><th>Effets</th><th>S</th><th>C</th></tr>
+				<tr><td>1</td><td>Bonus temporaire pour chaque ennemi défait</td><td>0</td><td>5</td></tr>
+				<tr><td>2</td><td></td><td>0</td><td>5</td></tr>
+				<tr><td>3</td><td></td><td>0</td><td>5</td></tr>
+				<tr><td>4</td><td></td><td>0</td><td>5</td></tr>
+				<tr><td>5</td><td></td><td>0</td><td>5</td></tr>
+				<tr><td>6+</td><td></td><td>0</td><td>5</td></tr>
+			</table>
+		</div>
+		<div class="comp">		
+			<h5>Coup croisé</h5>
+			<span class="comp_req">10 en Intuition</span>
+			<table class="tab2">
+				<tr><th>Niv.</th><th>Effets</th><th>S</th><th>C</th></tr>
+				<tr><td>1</td><td>Avec deux armes, le personnage porte une attaque simultanée des deux côtés de son adversaire. Celui-ci ne pourra pas parer les deux coups en une parade.</td><td>0</td><td>5</td></tr>
+				<tr><td>2</td><td></td><td>0</td><td>5</td></tr>
+				<tr><td>3</td><td></td><td>0</td><td>5</td></tr>
+				<tr><td>4</td><td></td><td>0</td><td>5</td></tr>
+				<tr><td>5</td><td></td><td>0</td><td>5</td></tr>
+				<tr><td>6+</td><td></td><td>0</td><td>5</td></tr>
+			</table>
+		</div>
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#fastnav_trigger").hover(function(){
+				$("#fastnav").show("fast");
+				$(this).toggleClass("active");
+			},function(){
+				$(this).toggleClass("active");
+			});
+			
+			$("#fastnav").hover(function(){
+
+			},function(){
+				$(this).hide("fast");
+			});
+			
+			$('#nav').toc({
+				'selectors': 'h3,h4,h5', //elements to use as headings
+				'container': '#all', //element to find all selectors in
+				'smoothScrolling': true, //enable or disable smooth scrolling on click
+				'prefix': 'nav', //prefix for anchor tags and class names
+				'onHighlight': function(el) {}, //called when a new section is highlighted 
+				'highlightOnScroll': false, //add class to heading that is currently in focus
+				'highlightOffset': 100, //offset to trigger the next headline
+				'anchorName': function(i, heading, prefix) { //custom function for anchor name
+					return prefix+i;
+				},
+				'headerText': function(i, heading, $heading) { //custom function building the header-item text
+					return $heading.text();
+				} 
+			});
+			
+			$('#nav .nav-h3').click(function(){
+				$(this).find('.nav-h5').toggleClass("active");
+			});
+		});
+	</script>
+</body>
+</html>

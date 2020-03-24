@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Temps de Faéments</title>
+	<link rel="stylesheet" href="data/faements1.css">
+	<link rel="stylesheet" href="data/home.css">
+	
+	<script type="text/javascript" src="data/jquery.min.js"></script>
+	<script type="text/javascript" src="data/jquery.transit.js"></script>
+</head>
+
+<body>
+	<div id="all">
+		<h1>Temps de Faéments</h1>
+		<div class="panel">
+			<a href="system.html"><img src="data/icons/system.png" />Système de jeu</a>
+			<a href="evolution.html"><img src="data/icons/evolution.png" />Evolution</a>
+			<a href="skills.html"><img src="data/icons/skills.png" />Compétences</a>
+			<a href="spells.html"><img src="data/icons/spells.png" />Sorts</a>
+			<a href="equipment.html"><img src="data/icons/equipment.png" />Equipement</a>
+			<a href="beasts.html"><img src="data/icons/beasts.png" />Bestiaire</a>	
+			<a href="sheets.html"><img src="data/icons/sheets.png" />Feuilles de personnage</a>	
+		</div>
+		<div class="version">Temps de Faéments v1.4.0</div>
+	</div>
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.panel').transition({
+				y:-100,
+				easing: 'out',
+				duration: '1000ms'
+			});
+			
+			$('.panel a').click(function(){
+				var link = $(this).attr('href');
+				$('.panel').transition({
+					y:+1000,
+					easing: 'out',
+					duration: '500ms'
+				}, function() {
+					window.location.href=link;
+				});
+				
+				
+				return false;
+			});
+		});
+		
+	</script>
+	
+</body>
+</html>
