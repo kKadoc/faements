@@ -244,3 +244,21 @@ table td {
 b {
 	color: #AD835A;
 }
+
+.note {
+	background : #f3e6d0;
+	color : #090909;
+	border : 1px solid #2d251b;
+	margin : 10px;
+	padding: 15px;
+	
+	float : right;
+	width : 300px;
+	
+	text-align: justify;
+}
+
+.note.big {
+	width:auto;
+	float :none;
+}
