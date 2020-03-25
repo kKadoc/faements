@@ -1,3 +1,7 @@
 table.tab_equip {
 	width : 100%;
 }
+
+table.tab_equip td:nth-child(9) {
+	width : 70px;
+}

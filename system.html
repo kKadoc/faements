@@ -81,7 +81,7 @@ Les autres, moins fortunés, moins chanceux ou ne supportant pas les restrictions
 					<tr><td>5</td><td>4</td><td>3</td><td>2</td></tr>
 				</table>
 			</div>  
-			<h5><span class="stat">Vigueur</span></h5>
+			<h5>Vigueur</h5>
 			<div class="content">
 				Représentant aussi bien la force physique du personnage que la résistance de son organisme, elle lui permet de soulever des objets lourds et de limiter les effets des poisons, de la <span class="jauge">Douleur</span> et des coups. 
 				Elle est indispensable à tout personnage subissant de nombreuses agressions ou voulant porter des coups aux impacts colossaux.<br />
@@ -214,7 +214,7 @@ Les autres, moins fortunés, moins chanceux ou ne supportant pas les restrictions
 					<tr>
 						<td rowspan="3">Bras</td>
 						<td>1</td>
-						<td>Poignet foulé : -5 au score d'attaque/parade avec ce bras</td>
+						<td>Poignet foulé : -5 à toutes les actions basées sur l'<span class="stat">Adresse</td>
 						<td>Poignet fracturé : aucune compétence active sur l'<span class="stat">Adresse</span> ne peut être utilisée.
 						<br />
 						<b>Effet permanent</b> : -3 à tous les tests d'apprentissage sur les compétences de coup</td>
@@ -237,7 +237,7 @@ Les autres, moins fortunés, moins chanceux ou ne supportant pas les restrictions
 					<tr>
 						<td rowspan="3">Jambe</td>
 						<td>1</td>
-						<td>Déchirure : -2 à toutes les attaques et défenses</td>
+						<td>Déchirure : -5 à toutes les actions basées sur la <span class="stat">Vigueur</span></td>
 						<td>Cheville fracturée : -3 en déplacement
 						<br />
 						<b>Effet permanent</b> : -3 à tous les tests d'apprentissage sur les compétences de <span class="stat">Vigueur</span></td>
@@ -417,11 +417,14 @@ Les autres, moins fortunés, moins chanceux ou ne supportant pas les restrictions
 			De nombreux évènements peuvent influencer l’état d’un personnage. Que ce soit en provenance d’une compétence, de la <span class="jauge">Fatigue</span> ou encore un d’un poison, la liste est longue.
 			<table class="small_tab">
 				<tr><th>Nom</th><th>Effets</th></tr>
+				<tr><td>A terre</td><td>Le personnage souffre d'un malus de -5 en <span class="stat">Adresse</span>, <span class="stat">Vigueur</span> et <span class="stat">Vivacité</span> lorsqu'il réalise une action de combat. <br />Par contre tout adversaire le prenant pour cible à distance subira un malus de -4 pour toucher.</td></tr>
+				<tr><td>Accroupi</td><td>Le personnage souffre d'un malus de -2 en <span class="stat">Adresse</span>, <span class="stat">Vigueur</span> et <span class="stat">Vivacité</span> lorsqu'il réalise une action de combat. <br />Par contre tout adversaire le prenant pour cible à distance subira un malus de -4 pour toucher.</td></tr>
 				<tr><td>Sonné</td><td>Le personnage voit toutes ses statistiques baissées de -5.</td></tr>
 				<tr><td>Déstabilisé</td><td>Lorsque le personnage vient d’être déstabilisé, si sa prochaine action est une action de combat (attaque, défense, compétence de combat …) celle-ci subira un malus de -10.</td></tr>
 				<tr><td>Dément</td><td>Le personnage est pris d’une folle envie de combattre. Il attaquera la dernière personne ayant été une menace pour lui ou à défaut, la personne la plus proche de lui.</td></tr>
 				<tr><td>Fiévreux</td><td>Le personnage voit toutes ses statistiques baissées de -2.</td></tr>
 				<tr><td>Évanoui</td><td>Le personnage tombe au sol et perd connaissance. Il ne peut plus agir. A chaque fois qu’il subit une nouvelle blessure, il effectue un test de <span class="stat">Vigueur</span> à 20 pour déterminer s'il reprend connaissance.</td></tr>
+				<tr><td>Mort</td><td>Le personnage manquera surement à ses compagnons. Il peut en vouloir à la malchance. Ou au MJ. En tout cas pas à lui, lui, il a été parfait.</td></tr>
 			</table>
 		</div>
 
