@@ -262,3 +262,15 @@ b {
 	width:auto;
 	float :none;
 }
+
+.etat {
+	color : #31C0DC;
+}
+
+.stat {
+	color : orange;
+}
+
+.jauge {
+	color : yellow;
+}
