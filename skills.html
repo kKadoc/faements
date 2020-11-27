@@ -57,21 +57,76 @@
 			Apprentissage(+4)		- faciles							-> 15							
 			Apprentissage(0)		- moyennes							-> 20
 			Apprentissage(-4)		- dures								-> 30
-			Apprentissage(-8)		- necessite un réel travail			-> 40
+			Apprentissage(-8)		- nécessite un réel travail			-> 40
 			Apprentissage(-12)		- sans aide impossible à apprendre	-> 50
 		-->
 								
 		<!-- ACTIONS INNEES -->
 		
-		<h3 class="comp_cat">Actions innées</h3>
+		<h3 class="comp_cat">Voie du déplacement</h3>
 		
 		<div class="comp">
 			<h4 class="nom">Courir</h4>
-			<span class="specifs"><span class="comp_req">Action innée</span></span>
-			<p class="niv1">
-				<n>Niv. 1</n><s title="Souffle">1</s><c title="Concentration">0</c><r title="Exécution">2</r>
-				<e>Le personnage se déplace d’un mouvement maximal de 8m. Si le terrain est difficilement praticable (gravats, végétation dense, …) le personnage doit diviser sa vitesse par deux ou réussir un test d’<span class="stat">Adresse</span> pour ne pas chuter.<br />S’agenouiller et s’accroupir se font sans pénalité, par contre s’allonger et se relever réduisent la distance de déplacement de 3m. Au début de son tour, le personnage peut réaliser un mouvement gratuit de 1m mais ne pourra pas utiliser l'action courir dans ce cas.</e>
+			<table class="spec"><tr><td class="left">
+				<span class="specifs"><span class="innee">Action innée</span></span>
+			</td><td>
+				Exécution : 2<br />
+				Souffle : 1<br />
+				Concentration : 0
+			</td></tr></table>
+			<p>
+				Le personnage se déplace d’un mouvement maximal de 8m. Si le terrain est difficilement praticable (gravats, végétation dense, …) le personnage doit diviser sa vitesse par deux ou réussir un test d’<span class="stat">Adresse</span> à 15 pour ne pas chuter.<br />S’agenouiller et s’accroupir se font sans pénalité, par contre s’allonger et se relever réduisent la distance de déplacement de 3m. 
+				<br />Il est possible d'associer une course avec une autre action. Dans ce cas, additionner les valeurs d'Execution, de <span class="jauge">Souffle</span> et de <span class="jauge">Concentration</span>
 			</p>
+		</div>
+		
+		<div class="comp">
+			<h4 class="nom">Leste</h4>
+			<table class="spec"><tr><td class="left">
+				<span class="specifs"><span class="passive">Action passive</span></span><br />
+				Caractéristique : <span class="stat">Vivacité</span><br />
+				Apprentissage : 15
+			</td><td>
+				Exécution : -<br />
+				Souffle : -<br />
+				Concentration : -
+			</td></tr></table>
+			<p>
+				La distance maximale du déplacement du personnage passe à 9m. De plus le test d'<span class="stat">Adresse</span> pour ne pas chuter en cas de terrain difficile est réduit à 12.
+			</p>
+		</div>
+		
+		<div class="comp">
+			<h4 class="nom">Déplacement en armure</h4>
+			<table class="spec"><tr><td class="left">
+				<span class="specifs"><span class="passive">Action passive</span></span><br />
+				Caractéristique : <span class="stat">Vivacité</span><br />
+				Apprentissage : 20
+			</td><td>
+				Exécution : -<br />
+				Souffle : -<br />
+				Concentration : -
+			</td></tr></table>
+			<p>
+				Le personnage n’est plus ralenti lorsqu’il porte une armure (cf. section équipement).
+			</p>
+		</div>
+		
+		<div class="comp">
+			<h4 class="nom">Replacement stratégique</h4>
+			<table class="spec"><tr><td class="left">
+				Caractéristique : <span class="stat">Vivacité</span><br />
+				Apprentissage : 15
+			</td><td>
+				Exécution : 0<br />
+				Souffle : 1<br />
+				Concentration : -
+			</td></tr></table>
+			<p>
+				Le personnage réalise un déplacement d'une distance maximale égale à 4m. Ce déplacement subit les mêmes modalités que l'action courir quant aux terrains difficiles ou encore à l'action de s'allonger/se relever.
+			</p>
+		</div>
+		
 			<p class="niv2">
 				<n>Niv. 2</n><s title="Souffle">1</s><c title="Concentration">0</c><r title="Exécution">2</r>
 				<e>Si le déplacement du personnage l’amène à portée d’un ennemi et que ce déplacement fait plus de 4m, il peut placer un coup puissant avec un bonus en dégâts de +4. Le temps d'exécution de l'action, le <span class="jauge">Souffle</span> consommé, etc sera alors celui de l'attaque et du déplacement combinés.</e>

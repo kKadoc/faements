@@ -1,94 +1,26 @@
-.comp n, .comp s, .comp c, .comp r , .comp e, .comp ad{
-	
-	display : inline-block;
-	padding : 5px;
+.innee {
+	color :  #31dc6a;
+}
+
+.passive {
+	color : #9ab0d9;
 }
 
 
-.comp s, .comp c, .comp r, .comp ad{
-	cursor : default;
-	
-	color:white;
-	
-	position : relative;
-	top : -3px;
-	
-	float:right;
+.spec {
+	width : 100%;
 }
 
-.comp p {
+.spec td {
+	vertical-align : top;
+}
+
+.spec td:nth-child(2) {
+	text-align : right;
+}
+
+p {
 	border: 1px solid #2d251b;
     background: #090909;
-    padding: 15px;
-	margin : 10px 0:
-}
-
-.comp s:before, .comp r:before, .comp c:before, .comp ad:before {
-	width : 20px;
-	height : 20px;
-	
-	background-size: 20px 20px;
-	display : inline-block;
-	width: 20px; 
-    height: 20px;
-    content:"";
-	margin-right : 5px;
-	
-	position : relative;
-	top : 3px;
-}
-
-.comp s:before {
-	background-image:url(souffle.png);
-}
-
-.comp ad:before {
-	background-image:url(adrenaline.png);
-}
-
-.comp c:before {
-	background-image:url(concentration.png);
-}
-
-.comp r:before {
-	background-image:url(execution.png);
-}
-
-
-.comp s {
-	text-decoration : none;
-}
-
-.comp n {
-	float : left;
-	width : 50px;
-	font-weight : bold;
-	
-	color: #AD835A;
-}
-
-.comp e {
-	display : block;
-	clear :  both;
-}
-
-.comp e ul {
-	display : inline-block;
-}
-
-.stab1 {
-	margin : 10px 0;
-}
-
-.comp .comp_req {
-	color : #00E676;
-}
-
-.comp .comp_spec {
-	color :  orange;
-}
-
-.comp .comp_forbid {
-	color : red;
-	text-decoration: line-through;
+	padding : 15px;
 }
