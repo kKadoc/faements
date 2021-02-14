@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Temps de Faéments</title>
+	<title>Temps de FaÃ©ments</title>
 	<link rel="stylesheet" href="data/faements.css">
 	<link rel="stylesheet" href="data/system.css">
 	<script type="text/javascript" src="data/jquery.min.js"></script>
 	<script type="text/javascript" src="data/animate.js"></script>
 	<script type="text/javascript" src="data/jquery.toc.js"></script>
 </head>
-
 <body>
 	<div id="fastmenu">
 		<div id="menu">
 			<a href="home.html" title="menu"><img src="data/icons/home.png" />Menu</a>
-			<a href="system.html" title="système de jeu" class="current"><img src="data/icons/system.png" />Système de jeu</a>
-			<a href="evolution.html" title="évolution"><img src="data/icons/evolution.png" />Evolution</a>
-			<a href="skills.html" title="compétences"><img src="data/icons/skills.ico" />Compétences</a>
+			<a href="system.html" title="systÃ¨me de jeu" class="current"><img src="data/icons/system.png" />SystÃ¨me de jeu</a>
+			<a href="evolution.html" title="Ã©volution"><img src="data/icons/evolution.png" />Evolution</a>
+			<a href="skills.html" title="compÃ©tences"><img src="data/icons/skills.ico" />CompÃ©tences</a>
 			<a href="spells.html" title="sorts"><img src="data/icons/spells.png" />Sorts</a>
-			<a href="equipment.html" title="équipement"><img src="data/icons/equipment.png" />Equipement</a>
+			<a href="equipment.html" title="Ã©quipement"><img src="data/icons/equipment.png" />Equipement</a>
 			<a href="beasts.html" title="bestiaire"><img src="data/icons/beasts.png" />Bestiaire</a>
 			<a href="aventure.html" title="Aventure"><img src="data/icons/craft.png" />Aventure</a>
 		</div>
@@ -33,49 +32,49 @@
 	<a id="fastnav_trigger" href="#"><img src="data/icons/map.png" /></a>
 	
 	<div id="all">
-		<h1>Temps de Faéments</h1>
+		<h1>Temps de FaÃ©ments</h1>
 
-		<h2>Système de jeu</h2>
+		<h2>SystÃ¨me de jeu</h2>
 		<h3>Conventions</h3>
 		<div class="bloc">
 			<ul>
-				<li>L’écriture xDy comme dans 1D6 signifie « x dés à y faces ». De la même façon 2D8 + 3 signifie « deux dés à 8 faces auxquels on ajoute 3 à leur somme».</li>
-				<li>Un dé à 10 faces prend ses valeurs entre 1 et 10 mais le résultat d’un dé à 100 faces sera compris entre 00 et 99.</li>
-				<li>Les arrondis se feront à l’arrondi le plus proche avec pour convention 0.5 arrondi à 1.</li>
-				<li>Lorsque plusieurs opérations sont à appliquer pour un test ou pour une caractéristiques, appliquer d’abord les multiplications et divisions puis en dernier les additions et soustractions.</li>
+				<li>Lâ€™Ã©criture xDy comme dans 1D6 signifie Â« x dÃ©s Ã  y faces Â». De la mÃªme faÃ§on 2D8 + 3 signifie Â« deux dÃ©s Ã  8 faces auxquels on ajoute 3 Ã  leur sommeÂ».</li>
+				<li>Un dÃ© Ã  10 faces prend ses valeurs entre 1 et 10 mais le rÃ©sultat dâ€™un dÃ© Ã  100 faces sera compris entre 00 et 99.</li>
+				<li>Les arrondis se feront Ã  lâ€™arrondi le plus proche avec pour convention 0.5 arrondi Ã  1.</li>
+				<li>Lorsque plusieurs opÃ©rations sont Ã  appliquer pour un test ou pour une caractÃ©ristiques, appliquer dâ€™abord les multiplications et divisions puis en dernier les additions et soustractions.</li>
 			</ul>
 		</div>
-		<h3>Les caractéristiques</h3>
+		<h3>Les caractÃ©ristiques</h3>
 		<div>
 			<!-- STATISTIQUES -->
 			<div class="note">
-				<b>Extrait des archives du temple d’Islamabad.</b><br /><br />
-«1442 sera surement l’année la plus importante de notre civilisation. Le monde suivait son cours paisiblement, naturellement j’ai envie de dire, mais à cette date deux évènements vinrent bouleverser l’ordre du monde. Personne ne sait réellement si ces deux évènements sont liés même si beaucoup en mettraient leur tête à couper. Ces deux bouleversements sont la découverte de la Magie ainsi que l’apparition en nombre croissant de créatures jusqu’alors inconnues et particulièrement agressives.
-La Magie permis aux hommes de toutes les nations de se développer bien plus rapidement. Leur donnant puissance, connaissance et confort, elle éleva le niveau de vie des populations et fût d’abord accueillie comme une bénédiction. […]
+				<b>Extrait des archives du temple dâ€™Islamabad.</b><br /><br />
+Â«1442 sera surement lâ€™annÃ©e la plus importante de notre civilisation. Le monde suivait son cours paisiblement, naturellement jâ€™ai envie de dire, mais Ã  cette date deux Ã©vÃ¨nements vinrent bouleverser lâ€™ordre du monde. Personne ne sait rÃ©ellement si ces deux Ã©vÃ¨nements sont liÃ©s mÃªme si beaucoup en mettraient leur tÃªte Ã  couper. Ces deux bouleversements sont la dÃ©couverte de la Magie ainsi que lâ€™apparition en nombre croissant de crÃ©atures jusquâ€™alors inconnues et particuliÃ¨rement agressives.
+La Magie permis aux hommes de toutes les nations de se dÃ©velopper bien plus rapidement. Leur donnant puissance, connaissance et confort, elle Ã©leva le niveau de vie des populations et fÃ»t dâ€™abord accueillie comme une bÃ©nÃ©diction. [â€¦]
 <br />
 <br />
-L’apparition des créatures fut moins impressionnante et vite ignorée à cause de l’ampleur de la Magie. Cette dernière qui permit de plus de les tenir à l’écart. Car ces créatures se révélèrent tout de suite incroyablement meurtrières. Elles attaquèrent sans raison les animaux et humains qu’elles croisaient même lorsqu’elles se trouvaient en sous-nombre. Beaucoup se mirent à les craindre, à les chasser et avec l’aide de la magie, à les repousser un moment. Malheureusement, quelques temps plus tard, elles se firent si nombreuses que seules les villes les mieux armées parvinrent à les retenir. Notre temple a la chance de profiter de la protection de la milice de la ville mais je crains que notre sécurité devienne rapidement menacée.
-Les populations fuient les campagnes pour chercher refuge derrière les murs fortifiés de cités. La surpopulation, la perte des récoltes et les attaques incessantes entrainèrent de nombreuses guerres civiles et finalement, ce sont de nombreux peuples qui chutèrent. […]
-Pendant ce temps de nombreux érudits firent des rapprochements entre l’utilisation de plus en plus importante de la magie et le nombre d’attaques toujours croissant. Certaines études montrèrent que les créatures sentaient l’utilisation de la magie et étaient attirées par celle-ci. Sans mesurer les conséquences, ces deux informations furent révélées aux populations ce qui ajouta un nouveau sujet de discorde. Nombreux furent ceux qui souhaitèrent tuer tout pratiquant de la magie tandis que les autres les considéraient plutôt comme leur dernière chance de survie face aux créatures.<br />
+Lâ€™apparition des crÃ©atures fut moins impressionnante et vite ignorÃ©e Ã  cause de lâ€™ampleur de la Magie. Cette derniÃ¨re qui permit de plus de les tenir Ã  lâ€™Ã©cart. Car ces crÃ©atures se rÃ©vÃ©lÃ¨rent tout de suite incroyablement meurtriÃ¨res. Elles attaquÃ¨rent sans raison les animaux et humains quâ€™elles croisaient mÃªme lorsquâ€™elles se trouvaient en sous-nombre. Beaucoup se mirent Ã  les craindre, Ã  les chasser et avec lâ€™aide de la magie, Ã  les repousser un moment. Malheureusement, quelques temps plus tard, elles se firent si nombreuses que seules les villes les mieux armÃ©es parvinrent Ã  les retenir. Notre temple a la chance de profiter de la protection de la milice de la ville mais je crains que notre sÃ©curitÃ© devienne rapidement menacÃ©e.
+Les populations fuient les campagnes pour chercher refuge derriÃ¨re les murs fortifiÃ©s de citÃ©s. La surpopulation, la perte des rÃ©coltes et les attaques incessantes entrainÃ¨rent de nombreuses guerres civiles et finalement, ce sont de nombreux peuples qui chutÃ¨rent. [â€¦]
+Pendant ce temps de nombreux Ã©rudits firent des rapprochements entre lâ€™utilisation de plus en plus importante de la magie et le nombre dâ€™attaques toujours croissant. Certaines Ã©tudes montrÃ¨rent que les crÃ©atures sentaient lâ€™utilisation de la magie et Ã©taient attirÃ©es par celle-ci. Sans mesurer les consÃ©quences, ces deux informations furent rÃ©vÃ©lÃ©es aux populations ce qui ajouta un nouveau sujet de discorde. Nombreux furent ceux qui souhaitÃ¨rent tuer tout pratiquant de la magie tandis que les autres les considÃ©raient plutÃ´t comme leur derniÃ¨re chance de survie face aux crÃ©atures.<br />
 <br />
-La race humaine est désormais sur le déclin. Plus des trois quarts de la population a été tué et les survivants luttent pour trouver une solution. Certains ont trouvé une place dans les rares villes encore habitables mais ils doivent alors faire face à la criminalité et au chaos qui y règnent. Les loyers y sont exorbitants et la milice doit se montrer d’une sévérité extrême pour maintenir un semblant de calme.
+La race humaine est dÃ©sormais sur le dÃ©clin. Plus des trois quarts de la population a Ã©tÃ© tuÃ© et les survivants luttent pour trouver une solution. Certains ont trouvÃ© une place dans les rares villes encore habitables mais ils doivent alors faire face Ã  la criminalitÃ© et au chaos qui y rÃ¨gnent. Les loyers y sont exorbitants et la milice doit se montrer dâ€™une sÃ©vÃ©ritÃ© extrÃªme pour maintenir un semblant de calme.
 <br />
-Les autres, moins fortunés, moins chanceux ou ne supportant pas les restrictions imposées par les cités vivent une vie de nomade. Ne pouvant rester trop longtemps au même endroit, ils se déplacent en caravane plus ou moins bien organisées et vivent de chasse, de pêche et du commerce des biens qu’ils récupèrent dans les ruines. Ils se transforment aussi parfois en chasseurs de primes pour mages car leur capture peut valoir des fortunes auprès de certaines personnes. »
+Les autres, moins fortunÃ©s, moins chanceux ou ne supportant pas les restrictions imposÃ©es par les citÃ©s vivent une vie de nomade. Ne pouvant rester trop longtemps au mÃªme endroit, ils se dÃ©placent en caravane plus ou moins bien organisÃ©es et vivent de chasse, de pÃªche et du commerce des biens quâ€™ils rÃ©cupÃ¨rent dans les ruines. Ils se transforment aussi parfois en chasseurs de primes pour mages car leur capture peut valoir des fortunes auprÃ¨s de certaines personnes. Â»
 			</div>
 			<h4>Les statistiques</h4>
 			<div class="content">
-				Les statistiques permettent de mesurer les capacités physiques du personnage. Elles deviennent définitivement plus élevées au fur et à mesure que le personnage gagne des niveaux et peuvent gagner des bonus/malus temporaires grâce à un sort ou à ue pièce d'équipement.
+				Les statistiques permettent de mesurer les capacitÃ©s physiques du personnage. Elles deviennent dÃ©finitivement plus Ã©levÃ©es au fur et Ã  mesure que le personnage gagne des niveaux et peuvent gagner des bonus/malus temporaires grÃ¢ce Ã  un sort ou Ã  ue piÃ¨ce d'Ã©quipement.
 			</div>
 			<h5>Adresse</h5>
 			<div class="content">
-				L’<span class="stat">Adresse</span> traduit l’habileté et la précision du personnage. C’est la caractéristique utilisée pour attaquer avec précision, tirer à l’arc ou pour opérer avec minutie.
+				Lâ€™<span class="stat">Adresse</span> traduit lâ€™habiletÃ© et la prÃ©cision du personnage. Câ€™est la caractÃ©ristique utilisÃ©e pour attaquer avec prÃ©cision, tirer Ã  lâ€™arc ou pour opÃ©rer avec minutie.
 			</div>
-			<h5>Vivacité</h5>
+			<h5>VivacitÃ©</h5>
 			<div class="content">
-				La <span class="stat">Vivacité</span> représente la vitesse de réaction du personnage. Aussi bien l’analyse de la situation que la mise en mouvement du corps pour y réagir. La <span class="stat">Vivacité</span> permet de porter des coups fulgurants et de réussir de nombreuses esquives.<br />
-				Depuis la <span class="stat">Vivacité</span>, découle la <span class="stat">Réactivité</span> qui traduit la capacité du personnage à enchainer les actions.<br /><br />	
+				La <span class="stat">VivacitÃ©</span> reprÃ©sente la vitesse de rÃ©action du personnage. Aussi bien lâ€™analyse de la situation que la mise en mouvement du corps pour y rÃ©agir. La <span class="stat">VivacitÃ©</span> permet de porter des coups fulgurants et de rÃ©ussir de nombreuses esquives.<br />
+				Depuis la <span class="stat">VivacitÃ©</span>, dÃ©coule la <span class="stat">RÃ©activitÃ©</span> qui traduit la capacitÃ© du personnage Ã  enchainer les actions.<br /><br />	
 				
-				<b>Réactivité</b>
+				<b>RÃ©activitÃ©</b>
 				<table class="tab1">
 					<tr><th>0-10</th><th>11-20</th><th>21-30</th><th>31 et +</th></tr>
 					<tr><td>5</td><td>4</td><td>3</td><td>2</td></tr>
@@ -83,82 +82,82 @@ Les autres, moins fortunés, moins chanceux ou ne supportant pas les restrictions
 			</div>  
 			<h5>Vigueur</h5>
 			<div class="content">
-				Représentant aussi bien la force physique du personnage que la résistance de son organisme, elle lui permet de soulever des objets lourds et de limiter les effets des poisons, de la <span class="jauge">Douleur</span> et des coups. 
-				Elle est indispensable à tout personnage subissant de nombreuses agressions ou voulant porter des coups aux impacts colossaux.<br />
+				ReprÃ©sentant aussi bien la force physique du personnage que la rÃ©sistance de son organisme, elle lui permet de soulever des objets lourds et de limiter les effets des poisons, de la <span class="jauge">Douleur</span> et des coups. 
+				Elle est indispensable Ã  tout personnage subissant de nombreuses agressions ou voulant porter des coups aux impacts colossaux.<br />
 				<br />
-				Trois seuils de blessure dépendent de la <span class="stat">Vigueur</span> : <br /><br />
+				Trois seuils de blessure dÃ©pendent de la <span class="stat">Vigueur</span> : <br /><br />
 				<b>Seuil de blessure superficielle</b> : 2.<br />
-				<b>Seuil de blessure grave</b> : égal à la valeur de la <span class="stat">Vigueur</span>.<br />
-				<b>Seuil de blessure critique</b> : égal à la valeur de la <span class="stat">Vigueur</span> multipliée par 2.
+				<b>Seuil de blessure grave</b> : Ã©gal Ã  la valeur de la <span class="stat">Vigueur</span>.<br />
+				<b>Seuil de blessure critique</b> : Ã©gal Ã  la valeur de la <span class="stat">Vigueur</span> multipliÃ©e par 2.
 			</div>
 			<h5>Prestance</h5>
 			<div class="content">
-				La <span class="stat">Prestance</span> définit la façon dont les gens vont remarquer votre personnage. Une forte <span class="stat">Prestance</span> permettra de faire immédiatement bonne impression et suscitera l’adhésion de votre auditoire à vos idées.
+				La <span class="stat">Prestance</span> dÃ©finit la faÃ§on dont les gens vont remarquer votre personnage. Une forte <span class="stat">Prestance</span> permettra de faire immÃ©diatement bonne impression et suscitera lâ€™adhÃ©sion de votre auditoire Ã  vos idÃ©es.
 			</div>
 			<h5>Intelligence</h5>
 			<div class="content">
-				« Savoir c’est pouvoir ». Ceux qui croient en cette maxime développent leur <span class="stat">Intelligence</span>. Celle-ci traduit les possibilités de raisonnement, la capacité à se souvenir ou encore les facultés à réfléchir vite.<br />
-				Un personnage avec une <span class="stat">Intelligence</span> inférieure à 6 ne sait ni lire ni écrire.
+				Â« Savoir câ€™est pouvoir Â». Ceux qui croient en cette maxime dÃ©veloppent leur <span class="stat">Intelligence</span>. Celle-ci traduit les possibilitÃ©s de raisonnement, la capacitÃ© Ã  se souvenir ou encore les facultÃ©s Ã  rÃ©flÃ©chir vite.<br />
+				Un personnage avec une <span class="stat">Intelligence</span> infÃ©rieure Ã  6 ne sait ni lire ni Ã©crire.
 			</div>
 			<h5>Intuition</h5>
 			<div class="content">
-				Grâce à son <span class="stat">Intuition</span>, le personnage va être capable de sentir les choses avant leur arrivée. Elle l’aidera ainsi à détecter un piège, un mensonge ou les traces de sa proie.
+				GrÃ¢ce Ã  son <span class="stat">Intuition</span>, le personnage va Ãªtre capable de sentir les choses avant leur arrivÃ©e. Elle lâ€™aidera ainsi Ã  dÃ©tecter un piÃ¨ge, un mensonge ou les traces de sa proie.
 			</div>
 			<h5>Bravoure</h5>
 			<div class="content">
-				Sans une <span class="stat">Bravoure</span> suffisament élevée, le personnage fuira à chaque altercation. Ce serait dommage...
+				Sans une <span class="stat">Bravoure</span> suffisament Ã©levÃ©e, le personnage fuira Ã  chaque altercation. Ce serait dommage...
 			</div>
 			
 			<!-- JAUGES -->
 			
 			<h4>Les jauges</h4>
 			<div class="content">
-				Les jauges sont des indicateurs de l'état du personnage. Leurs valeurs évoluent entre 0 et 5 et seront amenées à changer de nombreuses fois au cours d'un combat ou d'une aventure. On distingues trois types de jauges :
+				Les jauges sont des indicateurs de l'Ã©tat du personnage. Leurs valeurs Ã©voluent entre 0 et 5 et seront amenÃ©es Ã  changer de nombreuses fois au cours d'un combat ou d'une aventure. On distingues trois types de jauges :
 				<ul>
-					<li>Les jauges d'énergie : rassemblant la <span class="jauge">Concentration</span>, le <span class="jauge">Souffle</span> et l'<span class="jauge">Adrénaline</span>, ces jauges traduisent les ressources que peut utiliser le personnage. Il est interessant de les garder les plus remplies possible !</li>
-					<li>Les jauges d'alerte de combat : les Blessures, la <span class="jauge">Douleur</span>, le <span class="jauge">Moral</span> et la <span class="jauge">Peur</span>. Ces jauges permettent de mesurer les effets du combat sur le personnage. A surveiller de près sachant que des pénalités apparaissent lorsqu'elles atteignent un seuil critique.</li>
-					<li>Les jauges d'alerte d'aventure : la <span class="jauge">Faim</span>, la <span class="jauge">Fatigue</span> et le <span class="jauge">Froid</span>. Trois variables à garder basses pour s'assurer pour que le personnage reste en pleine possession de ses moyens.</li>
+					<li>Les jauges d'Ã©nergie : rassemblant la <span class="jauge">Concentration</span>, le <span class="jauge">Souffle</span> et l'<span class="jauge">AdrÃ©naline</span>, ces jauges traduisent les ressources que peut utiliser le personnage. Il est interessant de les garder les plus remplies possible !</li>
+					<li>Les jauges d'alerte de combat : les Blessures, la <span class="jauge">Douleur</span>, le <span class="jauge">Moral</span> et la <span class="jauge">Peur</span>. Ces jauges permettent de mesurer les effets du combat sur le personnage. A surveiller de prÃ¨s sachant que des pÃ©nalitÃ©s apparaissent lorsqu'elles atteignent un seuil critique.</li>
+					<li>Les jauges d'alerte d'aventure : la <span class="jauge">Faim</span>, la <span class="jauge">Fatigue</span> et le <span class="jauge">Froid</span>. Trois variables Ã  garder basses pour s'assurer pour que le personnage reste en pleine possession de ses moyens.</li>
 				</ul>
 			</div>
 			
 			<h5>Concentration</h5>
 			<div class="content">
-				Beaucoup d’actions demandent un surplus d’attention afin d’être correctement exécutées. Malheureusement une telle <span class="jauge">Concentration</span> ne peut être conservée indéfiniment. 
+				Beaucoup dâ€™actions demandent un surplus dâ€™attention afin dâ€™Ãªtre correctement exÃ©cutÃ©es. Malheureusement une telle <span class="jauge">Concentration</span> ne peut Ãªtre conservÃ©e indÃ©finiment. 
 				<ul>
-					<li>Au début de chaque tour, le personnage récupère 2 points de <span class="jauge">Concentration</span>.</li>
-					<li>A la fin d'un combat, le personnage récupère tous les points de <span class="jauge">Concentration</span> manquants.</li>
-					<li>Si cette jauge tombe à 0, le personnage gagne un point de <span class="jauge">Fatigue</span> (une seule fois par combat).</li>
+					<li>Au dÃ©but de chaque tour, le personnage rÃ©cupÃ¨re 2 points de <span class="jauge">Concentration</span>.</li>
+					<li>A la fin d'un combat, le personnage rÃ©cupÃ¨re tous les points de <span class="jauge">Concentration</span> manquants.</li>
+					<li>Si cette jauge tombe Ã  0, le personnage gagne un point de <span class="jauge">Fatigue</span> (une seule fois par combat).</li>
 				</ul>
 			</div>
 			<h5>Souffle</h5>
 			<div class="content">
-				Le <span class="jauge">Souffle</span> traduit l’énergie physique nécessaire à réaliser de nombreuses actions. Tout comme la <span class="jauge">Concentration</span>, cette ressource n'est pas infinie.
+				Le <span class="jauge">Souffle</span> traduit lâ€™Ã©nergie physique nÃ©cessaire Ã  rÃ©aliser de nombreuses actions. Tout comme la <span class="jauge">Concentration</span>, cette ressource n'est pas infinie.
 				<ul>
-					<li>Au début de chaque tour, le personnage récupère 2 points de <span class="jauge">Souffle</span>.</li>
-					<li>A la fin d'un combat, le personnage récupère tous les points de <span class="jauge">Souffle</span> manquants.</li>
-					<li>Si cette jauge tombe à 0, le personnage gagne un point de <span class="jauge">Fatigue</span> (une seule fois par combat).</li>
+					<li>Au dÃ©but de chaque tour, le personnage rÃ©cupÃ¨re 2 points de <span class="jauge">Souffle</span>.</li>
+					<li>A la fin d'un combat, le personnage rÃ©cupÃ¨re tous les points de <span class="jauge">Souffle</span> manquants.</li>
+					<li>Si cette jauge tombe Ã  0, le personnage gagne un point de <span class="jauge">Fatigue</span> (une seule fois par combat).</li>
 				</ul>
 			</div>
-			<h5>Adrénaline</h5>
+			<h5>AdrÃ©naline</h5>
 			<div class="content">
-				La ferveur du combat a de quoi rendre électrique le guerrier le plus téméraire. L'<span class="jauge">Adrénaline</span> accumulée lui permettra alors d'ignorer la douleur ou de disposer d'une force exceptionnelle.
+				La ferveur du combat a de quoi rendre Ã©lectrique le guerrier le plus tÃ©mÃ©raire. L'<span class="jauge">AdrÃ©naline</span> accumulÃ©e lui permettra alors d'ignorer la douleur ou de disposer d'une force exceptionnelle.
 				<ul>
-					<li>Le personnage gagne un point d'<span class="jauge">Adrénaline</span> à chaque blessure subie ainsi qu'à chaque ennemi abattu.</li>
-					<li>Le personnage perd un point d'<span class="jauge">Adrénaline</span> à chaque fois qu'il gagne un point de <span class="jauge">Fatigue</span>.</li>
-					<li>Avant de réaliser un test de résistance à la <span class="jauge">Douleur</span> le personnage peut dépenser 1 point d'<span class="jauge">Adrénaline</span> pour lancer deux dés et choisir parmi les deux résultats.</li>
-					<li>Avant de réaliser une action, le personnage peut dépenser un point d'<span class="jauge">Adrénaline</span> pour gagner un bonus de +5 à une statistique pour la durée de l'action.</li>
-					<li>A la fin d'un combat, le personnage perd tous ses points d'<span class="jauge">Adrénaline</span>.</li>
+					<li>Le personnage gagne un point d'<span class="jauge">AdrÃ©naline</span> Ã  chaque blessure subie ainsi qu'Ã  chaque ennemi abattu.</li>
+					<li>Le personnage perd un point d'<span class="jauge">AdrÃ©naline</span> Ã  chaque fois qu'il gagne un point de <span class="jauge">Fatigue</span>.</li>
+					<li>Avant de rÃ©aliser un test de rÃ©sistance Ã  la <span class="jauge">Douleur</span> le personnage peut dÃ©penser 1 point d'<span class="jauge">AdrÃ©naline</span> pour lancer deux dÃ©s et choisir parmi les deux rÃ©sultats.</li>
+					<li>Avant de rÃ©aliser une action, le personnage peut dÃ©penser un point d'<span class="jauge">AdrÃ©naline</span> pour gagner un bonus de +5 Ã  une statistique pour la durÃ©e de l'action.</li>
+					<li>A la fin d'un combat, le personnage perd tous ses points d'<span class="jauge">AdrÃ©naline</span>.</li>
 				</ul>
 			</div>
 			
 			<h5>Blessures</h5>
 			<div class="content">
-				Pouvant se remplir jusqu'à 5 points, ces jauges tiennent le compte des assauts subis par le personnage. Il existe 6 jauges de blessures réparties sur l'ensemble du corps (la tête, le torse, le bras gauche, le bras droit, la jambe gauche et la jambe droite). Lorsqu'une attaque atteint le personnage si les dégâts subis (après réduction d'armure, compétences, ...) sont supérieurs à un seuil de blessure, une blessure de son type est ajoutée.
+				Pouvant se remplir jusqu'Ã  5 points, ces jauges tiennent le compte des assauts subis par le personnage. Il existe 6 jauges de blessures rÃ©parties sur l'ensemble du corps (la tÃªte, le torse, le bras gauche, le bras droit, la jambe gauche et la jambe droite). Lorsqu'une attaque atteint le personnage si les dÃ©gÃ¢ts subis (aprÃ¨s rÃ©duction d'armure, compÃ©tences, ...) sont supÃ©rieurs Ã  un seuil de blessure, une blessure de son type est ajoutÃ©e.
 				Les blessures sont de trois sortes :
 				<ul>
-					<li>Superficielles : correspondant aux deux premiers points de la jauge. Simples avertissements, ces blessures n'ont pas d'effet sur le personnage. Attention cependant, si le personnage a déjà subit 2 blessures superficielles, la prochaine blessure superficielle sera automatiquement transformée en blessure grave.</li>
-					<li>Graves : les deux points suivants dans la jauge. Ce coup-ci ces blessures sont à prendre au sérieux car elles infligent des malus au personnage. Ces malus seront présents jusqu'à ce que la blessure soit soignée. Comme pour les blessures superficielles, si le personnage a déjà subi 2 blessures graves, la suivante sera transformée en critique.</li>
-					<li>Critiques : le dernier point de la jauge. Le personnage sera dans un sale état suite à ces blessures. Une blessure critique inflige un effet temporaire jusqu'à ce qu'elle soit soignée, ainsi qu'un malus permanent qui ne pourra être soigné. Si le personnage cumule 3 blessures critiques sur son corps, il meurt. Une fois qu'une jauge de blessure est remplie pour une zone, un nouvel assaut ne se traduit pas par une nouvelle blessure mais donne lieu au test de <span class="jauge">Douleur</span> associé (considéré comme provenant d'une blessure critique).</li>
+					<li>Superficielles : correspondant aux deux premiers points de la jauge. Simples avertissements, ces blessures n'ont pas d'effet sur le personnage. Attention cependant, si le personnage a dÃ©jÃ  subit 2 blessures superficielles, la prochaine blessure superficielle sera automatiquement transformÃ©e en blessure grave.</li>
+					<li>Graves : les deux points suivants dans la jauge. Ce coup-ci ces blessures sont Ã  prendre au sÃ©rieux car elles infligent des malus au personnage. Ces malus seront prÃ©sents jusqu'Ã  ce que la blessure soit soignÃ©e. Comme pour les blessures superficielles, si le personnage a dÃ©jÃ  subi 2 blessures graves, la suivante sera transformÃ©e en critique.</li>
+					<li>Critiques : le dernier point de la jauge. Le personnage sera dans un sale Ã©tat suite Ã  ces blessures. Une blessure critique inflige un effet temporaire jusqu'Ã  ce qu'elle soit soignÃ©e, ainsi qu'un malus permanent qui ne pourra Ãªtre soignÃ©. Si le personnage cumule 3 blessures critiques sur son corps, il meurt. Une fois qu'une jauge de blessure est remplie pour une zone, un nouvel assaut ne se traduit pas par une nouvelle blessure mais donne lieu au test de <span class="jauge">Douleur</span> associÃ© (considÃ©rÃ© comme provenant d'une blessure critique).</li>
 				</ul>
 				
 				<b>Tableau des blessures</b><br />
@@ -166,93 +165,93 @@ Les autres, moins fortunés, moins chanceux ou ne supportant pas les restrictions
 				<table>
 					<tr><th>Zone</th><th></th><th>Blessure grave</th><th>Blessure critique</th></tr>
 					<tr>
-						<td rowspan="3">Tête</td>
+						<td rowspan="3">TÃªte</td>
 						<td>1</td>
-						<td>Commotion : -2 <span class="stat">Intelligence</span> et <span class="stat">Vivacité</span> et <span class="etat">sonné</span> pour 1D6 tours</td>
+						<td>Commotion : -2 <span class="stat">Intelligence</span> et <span class="stat">VivacitÃ©</span> et <span class="etat">sonnÃ©</span> pour 1D6 tours</td>
 						<td>Mort
 						<br />
 						<b>Effet permanent</b> : cf. ci-dessus</td>
 					</tr>
 					<tr>
 						<td>2</td>
-						<td>Désorienté : -6 <span class="stat">Perception</span> et <span class="etat">sonné</span> pour 1D3 tours</td>
-						<td><span class="etat">Évanoui</span> pour 1D10 tours
+						<td>DÃ©sorientÃ© : -6 <span class="stat">Perception</span> et <span class="etat">sonnÃ©</span> pour 1D3 tours</td>
+						<td><span class="etat">Ã‰vanoui</span> pour 1D10 tours
 						<br />
-						<b>Effet permanent</b> Défiguré : -2 en <span class="stat">Prestance</span></td>
+						<b>Effet permanent</b> DÃ©figurÃ© : -2 en <span class="stat">Prestance</span></td>
 					</tr>
 					<tr>
 						<td>3</td>
-						<td>Chair à vif : -5 aux prochains tests de résistance à la <span class="jauge">Douleur</span> pour une blessure subie à la tête.</td>
-						<td><span class="etat">Évanoui</span> pour 1D10 tours
+						<td>Chair Ã  vif : -5 aux prochains tests de rÃ©sistance Ã  la <span class="jauge">Douleur</span> pour une blessure subie Ã  la tÃªte.</td>
+						<td><span class="etat">Ã‰vanoui</span> pour 1D10 tours
 						<br />
-						<b>Effet permanent</b> Amnésie : le personnage oublie 1 compétence (non innée) choisie au hasard.</td>
+						<b>Effet permanent</b> AmnÃ©sie : le personnage oublie 1 compÃ©tence (non innÃ©e) choisie au hasard.</td>
 					</tr>
 					
 					<tr>
 						<td rowspan="3">Torse</td>
 						<td>1</td>
-						<td>Souffle coupé : jauge de <span class="jauge">Souffle</span> vidée et valeur maximale réduite de 1</td>
+						<td>Souffle coupÃ© : jauge de <span class="jauge">Souffle</span> vidÃ©e et valeur maximale rÃ©duite de 1</td>
 						<td>Mort
 						<br />
 						<b>Effet permanent</b> : cf. ci-dessus</td>
 					</tr>
 					<tr>
 						<td>2</td>
-						<td>Côte fracturée : -2 en <span class="stat">Vigueur</span></td>
-						<td><span class="etat">Évanoui</span> pour 1D10 tours
+						<td>CÃ´te fracturÃ©e : -2 en <span class="stat">Vigueur</span></td>
+						<td><span class="etat">Ã‰vanoui</span> pour 1D10 tours
 						<br />
-						<b>Effet permanent</b> Torse enfoncé : -2 en <span class="stat">Vigueur</span></td>
+						<b>Effet permanent</b> Torse enfoncÃ© : -2 en <span class="stat">Vigueur</span></td>
 					</tr>
 					<tr>
 						<td>3</td>
-						<td>Chair à vif : -5 aux prochains tests de résistance à la <span class="jauge">Douleur</span> pour une blessure subie au torse.</td>
-						<td><span class="etat">Évanoui</span> pour 1D10 tours
+						<td>Chair Ã  vif : -5 aux prochains tests de rÃ©sistance Ã  la <span class="jauge">Douleur</span> pour une blessure subie au torse.</td>
+						<td><span class="etat">Ã‰vanoui</span> pour 1D10 tours
 						<br />
-						<b>Effet permanent</b> Estomac perforé : la récupération des points de <span class="jauge">Faim</span> est divisée par 2</td>
+						<b>Effet permanent</b> Estomac perforÃ© : la rÃ©cupÃ©ration des points de <span class="jauge">Faim</span> est divisÃ©e par 2</td>
 					</tr>
 					
 					<tr>
 						<td rowspan="3">Bras</td>
 						<td>1</td>
-						<td>Poignet foulé : -5 à toutes les actions basées sur l'<span class="stat">Adresse</td>
-						<td>Poignet fracturé : aucune compétence active sur l'<span class="stat">Adresse</span> ne peut être utilisée.
+						<td>Poignet foulÃ© : -5 Ã  toutes les actions basÃ©es sur l'<span class="stat">Adresse</td>
+						<td>Poignet fracturÃ© : aucune compÃ©tence active sur l'<span class="stat">Adresse</span> ne peut Ãªtre utilisÃ©e.
 						<br />
-						<b>Effet permanent</b> : -3 à tous les tests d'apprentissage sur les compétences de coup</td>
+						<b>Effet permanent</b> : -3 Ã  tous les tests d'apprentissage sur les compÃ©tences de coup</td>
 					</tr>
 					<tr>
 						<td>2</td>
-						<td>Doigt cassé : -2 en <span class="stat">Adresse</span></td>
-						<td>Doigt arraché : le personnage gagne automatiquement un point de <span class="jauge">Peur</span> et de <span class="jauge">Douleur</span>
+						<td>Doigt cassÃ© : -2 en <span class="stat">Adresse</span></td>
+						<td>Doigt arrachÃ© : le personnage gagne automatiquement un point de <span class="jauge">Peur</span> et de <span class="jauge">Douleur</span>
 						<br />
-						<b>Effet permanent</b> <span class="jauge">Douleur</span> du membre fantome : chaque jet de repos avec un résultat de 1 ou 2 ne donne aucun repos au personnage</td>
+						<b>Effet permanent</b> <span class="jauge">Douleur</span> du membre fantome : chaque jet de repos avec un rÃ©sultat de 1 ou 2 ne donne aucun repos au personnage</td>
 					</tr>
 					<tr>
 						<td>3</td>
-						<td>Chair à vif : -5 aux prochains tests de résistance à la <span class="jauge">Douleur</span> pour une blessure subie sur ce bras.</span></td>
-						<td>Fracture ouverte : le bras ne peut plus être utilisé et lache ce qu'il tenait
+						<td>Chair Ã  vif : -5 aux prochains tests de rÃ©sistance Ã  la <span class="jauge">Douleur</span> pour une blessure subie sur ce bras.</span></td>
+						<td>Fracture ouverte : le bras ne peut plus Ãªtre utilisÃ© et lache ce qu'il tenait
 						<br />
-						<b>Effet permanent</b> : à chaque jet de dé d'attaque avec cette main qui donne un résultat de 1, le personnage subit une blessure superficielle</td>
+						<b>Effet permanent</b> : Ã  chaque jet de dÃ© d'attaque avec cette main qui donne un rÃ©sultat de 1, le personnage subit une blessure superficielle</td>
 					</tr>
 					
 					<tr>
 						<td rowspan="3">Jambe</td>
 						<td>1</td>
-						<td>Déchirure : -5 à toutes les actions basées sur la <span class="stat">Vigueur</span></td>
-						<td>Cheville fracturée : -3 en déplacement
+						<td>DÃ©chirure : -5 Ã  toutes les actions basÃ©es sur la <span class="stat">Vigueur</span></td>
+						<td>Cheville fracturÃ©e : -3 en dÃ©placement
 						<br />
-						<b>Effet permanent</b> : -3 à tous les tests d'apprentissage sur les compétences de <span class="stat">Vigueur</span></td>
+						<b>Effet permanent</b> : -3 Ã  tous les tests d'apprentissage sur les compÃ©tences de <span class="stat">Vigueur</span></td>
 					</tr>
 					<tr>
 						<td>2</td>
-						<td>Entorse : -2 en déplacement</td>
-						<td>Genou disloqué : le personnage s'écroule et la jambe ne peut être utilisée
+						<td>Entorse : -2 en dÃ©placement</td>
+						<td>Genou disloquÃ© : le personnage s'Ã©croule et la jambe ne peut Ãªtre utilisÃ©e
 						<br />
-						<b>Effet permanent</b> : -2 en déplacement</td>
+						<b>Effet permanent</b> : -2 en dÃ©placement</td>
 					</tr>
 					<tr>
 						<td>3</td>
-						<td>Chair à vif : -5 aux prochains tests de résistance à la <span class="jauge">Douleur</span> pour une blessure subie sur cette jambe</span></td> 
-						<td>Hémorragie : si pas de soin reçu pendant 3D3 tours, le personnage meurt.
+						<td>Chair Ã  vif : -5 aux prochains tests de rÃ©sistance Ã  la <span class="jauge">Douleur</span> pour une blessure subie sur cette jambe</span></td> 
+						<td>HÃ©morragie : si pas de soin reÃ§u pendant 3D3 tours, le personnage meurt.
 						<br />
 						<b>Effet permanent</b> : -2 en <span class="stat">Vigueur</span></td>
 					</tr>
@@ -261,13 +260,13 @@ Les autres, moins fortunés, moins chanceux ou ne supportant pas les restrictions
 			
 			<h5>Douleur</h5>
 			<div class="content">
-				Impossible de subir toutes les attaques sans broncher. Vient un certain point où même le personnage le plus résistant viendra à craindre la douleur. A chaque blessure subie, le personnage doit réussir un test de <span class="stat">Vigueur</span> ou gagner des points de <span class="jauge">Douleur</span> selon la table suivante :<br /><br />
+				Impossible de subir toutes les attaques sans broncher. Vient un certain point oÃ¹ mÃªme le personnage le plus rÃ©sistant viendra Ã  craindre la douleur. A chaque blessure subie, le personnage doit rÃ©ussir un test de <span class="stat">Vigueur</span> ou gagner des points de <span class="jauge">Douleur</span> selon la table suivante :<br /><br />
 				<table>
 					<tr>
-						<th>Type de blessure</th><th>Seuil du test</th><th>Points de <span class="jauge">Douleur</span> en cas d'échec</th>
+						<th>Type de blessure</th><th>Seuil du test</th><th>Points de <span class="jauge">Douleur</span> en cas d'Ã©chec</th>
 					</tr>
 					<tr>
-						<td>Légère</td><td>25</td><td>1</td>
+						<td>LÃ©gÃ¨re</td><td>25</td><td>1</td>
 					</tr>
 					<tr>
 						<td>Grave</td><td>30</td><td>2</td>
@@ -278,7 +277,7 @@ Les autres, moins fortunés, moins chanceux ou ne supportant pas les restrictions
 				</table>
 				<br />
 				<ul>
-					<li>Si le personnage a 5 points de <span class="jauge">Douleur</span>, il tombe <span class="etat">Évanoui</span> pour 2D10 tours. A son réveil, il perd 1 point de <span class="jauge">Douleur</span>.</li>
+					<li>Si le personnage a 5 points de <span class="jauge">Douleur</span>, il tombe <span class="etat">Ã‰vanoui</span> pour 2D10 tours. A son rÃ©veil, il perd 1 point de <span class="jauge">Douleur</span>.</li>
 					<li>A la fin d'un combat, le personnage perd tous ses points de <span class="jauge">Douleur</span> sauf :
 						<ul>
 							<li>1 s'il a une blessure grave</li>
@@ -289,159 +288,159 @@ Les autres, moins fortunés, moins chanceux ou ne supportant pas les restrictions
 			</div>
 			
 			<h5>Peur</h5>
-			La peur est omniprésente sur le champ de bataille. Reste que seuls les meilleurs aventuriers savent la dompter efficacement.
+			La peur est omniprÃ©sente sur le champ de bataille. Reste que seuls les meilleurs aventuriers savent la dompter efficacement.
 			<div class="content">
 				<ul>
-					<li>A chaque fois que le personnage décide de ne pas parer ou esquiver une attaque qui lui est destinée, il doit réussir un test de <span class="stat">Bravoure</span> à 20 ou gagner un point de <span class="jauge">Peur</span>.</li>
-					<li>Si le personnage a 5 points de <span class="jauge">Peur</span>, il fuit en ligne droite celui qui a généré le dernier point de <span class="jauge">Peur</span>. Il continuera sa fuite à chaque tour jusqu'à ce qu'il réussisse un test de <span class="stat">Bravoure</span> et perde alors 1 point de <span class="jauge">Peur</span></li>
-					<li>Si le personnage passe un tour sans agir, il peut retirer un point de <span class="jauge">Peur</span> en réussissant un test de <span class="stat">Bravoure</span> à 20.</li>
+					<li>A chaque fois que le personnage dÃ©cide de ne pas parer ou esquiver une attaque qui lui est destinÃ©e, il doit rÃ©ussir un test de <span class="stat">Bravoure</span> Ã  20 ou gagner un point de <span class="jauge">Peur</span>.</li>
+					<li>Si le personnage a 5 points de <span class="jauge">Peur</span>, il fuit en ligne droite celui qui a gÃ©nÃ©rÃ© le dernier point de <span class="jauge">Peur</span>. Il continuera sa fuite Ã  chaque tour jusqu'Ã  ce qu'il rÃ©ussisse un test de <span class="stat">Bravoure</span> et perde alors 1 point de <span class="jauge">Peur</span></li>
+					<li>Si le personnage passe un tour sans agir, il peut retirer un point de <span class="jauge">Peur</span> en rÃ©ussissant un test de <span class="stat">Bravoure</span> Ã  20.</li>
 					<li>A la fin d'un combat, le personnage perd tous ses points de <span class="jauge">Peur</span></li>
 				</ul>
 			</div>
 			
 			<h5>Moral</h5>
-			Souvent le dernier rempart contre l'abandon, un moral élevé sera propice aux plus grands exploits.
+			Souvent le dernier rempart contre l'abandon, un moral Ã©levÃ© sera propice aux plus grands exploits.
 			<div class="content">
 				<ul>
-					<li>Si le personnage a 0 point de <span class="jauge">Moral</span>, il subit un malus de -1 à tous ses jets (ne s'applique que sur les dés à 20 faces, le résultat ne peut descendre en dessous de 1).<br />De plus il ne peut utiliser d'action héroïque.</li>
-					<li>Si le personnage a 5 points de <span class="jauge">Moral</span>, il gagne un bonus de +2 à tous ses jets (ne s'applique que sur les dés à 20 faces, le résultat ne peut monter au dessus de 20.).<br />De plus toute action héroïque utilisée a 1 chance sur 3 de ne pas dépenser le point d'action héroïque.</li>
-					<li>Si le personnage obtient un résultat de 1 sur un D20 il perd 1 point de <span class="jauge">Moral</span>.</li>
-					<li>Si un allié meurt, le personnage perd 2 points de <span class="jauge">Moral</span>.</li>
-					<li>Si le personnage obtient un résultat de 20 sur un D20, il gagne 1 point de <span class="jauge">Moral</span>.</li>
+					<li>Si le personnage a 0 point de <span class="jauge">Moral</span>, il subit un malus de -1 Ã  tous ses jets (ne s'applique que sur les dÃ©s Ã  20 faces, le rÃ©sultat ne peut descendre en dessous de 1).<br />De plus il ne peut utiliser d'action hÃ©roÃ¯que.</li>
+					<li>Si le personnage a 5 points de <span class="jauge">Moral</span>, il gagne un bonus de +2 Ã  tous ses jets (ne s'applique que sur les dÃ©s Ã  20 faces, le rÃ©sultat ne peut monter au dessus de 20.).<br />De plus toute action hÃ©roÃ¯que utilisÃ©e a 1 chance sur 3 de ne pas dÃ©penser le point d'action hÃ©roÃ¯que.</li>
+					<li>Si le personnage obtient un rÃ©sultat de 1 sur un D20 il perd 1 point de <span class="jauge">Moral</span>.</li>
+					<li>Si un alliÃ© meurt, le personnage perd 2 points de <span class="jauge">Moral</span>.</li>
+					<li>Si le personnage obtient un rÃ©sultat de 20 sur un D20, il gagne 1 point de <span class="jauge">Moral</span>.</li>
 				</ul>
 			</div>
 			
 			<h5>Faim</h5>
 			<div class="content">
 				<ul>
-					<li>2 points de <span class="jauge">Faim</span> sont générés par journée.</li>
-					<li>Un repas correct réduit de 2 points la <span class="jauge">Faim</span>.</li>
+					<li>2 points de <span class="jauge">Faim</span> sont gÃ©nÃ©rÃ©s par journÃ©e.</li>
+					<li>Un repas correct rÃ©duit de 2 points la <span class="jauge">Faim</span>.</li>
 					<li>Si le personnage a au moins 4 points en <span class="jauge">Faim</span>, il gagne 1 point en <span class="jauge">Fatigue</span>. Il continuera a en gagner 1 point toutes les deux heures.</li>
-					<li>Si le personnage a 5 points en <span class="jauge">Faim</span>, il devient <span class="etat">Évanoui</span> pendant 1D10 minutes et ne peut agir tant qu'il n'a pas mangé quelque chose.</li>
+					<li>Si le personnage a 5 points en <span class="jauge">Faim</span>, il devient <span class="etat">Ã‰vanoui</span> pendant 1D10 minutes et ne peut agir tant qu'il n'a pas mangÃ© quelque chose.</li>
 				</ul>
 			</div>
 			
 			<h5>Fatigue</h5>
 			<div class="content">
 				<ul>
-					<li>2 points de <span class="jauge">Fatigue</span> sont générés par journée.</li>
-					<li>Se reposer permet de réduire les points de <span class="jauge">Fatigue</span> (cf. repos).</li>
-					<li>Si le personnage a au moins 4 points en <span class="jauge">Fatigue</span>, il ne peut plus utiliser ses capacités à leur plein potentiel. Toutes ses compétences perdent 1 niveau jusqu'à ce que le personnage ne se repose. Les actions innées ne peuvent descendre en dessous de 1 mais les autres compétences le peuvent et devenir ainsi inutilisables.</li>
-					<li>Si le personnage a au moins 5 points de <span class="jauge">Fatigue</span>, toutes ses caractéristiques sont descendues à 5.</li>
+					<li>2 points de <span class="jauge">Fatigue</span> sont gÃ©nÃ©rÃ©s par journÃ©e.</li>
+					<li>Se reposer permet de rÃ©duire les points de <span class="jauge">Fatigue</span> (cf. repos).</li>
+					<li>Si le personnage a au moins 4 points en <span class="jauge">Fatigue</span>, il ne peut plus utiliser ses capacitÃ©s Ã  leur plein potentiel. Toutes ses compÃ©tences perdent 1 niveau jusqu'Ã  ce que le personnage ne se repose. Les actions innÃ©es ne peuvent descendre en dessous de 1 mais les autres compÃ©tences le peuvent et devenir ainsi inutilisables.</li>
+					<li>Si le personnage a au moins 5 points de <span class="jauge">Fatigue</span>, toutes ses caractÃ©ristiques sont descendues Ã  5.</li>
 				</ul>
 			</div>
 			
 			<h5>Froid</h5>
 			<div class="content">
 				<ul>
-					<li>Si le personnage a au moins 4 points en <span class="jauge">Froid</span>, il doit relancer tous ses tests de caractéristiques réussis.</li>
-					<li>Si le personnage a 5 points en <span class="jauge">Froid</span>, il s'évanouit jusqu'à être réchauffé. S'il n'est pas réchauffé en moins de 2 heures, le personnage meurt.</li>
+					<li>Si le personnage a au moins 4 points en <span class="jauge">Froid</span>, il doit relancer tous ses tests de caractÃ©ristiques rÃ©ussis.</li>
+					<li>Si le personnage a 5 points en <span class="jauge">Froid</span>, il s'Ã©vanouit jusqu'Ã  Ãªtre rÃ©chauffÃ©. S'il n'est pas rÃ©chauffÃ© en moins de 2 heures, le personnage meurt.</li>
 				</ul>
 			</div>
 
-			<h4>Les tests de caractéristiques</h4>
+			<h4>Les tests de caractÃ©ristiques</h4>
 			<div class="content">
-				De nombreuses actions demanderont à votre personnage de réussir un test selon une caractéristique avec un seuil cible Par exemple un test d'<span class="stat">Adresse</span> à 20.<br />
-				Pour ce faire, lancer un D20 et additionner la valeur de caractéristique du personnage. Si le résultat est supérieur ou égal au seuil indiqué, le test est un succès.<br />
+				De nombreuses actions demanderont Ã  votre personnage de rÃ©ussir un test selon une caractÃ©ristique avec un seuil cible Par exemple un test d'<span class="stat">Adresse</span> Ã  20.<br />
+				Pour ce faire, lancer un D20 et additionner la valeur de caractÃ©ristique du personnage. Si le rÃ©sultat est supÃ©rieur ou Ã©gal au seuil indiquÃ©, le test est un succÃ¨s.<br />
 				<br />
 				Seuils classiques :
 				<ul>
-					<li><b>10 : </b>test enfantin (se souvenir d'un évènement de la veille, lancer un objet à quelqu'un de proche, ...)</li>
-					<li><b>20 : </b>un minimum de concentration est nécessaire pour un personnage débutant mais l'expérience rendra bientôt le test facile. (tirer à l'arc, nager 25m en apnée, ...)</li>
+					<li><b>10 : </b>test enfantin (se souvenir d'un Ã©vÃ¨nement de la veille, lancer un objet Ã  quelqu'un de proche, ...)</li>
+					<li><b>20 : </b>un minimum de concentration est nÃ©cessaire pour un personnage dÃ©butant mais l'expÃ©rience rendra bientÃ´t le test facile. (tirer Ã  l'arc, nager 25m en apnÃ©e, ...)</li>
 					<li><b>30 : </b>un test qui n'est pas accessible au premier venu.</li>
-					<li><b>40 : </b>un test particulièrement ardu. Mieux vaut se préparer avant de le tenter.</li>
+					<li><b>40 : </b>un test particuliÃ¨rement ardu. Mieux vaut se prÃ©parer avant de le tenter.</li>
 					<li><b>50 : </b>Est-ce seulement possible !?</li>
 				</ul>
 			</div>
 			
-			<h4>Les duels de caractéristiques</h4>
+			<h4>Les duels de caractÃ©ristiques</h4>
 			<div class="content">
-				Ces duels permettent de mettre en comparaison les caractéristiques de deux personnages. Pour réaliser un duel sur une caractéristique, chaque personnage effectue un test de caractéristique. Le plus haut résultat l'emporte. En cas d'égalité, c'est le personnage à l'origine du duel qui l'emporte.<br />
+				Ces duels permettent de mettre en comparaison les caractÃ©ristiques de deux personnages. Pour rÃ©aliser un duel sur une caractÃ©ristique, chaque personnage effectue un test de caractÃ©ristique. Le plus haut rÃ©sultat l'emporte. En cas d'Ã©galitÃ©, c'est le personnage Ã  l'origine du duel qui l'emporte.<br />
 			</div>
 		</div>
 		
-		<h3>Actions héroïques</h3>
+		<h3>Actions hÃ©roÃ¯ques</h3>
 		<div class="content">
-			Même s'il ne le sait pas encore, votre personnage est promis à une destinée hors du commun. Et rien de mieux pour y accéder que quelques actions héroïques bien placées. A n'importe quel moment de la partie, le joueur pourra décider de réaliser une action héroïque. A ce moment là, le jet de dé nécessaire à la réalisation de l'action (quelle que soit la difficulté) sera réussi ! De quoi ouvrir de belles perspectives. <br />Le personnage peut également décider d'utiliser une action héroïque pour déplacer sa position sur la barre des temps de 1 à 4 points.<br /><br />Bien sûr, ce genre d'action est très rare, et le nombre d'actions héroïques disponibles à la charge du MJ. Une bonne méthode consiste à accorder en début de séance 1D3 actions héroïques par personnage.
+			MÃªme s'il ne le sait pas encore, votre personnage est promis Ã  une destinÃ©e hors du commun. Et rien de mieux pour y accÃ©der que quelques actions hÃ©roÃ¯ques bien placÃ©es. A n'importe quel moment de la partie, le joueur pourra dÃ©cider de rÃ©aliser une action hÃ©roÃ¯que. A ce moment lÃ , le jet de dÃ© nÃ©cessaire Ã  la rÃ©alisation de l'action (quelle que soit la difficultÃ©) sera rÃ©ussi ! De quoi ouvrir de belles perspectives. <br />Le personnage peut Ã©galement dÃ©cider d'utiliser une action hÃ©roÃ¯que pour dÃ©placer sa position sur la barre des temps de 1 Ã  4 points.<br /><br />Bien sÃ»r, ce genre d'action est trÃ¨s rare, et le nombre d'actions hÃ©roÃ¯ques disponibles Ã  la charge du MJ. Une bonne mÃ©thode consiste Ã  accorder en dÃ©but de sÃ©ance 1D3 actions hÃ©roÃ¯ques par personnage.
 		</div>
 
-		<h3>Déroulement du jeu</h3>
+		<h3>DÃ©roulement du jeu</h3>
 		<div>
 			<h4>Barre de temps</h4>
 			<div class="content">
-				La barre de temps représente l'avancement du combat dans le temps. Au début du combat elle est à 0 et ne cessera de progresser.
+				La barre de temps reprÃ©sente l'avancement du combat dans le temps. Au dÃ©but du combat elle est Ã  0 et ne cessera de progresser.
 			</div>
 			<h4>Tour de jeu</h4>
 			<div class="content">
-				Au cours de l'aventure, il sera souvent fait référence à des actions ayant des effets sur plusieurs tours. Il sera fait référence au tour de jeu qui représente est une tranche de 10 points de la barre de temps.
-				<br />Ainsi si un personnage est <span class="etat">sonné</span> au temps 24 pour 3 tours, il pourra jouer dès qu'on aura dépassé le temps 54.
-				<br />De même si un mage lance au temps 5 un sort produisant ses effets au début de chaque tour, les effets seront appliqués en même temps et pour tout le monde dès qu'on aura franchi 15, 25, etc.
+				Au cours de l'aventure, il sera souvent fait rÃ©fÃ©rence Ã  des actions ayant des effets sur plusieurs tours. Il sera fait rÃ©fÃ©rence au tour de jeu qui reprÃ©sente est une tranche de 10 points de la barre de temps.
+				<br />Ainsi si un personnage est <span class="etat">sonnÃ©</span> au temps 24 pour 3 tours, il pourra jouer dÃ¨s qu'on aura dÃ©passÃ© le temps 54.
+				<br />De mÃªme si un mage lance au temps 5 un sort produisant ses effets au dÃ©but de chaque tour, les effets seront appliquÃ©s en mÃªme temps et pour tout le monde dÃ¨s qu'on aura franchi 15, 25, etc.
 			</div>
-			<h4>Débuter un combat</h4>
+			<h4>DÃ©buter un combat</h4>
 			<div class="content">
-				Chaque personnage dispose de sa <span class="stat">Réactivité</span>. Celle-ci traduit la capacité à enchainer les actions et à réagir promptement en combat.
-				Au début du combat, chaque personnage se place sur la barre des temps au niveau de sa <span class="stat">Réactivité</span>.
-				Par exemple un personnage avec 3 de <span class="stat">Réactivité</span> jouera lorsque la barre de temps passera 3.
+				Chaque personnage dispose de sa <span class="stat">RÃ©activitÃ©</span>. Celle-ci traduit la capacitÃ© Ã  enchainer les actions et Ã  rÃ©agir promptement en combat.
+				Au dÃ©but du combat, chaque personnage se place sur la barre des temps au niveau de sa <span class="stat">RÃ©activitÃ©</span>.
+				Par exemple un personnage avec 3 de <span class="stat">RÃ©activitÃ©</span> jouera lorsque la barre de temps passera 3.
 			</div>
 			<h4>A qui de jouer ?</h4>
 			<div class="content">
-				Une fois le combat débuté, les joueurs joueront les uns après les autres selon leur ordre de la barre de temps (le plus petit joue en premier). En cas d'égalité, c'est celui ayant la plus grande <span class="stat">Vivacité</span> qui commence.
-				Un personnage doit jouer à ce moment là. Même s'il ne fait aucune action, il continuera à progresser dans la barre de temps.
+				Une fois le combat dÃ©butÃ©, les joueurs joueront les uns aprÃ¨s les autres selon leur ordre de la barre de temps (le plus petit joue en premier). En cas d'Ã©galitÃ©, c'est celui ayant la plus grande <span class="stat">VivacitÃ©</span> qui commence.
+				Un personnage doit jouer Ã  ce moment lÃ . MÃªme s'il ne fait aucune action, il continuera Ã  progresser dans la barre de temps.
 			</div>
 			<h4>Avancer dans la barre de temps</h4>
 			<div class="content">
-				Dès qu'un personnage achève son action, il progresse dans la barre de temps de son score de <span class="stat">Réactivité</span> + temps d'exécution de l'action. A noter que si le personnage décide de "ne rien faire", son action a un temps de 0 et n'avance sur la barre de temps que de la valeur de sa <span class="stat">Réactivité</span>.
+				DÃ¨s qu'un personnage achÃ¨ve son action, il progresse dans la barre de temps de son score de <span class="stat">RÃ©activitÃ©</span> + temps d'exÃ©cution de l'action. A noter que si le personnage dÃ©cide de "ne rien faire", son action a un temps de 0 et n'avance sur la barre de temps que de la valeur de sa <span class="stat">RÃ©activitÃ©</span>.
 			</div>
-			<h4>Réagir</h4>
+			<h4>RÃ©agir</h4>
 			<div class="content">
-				Certaines actions comme parer, ou résister à un sort sont réalisées en riposte à une action adverse. Elles ne peuvent être tentées que lorsque le personnage dispose d'action dans le tour, c'est à dire si son score sur la barre de temps n'est pas supérieur de 10 points au score de son adversaire.
+				Certaines actions comme parer, ou rÃ©sister Ã  un sort sont rÃ©alisÃ©es en riposte Ã  une action adverse. Elles ne peuvent Ãªtre tentÃ©es que lorsque le personnage dispose d'action dans le tour, c'est Ã  dire si son score sur la barre de temps n'est pas supÃ©rieur de 10 points au score de son adversaire.
 			</div>
 		</div>
 		
 		<h3>Les actions</h3>
 		<div class="content">
-			Lorsqu’un personnage souhaite agir, il utilise ses actions. Par défaut, chacun en possède une qu’il peut utiliser à son tour de jeu. Chaque action qu’elle soit innée ou provenant d’un entrainement spécifique se décline en 5 niveaux de maitrise. Le tout premier correspondant aux bases de la technique est connu dès l’acquisition de celle-ci. Ensuite, le personnage doit s’entrainer pour progresser dans sa maîtrise. A noter qu’après le 5eme degré de maîtrise, une formule apparait pour déterminer les effets d’un éventuel 6eme ou 7eme degré. Bien qu’il soit impossible de se spécialiser directement au dessus du 5eme niveau, certains objets ou compétences peuvent booster artificiellement ces niveaux.
-			Il est à noter que le niveau de maîtrise de l'action est le niveau maximal connu mais pas forcément celui utilisé. Selon la situation, le personnage peut choisir d'utiliser la technique à un niveau moins élevé (par exemple pour économiser son <span class="jauge">Souffle</span>). Ceci n'est valable uniquement pour les actions actives.
+			Lorsquâ€™un personnage souhaite agir, il utilise ses actions. Par dÃ©faut, chacun en possÃ¨de une quâ€™il peut utiliser Ã  son tour de jeu. Chaque action quâ€™elle soit innÃ©e ou provenant dâ€™un entrainement spÃ©cifique se dÃ©cline en 5 niveaux de maitrise. Le tout premier correspondant aux bases de la technique est connu dÃ¨s lâ€™acquisition de celle-ci. Ensuite, le personnage doit sâ€™entrainer pour progresser dans sa maÃ®trise. A noter quâ€™aprÃ¨s le 5eme degrÃ© de maÃ®trise, une formule apparait pour dÃ©terminer les effets dâ€™un Ã©ventuel 6eme ou 7eme degrÃ©. Bien quâ€™il soit impossible de se spÃ©cialiser directement au dessus du 5eme niveau, certains objets ou compÃ©tences peuvent booster artificiellement ces niveaux.
+			Il est Ã  noter que le niveau de maÃ®trise de l'action est le niveau maximal connu mais pas forcÃ©ment celui utilisÃ©. Selon la situation, le personnage peut choisir d'utiliser la technique Ã  un niveau moins Ã©levÃ© (par exemple pour Ã©conomiser son <span class="jauge">Souffle</span>). Ceci n'est valable uniquement pour les actions actives.
 			<br /><br />
-			Beaucoup d’actions sont éprouvantes pour l’organisme et demandent de la <span class="jauge">Concentration</span> et du <span class="jauge">Souffle</span>. A chaque fois que la description le mentionne, le personnage doit dépenser le nombre de points de <span class="jauge">Souffle</span> et de <span class="jauge">Concentration</span> pour réussir l’action.
+			Beaucoup dâ€™actions sont Ã©prouvantes pour lâ€™organisme et demandent de la <span class="jauge">Concentration</span> et du <span class="jauge">Souffle</span>. A chaque fois que la description le mentionne, le personnage doit dÃ©penser le nombre de points de <span class="jauge">Souffle</span> et de <span class="jauge">Concentration</span> pour rÃ©ussir lâ€™action.
 			<br /><br />
-			De plus il faut un certain temps pour éxécuter l'action, ce temps sera ajouté à la <span class="stat">Réactivité</span> du personnage pour déterminer quand jouer la prochaine action du personnage.
+			De plus il faut un certain temps pour Ã©xÃ©cuter l'action, ce temps sera ajoutÃ© Ã  la <span class="stat">RÃ©activitÃ©</span> du personnage pour dÃ©terminer quand jouer la prochaine action du personnage.
 			<br />
-			Le personnage peut décider de ne faire aucune action. Dans ce cas son action aura un temps d'exécution de 0 et il ne se déplacera que de sa <span class="stat">Réactivité</span> dans la barre des temps.
+			Le personnage peut dÃ©cider de ne faire aucune action. Dans ce cas son action aura un temps d'exÃ©cution de 0 et il ne se dÃ©placera que de sa <span class="stat">RÃ©activitÃ©</span> dans la barre des temps.
 			<br /><br />
-			Les effets des différents niveaux de maîtrise sont cumulatifs.	
+			Les effets des diffÃ©rents niveaux de maÃ®trise sont cumulatifs.	
 		</div>
 		
-		<h3>Les changements d’état</h3>
+		<h3>Les changements dâ€™Ã©tat</h3>
 		<div class="content">
-			De nombreux évènements peuvent influencer l’état d’un personnage. Que ce soit en provenance d’une compétence, de la <span class="jauge">Fatigue</span> ou encore un d’un poison, la liste est longue.
+			De nombreux Ã©vÃ¨nements peuvent influencer lâ€™Ã©tat dâ€™un personnage. Que ce soit en provenance dâ€™une compÃ©tence, de la <span class="jauge">Fatigue</span> ou encore un dâ€™un poison, la liste est longue.
 			<table class="small_tab">
 				<tr><th>Nom</th><th>Effets</th></tr>
-				<tr><td>A terre</td><td>Le personnage souffre d'un malus de -5 en <span class="stat">Adresse</span>, <span class="stat">Vigueur</span> et <span class="stat">Vivacité</span> lorsqu'il réalise une action de combat. <br />Par contre tout adversaire le prenant pour cible à distance subira un malus de -4 pour toucher.</td></tr>
-				<tr><td>Accroupi</td><td>Le personnage souffre d'un malus de -2 en <span class="stat">Adresse</span>, <span class="stat">Vigueur</span> et <span class="stat">Vivacité</span> lorsqu'il réalise une action de combat. <br />Par contre tout adversaire le prenant pour cible à distance subira un malus de -4 pour toucher.</td></tr>
-				<tr><td>Sonné</td><td>Le personnage voit toutes ses statistiques baissées de -5.</td></tr>
-				<tr><td>Déstabilisé</td><td>Lorsque le personnage vient d’être déstabilisé, si sa prochaine action est une action de combat (attaque, défense, compétence de combat …) celle-ci subira un malus de -10.</td></tr>
-				<tr><td>Dément</td><td>Le personnage est pris d’une folle envie de combattre. Il attaquera la dernière personne ayant été une menace pour lui ou à défaut, la personne la plus proche de lui.</td></tr>
-				<tr><td>Fiévreux</td><td>Le personnage voit toutes ses statistiques baissées de -2.</td></tr>
-				<tr><td>Évanoui</td><td>Le personnage tombe au sol et perd connaissance. Il ne peut plus agir. A chaque fois qu’il subit une nouvelle blessure, il effectue un test de <span class="stat">Vigueur</span> à 20 pour déterminer s'il reprend connaissance.</td></tr>
-				<tr><td>Mort</td><td>Le personnage manquera surement à ses compagnons. Il peut en vouloir à la malchance. Ou au MJ. En tout cas pas à lui, lui, il a été parfait.</td></tr>
+				<tr><td>A terre</td><td>Le personnage souffre d'un malus de -5 en <span class="stat">Adresse</span>, <span class="stat">Vigueur</span> et <span class="stat">VivacitÃ©</span> lorsqu'il rÃ©alise une action de combat. <br />Par contre tout adversaire le prenant pour cible Ã  distance subira un malus de -4 pour toucher.</td></tr>
+				<tr><td>Accroupi</td><td>Le personnage souffre d'un malus de -2 en <span class="stat">Adresse</span>, <span class="stat">Vigueur</span> et <span class="stat">VivacitÃ©</span> lorsqu'il rÃ©alise une action de combat. <br />Par contre tout adversaire le prenant pour cible Ã  distance subira un malus de -4 pour toucher.</td></tr>
+				<tr><td>SonnÃ©</td><td>Le personnage voit toutes ses statistiques baissÃ©es de -5.</td></tr>
+				<tr><td>DÃ©stabilisÃ©</td><td>Lorsque le personnage vient dâ€™Ãªtre dÃ©stabilisÃ©, si sa prochaine action est une action de combat (attaque, dÃ©fense, compÃ©tence de combat â€¦) celle-ci subira un malus de -10.</td></tr>
+				<tr><td>DÃ©ment</td><td>Le personnage est pris dâ€™une folle envie de combattre. Il attaquera la derniÃ¨re personne ayant Ã©tÃ© une menace pour lui ou Ã  dÃ©faut, la personne la plus proche de lui.</td></tr>
+				<tr><td>FiÃ©vreux</td><td>Le personnage voit toutes ses statistiques baissÃ©es de -2.</td></tr>
+				<tr><td>Ã‰vanoui</td><td>Le personnage tombe au sol et perd connaissance. Il ne peut plus agir. A chaque fois quâ€™il subit une nouvelle blessure, il effectue un test de <span class="stat">Vigueur</span> Ã  20 pour dÃ©terminer s'il reprend connaissance.</td></tr>
+				<tr><td>Mort</td><td>Le personnage manquera surement Ã  ses compagnons. Il peut en vouloir Ã  la malchance. Ou au MJ. En tout cas pas Ã  lui, lui, il a Ã©tÃ© parfait.</td></tr>
 			</table>
 		</div>
 
 		<h3>Le repos</h3>
 		<div class="content">
-			Récupérer est indispensable pour tout aventurier qui souhaite faire long feu. Mais selon les conditions le résultat n'est pas le même. A chaque repos (minimum 4h) lancer 1D10 avec les modificateurs décrits ci-dessous et se reporter au tableau de résultat.<br />
+			RÃ©cupÃ©rer est indispensable pour tout aventurier qui souhaite faire long feu. Mais selon les conditions le rÃ©sultat n'est pas le mÃªme. A chaque repos (minimum 4h) lancer 1D10 avec les modificateurs dÃ©crits ci-dessous et se reporter au tableau de rÃ©sultat.<br />
 			<h4>Modificateurs</h4>
 			<ul>
-				<li><b>Longue durée</b> (6h de sommeil) : +2</li>
+				<li><b>Longue durÃ©e</b> (6h de sommeil) : +2</li>
 				<li><b>Confort</b> (camp de base ou lit) : +2</li>
-				<li><b>Intempéries</b> : -3 (à adapter par le MJ)</li>
+				<li><b>IntempÃ©ries</b> : -3 (Ã  adapter par le MJ)</li>
 				<li><b>Froid/Faim/Peur/Douleur</b> (chaque jauge avec 4 points ou +) : -2</li>
 			</ul>
-			<h4>Résultats</h4>
+			<h4>RÃ©sultats</h4>
 			<ul>
-				<li><b>de 3 à 8</b> : Retire 2 points de <span class="jauge">Fatigue</span> + Retire 1 points de blessure*.</li>
-				<li><b>de 9 à 13</b> : Retire 3 points de <span class="jauge">Fatigue</span> + Retire 2 points de blessure* + Ajoute 1 point de <span class="jauge">Moral</span>.</li>
+				<li><b>de 3 Ã  8</b> : Retire 2 points de <span class="jauge">Fatigue</span> + Retire 1 points de blessure*.</li>
+				<li><b>de 9 Ã  13</b> : Retire 3 points de <span class="jauge">Fatigue</span> + Retire 2 points de blessure* + Ajoute 1 point de <span class="jauge">Moral</span>.</li>
 				<li><b>14 et +</b> : Retire 4 points de <span class="jauge">Fatigue</span> + Retire 4 points de blessure* + Ajoute 2 points de <span class="jauge">Moral</span>.</li>
 			</ul>
 			<span class="help">* avec 1/2/4 point de blessure le personnage peut retirer un blessure superficielle/grave/critique.</span>
