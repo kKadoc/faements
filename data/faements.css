@@ -264,13 +264,16 @@ b {
 }
 
 .etat {
-	color : #31C0DC;
+	color :  #2ecc71;
+	font-weight : bold;
 }
 
 .stat {
-	color : orange;
+	color :  #3498db;
+	font-weight : bold;
 }
 
 .jauge {
-	color : yellow;
+	color :  #f39c12;
+	font-weight : bold;
 }

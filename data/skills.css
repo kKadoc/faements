@@ -9,18 +9,87 @@
 
 .spec {
 	width : 100%;
+	border : none;
+	background : transparent;
 }
 
-.spec td {
-	vertical-align : top;
-}
-
-.spec td:nth-child(2) {
-	text-align : right;
-}
-
-p {
+.comp {
 	border: 1px solid #2d251b;
     background: #090909;
 	padding : 15px;
+	margin :10px -30px 10px -45px;
 }
+
+.comp h4 {
+	margin-top : 0;
+}
+
+.comp tr {
+	background : none;
+}
+
+.comp .effets {
+	background : #171614;
+	border : 1px solid #28241D;
+	margin :10px 0;
+	padding : 15px;
+}
+
+.spec .right {
+	text-align: right;
+}
+
+.spec p {
+	margin : 0 10px;
+}
+
+.left>span {
+	display : block;
+}
+
+.voie {
+	padding : 0 15px 15px 15px;
+	border:none;
+	border-left: 15px solid #fff;
+	border-top : 1px solid #fff;
+	border-bottom : 1px solid #fff;
+	border-right : 3px solid #fff;
+	border-radius : 10px 0 0 10px;
+	
+	margin :30px 40px 10px 40px;
+}
+
+.voie h3 {
+	margin : 0 0 0 -20px;
+	padding : 10px 30px ;
+	border: none;
+}
+
+.voie.Vivacité {
+	border-color : #f1c40f;
+}
+
+.voie.Adresse {
+	border-color : #28b463 ;
+}
+
+.voie.Vigueur {
+	border-color : #e74c3c ;
+}
+
+.voie.Prestance {
+	border-color : #8e44ad;
+}
+
+.voie.Intelligence {
+	border-color : #3498db ;
+}
+
+.voie.Intuition {
+	border-color : #fff;
+}
+
+.voie.Bravoure {
+	border-color : #9b59b6 ;
+}
+
