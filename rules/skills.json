@@ -1,0 +1,2277 @@
+{
+  "voies": [
+    {
+      "nom": "Déplacement",
+      "stat": "Vivacité",
+      "a_ranger": false,
+      "competences": [
+        {
+          "nom": "Courir",
+          "innee": true,
+          "exec": "2",
+          "souffle": "-",
+          "conc": "-",
+          "effets": [
+            {
+              "texte": "Le personnage se déplace d’un mouvement maximal de 8m. Si le terrain est difficilement praticable (gravats, végétation dense, …) le personnage doit diviser sa vitesse par deux ou réussir un test d’<span class=\"stat\">Adresse</span> à 15 pour ne pas chuter.<br />S’agenouiller et s’accroupir se font sans pénalité, par contre s’allonger et se relever réduisent la distance de déplacement de 3m. \n    <br />Il est possible d'associer une course avec une autre action. Dans ce cas, additionner les valeurs d'Execution, de <span class=\"jauge\">Souffle</span> et de <span class=\"jauge\">Concentration</span>. Par contre les 2 actions doivent être réalisées l'une après l'autre (il n'est pas possible de se déplacer de la moitié de son mouvement, puis faire une action, puis terminer le mouvement)."
+            }
+          ]
+        },
+        {
+          "nom": "Récupérer",
+          "innee": true,
+          "exec": "-",
+          "souffle": "-",
+          "conc": "-",
+          "effets": [
+            {
+              "texte": "Le personnage souffle un bon coup récupérant 2 points de <span class=\"jauge\">Souffle</span> et de <span class=\"jauge\">Concentration</span>."
+            }
+          ]
+        },
+        {
+          "nom": "Leste",
+          "passive": true,
+          "apprentissage": "Vivacité 10",
+          "exec": "-",
+          "souffle": "-",
+          "conc": "-",
+          "effets": [
+            {
+              "texte": "Les distances des actions de la voie du Déplacement sont augmentées de 1. De plus le test d'<span class=\"stat\">Adresse</span> pour ne pas chuter en cas de terrain difficile est réduit à 12."
+            }
+          ]
+        },
+        {
+          "nom": "Déplacement en armure",
+          "passive": true,
+          "apprentissage": "Vivacité 10",
+          "exec": "-",
+          "souffle": "-",
+          "conc": "-",
+          "effets": [
+            {
+              "texte": "Le personnage n’est plus ralenti lorsqu’il porte une armure (cf. section équipement)."
+            }
+          ]
+        },
+        {
+          "nom": "Sprinter",
+          "apprentissage": "Vivacité 10",
+          "exec": "3",
+          "souffle": "1",
+          "conc": "-",
+          "effets": [
+            {
+              "texte": "Une action qui permet au personnage de se déplacer de 12m."
+            }
+          ]
+        },
+        {
+          "nom": "Replacement stratégique",
+          "passive": true,
+          "apprentissage": "Vivacité 15",
+          "exec": "-",
+          "souffle": "-",
+          "conc": "-",
+          "effets": [
+            {
+              "texte": "Avant ou après avoir réalisé une action autre que courir, le personnage peut se déplacer de 3m."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Précision",
+      "stat": "Adresse",
+      "a_ranger": false,
+      "competences": [
+        {
+          "nom": "Coup précis",
+          "profil": "Profil Précis",
+          "innee": true,
+          "exec": "5",
+          "souffle": "-",
+          "conc": "-",
+          "effets": [
+            {
+              "texte": "Un coup visant une zone précise pour un effet maximal. Lors de l'attaque, le personnage lance deux dés de localisation et choisit celui qui l'intéresse."
+            }
+          ]
+        },
+        {
+          "nom": "Encore plus précis !",
+          "passive": true,
+          "apprentissage": "Adresse 10",
+          "exec": "-",
+          "souffle": "-",
+          "conc": "-",
+          "effets": [
+            {
+              "texte": "Les actions de combat de la voie de la précision lancent un dé de localisation supplémentaire."
+            }
+          ]
+        },
+        {
+          "nom": "Point faible",
+          "passive": true,
+          "apprentissage": "Adresse 15",
+          "exec": "-",
+          "souffle": "-",
+          "conc": "-",
+          "effets": [
+            {
+              "texte": "Les attaques de la voie de la précision ignorent l'armure de la cible si les jets de localisation forment une paire"
+            }
+          ]
+        },
+        {
+          "nom": "Coup ciblé",
+          "profil": "Profil Précis",
+          "apprentissage": "Adresse 20",
+          "exec": "5",
+          "souffle": "1",
+          "conc": "1",
+          "effets": [
+            {
+              "texte": "Avec ce coup le personnage ne jette pas de dé de localisation mais choisit la zone atteinte. En contrepartie, le jet d'attaque subit un malus de -5."
+            }
+          ]
+        },
+        {
+          "nom": "Répétition",
+          "profil": "Profil Précis",
+          "apprentissage": "Adresse 25",
+          "exec": "4",
+          "souffle": "1",
+          "conc": "1",
+          "effets": [
+            {
+              "texte": "Sur cette attaque, si le jet de localisation ne convient pas au personnage, il peut choisir à la place une autre zone qu'il a précédemment touché sur cette cible."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Puissance",
+      "stat": "Vigueur",
+      "a_ranger": false,
+      "competences": [
+        {
+          "nom": "Coup puissant",
+          "profil": "Profil Puissant",
+          "innee": true,
+          "exec": "6",
+          "souffle": "1",
+          "conc": "-",
+          "effets": [
+            {
+              "texte": "Un coup lent et imprécis mais avec un impact colossal. Le score d'attaque subit un malus de -4."
+            }
+          ]
+        },
+        {
+          "nom": "Endurant",
+          "passive": true,
+          "apprentissage": "Vigueur 10",
+          "exec": "-",
+          "souffle": "-",
+          "conc": "-",
+          "effets": [
+            {
+              "texte": "Les actions de combat de la voie de la puissance nécessite 1 point de souffle de moins."
+            }
+          ]
+        },
+        {
+          "nom": "Frappe lourde",
+          "profil": "Profil Puissant",
+          "apprentissage": "Vigueur 15",
+          "exec": "6",
+          "souffle": "3",
+          "conc": "-",
+          "effets": [
+            {
+              "texte": "Une attaque puissante qui inflige un malus de  -5 à toute parade qui lui est opposée."
+            }
+          ]
+        },
+        {
+          "nom": "Frappe du colosse",
+          "profil": "Profil Puissant",
+          "apprentissage": "Vigueur 20",
+          "exec": "6",
+          "souffle": "3",
+          "conc": "-",
+          "effets": [
+            {
+              "texte": "L'attaque magistrale gagne un bonus de dégâts égal au quart de la <span class=\"stat\">Vigueur</span> du personnage."
+            }
+          ]
+        },
+        {
+          "nom": "En puissance tout le temps !",
+          "apprentissage": "Vigueur 25",
+          "exec": "-",
+          "souffle": "-",
+          "conc": "-",
+          "effets": [
+            {
+              "texte": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Vitesse",
+      "stat": "Vivacité",
+      "a_ranger": false,
+      "competences": [
+        {
+          "nom": "Coup rapide",
+          "profil": "Profil Rapide",
+          "innee": true,
+          "exec": "4",
+          "souffle": "-",
+          "conc": "-",
+          "effets": [
+            {
+              "texte": "Un coup simple et rapide pour frapper au plus vite."
+            }
+          ]
+        },
+        {
+          "nom": "Encore plus vite !",
+          "passive": true,
+          "apprentissage": "Vivacité 10",
+          "exec": "-",
+          "souffle": "-",
+          "conc": "-",
+          "effets": [
+            {
+              "texte": "Les actions de combat de la voie de la vitesse nécessitent 1 temps d'Exécution de moins."
+            }
+          ]
+        },
+        {
+          "nom": "Rush",
+          "profil": "Profil Rapide",
+          "apprentissage": "Vivacité 15",
+          "exec": "4",
+          "souffle": "1",
+          "conc": "-",
+          "effets": [
+            {
+              "texte": "Une attaque flugurente qui inflige un malus de -5 à toute esquive qui lui est opposée."
+            }
+          ]
+        },
+        {
+          "nom": "Enchainement",
+          "profil": "Profil Rapide",
+          "apprentissage": "Vivacité 25",
+          "exec": "6",
+          "souffle": "2",
+          "conc": "-",
+          "effets": [
+            {
+              "texte": "Le personnage annonce le nombre d'attaque qu'il va tenter. Ce nombre étant compris entre 1 et 4. Ces attaques peuvent être réparties entre n'importe quelles cibles à portée. Chaque attaque subit un malus à l'attaque de -3 par attaque tentée (c’est-à-dire que s'il tente 3 attaques enchainées, chaque attaque subira un malus de -9). Dès qu'une attaque est échouée, l'enchainement s'arrête."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Robustesse",
+      "stat": "Vigueur",
+      "a_ranger": false,
+      "competences": [
+        {
+          "nom": "Encaisser un coup",
+          "innee": true,
+          "passive": true,
+          "exec": "-",
+          "souffle": "-",
+          "conc": "-",
+          "effets": [
+            {
+              "texte": "Lorsqu’il subit une attaque ciblée (coup, projectile, ...) celle-ci atteint une zone précise selon le schéma de localisation. Pour déterminer cette zone, lancer un dé à 12 faces et référez vous au tableau suivant (illustration dans la section Equipement – Armures). \n    <br />\n    <table class=\"tab_reset stab1\">\n     <tr><th>Zone</th><th>Nom</th></tr>\n     <tr><td>1</td><td>Tête</td></tr>\n     <tr><td>2,&nbsp;3,&nbsp;6</td><td>Buste</td></tr>\n     <tr><td>4,&nbsp;7</td><td>Bras gauche</td></tr>\n     <tr><td>5,&nbsp;8</td><td>Bras droit</td></tr>  \n     <tr><td>9,&nbsp;11</td><td>Jambe gauche</td></tr>\n     <tr><td>10,&nbsp;12</td><td>Jambe droite</td></tr>\n    </table>"
+            }
+          ]
+        },
+        {
+          "nom": "Cicatrisation hors norme",
+          "passive": true,
+          "apprentissage": "Vigueur 10",
+          "exec": "-",
+          "souffle": "-",
+          "conc": "-",
+          "effets": [
+            {
+              "texte": "Le personnage retire 1D3 blessures superficielles à la fin d'un combat."
+            }
+          ]
+        },
+        {
+          "nom": "Dur à cuire",
+          "passive": true,
+          "apprentissage": "Vigueur 10",
+          "exec": "-",
+          "souffle": "-",
+          "conc": "-",
+          "effets": [
+            {
+              "texte": "Le seuil de blessure critique est augmenté de +5."
+            }
+          ]
+        },
+        {
+          "nom": "Peau de fer",
+          "passive": true,
+          "apprentissage": "Vigueur 15",
+          "exec": "-",
+          "souffle": "0",
+          "conc": "0",
+          "effets": [
+            {
+              "niv": "1",
+              "texte": "Le personnage est doté d'une constitution à toute épreuve. Il réduit les dégâts provenant d'une attaque physique de 2 points."
+            },
+            {
+              "niv": "2",
+              "texte": "Les dégâts physiques sont réduits de 3 points et les autres de 2."
+            },
+            {
+              "niv": "3",
+              "texte": "Contre une attaque physique, le personnage peut réduire le nombre de dégâts subis. Pour chaque point de dégâts réduit, il doit dépenser 1 point de <span class=\"jauge\">Souffle</span>."
+            },
+            {
+              "niv": "4",
+              "texte": "Les dégâts physiques sont réduits de 4 points et les autres de 2."
+            },
+            {
+              "niv": "5",
+              "texte": "1 point de <span class=\"jauge\">Souffle</span> réduit de 3 les dégâts."
+            },
+            {
+              "niv": "6+",
+              "texte": "Chaque niveau augmente la résistance aux dégâts physiques et magiques de 1."
+            }
+          ]
+        },
+        {
+          "nom": "Résistance aux poisons",
+          "passive": true,
+          "apprentissage": "Vigueur 15",
+          "exec": "-",
+          "souffle": "0",
+          "conc": "0",
+          "effets": [
+            {
+              "niv": "1",
+              "texte": "Lorsque le personnage doit résister à un poison, il peut relancer son jet si le résultat ne lui convient pas. Cependant cette relance sera soumise à un malus de -4 à la statistique testée."
+            },
+            {
+              "niv": "2",
+              "texte": "Le malus de la relance passe à -3."
+            }
+          ]
+        },
+        {
+          "nom": "Second Souffle",
+          "passive": true,
+          "apprentissage": "Vigueur 15",
+          "exec": "-",
+          "souffle": "0",
+          "conc": "0",
+          "effets": [
+            {
+              "niv": "1",
+              "texte": "Une fois par combat, si le personnage tombe à 0 point de <span class=\"jauge\">Souffle</span> et doit prendre 1 point de <span class=\"jauge\">Fatigue</span>, il regagne 2 points de <span class=\"jauge\">Souffle</span> à la place."
+            },
+            {
+              "niv": "2",
+              "texte": "+1 en <span class=\"stat\">Vigueur</span> pour 1 tour."
+            },
+            {
+              "niv": "3",
+              "texte": "Il gagne désormais 3 points de <span class=\"jauge\">Souffle</span>."
+            },
+            {
+              "niv": "4",
+              "texte": "+1 en <span class=\"stat\">Vigueur</span> pour 2 tours."
+            },
+            {
+              "niv": "5",
+              "texte": "Il regagne tout son <span class=\"jauge\">Souffle</span>."
+            },
+            {
+              "niv": "6+",
+              "texte": "Chaque niveau augmente de 1 tour la durée du bonus en <span class=\"stat\">Vigueur</span>."
+            }
+          ]
+        },
+        {
+          "nom": "Regain d'attention",
+          "passive": true,
+          "apprentissage": "Vigueur 15",
+          "exec": "-",
+          "souffle": "0",
+          "conc": "0",
+          "effets": [
+            {
+              "niv": "1",
+              "texte": "Une fois par combat, si le personnage tombe à 0 point de <span class=\"jauge\">Concentration</span> et doit prendre 1 point de <span class=\"jauge\">Fatigue</span>, il regagne 2 points de <span class=\"jauge\">Concentration</span> à la place."
+            },
+            {
+              "niv": "2",
+              "texte": "+1 en <span class=\"stat\">Intuition</span> pour 1 tour."
+            },
+            {
+              "niv": "3",
+              "texte": "Il gagne désormais 3 points de <span class=\"jauge\">Concentration</span>."
+            },
+            {
+              "niv": "4",
+              "texte": "+1 en <span class=\"stat\">Intuition</span> pour 2 tours."
+            },
+            {
+              "niv": "5",
+              "texte": "Il regagne toute sa <span class=\"jauge\">Concentration</span>."
+            },
+            {
+              "niv": "6+",
+              "texte": "Chaque niveau augmente de 1 tour la durée du bonus en <span class=\"stat\">Intuition</span>."
+            }
+          ]
+        },
+        {
+          "nom": "Pour l'honneur, et la gloire !",
+          "passive": true,
+          "apprentissage": "Vigueur 30",
+          "exec": "-",
+          "souffle": "0",
+          "conc": "0",
+          "effets": [
+            {
+              "niv": "1",
+              "texte": "Dès que le personnage a deux blessures critiques, il ajoute +2 dans deux de ses statistiques."
+            },
+            {
+              "niv": "2",
+              "texte": "L'augmentation des caractéristiques passe à +4."
+            },
+            {
+              "niv": "3",
+              "texte": "4 statistiques sont maintenant augmentées."
+            },
+            {
+              "niv": "4",
+              "texte": "Le personnage peut déclencher la compétence en dépensant 2 points d'<span class=\"jauge\">Adrénaline</span> à condition d'avoir au moins une blessure critique."
+            },
+            {
+              "niv": "5",
+              "texte": "Toutes les statistiques sont boostées par cette compétence."
+            },
+            {
+              "niv": "6+",
+              "texte": "Les seuils de déclenchement sont augmentés de 5% par niveau."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Parade",
+      "stat": "Adresse",
+      "a_ranger": false,
+      "competences": [
+        {
+          "nom": "Parer",
+          "innee": true,
+          "exec": "1",
+          "souffle": "1",
+          "conc": "-",
+          "effets": [
+            {
+              "texte": "Au corps à corps, si le personnage pense pouvoir bloquer l’attaque de son adversaire, il peut utiliser une action pour tenter de la parer. Dans ce cas, il doit utiliser une arme ou un bouclier et son score de défense sera égal à son <span class=\"stat\">Adresse</span> un D20.<br />Si sa défense est plus grande que l’attaque, les dégâts de l'attaque sont réduis de la valeur haute de parade de l'arme. Si la parade est un échec, les dégâts sont tout de même réduits mais de la valeur basse de parade de l'arme."
+            }
+          ]
+        },
+        {
+          "nom": "Maitre de la parade",
+          "passive": true,
+          "apprentissage": "Adresse 15",
+          "exec": "-",
+          "souffle": "-",
+          "conc": "-",
+          "effets": [
+            {
+              "texte": "Pour chaque niveau dans cette compétence, le personnage gagne un bonus de +2 à ses parades."
+            }
+          ]
+        },
+        {
+          "nom": "Parade de projectile",
+          "passive": true,
+          "apprentissage": "Adresse 15",
+          "exec": "-",
+          "souffle": "-",
+          "conc": "-",
+          "effets": [
+            {
+              "texte": "Si le personnage est la cible d’un projectile, il peut tenter une parade avec un malus de -4. Il opposera alors sa défense au résultat du test d'<span class=\"stat\">Adresse</span> du tireur (ou du test d'<span class=\"stat\">Intelligence</span> pour un projectile magique)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Esquive",
+      "stat": "Vivacité",
+      "a_ranger": false,
+      "competences": [
+        {
+          "nom": "Esquiver",
+          "innee": true,
+          "exec": "1",
+          "souffle": "-",
+          "conc": "1",
+          "effets": [
+            {
+              "texte": "Au corps à corps, si le personnage pense pouvoir éviter l’attaque de son adversaire, il peut utiliser une action pour tenter de l’esquiver. Dans ce cas, son score de défense sera égal à sa <span class=\"stat\">Vivacité</span> plus un D20.<br />Si sa défense est plus grande que le score d'attaque, le coup est évité.<br />Un personnage en armure lourde ne peut pas esquiver."
+            }
+          ]
+        },
+        {
+          "nom": "Esquive en armure lourde",
+          "passive": true,
+          "apprentissage": "Vivacité 10",
+          "exec": "-",
+          "souffle": "-",
+          "conc": "-",
+          "effets": [
+            {
+              "texte": "Le personnage peut désormais tenter des esquives en armure lourde. Il subira néanmoins un malus de -4."
+            }
+          ]
+        },
+        {
+          "nom": "Maitre de l'esquive",
+          "passive": true,
+          "apprentissage": "Vivacité 10",
+          "exec": "-",
+          "souffle": "-",
+          "conc": "-",
+          "effets": [
+            {
+              "texte": "Pour chaque niveau dans cette compétence, le personnage gagne un bonus de +2 à ses esquives."
+            }
+          ]
+        },
+        {
+          "nom": "Esquive de projectile",
+          "passive": true,
+          "apprentissage": "Vivacité 15",
+          "exec": "-",
+          "souffle": "-",
+          "conc": "-",
+          "effets": [
+            {
+              "texte": "Si le personnage est la cible d’un projectile, il peut tenter de l’esquiver avec un malus de -4. Il opposera alors sa défense au résultat du test d'<span class=\"stat\">Adresse</span> du tireur (ou du test d'<span class=\"stat\">Intelligence</span> pour un projectile magique)."
+            }
+          ]
+        },
+        {
+          "nom": "Plongeon",
+          "apprentissage": "Vivacité 15",
+          "exec": "1",
+          "souffle": "1",
+          "conc": "1",
+          "effets": [
+            {
+              "texte": "Le personnage plonge sur le côté pour éviter l'attaque. Cette action se réalise comme une esquive mais permet en plus au personnage de se déplacer d'1m dans la direction de son choix."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Distance",
+      "stat": "Adresse",
+      "a_ranger": false,
+      "competences": [
+        {
+          "nom": "Attaque à distance",
+          "profil": "Profil Distant",
+          "innee": true,
+          "exec": "5",
+          "souffle": "-",
+          "conc": "-",
+          "effets": [
+            {
+              "texte": "Le personnage utilise une arme à projectile (arc, javelot, ou tout autre arme improvisée) pour atteindre un ennemi à distance. Pour déterminer s’il touche, il doit réussir un test d’<span class=\"stat\">Adresse</span> à 20 avec les bonus/malus suivants :\n    <br />\n    <table class=\"tab_reset stab1\">\n     <tr><th>Situation</th><th>Bonus/malus</th></tr>\n     <tr><td>Cible à courte portée*</td><td>+4</td></tr>\n     <tr><td>Cible en mouvement**</td><td>-4</td></tr>\n     <tr><td>Cible de grande taille</td><td>+4</td></tr>\n     <tr><td>Cible sprintant</td><td>-6</td></tr>\n     <tr><td>Cible zigzagant</td><td>-10</td></tr>\n     <tr><td>Cible agenouillée</td><td>-2</td></tr>\n     <tr><td>Cible allongée</td><td>-4</td></tr>\n     <tr><td>Cible de petite taille</td><td>-4</td></tr>\n     <tr><td>Tirer au corps à corps</td><td>-6</td></tr>\n     <tr><td>Cible à couvert</td><td>-6***</td></tr>\n    </table>\n\n    <i>* est considéré comme à courte portée si la cible est à moins de 10m du tireur.</i><br />\n    <i>** est considéré comme en mouvement tout personnage ayant passé sa dernière action à se déplacer.</i>\n    <i>*** valeur à adapter par le mj selon l'importance du couvert. Un malus de -6 correspond à une cible ayant 50% de son corps protégé par un élément.</i>\n    <br />\n    <br />\n    Une fois la cible touchée, la résolution des dégâts est identique à une attaque au corps à corps (localisation, armure, …) en utilisant les dégâts du profil distance."
+            }
+          ]
+        },
+        {
+          "nom": "Tir précis",
+          "profil": "Profil Distant",
+          "apprentissage": "Adresse 10",
+          "exec": "6",
+          "souffle": "-",
+          "conc": "2",
+          "effets": [
+            {
+              "texte": "Sur ce tir, le personnage ignore le malus pour toucher le plus impactant."
+            }
+          ]
+        },
+        {
+          "nom": "Longue distance",
+          "passive": true,
+          "apprentissage": "Adresse 10",
+          "exec": "-",
+          "souffle": "-",
+          "conc": "-",
+          "effets": [
+            {
+              "texte": "La distance de la courte portée passe à 20m."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Archer",
+      "stat": "Adresse",
+      "a_ranger": false,
+      "competences": [
+        {
+          "nom": "Tir double",
+          "profil": "Profil Distant",
+          "apprentissage": "Adresse 15",
+          "exec": "6",
+          "souffle": "-",
+          "conc": "2",
+          "effets": [
+            {
+              "texte": "Le personnage enclenche deux flèches sur son arc ou arbalète et les décoche vers une cible unique. La portée est alors réduite de 10, les dégâts de chaque flèche de 4 et l’<span class=\"stat\">Adresse</span> de 4. Un seul jet de localisation est utilisé mais l'armure est appliquée pour chaque flèche."
+            }
+          ]
+        },
+        {
+          "nom": "Tir rapide",
+          "profil": "Profil Distant",
+          "apprentissage": "Adresse 20",
+          "exec": "4",
+          "souffle": "3",
+          "conc": "3",
+          "effets": [
+            {
+              "niv": "1",
+              "texte": "Un tir plus rapide mais moins efficace. Les dégâts et l'<span class=\"stat\">Adresse</span> sont réduits de 5."
+            },
+            {
+              "niv": "2",
+              "texte": "Les malus passent à -4."
+            },
+            {
+              "niv": "3",
+              "texte": "Les malus passent à -3."
+            },
+            {
+              "niv": "4",
+              "texte": "L'attaque est encore plus rapide (Exécution 3)."
+            },
+            {
+              "niv": "5",
+              "texte": "Les malus passent à -2."
+            },
+            {
+              "niv": "6+",
+              "texte": "Les malus sont diminués de 1 par niveau (ne peuvent pas devenir des bonus)."
+            }
+          ]
+        },
+        {
+          "nom": "Tir d'ajustement",
+          "profil": "Profil Distant",
+          "apprentissage": "Adresse 30",
+          "exec": "3",
+          "souffle": "2",
+          "conc": "3",
+          "effets": [
+            {
+              "niv": "1",
+              "texte": "Le personnage effectue un tir ayant pour but de trouver ses marques. Les dégâts de l'attaque sont divisés par deux mais si l'attaque touche, tous les prochains tirs auront un bonus de +5 pour toucher jusqu'à ce que la cible se soit déplacée de plus de 2m."
+            },
+            {
+              "niv": "2",
+              "texte": "Le bonus fonctionne sur un adversaire s'étant déplacé jusqu'à 5m."
+            },
+            {
+              "niv": "3",
+              "texte": "Le bonus s'applique à tout ennemi dans une zone de 5m de rayon."
+            },
+            {
+              "niv": "4",
+              "texte": "Les bonus passent à +8."
+            }
+          ]
+        },
+        {
+          "nom": "Tir incapacitant",
+          "profil": "Profil Distant",
+          "apprentissage": "Adresse 20",
+          "exec": "5",
+          "souffle": "3",
+          "conc": "3",
+          "effets": [
+            {
+              "texte": "<i>(effets à définir)</i>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Assassin",
+      "stat": "Adresse",
+      "a_ranger": false,
+      "competences": [
+        {
+          "nom": "Science des pièges",
+          "passive": true,
+          "apprentissage": "Adresse 20",
+          "exec": "-",
+          "souffle": "-",
+          "conc": "-",
+          "effets": [
+            {
+              "niv": "1",
+              "texte": "Le personnage sait poser la plupart des pièges."
+            },
+            {
+              "niv": "2",
+              "texte": "Le personnage sait fabriquer la plupart des pièges."
+            },
+            {
+              "niv": "3",
+              "texte": "Le personnage gagne un bonus de +10 en <span class=\"stat\">Intuition</span> pour détecter les pièges."
+            },
+            {
+              "niv": "4",
+              "texte": "Le personnage sait désamorcer la plupart des pièges en réussissant un test d'<span class=\"stat\">Adresse</span>. En cas d'échec, le piège se déclenche."
+            },
+            {
+              "niv": "5",
+              "texte": "Lorsqu'il désamorce un piège, il peut tenter de le récupérer pour lui. Dans ce cas le test de désamorçage subit un malus de -10."
+            }
+          ]
+        },
+        {
+          "nom": "Discrétion",
+          "passive": true,
+          "apprentissage": "Adresse 20",
+          "exec": "-",
+          "souffle": "0",
+          "conc": "0",
+          "effets": [
+            {
+              "niv": "1",
+              "texte": "Grâce à cette compétence, le personnage peut diminuer ses chances d'être repéré. Lorsqu'il utilise une armure légère, il peut se déplacer sans émettre de son et ne sera détecté que par une personne le cherchant activement. Pour le détecter, celle-ci devra alors réussir un test opposé sur l'<span class=\"stat\">Intuition</span> basé sur l'ouïe avec en malus -5 contre l'<span class=\"stat\">Adresse</span> du personnage. A noter que le personnage ne dissimule que les sons qu'il émet. S'il passe devant un vigile celui-ci le verra aussitôt. Pendant la discrétion, le personnage ne peut utiliser d'autre compétence."
+            },
+            {
+              "niv": "2",
+              "texte": "La discrétion s'applique désormais sur son apparence. Il pourra ainsi passer devant une personne sans se faire détecter si celle-ci ne le cherche pas activement (test opposé d'<span class=\"stat\">Intuition</span> -5 contre l'<span class=\"stat\">Adresse</span> du personnage)."
+            },
+            {
+              "niv": "3",
+              "texte": "Les malus pour se faire détecter passent à -8."
+            },
+            {
+              "niv": "4",
+              "texte": "Lorsque le personnage porte une attaque pendant sa discrétion, il choisit sa localisation et inflige le maximum de dégâts. Le personnage peut désormais lancer des sorts même en étant discret (détection par test opposé d'<span class=\"stat\">Intuition</span> -5 contre l'<span class=\"stat\">Adresse</span>)."
+            },
+            {
+              "niv": "5",
+              "texte": "Les malus pour se faire détecter passent à -10."
+            },
+            {
+              "niv": "6+",
+              "texte": "Chaque niveau augmente le malus pour être détecté de 1."
+            }
+          ]
+        },
+        {
+          "nom": "Crochetage",
+          "passive": true,
+          "apprentissage": "Adresse 20",
+          "exec": "-",
+          "souffle": "-",
+          "conc": "-",
+          "effets": [
+            {
+              "texte": "<i>(effets à définir)</i>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Protecteur",
+      "stat": "Vigueur",
+      "a_ranger": false,
+      "competences": [
+        {
+          "nom": "Coup de bouclier",
+          "profil": "Profil Puissant",
+          "apprentissage": "Vigueur 20",
+          "exec": "6",
+          "souffle": "3",
+          "conc": "0",
+          "effets": [
+            {
+              "texte": "Le personnage assène une puissante attaque à l'aide de son bouclier (profil puissant). Si l'attaque touche, l'adversaire doit réussir un test de <span class=\"stat\">Vigueur</span> opposé ou être <span class=\"etat\">déstabilisé</span> pour 1 tour."
+            }
+          ]
+        },
+        {
+          "nom": "Interception",
+          "apprentissage": "Vigueur",
+          "exec": "-",
+          "souffle": "-",
+          "conc": "-",
+          "effets": [
+            {
+              "texte": "Le personnage intercepte une attaque destinée à un allié proche pour la subir à sa place. <i>(effets à définir)</i>"
+            }
+          ]
+        },
+        {
+          "nom": "Vigilance",
+          "passive": true,
+          "apprentissage": "Vigueur",
+          "exec": "-",
+          "souffle": "-",
+          "conc": "-",
+          "effets": [
+            {
+              "texte": "Le personnage reste en alerte pour détecter et anticiper les menaces qui pèsent sur ses alliés. <i>(effets à définir)</i>"
+            }
+          ]
+        },
+        {
+          "nom": "Sacrifice",
+          "apprentissage": "Vigueur",
+          "exec": "-",
+          "souffle": "-",
+          "conc": "-",
+          "effets": [
+            {
+              "texte": "Le personnage se met en danger pour protéger un allié, encaissant les conséquences à sa place. <i>(effets à définir)</i>"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Berserker",
+      "stat": "Vigueur",
+      "a_ranger": false,
+      "competences": [
+        {
+          "nom": "Frénésie",
+          "apprentissage": "Vigueur 15",
+          "exec": "-",
+          "souffle": "-",
+          "conc": "-",
+          "effets": [
+            {
+              "niv": "1",
+              "texte": "Le personnage décide de rentrer en furie au début de son tour sans coût. A partir de ce moment et jusqu'à ce que le personnage ne dispose de plus aucun point d'<span class=\"jauge\">Adrénaline</span>, chaque point d'<span class=\"jauge\">Adrénaline</span> augmente les dégâts infligés par une attaque au corps à corps de +2. En contrepartie, chaque attaque échouée ou chaque action autre qu'une attaque fait perdre 1 point d'<span class=\"jauge\">Adrénaline</span>."
+            },
+            {
+              "niv": "2",
+              "texte": "Les dégâts passent à +3."
+            },
+            {
+              "niv": "3",
+              "texte": "Le personnage peut décider en début de tour et sans coût de stopper la frénésie."
+            },
+            {
+              "niv": "4",
+              "texte": "Une attaque infligeant une blessure à un ennemi fait gagner 1 point d'<span class=\"jauge\">Adrénaline</span>."
+            },
+            {
+              "niv": "5",
+              "texte": "Les dégâts passent à +4."
+            }
+          ]
+        },
+        {
+          "nom": "Furie guerrière",
+          "apprentissage": "Vigueur 15",
+          "exec": "-",
+          "souffle": "0",
+          "conc": "0",
+          "effets": [
+            {
+              "niv": "1",
+              "texte": "A déclencher au début de son tour sans dépenser d'action (coûte 2 points d'<span class=\"jauge\">Adrénaline</span>). Chaque ennemi défait au combat dans un rayon de 10m donne un bonus de +5 pour résister à la <span class=\"jauge\">Douleur</span> pour 3 tours (les effets se cumulent et chaque nouvel effet renouvelle la durée)."
+            },
+            {
+              "niv": "2",
+              "texte": "Chaque ennemi défait donne également un bonus de +2 au seuil de blessure légère."
+            },
+            {
+              "niv": "3",
+              "texte": "Chaque ennemi défait donne également un bonus de +2 au seuil de blessure grave."
+            }
+          ]
+        },
+        {
+          "nom": "Sang bouillonnant",
+          "passive": true,
+          "apprentissage": "Vigueur 15",
+          "exec": "-",
+          "souffle": "-",
+          "conc": "-",
+          "effets": [
+            {
+              "texte": "Au début de chaque combat, le personnage commence avec 2 points d'<span class=\"jauge\">Adrénaline</span>."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Lutteur",
+      "stat": "Vigueur",
+      "a_ranger": false,
+      "competences": [
+        {
+          "nom": "Prise au corps",
+          "apprentissage": "Vigueur 15",
+          "exec": "4",
+          "souffle": "2",
+          "conc": "0",
+          "effets": [
+            {
+              "niv": "1",
+              "texte": "Le personnage saisit un adversaire pour l'empêcher d'agir. Le personnage effectue un test opposé de sa <span class=\"stat\">Vigueur</span> contre la <span class=\"stat\">Vigueur</span> ou l'<span class=\"stat\">Adresse</span> de l'adversaire (au choix de ce dernier). En cas de réussite, l'adversaire ne pourra que tenter de se libérer (action : 1 exécution, 2 <span class=\"jauge\">Souffle</span>) en réussissant un test de <span class=\"stat\">Vigueur</span> opposé. Le personnage peut maintenir cette position à chaque tour tant qu'il continue à dépenser son <span class=\"jauge\">Souffle</span>."
+            }
+          ]
+        },
+        {
+          "nom": "Repousser",
+          "apprentissage": "Vigueur 30",
+          "exec": "-1",
+          "souffle": "3",
+          "conc": "0",
+          "effets": [
+            {
+              "niv": "1",
+              "texte": "Le personnage sacrifie les dégâts qu'il cause pour repousser son adversaire. En cas de réussite d'un test opposé sur la <span class=\"stat\">Vigueur</span>, l'adversaire doit reculer de deux mètres."
+            },
+            {
+              "niv": "2",
+              "texte": "Le personnage peut repousser jusqu'à deux adversaires au contact. Ils devront tous les deux effectuer le test opposé avec un bonus de +5."
+            },
+            {
+              "niv": "3",
+              "texte": "Les adversaires sont repoussés de 4 mètres."
+            },
+            {
+              "niv": "4",
+              "texte": "Le personnage gagne un bonus de 5 en <span class=\"stat\">Vigueur</span> pour le test."
+            },
+            {
+              "niv": "5",
+              "texte": "En plus d'être repoussés, les adversaires tombent à terre en cas d'échec du test."
+            },
+            {
+              "niv": "6+",
+              "texte": "Chaque niveau augmente la <span class=\"stat\">Vigueur</span> de 5 points."
+            }
+          ]
+        },
+        {
+          "nom": "Étranglement",
+          "apprentissage": "Vigueur 20",
+          "exec": "4",
+          "souffle": "2",
+          "conc": "0",
+          "effets": [
+            {
+              "texte": "Le personnage resserre son emprise autour de la gorge de sa cible. A chaque tour où la prise est maintenue, la cible doit réussir un test de <span class=\"stat\">Vigueur</span> opposé. Au troisième échec, elle tombe <span class=\"etat\">Évanoui</span>."
+            }
+          ]
+        },
+        {
+          "nom": "Clé de bras",
+          "apprentissage": "Vigueur 20",
+          "exec": "4",
+          "souffle": "2",
+          "conc": "0",
+          "effets": [
+            {
+              "texte": "Le personnage applique une clé de bras. En cas de réussite d'un test de <span class=\"stat\">Vigueur</span> opposé, au choix du personnage : soit il désarme la cible, soit il la met <span class=\"etat\">à terre</span> et l'empêche de jouer (elle perd son action)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Héraut",
+      "stat": "Prestance",
+      "a_ranger": false,
+      "competences": [
+        {
+          "nom": "Tenez bon !",
+          "apprentissage": "Prestance 15",
+          "exec": "1",
+          "souffle": "2",
+          "conc": "2",
+          "effets": [
+            {
+              "niv": "1",
+              "texte": "Le personnage encourage ses alliés dans la bataille. Tous les alliés à 5m du personnage gagnent un bonus de +2 pour résister à la <span class=\"jauge\">Peur</span> et à la <span class=\"jauge\">Douleur</span> pendant 2 tours. Cette action peut également être utilisée en même temps qu'une action innée."
+            },
+            {
+              "niv": "2",
+              "texte": "La compétence s'applique également au personnage."
+            },
+            {
+              "niv": "3",
+              "texte": "L'aire d'effet passe à 10m."
+            },
+            {
+              "niv": "4",
+              "texte": "Les bonus montent à +5."
+            },
+            {
+              "niv": "5",
+              "texte": "Les effets durent 4 tours."
+            }
+          ]
+        },
+        {
+          "nom": "Provoquer",
+          "apprentissage": "Prestance 15",
+          "exec": "3",
+          "souffle": "0",
+          "conc": "2",
+          "effets": [
+            {
+              "niv": "1",
+              "texte": "Le personnage provoque ses adversaires pour les forcer à se concentrer sur lui. S'il applique la compétence à tous les ennemis dans l'aire d'effet, ceux-ci doivent réussir un test opposé de leur <span class=\"stat\">Intelligence</span> +5 contre la <span class=\"stat\">Prestance</span> du lanceur. Si le personnage cible un ennemi en particulier, il est le seul à devoir réussir le test sans aucun bonus. L'aire d'effet est un disque centré sur le personnage et d'un rayon de 5m."
+            },
+            {
+              "niv": "2",
+              "texte": "L'aire d'effet passe à un disque de 10m de rayon."
+            }
+          ]
+        },
+        {
+          "nom": "Discours inspirant",
+          "apprentissage": "Prestance 15",
+          "exec": "10",
+          "souffle": "2",
+          "conc": "3",
+          "effets": [
+            {
+              "niv": "1",
+              "texte": "Le personnage prononce un discours qui décuple les capacités de ses alliés. Tout allié à 5m gagne pour 2D6 tours 1D3 + <span class=\"stat\">Prestance</span>/10 à l'une des caractéristiques de son choix."
+            },
+            {
+              "niv": "2",
+              "texte": "La portée passe à 10 mètres."
+            },
+            {
+              "niv": "3",
+              "texte": "2 caractéristiques sont augmentées."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Barde",
+      "stat": "Prestance",
+      "a_ranger": false,
+      "competences": [
+        {
+          "nom": "Chant fortifiant",
+          "apprentissage": "Prestance 15",
+          "exec": "3",
+          "souffle": "0",
+          "conc": "2",
+          "effets": [
+            {
+              "niv": "1",
+              "texte": "Lorsque le personnage chante cette mélodie, ses alliés ressentent une paix intérieure revigorante. Tout allié à moins de 5 mètres regagne 1 point de <span class=\"jauge\">Concentration</span> et de <span class=\"jauge\">Souffle</span>. Cette action peut également être utilisée en même temps qu'une action innée."
+            },
+            {
+              "niv": "2",
+              "texte": "La compétence s'applique également au personnage."
+            },
+            {
+              "niv": "3",
+              "texte": "Les alliés à 10 mètres regagnent 1 point de <span class=\"jauge\">Concentration</span> et de <span class=\"jauge\">Souffle</span>."
+            },
+            {
+              "niv": "4",
+              "texte": "Les alliés à 10 mètres regagnent 2 points de <span class=\"jauge\">Concentration</span> et de <span class=\"jauge\">Souffle</span>."
+            },
+            {
+              "niv": "5",
+              "texte": "Tant que le personnage chante, les alliés dans l'aire d'effet divisent les coûts en <span class=\"jauge\">Concentration</span> et <span class=\"jauge\">Souffle</span>."
+            },
+            {
+              "niv": "6+",
+              "texte": "Chaque niveau agrandit la zone d'effet de 1 mètre."
+            }
+          ]
+        },
+        {
+          "nom": "Chant entrainant",
+          "apprentissage": "Prestance 15",
+          "exec": "3",
+          "souffle": "0",
+          "conc": "2",
+          "effets": [
+            {
+              "niv": "1",
+              "texte": "Lorsque le personnage chante cette mélodie, ses alliés ressentent une bouffée d'énergie nouvelle. Tout allié à moins de 5 mètres regagne 1 point de <span class=\"jauge\">Moral</span>. Cette action peut également être utilisée en même temps qu'une action innée. Ce bonus ne peut être appliqué qu'une fois par jour par personnage."
+            },
+            {
+              "niv": "2",
+              "texte": "La compétence s'applique également au personnage."
+            },
+            {
+              "niv": "3",
+              "texte": "Les alliés à 10 mètres regagnent 1 point de <span class=\"jauge\">Moral</span>."
+            },
+            {
+              "niv": "4",
+              "texte": "Les alliés à 10 mètres regagnent 2 points de <span class=\"jauge\">Moral</span>."
+            },
+            {
+              "niv": "5",
+              "texte": "Tant que le personnage chante, les alliés dans l'aire d'effet ne peuvent pas perdre de point de <span class=\"jauge\">Moral</span>."
+            },
+            {
+              "niv": "6+",
+              "texte": "Chaque niveau agrandit la zone d'effet de 1 mètre."
+            }
+          ]
+        },
+        {
+          "nom": "Chant de guerre",
+          "apprentissage": "Prestance 20",
+          "exec": "3",
+          "souffle": "1",
+          "conc": "1",
+          "effets": [
+            {
+              "niv": "1",
+              "texte": "Le personnage chante pour inspirer les alliés autour de lui. Le chanteur considère la valeur de sa caractéristique la plus élevée (il choisit en cas d'égalité). Tout allié à 5m gagne +1/10 de cette valeur pour lui-même pour 1 tour. Pendant cette durée l'allié peut reprendre lui aussi le chant comme s'il disposait de la compétence au niveau 1. Cela prolongera l'effet du chant « principal » et ajoutera un nouveau bonus lié à la caractéristique du nouveau chanteur. Cette action peut également être utilisée en même temps qu'une action innée."
+            },
+            {
+              "niv": "2",
+              "texte": "La portée passe à 10 mètres."
+            },
+            {
+              "niv": "3",
+              "texte": "La durée passe à 2 tours."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Sorcellerie",
+      "stat": "Intelligence",
+      "a_ranger": false,
+      "competences": [
+        {
+          "nom": "Lancer un sort",
+          "innee": true,
+          "exec": "*",
+          "souffle": "-",
+          "conc": "*",
+          "effets": [
+            {
+              "texte": "Bien que cette action semble accessible à tous les individus, seuls les rares mages dotés de talent et de savoir peuvent réellement manipuler l’énergie magique.<br />Lorsque le personnage souhaite lancer un sort, il doit réussir à canaliser assez d’énergie en lui : c’est le seuil de puissance du sort. Pour générer cette énergie, le mage additionne son <span class=\"stat\">Intelligence</span> et un D20. Il peut aussi ajouter un nombre de points de <span class=\"jauge\">Concentration</span>s au choix. (Le mage choisit ce nombre avant de lancer son dé). Chaque point de <span class=\"jauge\">Concentration</span> dépensé donne un bonus de +5 au total<br />Si ce score est inférieur au seuil de puissance du sort, le mage n’a pas réussi à se concentrer assez rapidement et le sort est perdu (l’action est perdue et les points de <span class=\"jauge\">Concentration</span> aussi). Sinon, le sort est lancé avec succès.<br />Si de plus ce score est supérieur au seuil critique du sort, celui-ci est lancé à sa puissance maximale.<br /><br />Enfin si le sort lancé est un projectile magique, le mage doit également toucher sa cible avec. Le principe est identique à l’attaque à distance (test d’<span class=\"stat\">Adresse</span>, bonus/malus, …) à la différence près que le mage utilise son <span class=\"stat\">Intelligence</span> et non son <span class=\"stat\">Adresse</span> pour effectuer le test.<br />Pour lancer un sort, le personnage a besoin de parler et doit pouvoir faire suffisamment de mouvements. Ainsi, s’il se retrouve ligoté ou bâillonné, il ne pourra utiliser cette compétence."
+            }
+          ]
+        },
+        {
+          "nom": "Résister à un sort",
+          "innee": true,
+          "exec": "1",
+          "souffle": "-",
+          "conc": "*",
+          "effets": [
+            {
+              "texte": "Se sentant affecté par les effets d’un sort, le personnage peut décider de lui résister et focalise son attention pour ce protéger (la décision est donc prise après avoir déterminé si le sort touche sa cible). Dans ce cas, il additionne son <span class=\"stat\">Intelligence</span>, un D20 et un nombre de points de <span class=\"jauge\">Concentration</span> de son choix. Chaque point de <span class=\"jauge\">Concentration</span> donne un bonus de +5 au total. Si le résultat est supérieur au total du lanceur du sort, ses effets sont annulés. Cette défense n'est pas possible si le sort est un projectile magique."
+            }
+          ]
+        },
+        {
+          "nom": "Incantation ajustée",
+          "passive": true,
+          "apprentissage": "Intelligence 10",
+          "exec": "-",
+          "souffle": "-",
+          "conc": "-",
+          "effets": [
+            {
+              "texte": "Après avoir jeté son dé de sort, le mage peut décider de rajouter des points de <span class=\"jauge\">Concentration</span> pour réussir à lancer le sort. Chaque point ajouté ne donne alors qu'un bonus de +2 au total."
+            }
+          ]
+        },
+        {
+          "nom": "Connaissance de la magie",
+          "passive": true,
+          "apprentissage": "Intelligence 15",
+          "exec": "-",
+          "souffle": "0",
+          "conc": "0",
+          "effets": [
+            {
+              "niv": "1",
+              "texte": "Grâce à ses nombreux apprentissages, le personnage est capable de reconnaître l'ensemble des sorts dont le malus d'apprentissage est inférieur ou égal à 20."
+            },
+            {
+              "niv": "2",
+              "texte": "Sur un test d'<span class=\"stat\">Intuition</span> réussi (la difficulté dépend de la puissance de l'objet), le mage est capable de détecter tout enchantement/objet magique/faément présent dans un rayon égal à son <span class=\"stat\">Intelligence</span>."
+            },
+            {
+              "niv": "3",
+              "texte": "Le personnage sait identifier les effets magiques sur les objets enchantés."
+            },
+            {
+              "niv": "4",
+              "texte": "Le personnage est capable de reconnaître tous les sorts."
+            }
+          ]
+        },
+        {
+          "nom": "Maitrise de la magie",
+          "passive": true,
+          "apprentissage": "Intelligence 15",
+          "exec": "-",
+          "souffle": "0",
+          "conc": "0",
+          "effets": [
+            {
+              "niv": "1",
+              "texte": "Le personnage devient spécialiste dans l'utilisation de cette magie. Il gagne automatiquement un bonus de +1 pour lancer les sorts de ce domaine."
+            },
+            {
+              "niv": "2",
+              "texte": "Le personnage gagne un bonus de +3 en <span class=\"stat\">Intelligence</span> pour apprendre les sorts appartenant à ce domaine."
+            },
+            {
+              "niv": "3",
+              "texte": "Le bonus pour lancer les sorts passe à +2."
+            },
+            {
+              "niv": "4",
+              "texte": "Le bonus d'apprentissage passe à +5."
+            },
+            {
+              "niv": "5",
+              "texte": "Le bonus pour lancer les sorts passe à +3."
+            },
+            {
+              "niv": "6+",
+              "texte": "Chaque niveau augmente les bonus pour lancer les sorts et pour les apprendre de +1."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Accrobate",
+      "stat": "Adresse",
+      "a_ranger": false,
+      "competences": [
+        {
+          "nom": "Pied sûr",
+          "passive": true,
+          "apprentissage": "Adresse 10",
+          "exec": "-",
+          "souffle": "-",
+          "conc": "-",
+          "effets": [
+            {
+              "texte": "Lorsqu'il rate un test d'<span class=\"stat\">Adresse</span> à cause d'un terrain difficile, il peut relancer le test."
+            }
+          ]
+        },
+        {
+          "nom": "Agilité hors norme",
+          "passive": true,
+          "apprentissage": "Adresse 15",
+          "exec": "-",
+          "souffle": "-",
+          "conc": "-",
+          "effets": [
+            {
+              "texte": "Sauter, grimper et faire des accrobaties sont choses aisées pour le personnage qui gagne un bonus de +5 aux jets pour évaluer un déplacement ou une accrobatie."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Apprentissage",
+      "stat": "Intelligence",
+      "a_ranger": false,
+      "competences": [
+        {
+          "nom": "Débrouillard",
+          "passive": true,
+          "apprentissage": "Intelligence",
+          "exec": "-",
+          "souffle": "-",
+          "conc": "-",
+          "effets": [
+            {
+              "texte": "Réduit de 2 les prérequis à l'utilisation des armes et armures"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Arts martiaux",
+      "stat": "Vivacité",
+      "a_ranger": false,
+      "competences": [
+        {
+          "nom": "Combat à mains nues",
+          "apprentissage": "Vivacité 10",
+          "exec": "5",
+          "souffle": "-",
+          "conc": "-",
+          "effets": [
+            {
+              "texte": "Quand il se bat avec ses poings le personnage inflige 1D8 dégâts et choisit entre la <span class=\"stat\">Vivacité</span>, l'<span class=\"stat\">Adresse</span> et la <span class=\"stat\">Vigueur</span> comme caractéristique d'attaque."
+            }
+          ]
+        },
+        {
+          "nom": "Mains puissantes",
+          "passive": true,
+          "apprentissage": "Vigueur 15",
+          "exec": "-",
+          "souffle": "-",
+          "conc": "-",
+          "effets": [
+            {
+              "texte": "Les actions de combat de la voie des arts martiaux qui sont basées sur la <span class=\"stat\">Vigueur</span> ont leurs dégâts augmentés du quart de la <span class=\"stat\">Vigueur</span>."
+            }
+          ]
+        },
+        {
+          "nom": "Coups déstabilisants",
+          "passive": true,
+          "apprentissage": "Adresse 15",
+          "exec": "-",
+          "souffle": "-",
+          "conc": "-",
+          "effets": [
+            {
+              "texte": "Avec les actions de combat de la voie des arts martiaux basées sur l'<span class=\"stat\">Adresse</span> et en cas d'attaque qui touche, le personnage peut déplacer son adversaire (de taille équivalente) d'1m dans n'importe quelle direction."
+            }
+          ]
+        },
+        {
+          "nom": "Déluge de coup",
+          "passive": true,
+          "apprentissage": "Vivacité 15",
+          "exec": "-",
+          "souffle": "-",
+          "conc": "-",
+          "effets": [
+            {
+              "texte": "Les actions de combat de la voie des arts martiaux qui sont basées sur l'<span class=\"stat\">Vivacité</span> sont particulièrement complexes à contrer. Le défenseur subit un malus de -10 à ses esquives et parades."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Charge",
+      "stat": "Vigueur",
+      "a_ranger": false,
+      "competences": [
+        {
+          "nom": "Charge",
+          "profil": "Profil Puissant",
+          "apprentissage": "Vigueur 10",
+          "exec": "6",
+          "souffle": "2",
+          "conc": "-",
+          "effets": [
+            {
+              "texte": "Après avoir réalisé un déplacement de plus de 5m qui l'amène à portée de sa cible, le personnage profite de son élan pour asséner un coup dévastateur."
+            }
+          ]
+        },
+        {
+          "nom": "Charge féroce",
+          "profil": "Profil Puissant",
+          "apprentissage": "Vigueur 15",
+          "exec": "6",
+          "souffle": "2",
+          "conc": "-",
+          "effets": [
+            {
+              "texte": "Après avoir réalisé un déplacement de plus de 5m qui l'amène à portée de sa cible, le personnage engage toute son énergie dans un coup meurtrier. Celui-ci devra réussir un test de <span class=\"stat\">Vigueur</span> opposé ou être déstabilisé pour 1 tour.<br />Le personnage quant à lui subit des dégâts égaux au quart de sa <span class=\"stat\">Vigueur</span> mais augmente les dégâts de son attaque de la moitié de sa <span class=\"stat\">Vigueur"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Courage",
+      "stat": "Bravoure",
+      "a_ranger": false,
+      "competences": [
+        {
+          "nom": "Sang-froid",
+          "passive": true,
+          "apprentissage": "Bravoure 15",
+          "exec": "-",
+          "souffle": "-",
+          "conc": "-",
+          "effets": [
+            {
+              "texte": "Lorsqu'il décide d'encaisser une attaque, le test de <span class=\"stat\">Courage</span> passe à 15."
+            }
+          ]
+        },
+        {
+          "nom": "Réponse adaptée",
+          "passive": true,
+          "apprentissage": "Bravoure 15",
+          "exec": "-",
+          "souffle": "-",
+          "conc": "-",
+          "effets": [
+            {
+              "texte": "Lorsque le personnage encaisse une attaque basée sur un profil rapide, il n'a pas besoin de réaliser un jet de <span class=\"stat\">Courage</span>."
+            }
+          ]
+        },
+        {
+          "nom": "Encore un effort",
+          "passive": true,
+          "apprentissage": "Bravoure 20",
+          "exec": "-",
+          "souffle": "-",
+          "conc": "1",
+          "effets": [
+            {
+              "texte": "En cas d'échec d'un jet de <span class=\"stat\">Courage</span>, le personnage peut dépenser 1 point de  <span class=\"jauge\">Concentration</span> pour relancer son jet."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Double maniement",
+      "stat": "Adresse",
+      "a_ranger": false,
+      "competences": [
+        {
+          "nom": "Coup croisé",
+          "profil": "Profil Précis",
+          "apprentissage": "Adresse 10",
+          "exec": "6",
+          "souffle": "1",
+          "conc": "-",
+          "effets": [
+            {
+              "texte": "Avec deux armes, le personnage porte une attaque simultanée des deux côtés de son adversaire. C'est l'arme principale qui est considérée comme portant l'attaque (pas de jet de dé pour l'arme secondaire). Si l'adversaire veut parer le coup, il doit réaliser une parade pour chaque arme, par contre il peut esquiver les deux coups en une esquive. L'attaque aura un malus de -5 en attaque."
+            }
+          ]
+        },
+        {
+          "nom": "Double coup",
+          "profil": "Profil Rapide",
+          "apprentissage": "Vivacité 20",
+          "exec": "6",
+          "souffle": "2",
+          "conc": "-",
+          "effets": [
+            {
+              "texte": "Le personnage réalise deux attaques consécutives sur la même cible. Ces deux attauqes sont réalisées avec deux armes différentes"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Fourberie",
+      "stat": "Vivacité",
+      "a_ranger": false,
+      "competences": [
+        {
+          "nom": "Feinte",
+          "profil": "Profil Rapide",
+          "apprentissage": "Vivacité 10",
+          "exec": "4",
+          "souffle": "-",
+          "conc": "-",
+          "effets": [
+            {
+              "texte": "Le personnage change au dernier moment la trajectoire de son attaque pour tromper son adversaire. Le coup gagne un bonus de +4 en attaque."
+            }
+          ]
+        },
+        {
+          "nom": "Coup dans le dos",
+          "profil": "Profil Rapide",
+          "apprentissage": "Vivacité 15",
+          "exec": "4",
+          "souffle": "-",
+          "conc": "-",
+          "effets": [
+            {
+              "texte": "Le personnage profite d'une distraction de son adversaire pour amplifier ses dégâts. Chaque niveau dans cette compétence augmente de +1 l'attaque et les dégâts infligés à un ennemi qui vient de réaliser une action de combat ciblé vers un autre personnage"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Interception",
+      "stat": "Vivacité",
+      "a_ranger": false,
+      "competences": [
+        {
+          "nom": "Attaque d'opportunité",
+          "profil": "Profil Rapide",
+          "apprentissage": "Vivacité 15",
+          "exec": "3",
+          "souffle": "-",
+          "conc": "1",
+          "effets": [
+            {
+              "texte": "Lorsqu'un adversaire à portée réalise une action autre qu'une action de combat, le personnage peut placer une attaque sans réponse possible. La cible ne peut pas la défendre (ni parade, ni esquive) mais ne doit pas réaliser de test de <span class=\"jauge\">Bravoure</span> non plus."
+            }
+          ]
+        },
+        {
+          "nom": "Contre-attaque",
+          "passive": true,
+          "apprentissage": "Vivacité 15",
+          "exec": "-",
+          "souffle": "-",
+          "conc": "-",
+          "effets": [
+            {
+              "texte": "Avant de tenter une parade ou une esquive, le personnage annonce qu'il va contre-attaquer. Si la défense (subissant un malus de -5) est réussie, il pourra enchainer sur un coup rapide. Le temps total de l'action sera alors égal à la <span class=\"stat\">Réactivité</span> du personnage + temps d'exécution de la défense + temps d'exécution du coup rapide."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Maitre d'arme",
+      "stat": "Adresse",
+      "a_ranger": false,
+      "competences": [
+        {
+          "nom": "Maitrise de l'arme",
+          "passive": true,
+          "apprentissage": "Adresse 10",
+          "exec": "-",
+          "souffle": "-",
+          "conc": "-",
+          "effets": [
+            {
+              "texte": "Le personnage choisit une arme (dague, arc long, ...) qu'il va maitriser au maximum. Il gagne un bonus de +1 aux dégâts lorsqu'il qu'il utilise cette arme. De plus il peut s'entrainer à raison de séances d'une heure minimum pour continuer son amélioration. Une heure d'entrainement génère 1 point de <span class=\"jauge\">Fatigue</span>. Au bout de 5h d'entrainement, le personnage gagne également +1 à ses jets d'attaque réalisés avec cette arme. A chaque fois que le personnage améliore cette compétence, il peut bénéficier de ces 2 points d'amélioration."
+            }
+          ]
+        },
+        {
+          "nom": "Frappe économe",
+          "profil": "Profil Précis",
+          "apprentissage": "Adresse 10",
+          "exec": "5",
+          "souffle": "-",
+          "conc": "-",
+          "effets": [
+            {
+              "texte": "Un coup simple permettant de récupérer 1 point de <span class=\"jauge\">Souffle</span> dans le combat tout en maintenant l'agression."
+            }
+          ]
+        },
+        {
+          "nom": "Position défensive",
+          "passive": true,
+          "apprentissage": "Adresse 10",
+          "exec": "-",
+          "souffle": "-",
+          "conc": "-",
+          "effets": [
+            {
+              "texte": "En adoptant cette posture, le personnage se tourne résoluement vers la défense. Pendant 3 tours il gagne un bonus +1 à ses parades et esquives au prix d'un malus de -1 en attaque. Passer en position défensive ne prend pas de temps mais doit être déclaré en début d'action du personnage."
+            }
+          ]
+        },
+        {
+          "nom": "Déstabilisation",
+          "profil": "Profil Précis",
+          "apprentissage": "Adresse 15",
+          "exec": "5",
+          "souffle": "-",
+          "conc": "1",
+          "effets": [
+            {
+              "texte": "Un pied qui traine, un coup d'épaule, le personnage profite de son attaque pour mettre en péril l’équilibre de son adversaire. Que l'attaque touche ou pas, il tente un duel de caractéristiques basé sur la <span class=\"stat\">Vivacité</span>. En cas de succès, la cible est déstabilisée pour 1D3 tours."
+            }
+          ]
+        },
+        {
+          "nom": "Posture offensive",
+          "passive": true,
+          "apprentissage": "Adresse 15",
+          "exec": "-",
+          "souffle": "-",
+          "conc": "-",
+          "effets": [
+            {
+              "texte": "En adoptant cette posture, le personnage se tourne résolument vers l'offensive. Pendant 3 tours il gagne un bonus de +1 en attaque au prix d'un malus de -1 en défense. Passer en position offensive ne prend pas de temps mais doit être déclaré en début d'action du personnage."
+            }
+          ]
+        },
+        {
+          "nom": "Frappe vicieuse",
+          "profil": "Profil Précis",
+          "apprentissage": "Adresse 20",
+          "exec": "5",
+          "souffle": "1",
+          "conc": "1",
+          "effets": [
+            {
+              "texte": "Le personnage tente une attaque particulièrement vicieuse pour infliger un maximum de dégâts. L’attaque subira un malus de -5 pour toucher mais en cas de succès, les dégâts seront augmentés du quart de l’<span class=\"stat\">Adresse</span> du personnage."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Sorcellerie de combat",
+      "stat": "Intelligence",
+      "a_ranger": false,
+      "competences": [
+        {
+          "nom": "Mains brulantes",
+          "innee": true,
+          "passive": true,
+          "exec": "-",
+          "souffle": "-",
+          "conc": "-",
+          "effets": [
+            {
+              "texte": "Quand le personnage lance un projectile magique sur une cible au corps à corps, il touche automatiquement."
+            }
+          ]
+        },
+        {
+          "nom": "Spécialiste des projectiles",
+          "passive": true,
+          "apprentissage": "Intelligence 10",
+          "exec": "-",
+          "souffle": "-",
+          "conc": "-",
+          "effets": [
+            {
+              "texte": "Pour les projectiles magiques, les points de <span class=\"jauge\">Concentration</span> dépensés  pour lancer le sort sont également appliqués en bonus pour déterminer si le projectile atteint sa cible."
+            }
+          ]
+        },
+        {
+          "nom": "Expert en canalisation",
+          "passive": true,
+          "apprentissage": "Intelligence 15",
+          "exec": "-",
+          "souffle": "0",
+          "conc": "0",
+          "effets": [
+            {
+              "niv": "1",
+              "texte": "Les durées de canalisation sont réduites de 1."
+            },
+            {
+              "niv": "2",
+              "texte": "Si le personnage ne gagne pas de point de <span class=\"jauge\">Douleur</span> lorsqu'il subit une blessure, la canalisation n'est pas interrompue."
+            },
+            {
+              "niv": "3",
+              "texte": "Le personnage peut se déplacer de 2m à l'issue de la canalisation et avant de lancer le sort."
+            },
+            {
+              "niv": "4",
+              "texte": "Les durées de canalisation sont réduites de 2."
+            }
+          ]
+        },
+        {
+          "nom": "Incantation rapide",
+          "apprentissage": "Intelligence 30",
+          "exec": "-1",
+          "souffle": "0",
+          "conc": "+1",
+          "effets": [
+            {
+              "niv": "1",
+              "texte": "Au prix d'un effort de <span class=\"jauge\">Concentration</span> supplémentaire, le personnage tente de lancer son sort plus rapidement. En dépensant 1 point de <span class=\"jauge\">Concentration</span> supplémentaire, le temps d'exécution est réduit de 1. Quel que soit le résultat du lancement, le sort ne pourra pas être lancé avec son seuil critique."
+            },
+            {
+              "niv": "3",
+              "texte": "Peut être lancé en seuil critique."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Faément",
+      "stat": "Intelligence",
+      "a_ranger": false,
+      "competences": [
+        {
+          "nom": "Faément mineur",
+          "apprentissage": "Intelligence 15",
+          "exec": "*",
+          "souffle": "0",
+          "conc": "4",
+          "effets": [
+            {
+              "niv": "1",
+              "texte": "Le personnage charge un sort dans un réceptacle pour que celui-ci soit déclenché lorsque les conditions nécessaires seront remplies. Pour préparer le faément, le personnage doit au préalable : connaître le sort qu'il veut inscrire ; disposer d'un réceptacle d'énergie suffisamment chargé (charge nécessaire = seuil de puissance du sort &times;2) ; avoir un stylet à faéments ; accéder à une surface dure (métal, roche, bois...). La préparation aura pour durée un nombre de temps d'action égal au seuil de puissance du sort. Durant cette préparation, le personnage définit la condition de déclenchement (condition simple, sans « ET » ni « OU », n'impliquant que des éléments à moins de 20m) ainsi que ses modalités (direction du projectile, zone d'effet). Un test d'<span class=\"stat\">Intelligence</span> avec comme cible le seuil de puissance du sort doit être réussi pour inscrire le faément (en cas d'échec le réceptacle perd 50% de ses charges). Une fois terminé, dès que la condition est remplie, le sort est lancé et le faément détruit."
+            },
+            {
+              "niv": "2",
+              "texte": "Le faément peut déclencher un sort en seuil critique. Dans ce cas, la durée de préparation et la charge nécessaire dépendent du seuil critique et non du seuil de puissance."
+            },
+            {
+              "niv": "3",
+              "texte": "En cas d'échec, un test de <span class=\"stat\">Vivacité</span> réussi permet de ne perdre aucune charge."
+            },
+            {
+              "niv": "4",
+              "texte": "La condition de déclenchement peut cibler un élément allant jusqu'à 50m."
+            }
+          ]
+        },
+        {
+          "nom": "Faément majeur",
+          "apprentissage": "Intelligence 30",
+          "exec": "*",
+          "souffle": "0",
+          "conc": "4",
+          "effets": [
+            {
+              "niv": "1",
+              "texte": "Le fonctionnement est le même que le faément mineur avec les différences suivantes : la charge nécessaire n'est plus le seuil de puissance &times;2 mais &times;10 ; la durée de préparation est le seuil de puissance &times;2 ; lorsque le sort est déclenché, le faément ne se détruit pas (au bout d'un tour d'attente, si la condition est de nouveau présente, le sort est déclenché de nouveau)."
+            },
+            {
+              "niv": "2",
+              "texte": "Le faément peut déclencher un sort en seuil critique. Dans ce cas, la durée de préparation et la charge nécessaire dépendent du seuil critique et non du seuil de puissance."
+            },
+            {
+              "niv": "3",
+              "texte": "En cas d'échec, un test de <span class=\"stat\">Vivacité</span> réussi permet de ne perdre aucune charge."
+            },
+            {
+              "niv": "4",
+              "texte": "La condition de déclenchement peut cibler un élément allant jusqu'à 50m."
+            }
+          ]
+        },
+        {
+          "nom": "Chargement",
+          "apprentissage": "Intelligence 20",
+          "exec": "-",
+          "souffle": "-",
+          "conc": "-",
+          "effets": [
+            {
+              "niv": "1",
+              "texte": "Charge un réceptacle d'énergie (une pierre précieuse). 1h &rarr; +10 énergie &rarr; test d'<span class=\"stat\">Intelligence</span> 20 ; 1h &rarr; +15 énergie &rarr; test d'<span class=\"stat\">Intelligence</span> 25 ; 1h &rarr; +20 énergie &rarr; test d'<span class=\"stat\">Intelligence</span> 30. En cas d'échec du test, le réceptacle perd 1D10 points d'énergie.<br /><b>Pierres :</b> Diamant (charge max = 400) ; Rubis (charge max = 600, test pour charger -5) ; Améthyste (charge max = 300, test pour charger +2) ; Topaze (charge max = 200, en cas d'échec de chargement perte seulement de 1D6)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Médecine",
+      "stat": "Intelligence",
+      "a_ranger": false,
+      "competences": [
+        {
+          "nom": "Science des antidotes",
+          "passive": true,
+          "apprentissage": "Intelligence 20",
+          "exec": "-",
+          "souffle": "0",
+          "conc": "0",
+          "effets": [
+            {
+              "niv": "1",
+              "texte": "Le personnage sait reconnaître la majorité des poisons rien qu'en étudiant une personne victime des symptômes."
+            },
+            {
+              "niv": "2",
+              "texte": "Le personnage peut stopper les effets de n'importe quel poison pendant 1 heure grâce à un antidote commun."
+            },
+            {
+              "niv": "3",
+              "texte": "En utilisant un antidote commun et une dose du poison qui touche une victime, le personnage peut la guérir."
+            },
+            {
+              "niv": "4",
+              "texte": "Lorsqu'il utilise un bandage ou un baume de soin, les effets d'un antidote commun s'ajoutent (ne peut être combiné avec les compétences précédentes, donc inutilisable pour ralentir ou soigner un poison puissant)."
+            },
+            {
+              "niv": "5",
+              "texte": "Lorsqu'il utilise un antidote, la cible est immunisée contre ce poison pendant 1 heure."
+            },
+            {
+              "niv": "6+",
+              "texte": "Chaque niveau augmente de 1 heure la durée d'immunité au poison."
+            }
+          ]
+        },
+        {
+          "nom": "Médecine de guerre",
+          "passive": true,
+          "apprentissage": "Intelligence 20",
+          "exec": "-",
+          "souffle": "0",
+          "conc": "0",
+          "effets": [
+            {
+              "niv": "1",
+              "texte": "Le personnage gagne un bonus de +5 lorsqu'il utilise un bandage de premiers secours."
+            },
+            {
+              "niv": "2",
+              "texte": "Le baume de soin soigne 1 blessure superficielle supplémentaire."
+            },
+            {
+              "niv": "3",
+              "texte": "Utiliser un équipement de soin nécessite une action de moins."
+            },
+            {
+              "niv": "4",
+              "texte": "Le personnage gagne un bonus supplémentaire de +5 lorsqu'il utilise un bandage de premiers secours."
+            },
+            {
+              "niv": "5",
+              "texte": "Le baume de soin soigne également 1 blessure grave."
+            },
+            {
+              "niv": "6+",
+              "texte": "Chaque niveau augmente de +2 le bonus d'utilisation d'un bandage de premiers secours."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Explorateur",
+      "stat": "Intelligence",
+      "a_ranger": false,
+      "competences": [
+        {
+          "nom": "Orientation",
+          "passive": true,
+          "apprentissage": "Intelligence 15",
+          "exec": "-",
+          "souffle": "0",
+          "conc": "0",
+          "effets": [
+            {
+              "niv": "1",
+              "texte": "Le personnage connaît parfaitement la géographie de son pays."
+            },
+            {
+              "niv": "2",
+              "texte": "Le personnage est capable de se repérer dans toutes les situations, que ce soit grâce au soleil, aux étoiles ou autre."
+            },
+            {
+              "niv": "3",
+              "texte": "Le personnage est toujours capable de pointer le nord, même dans un espace clos sans visibilité sur l'extérieur."
+            }
+          ]
+        },
+        {
+          "nom": "Connaissances naturelles",
+          "passive": true,
+          "apprentissage": "Intelligence 15",
+          "exec": "-",
+          "souffle": "0",
+          "conc": "0",
+          "effets": [
+            {
+              "niv": "1",
+              "texte": "Habitué aux milieux naturels, le personnage est capable de reconnaître la plupart des animaux, plantes et minéraux de son pays. Il connaît également leurs principales vertus et leur potentiel de vente."
+            },
+            {
+              "niv": "2",
+              "texte": "Le personnage sait désormais prélever et préparer les parties intéressantes de son environnement naturel. Il peut en faire de petits objets d'utilisation courante (bandages de secours, bijoux de faible qualité, peaux de bêtes...)."
+            },
+            {
+              "niv": "3",
+              "texte": "Le personnage devient un véritable artisan avec les matériaux naturels. Il est capable de sculpter, tailler, coudre, graver pour fabriquer des objets de valeur supérieure."
+            }
+          ]
+        },
+        {
+          "nom": "Survie",
+          "passive": true,
+          "apprentissage": "Intelligence 15",
+          "exec": "-",
+          "souffle": "0",
+          "conc": "0",
+          "effets": [
+            {
+              "niv": "1",
+              "texte": "Le personnage peut démarrer un feu en 1D6 minutes sans matériel particulier."
+            },
+            {
+              "niv": "2",
+              "texte": "1 fois par jour, sait utiliser les plantes et ressources naturelles à disposition pour réduire la <span class=\"jauge\">Faim</span> de 1 point."
+            },
+            {
+              "niv": "3",
+              "texte": "Le personnage sait dormir sans le confort d'un feu de camp et profiter tout de même du bonus de +2 au test de repos."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "Érudit",
+      "stat": "Intelligence",
+      "a_ranger": false,
+      "competences": [
+        {
+          "nom": "Analyse",
+          "passive": true,
+          "apprentissage": "Intelligence 15",
+          "exec": "-",
+          "souffle": "0",
+          "conc": "0",
+          "effets": [
+            {
+              "niv": "1",
+              "texte": "Le personnage analyse le comportement de son adversaire pour déterminer ses forces et faiblesses. Il lance un D20 auquel il somme son <span class=\"stat\">Intelligence</span>/2. Toutes les caractéristiques de la cible inférieures au résultat seront connues du personnage."
+            },
+            {
+              "niv": "2",
+              "texte": "Le personnage peut déterminer les compétences de sa cible."
+            },
+            {
+              "niv": "3",
+              "texte": "Chaque action défensive effectuée par le personnage contre un adversaire analysé dans le combat donne un bonus de +2 pour les prochaines tentatives."
+            },
+            {
+              "niv": "5",
+              "texte": "Chaque action défensive effectuée contre le personnage par un adversaire analysé inflige un malus de -2 pour les prochaines tentatives."
+            }
+          ]
+        },
+        {
+          "nom": "Apprenti",
+          "passive": true,
+          "apprentissage": "Intelligence 20",
+          "exec": "-",
+          "souffle": "0",
+          "conc": "0",
+          "effets": [
+            {
+              "niv": "1",
+              "texte": "Le personnage bénéficie d'une capacité d'apprentissage supérieure à la moyenne. A chaque tentative d'apprentissage d'une compétence, il gagne un bonus de +1 pour la maîtriser."
+            },
+            {
+              "niv": "2",
+              "texte": "Le bonus passe à +2."
+            },
+            {
+              "niv": "3",
+              "texte": "Le personnage lance deux dés et utilise le meilleur résultat pour apprendre la compétence."
+            },
+            {
+              "niv": "4",
+              "texte": "Le bonus d'apprentissage passe à +3."
+            },
+            {
+              "niv": "5",
+              "texte": "Le personnage lance deux dés et utilise leur somme."
+            },
+            {
+              "niv": "6+",
+              "texte": "Chaque niveau donne un bonus de +1 pour apprendre la compétence."
+            }
+          ]
+        },
+        {
+          "nom": "Professeur",
+          "passive": true,
+          "apprentissage": "Intelligence 20",
+          "exec": "-",
+          "souffle": "0",
+          "conc": "0",
+          "effets": [
+            {
+              "niv": "1",
+              "texte": "S'il le souhaite, le personnage peut aider une personne à apprendre une compétence. S'il la connaît déjà, le personnage aidé gagnera un bonus de +2 pour apprendre, sinon ce bonus sera de +1."
+            },
+            {
+              "niv": "2",
+              "texte": "Les bonus passent à +4 et +2."
+            },
+            {
+              "niv": "3",
+              "texte": "Après un échec, le personnage aidé peut quand même retenter un deuxième test sans avoir à observer la compétence une nouvelle fois."
+            },
+            {
+              "niv": "4",
+              "texte": "Les bonus passent à +6 et +4."
+            },
+            {
+              "niv": "5",
+              "texte": "Les bonus passent à +8 et +6."
+            },
+            {
+              "niv": "6+",
+              "texte": "Chaque niveau augmente les bonus de +1."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "A RANGER PRESTANCE",
+      "stat": "Prestance",
+      "a_ranger": true,
+      "competences": [
+        {
+          "nom": "Charge héroïque",
+          "apprentissage": "Prestance 20",
+          "exec": "3",
+          "souffle": "2",
+          "conc": "3",
+          "effets": [
+            {
+              "niv": "1",
+              "texte": "Le personnage charge un ennemi dans un élan d'héroïsme (déplacement minimal de 5m et maximal de 10m). Tout allié à 5m gagne pour 2D6 tours +(1 + <span class=\"stat\">Prestance</span>/10) aux dégâts lorsqu'il effectue une charge."
+            },
+            {
+              "niv": "2",
+              "texte": "La portée passe à 10 mètres."
+            },
+            {
+              "niv": "3",
+              "texte": "Le personnage peut réaliser sa charge héroïque en même temps qu'une charge normale (et donc porter un coup puissant) en ajoutant le <span class=\"jauge\">Souffle</span> et la <span class=\"jauge\">Concentration</span>."
+            }
+          ]
+        },
+        {
+          "nom": "Effrayant",
+          "passive": true,
+          "apprentissage": "Prestance 15",
+          "exec": "-",
+          "souffle": "-",
+          "conc": "-",
+          "effets": [
+            {
+              "niv": "1",
+              "texte": "Le personnage inspire la terreur aux ennemis à son contact qui doivent réussir un test opposé de <span class=\"stat\">Bravoure</span> contre la caractéristique la plus élevée du personnage au début de leur tour ou gagner un point de <span class=\"jauge\">Peur</span>."
+            },
+            {
+              "niv": "2",
+              "texte": "Les ennemis à 3m du personnage sont susceptibles d'être effrayés."
+            },
+            {
+              "niv": "3",
+              "texte": "Le personnage décide ou non s'il inspire la <span class=\"jauge\">Peur</span> à ses ennemis."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "A RANGER INTELLIGENCE",
+      "stat": "Intelligence",
+      "a_ranger": true,
+      "competences": [
+        {
+          "nom": "Connaissances métallurgiques",
+          "passive": true,
+          "apprentissage": "Intelligence 15",
+          "exec": "-",
+          "souffle": "0",
+          "conc": "0",
+          "effets": [
+            {
+              "niv": "1",
+              "texte": "Permet au personnage d'entretenir une pièce d'équipement afin de conserver sa qualité. Permet de fabriquer des éléments simples des armes et armures (sangles, flèches, lames simples...)."
+            },
+            {
+              "niv": "2",
+              "texte": "Permet d'améliorer une arme pour qu'elle inflige 2 dégâts supplémentaires sur un type de profil."
+            },
+            {
+              "niv": "3",
+              "texte": "Le personnage est capable de renforcer une armure, augmentant la défense de 1 sur chaque zone."
+            },
+            {
+              "niv": "4",
+              "texte": "Permet d'améliorer une arme pour qu'elle inflige 2 dégâts supplémentaires sur tous les profils."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "nom": "A RANGER INTUITION",
+      "stat": "Intuition",
+      "a_ranger": true,
+      "competences": [
+        {
+          "nom": "Pistage",
+          "passive": true,
+          "apprentissage": "Intuition 15",
+          "exec": "-",
+          "souffle": "0",
+          "conc": "0",
+          "effets": [
+            {
+              "niv": "1",
+              "texte": "Permet au personnage de suivre une piste fraîche."
+            },
+            {
+              "niv": "2",
+              "texte": "Le personnage sait déterminer les circonstances qui ont laissé les traces (personne blessée, ligotée...)."
+            },
+            {
+              "niv": "3",
+              "texte": "Le personnage peut suivre une piste quasi effacée (après une pluie ou une semaine)."
+            }
+          ]
+        },
+        {
+          "nom": "Regard pénétrant",
+          "passive": true,
+          "apprentissage": "Intuition 15",
+          "exec": "-",
+          "souffle": "0",
+          "conc": "0",
+          "effets": [
+            {
+              "niv": "1",
+              "texte": "Lorsque le personnage doit réussir un test d'<span class=\"stat\">Intuition</span> basé sur la vue, il gagne un bonus de +2 au test."
+            },
+            {
+              "niv": "2",
+              "texte": "Lorsqu'il attaque un adversaire au corps à corps, le personnage détecte les zones les moins protégées. Au début du combat il détecte une zone fragilisée (lancer un dé de localisation) ; cette zone offre une protection diminuée de 2."
+            },
+            {
+              "niv": "3",
+              "texte": "Le bonus au test d'<span class=\"stat\">Intuition</span> passe à +4."
+            },
+            {
+              "niv": "4",
+              "texte": "Lorsqu'il utilise une arme à distance, les malus dus à la longue portée sont divisés par deux."
+            },
+            {
+              "niv": "5",
+              "texte": "Le bonus au test d'<span class=\"stat\">Intuition</span> passe à +6."
+            },
+            {
+              "niv": "6+",
+              "texte": "Chaque niveau apporte un bonus de +2 au test d'<span class=\"stat\">Intuition</span>."
+            }
+          ]
+        },
+        {
+          "nom": "Compagnon animal",
+          "passive": true,
+          "apprentissage": "Intuition 15",
+          "exec": "-",
+          "souffle": "0",
+          "conc": "0",
+          "effets": [
+            {
+              "niv": "1",
+              "texte": "Le personnage se lie d'amitié avec un petit mammifère (chat, chien, furet...) et est capable de lui communiquer des instructions simples. Pour se lier, le personnage doit réussir un test de <span class=\"stat\">Prestance</span> à 25."
+            },
+            {
+              "niv": "2",
+              "texte": "Le personnage peut désormais se lier avec n'importe quelle créature animale de petite taille (oiseau, poisson...)."
+            },
+            {
+              "niv": "3",
+              "texte": "Le personnage peut se lier avec des créatures animales de taille moyenne (biche, rapace, félin...) et leur communiquer des ordres plus complexes. Test de <span class=\"stat\">Prestance</span> à 30."
+            },
+            {
+              "niv": "4",
+              "texte": "Le personnage peut se lier avec des créatures animales de grande taille. En méditant, il est capable de percevoir à travers les sens de son compagnon. Test de <span class=\"stat\">Prestance</span> à 40."
+            }
+          ]
+        },
+        {
+          "nom": "Présentiment",
+          "passive": true,
+          "apprentissage": "Intuition 15",
+          "exec": "-",
+          "souffle": "0",
+          "conc": "0",
+          "effets": [
+            {
+              "niv": "1",
+              "texte": "Le personnage sait détecter tout élément naturel influencé par un élément étranger. Cette connaissance lui permet d'anticiper les potentielles agressions et d'y réagir : il gagne un bonus de +1 à tous ses tests défensifs (parade, esquive, résister à un sort, détection...). Ce bonus ne s'applique qu'en milieu naturel."
+            },
+            {
+              "niv": "2",
+              "texte": "Le bonus passe à +2."
+            },
+            {
+              "niv": "3",
+              "texte": "Dans un milieu non naturel, le bonus s'applique mais divisé par 2."
+            },
+            {
+              "niv": "4",
+              "texte": "Le bonus passe à +3."
+            },
+            {
+              "niv": "5",
+              "texte": "Le bonus passe à +4."
+            },
+            {
+              "niv": "6+",
+              "texte": "+1 par niveau."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<title>Temps de Faéments</title>
-	<link rel="stylesheet" href="data/faements.css">
-	<link rel="stylesheet" href="data/equipment.css">
-	<script type="text/javascript" src="data/jquery.min.js"></script>
-	<script type="text/javascript" src="data/animate.js"></script>
-	<script type="text/javascript" src="data/jquery.toc.js"></script>
+	<link rel="stylesheet" href="render/faements.css">
+	<link rel="stylesheet" href="render/equipment.css">
+	<script type="text/javascript" src="render/jquery.min.js"></script>
+	<script type="text/javascript" src="render/animate.js"></script>
+	<script type="text/javascript" src="render/jquery.toc.js"></script>
 </head>
 <body>
 	<div id="fastmenu">
@@ -164,6 +165,8 @@
 			<br /><br />
 			<b>Tir(A, B) :</b> l’arme est spécialement étudiée pour atteindre un ennemi à distance. Le coefficient de portée (chiffre A entre parenthèses) permet de déterminer la distance maximale de l’arme : (coefficient A x <span class="stat">Vigueur</span>).
 			<br />Le deuxième chiffre entre parenthèses indique la durée de l'action de recharge de l'arme. Si ce chiffre est non nul, le personnage devra passer une action (temps d'execution B + <span class="stat">Réactivité</span>) pour recharger. Recharger dans des conditions négatives (par exemple au corps à corps) nécessite la réussite d'un test d'<span class="stat">Adresse</span> à 20.
+			<b>Bouclier :</b> En plus d'offrir une protection supplémentaire lors d'une parade, un bouclier permet à son porteur d'utiliser l'action Parer contre un projectile avec un malus de -5.
+			<br /><br />
 		</div>
 
 		<h3>Les armures</h3>
@@ -324,6 +327,6 @@
 			<b>Actif si porté :</b> l’objet apporte ses effets dès que son utilisateur le porte. Ceux-ci sont cumulables mais il est impossible de porter deux objets de même type (exemple deux capes, ou deux anneaux).
 		</div>
 	</div>
-	<script type="text/javascript" src="data/custom_navigation.js"></script>
+	<script type="text/javascript" src="render/custom_navigation.js"></script>
 </body>
 </html>

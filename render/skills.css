@@ -1,0 +1,269 @@
+.innee {
+	color :  #31dc6a;
+}
+
+.passive {
+	color : #9ab0d9;
+}
+
+
+.spec {
+	width : 100%;
+	border : none;
+	background : transparent;
+}
+
+.comp {
+	border: 1px solid #2d251b;
+    background: #090909;
+	padding : 15px;
+	margin :10px -30px 10px -45px;
+}
+
+.comp h4 {
+	margin-top : 0;
+}
+
+.comp tr {
+	background : none;
+}
+
+.comp .effets {
+	background : #171614;
+	border : 1px solid #28241D;
+	margin :10px 0;
+	padding : 15px;
+}
+
+.spec .right {
+	text-align: right;
+}
+
+.spec p {
+	margin : 0 10px;
+}
+
+.left>span {
+	display : block;
+}
+
+.voie {
+	padding : 0 15px 15px 15px;
+	border:none;
+	border-left: 15px solid #fff;
+	border-top : 1px solid #fff;
+	border-bottom : 1px solid #fff;
+	border-right : 3px solid #fff;
+	border-radius : 10px 0 0 10px;
+	
+	margin :30px 40px 10px 40px;
+}
+
+.voie h3 {
+	margin : 0 0 0 -20px;
+	padding : 10px 30px ;
+	border: none;
+}
+
+.voie.Vivacité {
+	border-color : #f1c40f;
+}
+
+.voie.Adresse {
+	border-color : #28b463 ;
+}
+
+.voie.Vigueur {
+	border-color : #e74c3c ;
+}
+
+.voie.Prestance {
+	border-color : #8e44ad;
+}
+
+.voie.Intelligence {
+	border-color : #3498db ;
+}
+
+.voie.Intuition {
+	border-color : #fff;
+}
+
+.voie.Bravoure {
+	border-color : #9b59b6 ;
+}
+
+/* Voies "A RANGER" : compétences non encore triées */
+.voie.a_ranger {
+	border-style : dashed;
+	opacity : 0.92;
+}
+
+/* Accordéon des voies */
+.voie > h3 {
+	cursor : pointer;
+	-webkit-user-select : none;
+	user-select : none;
+}
+
+.voie > h3::before {
+	content : "\25BE  "; /* ▾ */
+	font-size : 0.8em;
+}
+
+.voie.collapsed > h3::before {
+	content : "\25B8  "; /* ▸ */
+}
+
+/* En mode replié : n'afficher que les noms (labels) des compétences */
+.voie.collapsed > .comp {
+	display : inline-block;
+	vertical-align : top;
+	margin : 5px 5px 0 0;
+	padding : 3px 9px;
+	background : #171614;
+	border : 1px solid #28241d;
+	border-radius : 4px;
+	cursor : pointer;
+}
+
+.voie.collapsed > .comp:hover {
+	border-color : #6b6253;
+}
+
+.voie.collapsed > .comp > *:not(h4) {
+	display : none;
+}
+
+.voie.collapsed > .comp h4 {
+	margin : 0;
+	font-size : 0.82em;
+	font-weight : normal;
+}
+
+
+/* ================= Mise en page condensée (lignes) ================= */
+
+.voie {
+	margin : 12px 25px;
+	padding : 0 12px 6px 12px;
+}
+
+.voie > h3 {
+	padding : 6px 20px;
+	font-size : 1.15em;
+}
+
+/* Chaque compétence sur une ligne, sans gros encadré */
+.voie > .comp {
+	border : none;
+	border-top : 1px solid #241f18;
+	background : transparent;
+	margin : 0;
+	padding : 4px 2px;
+	overflow : hidden; /* contient le flottant */
+}
+
+.voie > .comp .nom {
+	display : inline;
+	font-size : 1em;
+	line-height : 1.7;
+}
+
+/* Bloc « type + coûts » : compact, flottant à droite sur la ligne du nom */
+.voie > .comp > .spec {
+	float : right;
+	width : auto;
+	margin : 0;
+	font-size : 0.7em;
+}
+
+.voie > .comp > .spec td {
+	padding : 0;
+	vertical-align : middle;
+}
+
+.voie > .comp > .spec .left > span {
+	display : inline;
+	margin-left : 12px;
+}
+
+.voie > .comp > .spec .right {
+	white-space : nowrap;
+	padding-left : 14px;
+}
+
+.voie > .comp > .spec .right p {
+	display : inline;
+	margin : 0 0 0 8px;
+	font-size : 0; /* masque le libellé long (« Exécution : », etc.) */
+}
+
+.voie > .comp > .spec .right p > span {
+	font-size : 13px;
+	color : #d8cbb0;
+}
+
+.voie > .comp > .spec .right p:nth-child(1)::before { content : "Ex"; font-size : 11px; color : #6f665b; margin-right : 3px; }
+.voie > .comp > .spec .right p:nth-child(2)::before { content : "Sf"; font-size : 11px; color : #6f665b; margin-right : 3px; }
+.voie > .comp > .spec .right p:nth-child(3)::before { content : "Cc"; font-size : 11px; color : #6f665b; margin-right : 3px; }
+
+/* Effets : petit, sous le nom, sans cadre */
+.voie > .comp > .effets {
+	clear : both;
+	border : none;
+	background : transparent;
+	margin : 1px 0 0 0;
+	padding : 0;
+	font-size : 0.82em;
+	line-height : 1.35;
+	color : #a89f92;
+}
+
+.voie > .comp > .effets table {
+	font-size : 0.95em;
+	margin : 4px 0;
+}
+
+
+/* ================= Refonte : voies en lignes de tableau ================= */
+
+/* Plus de bordures colorées ; seule reste une bordure gauche épaisse
+   dont la couleur (héritée de .voie.<Caractéristique>) marque la stat. */
+.voie {
+	border-top : none;
+	border-right : none;
+	border-bottom : none;
+	border-left-width : 12px;
+	border-radius : 0;
+	margin : 6px 25px;
+}
+
+/* En mode fermé : une voie = une ligne de tableau (nom | compétences) */
+.voie.collapsed {
+	position : relative;
+	margin : 0 25px;
+	padding : 7px 12px 4px 210px;
+	border-bottom : 1px solid #1c1811;
+}
+
+.voie.collapsed:first-of-type {
+	border-top : 1px solid #1c1811;
+}
+
+/* 1re colonne : le nom de la voie */
+.voie.collapsed > h3 {
+	position : absolute;
+	left : 0;
+	top : 0;
+	width : 186px;
+	margin : 0;
+	padding : 8px 10px 0 12px;
+	font-size : 0.95em;
+	line-height : 1.2;
+}
+
+/* 2e colonne : la liste des compétences (chips) */
+.voie.collapsed > .comp {
+	margin : 0 4px 4px 0;
+}

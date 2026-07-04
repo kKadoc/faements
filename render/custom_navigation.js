@@ -49,4 +49,23 @@ $(document).ready(function(){
 	$('#nav .nav-h3').click(function(){
 		$(this).find('.nav-h5');
 	});
+
+	// Accordéon des voies (page des compétences)
+	if ($('.voie').length) {
+		$('.voie').addClass('collapsed');
+		$('.voie > h3').on('click', function(){
+			$(this).parent('.voie').toggleClass('collapsed');
+		});
+		// En mode replié, cliquer sur un label de compétence déplie la voie
+		$('.voie').on('click', '.comp > h4', function(){
+			var voie = $(this).closest('.voie');
+			if (voie.hasClass('collapsed')) {
+				voie.removeClass('collapsed');
+			}
+		});
+		// Cliquer dans le sommaire déplie toutes les voies pour atteindre la cible
+		$('#nav').on('click', 'a', function(){
+			$('.voie').removeClass('collapsed');
+		});
+	}
 });
