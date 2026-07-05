@@ -15,8 +15,16 @@ $(function () {
 		.on('click', '.voie > .comp > h4', function () {
 			$(this).closest('.voie').removeClass('collapsed');
 		})
-		.on('click', '#nav a', function () {
-			$('.voie').removeClass('collapsed');
+		.on('click', '#nav a', function (e) {
+			var $target = $($(this).attr('href'));      // titre visé (h3 de voie ou h4 de compétence)
+			var $voie = $target.closest('.voie');
+			if ($voie.length) {
+				e.preventDefault();
+				$('.voie').addClass('collapsed');        // tout fermer
+				$voie.removeClass('collapsed');          // n'ouvrir que la voie concernée
+				// scroll vers le titre visé APRÈS le changement de mise en page
+				$('html, body').stop().animate({ scrollTop: $target.offset().top - 20 }, 300);
+			}
 		});
 
 	/* --- Chargement des données puis rendu --- */
